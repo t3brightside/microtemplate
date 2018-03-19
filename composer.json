@@ -1,0 +1,24 @@
+{
+  "name": "t3brightside/microtemplate",
+  "description": "One page template with sections and lightbox like sub pages. Demo at: https://microtemplate.t3brightside.com",
+  "type": "typo3-cms-extension",
+  "version": "0.1.0",
+  "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid"],
+  "homepage": "https://microtemplate.t3brightside.com/",
+  "license": "GPL-2.0+",
+  "authors": [
+      {
+          "name": "Tanel Põld",
+          "role": "Developer",
+          "email": "info@t3brightside.com",
+          "homepage": "https://t3brightside.com"
+      }
+  ],
+  "require": {
+    "typo3/cms-core": ">=8.7.0,<9.0"
+  },
+  "replace": {
+    "microtemplate": "self.version",
+    "typo3-ter/microtemplate": "self.version"
+  }
+}
