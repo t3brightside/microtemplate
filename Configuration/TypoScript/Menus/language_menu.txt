@@ -1,0 +1,17 @@
+#	page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Menus/languageMenu.css	
+
+menuLang = HMENU
+menuLang {
+  special = language
+  special.value = 0,1
+  special.normalWhenNoLanguage = 0
+  wrap = <ul id="languageMenu">|</ul>
+  1 = TMENU
+  1 {
+    NO = 1
+    NO {
+      linkWrap =<li class="first">|</li>|*|<li>|</li>|*|<li class="last">|</li>
+      stdWrap.override = EN || CN
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500');
+
+h1,h2,h3,h4 {
+	font-family: 'Fira Sans Extra Condensed';
+	font-weight: 500;
+}
+
+.headerFont {
+	font-family: 'Fira Sans Extra Condensed';
+	font-weight: 400;
+}
+
+a, a:visited  {text-decoration: none; color: #db0500}
+
+.btn, .btn:visited {
+	font-size: 0.86em;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	display: inline-block; 
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 2px solid #db0500;
+	background-color: #db0500;
+	color: #fff;
+	line-height: 1em;
+	padding: 0.7em 1.7em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-right: 0.4em;
+}
+
+.align-center {
+	text-align: center
+}
+
+.align-center .btn {
+	margin-left: 0.2em;
+	margin-right: 0.2em
+}
+
+.align-right {
+	text-align: right
+}
+
+.align-right .btn {
+	text-align: right;
+	margin-left: 0.4em;
+	margin-right: 0
+}
+
+.blueText {color:#0303de}

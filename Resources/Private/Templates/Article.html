@@ -1,0 +1,16 @@
+<f:render partial="CloseLink" arguments="{_all}" />
+<div id="p{data.uid}" class="subpage subpageContentWidth">
+	<article>
+		<header>
+			<f:if condition="{contentHeader}">
+				<f:then><h1>{contentHeader}</h1></f:then>	
+				<f:else><h1>{data.title}</h1></f:else>
+			</f:if>
+			<f:if condition="{data.author}">By {data.author} • </f:if><f:format.date format="%e. %B %Y">{data.lastUpdated}</f:format.date>
+			<hr />
+	  <f:if condition="{data.subtitle}"><p><strong>{data.subtitle}</strong></p></f:if>
+	  </header>
+		<f:comment><p>{data.abstract}</p></f:comment>
+		<f:format.raw>{contentDefault}</f:format.raw>
+	</article>
+</div>

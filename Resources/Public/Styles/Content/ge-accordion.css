@@ -1,0 +1,30 @@
+.ge-accordion-section-title {
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 1.26em;
+	padding: 0.72em 0;
+	position: relative;
+	outline: 0;
+	box-sizing: border-box;
+	display: block;
+	font-weight: 500;
+	background: url("data:image/svg+xml;charset=UTF-8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='48px' height='24px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve'><g><line fill='none' stroke='%23999999' stroke-miterlimit='10' x1='0' y1='12.5' x2='24' y2='12.5'/><line fill='none' stroke='%23999999' stroke-miterlimit='10' x1='11.5' y1='0' x2='11.5' y2='24'/></g></svg>") no-repeat right center;
+}
+
+.ge-accordion-section {
+	border-bottom: 1px solid #ddd
+}
+.ge-accordion-section-content div:first-child header {
+	display: none
+}
+.ge-accordion-section:last-child {
+	border-bottom: none
+}
+
+.ge-accordion-section-title.active, .ge-accordion-section-title:hover {
+  text-decoration:none;
+}
+
+.ge-accordion-section-title.active {
+	border-bottom: none;
+	background: url("data:image/svg+xml;charset=UTF-8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='48px' height='24px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve'><g><line fill='none' stroke='%23999999' stroke-miterlimit='10' x1='0' y1='12.5' x2='24' y2='12.5'/></g></svg>") no-repeat right center;
+}

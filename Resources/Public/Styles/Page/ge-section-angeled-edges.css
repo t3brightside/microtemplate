@@ -1,0 +1,33 @@
+.ge-section-angeled-edges:first-child {
+	margin-top: -3em
+}
+
+.ge-section-angeled-edges:last-child {
+	margin-bottom: -3em
+}
+
+.ge-section-angeled-edges {
+	float: left;
+	width: 250%;
+	transform: rotate(-3deg);
+	margin-left: -75%;
+	padding-left: 75%;
+	padding-right: 75%;
+	overflow: hidden;
+}
+
+.ge-section-angeled-edges .ge-section {
+	transform: rotate(3deg);
+	margin-top: -3em;
+	margin-bottom: -3em;
+	padding-top: 8em;
+	padding-bottom: 8em;
+}
+
+.ge-section-angeled-edges .ge-section.fullheight {
+  min-height: 118vh;
+}
+
+.ge-section-angeled-edges:last-child .ge-section.fullheight {
+  min-height: 110vh;
+}

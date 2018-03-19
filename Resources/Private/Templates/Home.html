@@ -1,0 +1,30 @@
+<div id="cTop">
+	<div id="p{data.uid}">
+		<div id="header">
+			<div class="header-bg"></div>
+			<div class="pageWidth">
+				<div class="contentWidth">
+					<a href="#cTop" aria-label="scroll to top" title="{data.title}">
+						<f:if condition="{files.0}">
+							<f:then><img src="{files.0.publicUrl}" id="logo" alt="{data.title}" /></f:then>
+							<f:else><img src="{logoFile}" id="logo" alt="{data.title}" /></f:else>
+						</f:if>
+					</a>
+					<f:cObject typoscriptObjectPath="mainMenu" />
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="pageWidth">
+		    <f:format.raw>{contentDefault}</f:format.raw>
+	    </div>
+		</div>
+		<div id="footer">
+			<div class="pageWidth">
+				<footer>
+					<f:format.raw>{contentFooter}</f:format.raw>
+				</footer>
+	    </div>
+		</div>
+	</div>
+</div>

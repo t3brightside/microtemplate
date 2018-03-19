@@ -1,0 +1,40 @@
+<f:if condition="{ge-section-angeled-edges}">
+<div class="ge-section-angeled-edges{f:if(condition: '{data.flexform_bgcolordefined}==1', then: ' bg-light')} {f:if(condition: '{data.flexform_bgcolordefined}==2', then: ' bg-dark')} {f:if(condition: '{data.flexform_bgcolordefined}==3', then: ' bg-black')}" style="{f:if(condition: '{data.flexform_bgcolor}', then: 'background-color: {data.flexform_bgcolor};')}">
+</f:if>
+<div 
+	id="c{data.uid}"
+	class="ge-section {data.flexform_class}
+		{f:if(condition: '{data.flexform_nopadding}==1', then: 'nopadding')}
+		{f:if(condition: '{data.flexform_fullheight}==1', then: 'fullheight')}
+		{f:if(condition: '{data.flexform_fullheight}==1&&{data.flexform_vcenter}==1', then: 'vcenter')}
+		{f:if(condition: '{data.flexform_fullwidth}==1', then: 'fullwidth')}
+		{f:if(condition: '{data.flexform_bgcolordefined}==1', then: 'bg-light')}
+		{f:if(condition: '{data.flexform_bgcolordefined}==2', then: 'bg-dark')}
+		{f:if(condition: '{data.flexform_bgcolordefined}==3', then: 'bg-black')}
+		{f:if(condition: '{data.flexform_textcolor}==1', then: 'text-light')}
+		{f:if(condition: '{data.flexform_textcolor}==2', then: 'text-dark')}
+		{f:if(condition: '{data.flexform_alignment}==2', then: 'align-center')}
+		{f:if(condition: '{data.space_before_class}', then: 'frame-space-before-{data.space_before_class}')}
+		{f:if(condition: '{data.space_after_class}', then: 'frame-space-after-{data.space_after_class}')}
+		{f:if(condition: '{data.flexform_bgimgplacement}&&{sectionBg}', then: 'bg{data.flexform_bgimgplacement}')}
+		{f:if(condition: '{data.flexform_bgvideo}', then: 'has-bg-video')}
+		{f:if(condition: '{data.flexform_bgfixed}', then: 'fixed')}
+	"
+	style="
+		{f:if(condition: '{sectionBg}', then: 'background: url({sectionBg}) no-repeat;')} {f:if(condition: '{sectionBg}', then: 'background-size: cover;')}
+		{f:if(condition: '{data.flexform_bgcolor}', then: 'background-color: {data.flexform_bgcolor};')}
+	">
+	<f:if condition="{data.flexform_bgvideo}">
+		<video id="videoid{data.uid}" class="bg-video" playsinline autoplay muted {f:if(condition: '{data.flexform_noloop}', then: '', else: 'loop')}>
+			 <f:for each="{files}" as="file">
+	      <source src="{file.publicUrl}" type="{file.mimetype}">
+	    </f:for>
+		</video>
+	</f:if>
+	<div class="contentWidth">
+		<section><f:format.raw>{data.tx_gridelements_view_column_101}</f:format.raw></section>
+	</div>
+</div>
+<f:if condition="{ge-section-angeled-edges}">
+</div>
+</f:if>

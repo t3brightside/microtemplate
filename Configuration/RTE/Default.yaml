@@ -1,0 +1,54 @@
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+    contentsCss:
+      - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
+      - "EXT:microtemplate/Resources/Public/Styles/rte.css"
+    stylesSet:
+      # Inline styles
+      - { name: "Button", element: "a", attributes: { class: "btn"} }
+      - { name: "With header font", element: "span", attributes: { class: "headerFont"} }
+      - { name: "Blue text", element: "span", attributes: { class: "blueText"} }
+
+    format_tags: "p;h1;h2;h3;h4;h5;pre"
+
+    toolbarGroups:
+      - { name: styles, groups: [ format, styles ] }
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list, blocks, align ] }
+      - { name: links, groups: [ links ] }
+      - { name: editing, groups: [ spellchecker ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ table, specialchar, cleanup ] }
+      - { name: document, groups: [ mode ] }
+      
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+
+    extraPlugins:
+      - justify
+
+    removePlugins:
+      - image
+
+    removeButtons:
+      - Table
+      - Justify
+      - Anchor
+      - Underline
+      - Strike
+
+# Allow s and u tag
+processing:
+  allowTags:
+    - s
+    - u

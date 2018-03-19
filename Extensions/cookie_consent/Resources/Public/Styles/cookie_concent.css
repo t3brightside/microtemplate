@@ -1,0 +1,38 @@
+.cc-window {
+	position: fixed;
+	z-index: 999; 
+	bottom: 0;
+	background: #1d1d1d;
+	color: #fff;
+	width: 100%;
+	padding: 0.1em 0;
+	font-size: 0.85em;	
+	line-height: 1.3em;
+}
+.cc-window .contentWidth{
+		display: table;
+		width: 100%;
+		border-spacing: 0.64em;
+}
+.cc-message {
+	display: table-cell;
+	padding-right: 2em;
+	vertical-align: middle;
+	font-weight: 100;
+}
+
+.cc-link {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.cc-compliance {
+	display-table: cell;
+	vertical-align: middle;
+	text-align: right
+}
+.cc-compliance .btn {
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	margin-right: 0;
+}

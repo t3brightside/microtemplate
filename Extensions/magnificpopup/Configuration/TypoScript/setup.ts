@@ -1,0 +1,24 @@
+page {
+	includeCSS.magnificpopup = EXT:microtemplate/Extensions/magnificpopup/Resources/Public/Styles/magnific-popup.css
+	includeJSFooterlibs.magnificpopup = //cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js
+	includeJSFooterlibs.magnificpopup {
+		external = 1
+		async = 0
+		excludeFromConcatenation = 1
+		disableCompression = 1
+	}
+	jsFooterInline {
+    10 = TEXT
+    10.value (
+      $('.ce-textpic').each(function() {
+      	$(this).magnificPopup({ 
+      		delegate: 'a.lightbox', // child items selector, by clicking on it popup will open
+      		gallery: {
+      			enabled: true
+      		},
+      		type: 'image'
+      	});
+			});
+    )
+	}
+}

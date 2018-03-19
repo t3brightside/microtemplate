@@ -1,0 +1,42 @@
+.ge-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.ge-card {
+	font-size: 0.85em;
+	line-height: 1.4em;
+	width: 32%;
+	clear: none;
+	padding: 1.6em;
+	background: rgba(0, 0, 0, 0.10);
+	margin-bottom: 1.5%;
+}
+
+.text-light .ge-card {
+	background: rgba(0, 0, 0, 0.50);
+}
+
+.ge-card h3 {
+	font-weight: 100;
+	font-size: 1.4em;
+}
+
+.ge-card .frame *:last-child {
+	margin-bottom: 0
+}
+
+.ge-card .frame:first-child header * {
+	padding-top: 0;
+	margin-top: 0;
+	padding-bottom: 0.7em;
+}
+
+.ge-cards.small .ge-card {
+	width: 49%;
+}
+
+.ge-cards.tiny .ge-card {
+	width: 100%;
+}
