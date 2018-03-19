@@ -1,6 +1,6 @@
 {
   "name": "t3brightside/microtemplate",
-  "description": "One page template with sections and lightbox like sub pages. Demo at: https://microtemplate.t3brightside.com",
+  "description": "TYPO3 CMS template extension – sectioned one pager with light box like sub pages.",
   "type": "typo3-cms-extension",
   "version": "0.1.0",
   "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid"],
