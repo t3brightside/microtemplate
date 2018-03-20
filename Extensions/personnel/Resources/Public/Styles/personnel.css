@@ -44,12 +44,14 @@
 		margin-bottom: 1em;
 	}
 	.personnel-item a {display: inline-block; vertical-align: top; margin: 0.7em 0.3em 0 0.3em; font-size: 1.2em}
-	.grid-pagesection.background-dark .personnel-item a {color: #fff}
 	.personnel-item img {width: 100%; height: auto; margin-bottom: 1.4em; max-width: 14em; border-radius: 50%}
 	.personnel-item h2 {font-size: 1.143em; margin: 0; padding: 0}
 	.personnel-item-profession {margin-bottom: 0}
 	.personnel-space {display: inline-block; width: 6%; height: 1em}
 	.personnel-space:nth-child(6n) {width: 100%}
+	
+	.ge-section.bg-dark .personnel-item a {color: #fff }
+
 	@media screen and (max-width: 740px){
 		.personnel-item {width: 47.5%}
 	}
