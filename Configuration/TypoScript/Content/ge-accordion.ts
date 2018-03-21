@@ -5,9 +5,9 @@ page {
 		10011 = TEXT
 		10011.value (
 			<style>
-				.ge-accordion-section-title {color: {$microtemplate.textDefault}}
-				.ge-pagesection.text-light .accordion-section-title {color: {$microtemplate.textLight}}
-				.ge-pagesection.text-dark .accordion-section-title {color: {$microtemplate.textDark}}
+				.ge-accordion-section-title {color: {$microtemplate.text-default}}
+				.ge-pagesection.text-light .accordion-section-title {color: {$microtemplate.text-light}}
+				.ge-pagesection.text-dark .accordion-section-title {color: {$microtemplate.text-dark}}
 			</style>
 		)
 	}
@@ -41,7 +41,7 @@ tt_content.gridelements_pi1 {
 									15.value.insertData = 1
 									20 < tt_content
 									25 = TEXT
-									25.value = </div>
+									25.value = <div class="clear"></div></div>
 								}
 							}
 						}
