@@ -36,7 +36,7 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label=Maximum home page width (px, em or %)
 	microtemplate.pageWidth = 100%
 # cat=Microtemplate/microtemplatestyles; type=string; label=Maximum home page content width (px, em or %)
-	microtemplate.contentWidth = 1260px
+	microtemplate.contentWidth = 1240px
 # cat=Microtemplate/microtemplatestyles; type=string; label=Maximum sub page content width (px, em or %)
 	microtemplate.subpageContentWidth = 860px
 # cat=Microtemplate/microtemplatestyles; type=int; label=Content section background image width (px)
