@@ -41,6 +41,8 @@
 	microtemplate.subpageContentWidth = 860px
 # cat=Microtemplate/microtemplatestyles; type=int; label=Content section background image width (px)
 	microtemplate.ge-section.bg-width = 1400
+# cat=Microtemplate/microtemplatestyles; type=int[10-100]; label=Content section background jpg quality
+	microtemplate.ge-section.bg-quality = 80
 # cat=Microtemplate/microtemplatestyles; type=boolean; label=Enable 3 degree angled edges between content sections:Experimental, fixed backgrounds won't work in some browsers if activated
 	microtemplate.ge-section-angeled-edges = 0
 

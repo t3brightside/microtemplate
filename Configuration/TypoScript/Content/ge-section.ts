@@ -34,14 +34,11 @@ tt_content.gridelements_pi1 {
 							    	width = {$microtemplate.ge-section.bg-width}
 										width.override.field = flexform_bgimagewidth
 									}	
-									6 = TEXT		
-									6.darkness.value.field = flexform_bgimagedarkness					
 									10 = IMG_RESOURCE
 									10 {
 										file = GIFBUILDER
 										file {
 									    format = jpg
-									    quality = {$microtemplate.ge-section.bg-quality}
 									    XY = [5.w],[5.h]
 									    5 = IMAGE
 									    5.file.import.data = REGISTER:theImage
