@@ -12,7 +12,7 @@ page {
 		1001 = TEXT
 		1001.value (
 			<style>
-				body {color: {$microtemplate.text-default}}
+				body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 				.header-bg {background: {$microtemplate.header-bg}}
 				.pageWidth {max-width: {$microtemplate.pageWidth}}
 				.contentWidth {max-width: {$microtemplate.contentWidth}}

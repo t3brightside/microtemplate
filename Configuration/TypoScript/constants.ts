@@ -19,6 +19,8 @@
 	microtemplate.logoFile = typo3conf/ext/microtemplate/Resources/Public/Images/brightside_logo.svg
 # cat=Microtemplate/microtemplatestyles; type=color; label=Default text color: Body, headers, main menu
 	microtemplate.text-default = #111111
+# cat=Microtemplate/microtemplatestyles; type=color; label=Default background color: <body>
+	microtemplate.body-background = #ffffff
 # cat=Microtemplate/microtemplatestyles; type=color; label=Accent color:Link color & button background
 	microtemplate.accentColor = #db0500
 # cat=Microtemplate/microtemplatestyles; type=color; label=Light text:Used on dark background or if set in section settings
