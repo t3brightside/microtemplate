@@ -37,11 +37,7 @@
 @media screen and (max-width: 740px) {
   
   .ge-grid .ge-grid-col {
-    width: 100%;
-  }
-  
-  .ge-grid-space {
-    display: none;
+    width: 100% !important;
   }
   
 }
