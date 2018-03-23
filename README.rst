@@ -22,6 +22,7 @@ It's a plug & play template extension that works out of the box. It's based on T
 - Configurable color schemes
 - Automatic main menu of section titles
 - Section background manipulation (color, image with effects, video)
+– IE 9 friendly except Cards layout that uses display: flex
 
 Sources
 -------
