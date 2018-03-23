@@ -34,10 +34,8 @@ page {
 	meta.description.data = page:description
 	headerData.899 = TEXT
 	headerData.899.value (
-		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 		<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-		<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
   )
 }
 
