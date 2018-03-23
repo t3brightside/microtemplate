@@ -1,7 +1,7 @@
 # javascript for menus can be found in deticated typoscript files (Menus/sectionMenu.ts for example)
 config {
-	concatenateJs = 0
-	compressJs = 0
+	concatenateJs = 1
+	compressJs = 1
 	moveJsFromHeaderToFooter = 1
 	removeDefaultJS = 
 } 

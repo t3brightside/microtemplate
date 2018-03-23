@@ -35,12 +35,9 @@ page {
 	headerData.899 = TEXT
 	headerData.899.value (
 		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-		<link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin>
-		<link rel="preconnect" href="https://www.youtube.com" crossorigin>
 		<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 		<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
-		<link rel="preconnect" href="https://i.ytimg.com/" crossorigin>	
   )
 }
 

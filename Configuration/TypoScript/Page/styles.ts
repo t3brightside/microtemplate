@@ -1,7 +1,7 @@
 # CSS includes and inline dynamic parametres from template constants
 config {
-	concatenateCss = 0
-	compressCss = 0
+	concatenateCss = 1
+	compressCss = 1
 	removePageCss = 1
 }
 page {
