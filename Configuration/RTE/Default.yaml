@@ -16,6 +16,7 @@ editor:
       - { name: "Button", element: "a", attributes: { class: "btn"} }
       - { name: "With header font", element: "span", attributes: { class: "headerFont"} }
       - { name: "Blue text", element: "span", attributes: { class: "blueText"} }
+      - { name: "No line breaks on mobile", element: "span", attributes: { class: "no-br-on-mobile"} }
 
     format_tags: "p;h1;h2;h3;h4;h5;pre"
 

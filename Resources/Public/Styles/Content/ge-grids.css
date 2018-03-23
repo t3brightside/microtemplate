@@ -1,12 +1,14 @@
 .ge-grid {
-  -ms-flex-wrap:wrap;
-  -webkit-flex-wrap:wrap;
-  display:-ms-flexbox;
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;
-  flex-wrap:wrap;
-	justify-content: space-between;
+  width: 100%;
+}
+
+.ge-grid-col, .ge-grid-space {
+	float: left;
+}
+
+.ge-grid-space {
+	width: 5%;
+	min-height: 1px;
 }
 
 .ge-grid-1-1 .ge-grid-col {
@@ -35,9 +37,12 @@
 
 
 @media screen and (max-width: 740px) {
-  
-  .ge-grid .ge-grid-col {
+	
+  .ge-grid-col {
     width: 100% !important;
+  }
+  .ge-grid-space {
+	  display: none
   }
   
 }

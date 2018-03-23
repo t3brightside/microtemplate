@@ -1,5 +1,11 @@
 page.includeCSS.ge-grids = EXT:microtemplate/Resources/Public/Styles/Content/ge-grids.css
 
+#page.headerData.3948 = TEXT
+#page.headerData.3948.value = {$microtemplate.contentWidth} / 3
+#page.headerData.3948.prioriCalc = 1
+#page.headerData.3948.value (
+# <style>.ge-grid-1-1-1 .ge-grid-col {max-width: 200px !important}</styles>
+#)
 tt_content.gridelements_pi1 {
 	10 =< lib.stdheader
 	20 = COA

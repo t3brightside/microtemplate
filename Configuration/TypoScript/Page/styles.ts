@@ -28,8 +28,6 @@ page {
 				.ge-section.text-dark {color: {$microtemplate.text-dark}}
 				
 				.subpage {color: {$microtemplate.text-dark}}
-				
-				.personnel-item .icon, .personnel-item .icon:visited {color: {$microtemplate.text-default}}
 			</style>
 		)
 	}

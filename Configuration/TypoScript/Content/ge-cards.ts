@@ -54,7 +54,7 @@ tt_content.gridelements_pi1 {
 							renderObj {
 								10 = COA
 								10 {
-									wrap = <div class="ge-card">|</div>
+									wrap = <div class="ge-card">|</div><div class="ge-card-space"></div>
 									20 < tt_content
 								}
 							}
