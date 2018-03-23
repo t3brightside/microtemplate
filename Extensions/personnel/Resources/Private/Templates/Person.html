@@ -3,7 +3,7 @@
 	<f:section name="Main">
 		<div class="personnel template-{data.tx_personnel_template}">
 			<f:if condition="{data.tx_personnel_template} == 0">
-				<f:for each="{personnel}" as="person">
+				<f:for each="{personnel}" as="person" iteration="iterator">
 			    <div class="personnel-item">
 				    <f:image image="{person.files.0}" width="500c" height="500c-100" alt="{person.data.firstname} {person.data.lastname} – {person.data.profession}" />
 			      <h2 class="personnel-item-name">{person.data.firstname} {person.data.lastname}</h2>
@@ -15,6 +15,9 @@
 							<f:link.page class="personnel-item-vCard icon" title="vCard" pageType="888" additionalParams="{person: '{person.data.uid}'}" additionalAttributes="{download: '{person.data.firstname}_{person.data.lastname}.vcf'}"><i class="icon-address-card"></i></f:link.page>
 						</p>
 			    </div>
+			    <f:if condition="{iterator.isLast}!=1">
+						<div class="personnel-space"></div>
+					</f:if>
 				</f:for>
 			</f:if>
 			<f:if condition="{data.tx_personnel_template} == 1">
