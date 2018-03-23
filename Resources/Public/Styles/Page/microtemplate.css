@@ -449,7 +449,7 @@ tr:last-child td {
   font-weight: 400;
 }
 
-.ce-gallery .ce-inner {
+.ce-gallery {
   display: table;
 }
 
@@ -468,9 +468,10 @@ tr:last-child td {
 }
 
 .ce-gallery img {
-  width: auto;
+  width: 100%;
   height: auto;
   max-width: 100%;
+  
 }
 
 .ce-textpic.ce-above .ce-gallery {
@@ -567,6 +568,7 @@ input, select, textarea {
   border-radius: 0;
 }
 
+
 input, select, textarea, button {
   font-family: sans-serif;
 }
@@ -662,14 +664,18 @@ form .error:before {
   width: 100%;
   background: #000;
   transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
 
 .closelink i.l {
   transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+
 }
 
 .closelink:hover {
   transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
 }
 
 
