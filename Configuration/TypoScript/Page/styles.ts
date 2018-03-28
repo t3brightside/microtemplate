@@ -36,5 +36,5 @@ page {
 	page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
 [global]
 [globalVar = LIT:0<{$microtemplate.scroll-effects}]
-	page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
+	page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
 [global]
