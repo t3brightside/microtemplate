@@ -4,9 +4,8 @@
 
 	var $window = $(window);
 	var $effectMe = $('.frame');
-	var $windowHeight = $window.height();
 	$window.scroll(function () {
-	  var bottom_of_window = $window.scrollTop() + $windowHeight;
+	  var bottom_of_window = $window.scrollTop() + $window.height();
 	  $effectMe.each(function (i) {
 	    var $elm = $effectMe.eq(i);
 	    var top_of_object = $elm.offset().top + 150;
