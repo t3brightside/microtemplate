@@ -1,12 +1,13 @@
 /***
 	Set .in-viewport class to every .frame to create fade in effect with CSS
 ***/
-
+	
 	var $window = $(window);
 	var $effectMe = $('.frame');
-	$window.scroll(function () {
+		
+	$.fn.scrollFadeIn = function() {
 	  var bottom_of_window = $window.scrollTop() + $window.height();
-	  $effectMe.each(function (i) {
+	  $(this).each(function (i) {
 	    var $elm = $effectMe.eq(i);
 	    var top_of_object = $elm.offset().top + 150;
 	    if (bottom_of_window > top_of_object) {
@@ -17,4 +18,13 @@
 	      $elm.removeClass('in-viewport');
 	    }
 	  }); 
+	}
+ 
+	$window.scroll(function () {
+	  $effectMe.scrollFadeIn(); 
 	});
+
+	$window.on('pageshow', function(){
+		$effectMe.scrollFadeIn();
+	});
+	
