@@ -4,7 +4,7 @@ mod.web_layout.BackendLayouts {
 		config {
 			backend_layout {
 				colCount = 1
-				rowCount = 2
+				rowCount = 1
 				rows {
 					1 {
 						columns {
@@ -40,7 +40,6 @@ mod.web_layout.BackendLayouts {
 				    columns {
 				      1 {
 				        name = Page content
-				        disabledGridTypes = grid-pagesection
 				        colPos = 0
 				        disallowed {
 				          tx_gridelements_backend_layout = ge-section
@@ -72,7 +71,7 @@ mod.web_layout.BackendLayouts {
 				    columns {
 				      1 {
 				        name = Article content
-				        disabledGridTypes = grid-pagesection
+				        disabledGridTypes = ge-section
 				        colPos = 0
 				        disallowed {
 				          tx_gridelements_backend_layout = ge-section

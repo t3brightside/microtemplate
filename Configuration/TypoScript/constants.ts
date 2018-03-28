@@ -47,6 +47,8 @@
 	microtemplate.ge-section.bg-quality = 80
 # cat=Microtemplate/microtemplatestyles; type=boolean; label=Enable 3 degree angled edges between content sections:Experimental, fixed backgrounds won't work in some browsers if activated
 	microtemplate.ge-section-angeled-edges = 0
+# cat=Microtemplate/microtemplatestyles; type=boolean; label=Enable content fade in on scrolling
+	microtemplate.scroll-effects = 0
 
 # cat=Microtemplate/microtemplatestyles; type=int; label=Maximum image width (px)
 	styles.content.textmedia.maxW = 1200
