@@ -9,7 +9,7 @@
 	  var bottom_of_window = $window.scrollTop() + $window.height();
 	  $(this).each(function (i) {
 	    var $elm = $effectMe.eq(i);
-	    var top_of_object = $elm.offset().top + 150;
+	    var top_of_object = $elm.offset().top + 50;
 	    if (bottom_of_window > top_of_object) {
 	      if (!$elm.hasClass('in-viewport')) {
 	        $elm.addClass('in-viewport');
