@@ -35,6 +35,6 @@ page {
 [globalVar = LIT:0<{$microtemplate.ge-section-angeled-edges}]
 	page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
 [global]
-[globalVar = LIT:0<{$microtemplate.scroll-effects}]
+[globalVar = LIT:0<{$microtemplate.scroll-effects}]&&[globalVar = TSFE:page|backend_layout = pagets__home]
 	page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
 [global]
