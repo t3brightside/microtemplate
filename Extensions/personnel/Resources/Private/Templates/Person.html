@@ -5,15 +5,17 @@
 			<f:if condition="{data.tx_personnel_template} == 0">
 				<f:for each="{personnel}" as="person" iteration="iterator">
 			    <div class="personnel-item">
-				    <f:image image="{person.files.0}" width="500c" height="500c-100" alt="{person.data.firstname} {person.data.lastname} – {person.data.profession}" />
-			      <h2 class="personnel-item-name">{person.data.firstname} {person.data.lastname}</h2>
-			      <f:if condition="{person.data.profession}"><p class="personnel-item-profession">{person.data.profession}</p></f:if>
-						<p class="personnel-item-contacts">
-							<f:if condition="{person.data.info}">{person.data.info} <br /></f:if>
-							<f:if condition="{person.data.phone}"><a class="personnel-item-phone icon" title="Call" href="tel:{person.data.phone}"><i class="icon-phone-squared"></i></a></f:if>
-							<f:if condition="{person.data.email}"><f:link.email title="Email" class="personnel-item-email icon" email="{person.data.email}"><i class="icon-mail"></i></f:link.email></f:if>
-							<f:link.page class="personnel-item-vCard icon" title="vCard" pageType="888" additionalParams="{person: '{person.data.uid}'}" additionalAttributes="{download: '{person.data.firstname}_{person.data.lastname}.vcf'}"><i class="icon-address-card"></i></f:link.page>
-						</p>
+				    <div class="frame">
+					    <f:image image="{person.files.0}" width="500c" height="500c-100" alt="{person.data.firstname} {person.data.lastname} – {person.data.profession}" />
+				      <h2 class="personnel-item-name">{person.data.firstname} {person.data.lastname}</h2>
+				      <f:if condition="{person.data.profession}"><p class="personnel-item-profession">{person.data.profession}</p></f:if>
+							<p class="personnel-item-contacts">
+								<f:if condition="{person.data.info}">{person.data.info} <br /></f:if>
+								<f:if condition="{person.data.phone}"><a class="personnel-item-phone icon" title="Call" href="tel:{person.data.phone}"><i class="icon-phone-squared"></i></a></f:if>
+								<f:if condition="{person.data.email}"><f:link.email title="Email" class="personnel-item-email icon" email="{person.data.email}"><i class="icon-mail"></i></f:link.email></f:if>
+								<f:link.page class="personnel-item-vCard icon" title="vCard" pageType="888" additionalParams="{person: '{person.data.uid}'}" additionalAttributes="{download: '{person.data.firstname}_{person.data.lastname}.vcf'}"><i class="icon-address-card"></i></f:link.page>
+							</p>
+				    </div>
 			    </div>
 			    <f:if condition="{iterator.isLast}!=1">
 						<div class="personnel-space"></div>

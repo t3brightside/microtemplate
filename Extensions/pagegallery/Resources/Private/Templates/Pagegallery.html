@@ -73,7 +73,7 @@
 				<f:if condition="{data.tx_pagegallery_template} == 4">
 					<ul class="pagegallery-newslist">
 						<f:for each="{menu}" as="page">
-							<li>						
+							<li class="frame">						
 								<a href="{page.link}" <f:if condition="{page.target}">target="{page.target}"</f:if> title="{page.title}">
 									<h2 class="title">{page.data.title}</h2>
 									<p class="author-and-date"><f:if condition="{page.data.author}">By {page.data.author} &#8226; </f:if><f:format.date format="j. F Y">{page.data.lastUpdated}</f:format.date></p>

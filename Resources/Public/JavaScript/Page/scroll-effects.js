@@ -2,7 +2,7 @@
 	Set .in-viewport class to every .frame to create fade in effect with CSS
 ***/
 	
-	var $addTo = $('.frame');
+	var $addTo = $('.ge-section .frame');
 	
 	$.fn.addInViewport = function() {
 		var $effectMe = $(this);
@@ -21,7 +21,7 @@
 	}
  
 	$(window).scroll(function () {
-	  $addTo.addInViewport(); 
+	  $addTo.addInViewport();
 	});
 
 	$(window).on('pageshow', function(){
