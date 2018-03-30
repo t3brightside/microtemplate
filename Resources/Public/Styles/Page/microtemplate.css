@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500";
 
-/* 
+/*
 	Link, button etc colors and dynamic container widths are set in:
 	Configuration/TypoScript/Setup/styles.ts and can be edited through TS constant editor
 */
@@ -674,7 +674,7 @@ form .error:before {
 	-ms-transform:rotate(90deg);
 }
 
-/* responsive layout  ====================================================================== */
+/* responsive layout */
 @media screen and (min-width: 1600px) {
 	.ge-section.home h1 {
 		font-size:4em;
@@ -697,7 +697,7 @@ form .error:before {
 	html {
 		font-size:16px;
 	}
-	
+
 	.ge-section {
 		padding-top:4em;
 		padding-bottom:4em;
@@ -709,11 +709,11 @@ form .error:before {
 		font-size:2.3em;
 		line-height:1.2em;
 	}
-	
+
 	h2 {
 		font-size:1.5em;
 	}
-	
+
 	input,select,textarea {
 		width:100%;
 	}
@@ -723,7 +723,7 @@ form .error:before {
 	.contentWidth {
 		padding:0 1.667em;
 	}
-	
+
 	.no-br-on-mobile br {
 		display:none;
 	}
