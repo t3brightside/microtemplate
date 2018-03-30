@@ -20,4 +20,4 @@ div[data-ctype="gridelements_pi1"] + .exampleContent .t3-grid-cell {border-botto
 
 .t3-page-ce-dragitem + .t3-page-ce {padding: 0}
 .t3-ctype-identifier > strong > a, .exampleContent > a {display: inline-block; width: 100%}
-.t3-grid-cell {background: none; }
+.t3-grid-cell {background: none}

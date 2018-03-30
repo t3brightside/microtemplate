@@ -3,6 +3,7 @@ tx_gridelements {
 		ge-section {
 	    title = Section
 	    description = Content section with background color, image, video etc. Section title shows in main menu if not excluded.
+			icon = typo3conf/ext/microtemplate/Resources/Public/Images/Backend/ge-section.svg
 	    config {
 	    	colCount = 1
 	    	rowCount = 1

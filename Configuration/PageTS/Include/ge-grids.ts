@@ -3,6 +3,7 @@ tx_gridelements {
 		ge-grid-1-1 {
 			title = Two equal columns
 			description = 
+			icon = typo3conf/ext/microtemplate/Resources/Public/Images/Backend/ge-grid-1-1.svg
 			config {
 				colCount = 2
 				rowCount = 1
@@ -25,6 +26,7 @@ tx_gridelements {
 		ge-grid-1-1-1 {
 			title = Three equal columns
 			description = 
+			icon = typo3conf/ext/microtemplate/Resources/Public/Images/Backend/ge-grid-1-1-1.svg
 			config {
 				colCount = 3
 				rowCount = 1
@@ -51,6 +53,7 @@ tx_gridelements {
 		ge-grid-1-2 {
 			title = Two columns, wider right
 			description = 
+			icon = typo3conf/ext/microtemplate/Resources/Public/Images/Backend/ge-grid-1-2.svg
 			config {
 				colCount = 3
 				rowCount = 1
@@ -74,6 +77,7 @@ tx_gridelements {
 		ge-grid-2-1 {
 			title = Two columns, wider left
 			description = 
+			icon = typo3conf/ext/microtemplate/Resources/Public/Images/Backend/ge-grid-2-1.svg
 			config {
 				colCount = 3
 				rowCount = 1

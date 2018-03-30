@@ -3,6 +3,7 @@ tx_gridelements {
 		ge-accordion {
 	    title = Accordion
 	    description = Content elements as accordion
+	    icon = typo3conf/ext/microtemplate/Resources/Public/Images/Backend/ge-accordion.svg
 	    config {
 	    	colCount = 1
 	    	rowCount = 1

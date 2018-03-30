@@ -3,6 +3,7 @@ tx_gridelements {
 		ge-cards {
 	    title = Cards
 	    description = Content elements in card list
+			icon = typo3conf/ext/microtemplate/Resources/Public/Images/Backend/ge-cards.svg
 	    config {
 	    	colCount = 1
 	    	rowCount = 1
