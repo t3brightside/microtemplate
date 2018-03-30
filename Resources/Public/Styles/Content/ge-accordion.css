@@ -1,34 +1,38 @@
 .ge-accordion-section-title {
-	font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-size: 1.26em;
-	padding: 0.72em 0;
-	position: relative;
-	outline: 0;
-	box-sizing: border-box;
-	display: block;
-	font-weight: 500;
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect y="12" width="26" height="2" style="fill:#111111"/><rect y="12" width="26" height="2" transform="translate(0 26) rotate(-90)" style="fill:#111111"/></svg>') no-repeat right 0.76em;
-	background-size: 1.1em 1.1em;
-}
-.ge-accordion-section-content {
-	display: none;
-}
-.ge-accordion-section {
-	border-bottom: 1px solid #ddd;
-}
-.ge-accordion-section-content div:first-child header {
-	display: none
-}
-.ge-accordion-section:last-child {
-	border-bottom: none
+	font-family:'Fira Sans Extra Condensed',sans-serif;
+	font-size:1.26em;
+	padding:.72em 0;
+	position:relative;
+	outline:0;
+	box-sizing:border-box;
+	display:block;
+	font-weight:500;
+	background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect y="12" width="26" height="2" style="fill:#111"/><rect y="12" width="26" height="2" transform="translate(0 26) rotate(-90)" style="fill:#111"/></svg>') no-repeat right .76em;
+	background-size:1.1em 1.1em;
 }
 
-.ge-accordion-section-title.active, .ge-accordion-section-title:hover {
-  text-decoration:none;
+.ge-accordion-section-content {
+	display:none;
+}
+
+.ge-accordion-section {
+	border-bottom:1px solid #ddd;
+}
+
+.ge-accordion-section-content div:first-child header {
+	display:none;
+}
+
+.ge-accordion-section:last-child {
+	border-bottom:none;
+}
+
+.ge-accordion-section-title.active,.ge-accordion-section-title:hover {
+	text-decoration:none;
 }
 
 .ge-accordion-section-title.active {
-	border-bottom: none;
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect y="12" width="26" height="2" style="fill:#1b1b1c"/></svg>') no-repeat right 0.76em;
-	background-size: 1.1em 1.1em;
+	border-bottom:none;
+	background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect y="12" width="26" height="2" style="fill:#1b1b1c"/></svg>') no-repeat right .76em;
+	background-size:1.1em 1.1em;
 }
