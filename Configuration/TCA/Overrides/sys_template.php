@@ -27,13 +27,6 @@ call_user_func(function()
       'Microtemplate - ext: Personnel'
     );
   }
-  if(TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('pagegallery')){
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-      $extensionKey,
-      'Extensions/pagegallery/Configuration/TypoScript',
-      'Microtemplate - ext: Pagegallery'
-    );
-  }
   if(TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('pagelist')){
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
       $extensionKey,
