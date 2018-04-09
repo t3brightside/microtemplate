@@ -1,151 +1,145 @@
-/* by t3brightside.com */
 .hmbrgr {
-	display:none;
-	position:relative;
-	float:right;
-	box-sizing:border-box;
-	margin-right:-.6em;
-	transition:all .4s;
+  display: none;
+  position: relative;
+  float: right;
+  box-sizing: border-box;
+  margin-right: -.6em;
+  transition: all .4s;
 }
 
 .hmbrgr b {
-	position:relative;
-	display:block;
-	margin:.94em;
-	margin-top:.66em;
-	width:2em;
-	height:1.5em;
+  position: relative;
+  display: block;
+  margin: .94em;
+  margin-top: .66em;
+  width: 2em;
+  height: 1.5em;
 }
 
 .hmbrgr i {
-	display:block;
-	position:absolute;
-	background:#000;
-	width:100%;
-	height:2px;
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 100%;
+  height: 2px;
 }
 
 .hmbrgr i.f {
-	top:0;
+  top: 0;
 }
 
 .hmbrgr i.m {
-	top:50%;
-	margin-top:-1px;
+  top: 50%;
+  margin-top: -1px;
 }
 
 .hmbrgr i.l {
-	bottom:0;
+  bottom: 0;
 }
 
 .hmbrgr.open i.m {
-	opacity:0;
+  opacity: 0;
 }
 
-.hmbrgr.open i.f,.hmbrgr.open i.l {
-	top:50%;
-	margin-top:-1px;
+.hmbrgr.open i.f, .hmbrgr.open i.l {
+  top: 50%;
+  margin-top: -1px;
 }
 
 .hmbrgr.open i.f {
-	transform:rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .hmbrgr.open i.l {
-	transform:rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
-.hmbrgr b,.hmbrgr i {
-	transition:all .3s ease-in-out;
+.hmbrgr b, .hmbrgr i {
+  transition: all .3s ease-in-out;
 }
 
 #menu {
-	font-family:'Fira Sans Extra Condensed',sans-serif;
-	font-weight:500;
-	text-transform:uppercase;
-	-webkit-font-smoothing:antialiased;
-	width:auto;
-	float:right;
-	margin:0;
-	box-sizing:border-box;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+  float: right;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 #menu ul {
-	padding:0;
-	margin:0;
-	width:auto;
+  padding: 0;
+  margin: 0;
+  width: auto;
 }
 
 #menu li {
-	display:inline-block;
-	list-style:none;
-	margin-left:3.556em;
+  display: inline-block;
+  list-style: none;
+  margin-left: 3.556em;
 }
 
 #menu a {
-	display:inline-block;
-	padding:.9em 0;
-	line-height:1em;
-	transition:color .4s;
+  display: inline-block;
+  padding: .9em 0;
+  line-height: 1em;
+  transition: color .4s;
 }
 
-#menu a:hover,#menu .active a {
-	text-decoration:none;
+#menu a:hover, #menu .active a {
+  text-decoration: none;
 }
 
 #header.scrolled #menu {
-	font-weight:400;
-	letter-spacing:.1px;
+  font-weight: 400;
+  letter-spacing: .1px;
 }
 
 /* mobile menu breakpoint for jQuery is defined in menu TS file, if you change it here you have to change it in TS as well */
+
 @media screen and (max-width: 1100px) {
-	.hmbrgr {
-		display:block;
-	}
-	
-	#header.scrolled .hmbrgr b {
-		margin:.94em;
-		height:1.12em;
-		width:1.7em;
-	}
-	
-	#header.scrolled .hmbrgr {
-		margin-right:-1em;
-		margin-top:-.26em;
-	}
-	
-	#menu {
-		display:none;
-		text-align:center;
-		width:100%;
-		padding-top:3em;
-		padding-bottom:2em;
-	}
-	
-	#menu ul {
-		width:100%;
-		padding:0;
-		margin:0;
-		max-width:100%;
-	}
-	
-	#menu ul li {
-		width:100%;
-		padding:0;
-		margin:0;
-	}
-	
-	#menu ul li a {
-		display:block;
-		width:100%;
-		box-sizing:border-box;
-		padding:1.5em;
-	}
+  .hmbrgr {
+    display: block;
+  }
+  #header.scrolled .hmbrgr b {
+    margin: .94em;
+    height: 1.12em;
+    width: 1.7em;
+  }
+  #header.scrolled .hmbrgr {
+    margin-right: -1em;
+    margin-top: -.26em;
+  }
+  #menu {
+    display: none;
+    text-align: center;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }
+  #menu ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+  #menu ul li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #menu ul li a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5em;
+  }
 }
 
 @media screen and (max-width: 960px) {
-	.hmbrgr {
-		margin-right:-1em;
-	}
+  .hmbrgr {
+    margin-right: -1em;
+  }
 }

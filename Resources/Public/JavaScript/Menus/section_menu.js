@@ -1,5 +1,5 @@
 $(document).ready(function() {
-// add remove mobile class on page resize
+  // add remove mobile class on page resize
   var lastWidth = $(window).width();
   $(window).resize(function() {
     if ($(window).width() != lastWidth) {
@@ -20,7 +20,7 @@ $(document).ready(function() {
       lastWidth = $(window).width();
     }
   });
-// open-close mobile menu with the hamburger
+  // open-close mobile menu with the hamburger
   $('.hmbrgr').click(function() {
     $('#menu').slideToggle();
     $('#menu').toggleClass('mobile');
@@ -32,20 +32,20 @@ $(document).ready(function() {
       }
     }
   });
-// close menu if clicking menu links
+  // close menu if clicking menu links
   $('#menu a').on('click', function(e) {
     $('#menu.mobile').slideUp();
     $('.hmbrgr').removeClass('open');
     $('#menu').removeClass('mobile');
   });
-// close menu if clicking logo
+  // close menu if clicking logo
   $('#logo').on('click', function(e) {
     $('#menu.mobile').slideUp();
     $('#menu').removeClass('mobile');
     $('.hmbrgr').removeClass('open');
     $(".header-bg").removeClass("show");
   });
-// close menu if clicking outside menu container
+  // close menu if clicking outside menu container
   $('#content, #footer').on('click', function(e) {
     $('#menu.mobile').slideUp();
     $('#menu').removeClass('mobile');
@@ -55,7 +55,7 @@ $(document).ready(function() {
     }
   });
 });
-// set active menu item by scrolling to a section	
+// set active menu item by scrolling to a section
 $(window).ready(function(jQuery) {
   $(window).scrollTop($(window).scrollTop() + 1);
   var topMenu = jQuery("#menu"),
@@ -82,6 +82,7 @@ $(window).ready(function(jQuery) {
       menuItems.parent().end().filter("[href$='#" + id + "']").parent().addClass("active");
     }
   });
+
   function checkVisible(elm, eval) {
     eval = eval || "object visible";
     var viewportHeight = $(window).height(), // Viewport Height

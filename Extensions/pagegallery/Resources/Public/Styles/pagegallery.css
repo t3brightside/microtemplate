@@ -74,7 +74,6 @@
   float: left
 }
 
-
 /* default 3 column layout */
 
 .pagegallery-item {
@@ -116,8 +115,7 @@
   width: 100%;
 }
 
-.pagegallery-item-subtitle,
-.pagegallery-item-abstract {
+.pagegallery-item-subtitle, .pagegallery-item-abstract {
   font-weight: normal;
   font-size: 0.9em
 }
@@ -132,7 +130,6 @@
 .pagegallery-space:nth-child(3n) {
   width: 100%
 }
-
 
 /* less columns for smaller screens */
 

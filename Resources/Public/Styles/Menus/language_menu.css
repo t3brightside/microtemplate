@@ -1,17 +1,36 @@
-/* by t3brightside.com */
+#menuLangCont {
+  float: right
+}
 
-	#menuLangCont {float: right}
-	#menuLangCont ul {list-style: none; padding: 0; margin: 0}
-	#menuLangCont li {display: inline-block; margin-left: 0.2em}
-	#menuLangCont a {color: #fff}
-	#menuLangCont img {width: 24px; height: auto}
+#menuLangCont ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
 
-	@media screen and (max-width: 1024px) {			
-		#menuLangCont {position: absolute; right: 74px}
-		#menuLangCont a {
-			display: block;
-			padding: 1.348em;
-			background: #f9f9f9;
-			line-height: 1em;
-		}
-	}
+#menuLangCont li {
+  display: inline-block;
+  margin-left: 0.2em
+}
+
+#menuLangCont a {
+  color: #fff
+}
+
+#menuLangCont img {
+  width: 24px;
+  height: auto
+}
+
+@media screen and (max-width: 1024px) {
+  #menuLangCont {
+    position: absolute;
+    right: 74px
+  }
+  #menuLangCont a {
+    display: block;
+    padding: 1.348em;
+    background: #f9f9f9;
+    line-height: 1em;
+  }
+}
