@@ -1,6 +1,6 @@
 {
   "name": "t3brightside/microtemplate",
-  "description": "TYPO3 CMS template extension – sectioned one pager with light box like sub pages.",
+  "description": "TYPO3 CMS template – sectioned one pager with light box like sub pages.",
   "type": "typo3-cms-extension",
   "version": "0.1.1",
   "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid"],
@@ -17,6 +17,12 @@
   "require": {
     "typo3/cms-core": ">=8.7.0,<9.0"
   },
+  "suggest": {
+    "t3brightside/metaplus": "Page title prefix & suffix, OpenGraph image and Favicon.",
+		"t3brightside/pagelist": "Easy to configure page teasers, article lists, cards etc.",
+    "t3brightside/personnel": "Contact lists with vCard download.",
+    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image and text."
+	},
   "replace": {
     "microtemplate": "self.version",
     "typo3-ter/microtemplate": "self.version"
