@@ -1,0 +1,46 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+	<f:section name="Main">
+		<f:if condition="{menu}">
+			<f:if condition="{data.tx_pagelist_template} == 0">
+				<div class="pagelist pagelist-cards template-{data.tx_pagelist_template}">
+					<f:for each="{menu}" as="page" iteration="iterator">
+						<f:render partial="Card" arguments="{_all}" />
+					</f:for>
+				</div>
+			</f:if>
+			<f:if condition="{data.tx_pagelist_template} == 1">
+				<div class="pagelist pagelist-articles template-{data.tx_pagelist_template}">
+					<f:for each="{menu}" as="page" iteration="iterator">
+						<f:render partial="Article" arguments="{_all}" />
+					</f:for>
+				</div>
+			</f:if>
+			<f:if condition="{data.tx_pagelist_template} == 2">
+				<div class="pagelist pagelist-articles template-{data.tx_pagelist_template}">
+					<f:for each="{menu}" as="page" iteration="iterator">
+						<f:render partial="ArticleNoImg" arguments="{_all}" />
+					</f:for>
+				</div>
+			</f:if>
+			<f:if condition="{data.tx_pagelist_template} == 3">
+				<div class="pagelist pagelist-microarticles template-{data.tx_pagelist_template}">
+					<f:for each="{menu}" as="page" iteration="iterator">
+						<f:render partial="MicroArticle" arguments="{_all}" />
+					</f:for>
+				</div>
+			</f:if>
+		</f:if>
+	</f:section>
+</html>
+
+
+<f:comment>
+	# Example with pagination
+	# Enable cHash in pagination to make it work with caching
+	<f:widget.paginate objects="{menu}" as="paginatedPages" configuration="{itemsPerPage: 5, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+		<f:for each="{paginatedPages}" as="page" iteration="iterator">
+			<f:render partial="Subsections/Article" arguments="{_all}" />
+		</f:for>
+	</f:widget.paginate>
+</f:comment>

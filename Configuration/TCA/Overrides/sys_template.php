@@ -7,7 +7,7 @@ call_user_func(function()
    * Temporary variables
    */
   $extensionKey = 'microtemplate';
-  
+
   /**
    * Default TypoScript for Microtemplate
    */
@@ -16,7 +16,7 @@ call_user_func(function()
     'Configuration/TypoScript',
     'Microtemplate - Main'
   );
-  
+
   /**
    * Custom templates for third party extensions
    */
@@ -34,7 +34,14 @@ call_user_func(function()
       'Microtemplate - ext: Pagegallery'
     );
   }
-  
+  if(TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('pagelist')){
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+      $extensionKey,
+      'Extensions/pagelist/Configuration/TypoScript',
+      'Microtemplate - ext: Page List'
+    );
+  }
+
   /**
    * Custom templates for optional scripts
    */
@@ -47,7 +54,7 @@ call_user_func(function()
     $extensionKey,
     'Extensions/google_analytics/Configuration/TypoScript',
     'Microtemplate - script: Google Analytics'
-  ); 
+  );
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Extensions/cookie_consent/Configuration/TypoScript',
