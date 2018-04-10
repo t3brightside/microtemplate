@@ -19,10 +19,10 @@
     "gridelementsteam/gridelements": ">=8.2.1,<9.0"
   },
   "suggest": {
-    "t3brightside/metaplus": "Page title prefix & suffix, OpenGraph image and Favicon.",
-		"t3brightside/pagelist": "Easy to configure page teasers, article lists, cards etc.",
-    "t3brightside/personnel": "Contact lists with vCard download.",
-    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image and text."
+    "t3brightside/metaplus": "Page title prefix & suffix, OpenGraph image and Favicon",
+		"t3brightside/pagelist": "Page teasers, article lists, cards etc",
+    "t3brightside/personnel": "Contact lists with vCard support",
+    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image"
 	},
   "replace": {
     "microtemplate": "self.version",
