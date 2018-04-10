@@ -14,6 +14,7 @@
 
 It's a plug & play template extension that works out of the box. It's based on TYPO3 FLUID templates. It uses jQuery but no CSS frameworks.
 
+- Can be installed in multi domain setup or just for a sub page
 - Modular architecture
 - Lightweight
 - Configurable color schemes
@@ -28,12 +29,11 @@ It's a plug & play template extension that works out of the box. It's based on T
 - **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_ **and** _'Resources -> Include Page TSConfig -> Microtemplate – Main'_
 
 ## Editors
-- Logo can be loaded to home page _'Resources -> Media'_.
+- Logo can be added to home page _'Resources -> Media'_.
 - To exclude content section from main menu uncheck _'Appearance -> Show in Section Menus'_ in section settings.
 
 ## Admins
-- Back end language flage, title and other settings can be altered in: _Configuration/TypoScript/PageTS/setup.ts_
-- Rich text editor configuration is in: _Configuration/PageTS/RTE/Default.yaml_ and styles are in: _Resources/Public/Styles/rte.css_
+- Back end language flag, title and other settings can be altered in: _Configuration/TypoScript/PageTS/setup.ts_
 
 ## Recommended
 These extensions are preconfigured and tested in Microtemplate package.
