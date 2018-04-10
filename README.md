@@ -2,9 +2,9 @@
 
 **TYPO3 CMS template extension for one page templates with light box like sub pages.**
 
-Ready for building a smaller scale website for a company, startup or an event. 
+For building smaller scale websites for companies, startups or events.
 
-- **[Demo](https://microtemplate.t3brightside.com/)**
+**[Demo page](https://microtemplate.t3brightside.com/)**
 
 ## System requirements
 
@@ -14,15 +14,17 @@ Ready for building a smaller scale website for a company, startup or an event.
 
 ## Features
 
-It's a plug & play template extension that works out of the box. It's based on TYPO3 FLUID templates. It uses jQuery but no CSS frameworks.
+It's a plug & play template that works out of the box. It's based on TYPO3 FLUID templates.
 
 - Can be installed in multi domain setup or just for a sub page
 - Modular architecture
-- Lightweight
+- Lightweight (no CSS frameworks)
 - Configurable color schemes
 - Automatic main menu of section titles
-- Section background manipulation (color, image with effects, video)
-- IE 9 friendly except Cards layout that uses display: flex
+- Content grids, accordion, cards
+- Section background (color, image with effects, video)
+- Section scroll in effect and angled edges
+- IE 9 friendly except cards that use display: flex
 
 ## Install
 - Install from TER **microtemplate** or composer **t3brightside/microtemplate**, include static templates you need, adjust template constants.
@@ -38,10 +40,11 @@ It's a plug & play template extension that works out of the box. It's based on T
 
 ## Recommended
 These extensions are preconfigured and tested in Microtemplate package.
-- personnel – Contact persons information with vCard support
+- [personnel](https://extensions.typo3.org/extension/personnel/)
+ – Contact persons information with vCard support
 - pagelist – Page teasers, article lists etc
-- youtubevideo – YouTube videos with cover images and cover text
-- metaplus – Page title prefix, suffix, favicon and OpenGraph image
+- [youtubevideo](https://extensions.typo3.org/extension/youtubevideo/) – YouTube videos with cover images and cover text
+- [metaplus](https://extensions.typo3.org/extension/metaplus/) – Page title prefix, suffix, favicon and OpenGraph image
 
 ## Sources
 
