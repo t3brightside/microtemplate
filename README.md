@@ -1,8 +1,7 @@
 # Microtemplate
 
 **TYPO3 CMS template extension for one page templates with light box like sub pages.**
-
-For building smaller scale websites for companies, startups or events.
+<br />For building smaller scale websites for companies, startups or events.
 
 **[Demo page](https://microtemplate.t3brightside.com/)**
 
@@ -42,7 +41,7 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 These extensions are preconfigured and tested in Microtemplate package.
 - [personnel](https://extensions.typo3.org/extension/personnel/)
  – Contact persons information with vCard support
-- pagelist – Page teasers, article lists etc
+- [pagelist](https://extensions.typo3.org/extension/pagelist/) – Page teasers, article lists etc
 - [youtubevideo](https://extensions.typo3.org/extension/youtubevideo/) – YouTube videos with cover images and cover text
 - [metaplus](https://extensions.typo3.org/extension/metaplus/) – Page title prefix, suffix, favicon and OpenGraph image
 

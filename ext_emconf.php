@@ -24,5 +24,5 @@ $EM_CONF[$_EXTKEY] = [
   'author' => 'Tanel Põld',
   'author_email' => 'tanel@brightside.ee',
   'author_company' => 'Brightside OÜ',
-  'version' => '0.1.1',
+  'version' => '0.1.2',
 ];
