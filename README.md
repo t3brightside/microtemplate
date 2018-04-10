@@ -2,8 +2,7 @@
 
 **TYPO3 CMS template extension for one page templates with light box like sub pages.**
 
-- **[Demo][84309a13]**
-  [84309a13]: https://microtemplate.t3brightside.com/ "Microtemplate Demo"
+- **[Demo](https://microtemplate.t3brightside.com/)**
 
 ## System requirements
 
@@ -25,30 +24,22 @@ It's a plug & play template extension that works out of the box. It's based on T
 
 ## Install
 - Install from TER **microtemplate** or composer **t3brightside/microtemplate**, include static templates you need, adjust template constants.
-
 - **Note:** Include fluid_styled_content as the first static template in the list.
-
 - **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_ **and** _'Resources -> Include Page TSConfig -> Microtemplate – Main'_
 
 ## Editors
 - Logo can be loaded to home page _'Resources -> Media'_.
-
 - To exclude content section from main menu uncheck _'Appearance -> Show in Section Menus'_ in section settings.
 
 ## Admins
 - Back end language flage, title and other settings can be altered in: _Configuration/TypoScript/PageTS/setup.ts_
-
 - Rich text editor configuration is in: _Configuration/PageTS/RTE/Default.yaml_ and styles are in: _Resources/Public/Styles/rte.css_
 
 ## Recommended
 These extensions are preconfigured and tested in Microtemplate package.
-
 - personnel – Contact persons information with vCard support
-
 - pagelist – Page teasers, article lists etc
-
 - youtubevideo – YouTube videos with cover images and cover text
-
 - metaplus – Page title prefix, suffix, favicon and OpenGraph image
 
 ## Sources
