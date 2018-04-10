@@ -2,6 +2,8 @@
 
 **TYPO3 CMS template extension for one page templates with light box like sub pages.**
 
+Ready for building a smaller scale website for a company, startup or an event. 
+
 - **[Demo](https://microtemplate.t3brightside.com/)**
 
 ## System requirements
@@ -21,7 +23,6 @@ It's a plug & play template extension that works out of the box. It's based on T
 - Automatic main menu of section titles
 - Section background manipulation (color, image with effects, video)
 - IE 9 friendly except Cards layout that uses display: flex
-- Preset templates for extensions personnel, pagelist, youtubevideo
 
 ## Install
 - Install from TER **microtemplate** or composer **t3brightside/microtemplate**, include static templates you need, adjust template constants.
