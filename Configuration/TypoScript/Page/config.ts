@@ -48,16 +48,16 @@ page {
 		partialRootPath = EXT:microtemplate/Resources/Private/Partials/
 		layoutRootPath = EXT:microtemplate/Resources/Private/Layouts/
 		templateRootPaths = EXT:microtemplate/Resources/Private/Templates/
-		
+
     dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     dataProcessing.10.references.fieldName = media
 		variables {
 			logoFile = TEXT
 			logoFile.value = {$microtemplate.logoFile}
-			
+
 			rootPageId = TEXT
 			rootPageId.value = {$microtemplate.rootPageId}
-			
+
 			contentDefault = COA
 			contentDefault {
 				10 = LOAD_REGISTER
@@ -80,8 +80,8 @@ page {
 					10.stdWrap.wrap = |
 				}
 			}
-			contentFooter < .contentDefault
-			contentFooter.20.select.where = colPos = 6
+		#	contentFooter < .contentDefault
+		#	contentFooter.20.select.where = colPos = 6
 		#	contentFooter.20.slide = -1
 		}
     file.stdWrap.cObject = CASE
