@@ -17,13 +17,6 @@
 				</div>
 			</f:if>
 			<f:if condition="{data.tx_pagelist_template} == 2">
-				<div class="pagelist pagelist-articles template-{data.tx_pagelist_template}">
-					<f:for each="{menu}" as="page" iteration="iterator">
-						<f:render partial="ArticleNoImg" arguments="{_all}" />
-					</f:for>
-				</div>
-			</f:if>
-			<f:if condition="{data.tx_pagelist_template} == 3">
 				<div class="pagelist pagelist-microarticles template-{data.tx_pagelist_template}">
 					<f:for each="{menu}" as="page" iteration="iterator">
 						<f:render partial="MicroArticle" arguments="{_all}" />
