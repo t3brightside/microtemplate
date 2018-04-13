@@ -69,6 +69,10 @@
   width: 100%;
 }
 
+.pagelist-cards .pagelist-card-space:last-child {
+  height: 1em;
+}
+
 .pagelist-microarticle {
   display: block;
   padding: 0;
@@ -140,8 +144,5 @@
     padding-left: 0;
     padding-right: 0;
     width: 100%
-  }
-  .pagelist-card-space:last-child {
-    height: 1em;
   }
 }
