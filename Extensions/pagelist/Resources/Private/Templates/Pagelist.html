@@ -23,6 +23,13 @@
 					</f:for>
 				</div>
 			</f:if>
+			<f:if condition="{data.tx_pagelist_template} == 3">
+				<div class="pagelist pagelist-cards template-{data.tx_pagelist_template}">
+					<f:for each="{menu}" as="page" iteration="iterator">
+						<f:render partial="MicroArticleCard" arguments="{_all}" />
+					</f:for>
+				</div>
+			</f:if>
 		</f:if>
 	</f:section>
 </html>

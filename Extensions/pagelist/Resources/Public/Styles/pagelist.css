@@ -1,3 +1,74 @@
+/* by t3brightside.com */
+
+.pagelist * {
+  box-sizing: border-box;
+}
+
+.pagelist {
+  width: 100%;
+  overflow: auto;
+}
+
+.pagelist img {
+  width: 100%;
+}
+
+.pagelist-img-dummy {
+  background-color: #eee;
+  width: 100%;
+  height: auto;
+}
+
+.pagelist a:hover {
+  text-decoration: none;
+}
+
+/* cards */
+
+.pagelist-card {
+  width: 47.5%;
+  clear: none;
+  transition-property: width;
+  transition-duration: 0.2s;
+}
+
+.pagelist-card a, .pagelist-card a:visited {
+  display: block;
+  width: 100%;
+}
+
+.pagelist-card a p {
+  color: #222;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.pagelist-card a:hover p {
+  opacity: 1;
+}
+
+.pagelist-card a:hover h2 {
+  text-decoration: underline;
+}
+
+.pagelist-card h2 {
+  font-size: 1.2em;
+  padding: 0.5em 0 0.3em;
+  margin: 0;
+}
+
+.pagelist-card-space {
+  width: 5%;
+  float: left;
+  height: 3em;
+}
+
+.pagelist-cards div:nth-child(4n) {
+  width: 100%;
+}
+
 .pagelist-microarticle {
   display: block;
   padding: 0;
@@ -57,9 +128,20 @@
 }
 
 @media screen and (max-width: 680px) {
+  .pagelist-card {
+    width: 100%
+  }
+  .pagelist-card-space {
+    display: block;
+    height: 3em;
+    width: 100%;
+  }
   .align-center .pagelist-microarticle a {
     padding-left: 0;
     padding-right: 0;
     width: 100%
+  }
+  .pagelist-card-space:last-child {
+    height: 1em;
   }
 }
