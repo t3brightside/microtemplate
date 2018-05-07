@@ -308,11 +308,6 @@ tr:last-child td {
   background-color: transparent !important;
 }
 
-.ge-section {
-  position: relative;
-  width: 100%;
-}
-
 .ge-section .bg-video {
   position: absolute;
   z-index: -1;
@@ -699,7 +694,11 @@ form .error:before {
     font-size: 19px;
   }
 }
-
+@media screen and (max-width: 1024px) {
+  .ge-section.fixed {
+    background-attachment: scroll !important;
+  }
+}
 @media screen and (max-width: 960px) {
   html {
     font-size: 16px;
