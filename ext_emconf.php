@@ -13,12 +13,12 @@
       'conflicts' => [
       ],
     ],
-    'state' => 'beta',
+    'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'author' => 'Tanel Põld',
     'author_email' => 'tanel@brightside.ee',
     'author_company' => 'Brightside OÜ',
-    'version' => '0.1.4',
+    'version' => '1.0.0',
   ];
