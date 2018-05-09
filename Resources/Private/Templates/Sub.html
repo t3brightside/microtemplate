@@ -1,10 +1,12 @@
-<f:render partial="CloseLink" arguments="{_all}" />
-<div id="p{data.uid}" class="subpage subpageContentWidth">
-	<section>
-		<f:if condition="{contentHeader}">
-			<f:then><h1>{contentHeader}</h1></f:then>	
-			<f:else><h1>{data.title}</h1></f:else>
-		</f:if>
-		<f:format.raw>{contentDefault}</f:format.raw>
-	</section>
-</div>
+<body class="subpage-body">
+	<f:render partial="CloseLink" arguments="{_all}" />
+	<div id="p{data.uid}" class="subpage subpageContentWidth">
+		<section>
+			<f:if condition="{contentHeader}">
+				<f:then><h1>{contentHeader}</h1></f:then>
+				<f:else><h1>{data.title}</h1></f:else>
+			</f:if>
+			<f:format.raw>{contentDefault}</f:format.raw>
+		</section>
+	</div>
+</body>

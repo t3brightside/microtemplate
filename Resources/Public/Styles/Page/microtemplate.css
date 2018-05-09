@@ -630,7 +630,9 @@ form .error:before {
   top: 0;
   left: 0;
 }
-
+.subpage-body {
+  background-color: #fff
+}
 .subpage {
   padding: 5em 1.6em;
   margin: auto;
