@@ -29,7 +29,7 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 - Install from TER **microtemplate** or composer **t3brightside/microtemplate**, include static templates you need, adjust template constants.
 - **Note:** Include fluid_styled_content as the first static template in the list.
 - **Edit home page** to set _'Resources -> Include Page TSConfig -> Microtemplate – Main'_ and save
-- **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_ 
+- **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_
 
 ## Editors
 - Logo can be added to home page _'Resources -> Media'_.
@@ -54,4 +54,4 @@ These extensions are preconfigured and tested in Microtemplate package.
 
 ## Development and maintenance
 
-[Brightside OÜ](https://t3brightside.com/) – TYPO3 specialized web agency
+[Brightside OÜ](https://t3brightside.com/) – TYPO3 development and hosting specialised web agency
