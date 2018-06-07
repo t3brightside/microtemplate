@@ -8,7 +8,9 @@ page {
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-		  gtag('config', '{$microtemplate.googleAnalyticsCode}');
+		  gtag('config', '{$microtemplate.googleAnalyticsCode}', { 'anonymize_ip': true });
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+
   )
 }
