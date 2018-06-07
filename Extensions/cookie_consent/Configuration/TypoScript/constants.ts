@@ -1,10 +1,10 @@
 # customsubcategory=microtemplatexcc=Microtemplate Cookie Consent
 # cat=Microtemplate/microtemplatexcc; type=string; label= Cookie message
-	microtemplate.ccmessage = Cookies simplify the provision of our services. Please accept our cookie and privacy policy for better service.
+	microtemplate.ccmessage = This website uses cookies to simplify the provision of services. By accepting you accept to activate Google Analytics.
 # cat=Microtemplate/microtemplatexcc; type=string; label= Read more link text
-	microtemplate.ccmore = Privacy & Settings
+	microtemplate.ccmore = Cookies, privacy & settings
 # cat=Microtemplate/microtemplatexcc; type=string; label= Allow cookies button text
-	microtemplate.ccallow = Accept
+	microtemplate.ccallow = I Accept
 # cat=Microtemplate/microtemplatexcc; type=string; label= Dismiss button text
 	microtemplate.ccdismiss = ✕
 # cat=Microtemplate/microtemplatexcc; type=string; label= URL to read more page
