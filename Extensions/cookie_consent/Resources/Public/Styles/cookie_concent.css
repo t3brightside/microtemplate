@@ -1,26 +1,25 @@
 .cc-window {
   position: fixed;
   z-index: 999;
-  bottom: 0;
+  bottom: 2em;
+  right: 2em;
+  max-width: 370px;
   background: #1d1d1d;
   color: #fff;
   width: 100%;
-  padding: 0.1em 0;
-  font-size: 0.85em;
+  padding: 1.5em;
+  font-size: 0.7em;
   line-height: 1.3em;
-}
-
-.cc-window .contentWidth {
-  display: table;
-  width: 100%;
-  border-spacing: 0.64em;
+  box-sizing: border-box;
 }
 
 .cc-message {
-  display: table-cell;
-  padding-right: 2em;
-  vertical-align: middle;
-  font-weight: 100;
+  padding-bottom: 1.5em;
+}
+
+.cc-dismiss {
+  color: #fff;
+  font-weight: bold;
 }
 
 .cc-link {
@@ -28,14 +27,55 @@
   text-decoration: underline;
 }
 
-.cc-compliance {
-  display-table: cell;
-  vertical-align: middle;
-  text-align: right
+.cc-link {
+  margin-top: 1em;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
 }
+
+.cc-opt-link {
+  display: block;
+}
+
+.cc-allow {
+  float: left
+}
+
+.cc-dismiss {
+  float: right;
+  position: absolute;
+  top: 0.3em;
+  right: 0.5em;
+  font-size: 1.2em;
+  padding: 0.5em;
+  background-color: transparent !important;
+}
+
+.cc-dismiss:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cc-compliance {}
 
 .cc-compliance .btn {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
   margin-right: 0;
+}
+
+.cc-invisible {
+  display: none
+}
+
+@media screen and (max-width: 680px) {
+  .cc-window {
+    max-width: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+  }
 }

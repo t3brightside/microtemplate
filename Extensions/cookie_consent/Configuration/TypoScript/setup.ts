@@ -27,16 +27,49 @@ page.jsFooterInline {
 		      "text": "#fff"
 		    }
 		  },
+			"type": "opt-in",
+			revokable:false,
 		  "content": {
 			  "message": "{$microtemplate.ccmessage}",
 		    "dismiss": "{$microtemplate.ccdismiss}",
+				"allow": "{$microtemplate.ccallow}",
 		    "link": "{$microtemplate.ccmore}",
 		    "href": "{$microtemplate.cchref}",
 		  },
 		  elements: {
-			  messagelink: '<div class="contentWidth"><span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}">{{link}}</a></span>',
-			  dismiss: '<a aria-label="dismiss cookie message" tabindex="0" class="btn cc-btn cc-dismiss">{{dismiss}}</a></div>',
-			}
+			  messagelink: '<div id="cookieconsent:desc" class="cc-message">{{message}} <a class="cc-link" href="{{href}}">{{link}}</a></div>',
+			  dismiss: '<a class="cc-opt-link cc-btn cc-dismiss">{{dismiss}}</a>',
+				allow: '<a class="btn cc-opt-link cc-btn cc-allow">{{allow}}</a>',
+			},
+			onInitialise: function (status) {
+			  var type = this.options.type;
+			  var didConsent = this.hasConsented();
+			  if (type == 'opt-in' && didConsent) {
+			    window['ga-disable-{$microtemplate.googleAnalyticsCode}'] = false;
+			  }
+			  if (type == 'opt-out' && !didConsent) {
+			    // disable cookies
+			  }
+			},
+			onStatusChange: function(status, chosenBefore) {
+			  var type = this.options.type;
+			  var didConsent = this.hasConsented();
+			  if (type == 'opt-in' && didConsent) {
+			    window['ga-disable-{$microtemplate.googleAnalyticsCode}'] = false;
+			  }
+			  if (type == 'opt-out' && !didConsent) {
+			    // disable cookies
+			  }
+			},
+			onRevokeChoice: function() {
+			  var type = this.options.type;
+			  if (type == 'opt-in') {
+			    window['ga-disable-{$microtemplate.googleAnalyticsCode}'] = true;
+			  }
+			  if (type == 'opt-out') {
+			    // enable cookies
+			  }
+			},
 		})});
 	)
 }
