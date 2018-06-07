@@ -12,6 +12,7 @@ page.includeJSFooterlibs.cookieconsent {
 	excludeFromConcatenation = 1
 	disableCompression = 1
 }
+
 page.jsFooterInline {
 	1000334 = TEXT
 	1000334.value (
@@ -28,7 +29,7 @@ page.jsFooterInline {
 		    }
 		  },
 			"type": "opt-in",
-			revokable:false,
+			revokable: "false",
 		  "content": {
 			  "message": "{$microtemplate.ccmessage}",
 		    "dismiss": "{$microtemplate.ccdismiss}",
@@ -42,32 +43,19 @@ page.jsFooterInline {
 				allow: '<a class="btn cc-opt-link cc-btn cc-allow">{{allow}}</a>',
 			},
 			onInitialise: function (status) {
-			  var type = this.options.type;
-			  var didConsent = this.hasConsented();
-			  if (type == 'opt-in' && didConsent) {
-			    window['ga-disable-{$microtemplate.googleAnalyticsCode}'] = false;
-			  }
-			  if (type == 'opt-out' && !didConsent) {
-			    // disable cookies
+			  if (status == cookieconsent.status.allow) {
+			    loadGA();
 			  }
 			},
 			onStatusChange: function(status, chosenBefore) {
-			  var type = this.options.type;
-			  var didConsent = this.hasConsented();
-			  if (type == 'opt-in' && didConsent) {
-			    window['ga-disable-{$microtemplate.googleAnalyticsCode}'] = false;
-			  }
-			  if (type == 'opt-out' && !didConsent) {
-			    // disable cookies
+			  if (status == cookieconsent.status.allow) {
+			    loadGA();
 			  }
 			},
 			onRevokeChoice: function() {
 			  var type = this.options.type;
 			  if (type == 'opt-in') {
 			    window['ga-disable-{$microtemplate.googleAnalyticsCode}'] = true;
-			  }
-			  if (type == 'opt-out') {
-			    // enable cookies
 			  }
 			},
 		})});

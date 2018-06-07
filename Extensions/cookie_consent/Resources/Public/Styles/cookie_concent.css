@@ -69,6 +69,10 @@
   display: none
 }
 
+.cc-revoke {
+  display: none;
+}
+
 @media screen and (max-width: 680px) {
   .cc-window {
     max-width: 100%;

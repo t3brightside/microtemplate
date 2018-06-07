@@ -8,10 +8,24 @@ page {
 	jsFooterInline {
 		10003346 = TEXT
 		10003346.value (
+			function loadGA(){
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', '{$microtemplate.googleAnalyticsCode}', { 'anonymize_ip': true });
 		)
 	}
+	[globalVar = LIT:1 = {$microtemplate.ccactive}]
+		jsFooterInline {
+			10003346 = TEXT
+			10003346.value (
+				function loadGA(){
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', '{$microtemplate.googleAnalyticsCode}', { 'anonymize_ip': true });
+				}
+			)
+		}
+	[global]
 }
