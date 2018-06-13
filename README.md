@@ -34,6 +34,15 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 ## Editors
 - Logo can be added to home page _'Resources -> Media'_.
 - To exclude content section from main menu uncheck _'Appearance -> Show in Section Menus'_ in section settings.
+- To add Google Analytics on/off switch to the privacy page add following HTML as page content:
+```html
+<p>Google Analytics <b>Off/On</b>:
+    <label class="switch">
+      <input id="gaSwitch" type="checkbox">
+      <span class="slider"></span>
+    </label>
+</p>
+```
 
 ## Admins
 - Back end language flag, title and other settings can be altered in: _Configuration/TypoScript/PageTS/setup.ts_
