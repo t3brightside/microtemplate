@@ -6,26 +6,66 @@ page {
 		<script async src="https://www.googletagmanager.com/gtag/js?id={$microtemplate.googleAnalyticsCode}"></script>
   )
 	jsFooterInline {
-		10003346 = TEXT
-		10003346.value (
-			function loadGA(){
+		100033486 = TEXT
+		100033486.value (
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', '{$microtemplate.googleAnalyticsCode}', { 'anonymize_ip': true });
 		)
 	}
-	[globalVar = LIT:1 = {$microtemplate.ccactive}]
-		jsFooterInline {
-			10003346 = TEXT
-			10003346.value (
-				function loadGA(){
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-					gtag('config', '{$microtemplate.googleAnalyticsCode}', { 'anonymize_ip': true });
-				}
-			)
-		}
-	[global]
 }
+[globalVar = LIT:1 = {$microtemplate.ccactive}]
+page {
+	jsFooterInline {
+		100033486 = TEXT
+		100033486.value (
+			// Set to the same value as the web property used on the site
+			var gaProperty = '{$microtemplate.googleAnalyticsCode}';
+
+			// Disable tracking if the opt-out cookie exists.
+
+			var disableStr = 'ga-disable-' + gaProperty;
+
+			if (document.cookie.indexOf(disableStr + '=true') > -1) {
+				window[disableStr] = true;
+				$("#gaSwitch").prop('checked', false);
+			}
+			if (document.cookie.indexOf(disableStr + '=false') > -1) {
+				window[disableStr] = false;
+				$("#gaSwitch").prop('checked', true);
+				runGA();
+			}
+
+			function gaOptout() {
+				document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+				window[disableStr] = true;
+				$("#gaSwitch").prop('checked', false);
+			}
+
+			function gaOptin() {
+				document.cookie = disableStr + '=false; expires=Thu, 31 Dec 2098 23:59:59 UTC; path=/';
+				window[disableStr] = false;
+				runGA();
+				$("#gaSwitch").prop('checked', true);
+			}
+
+			$('#gaSwitch').click(function(){
+				if (this.checked) {
+					gaOptin();
+				}
+				else {
+					gaOptout();
+				}
+			});
+
+			function runGA() {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', '{$microtemplate.googleAnalyticsCode}', { 'anonymize_ip': true });
+			}
+		)
+	}
+}
+[global]

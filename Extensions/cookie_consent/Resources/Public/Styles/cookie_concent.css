@@ -3,7 +3,7 @@
   z-index: 999;
   bottom: 2em;
   right: 2em;
-  max-width: 370px;
+  max-width: 25em;
   background: #1d1d1d;
   color: #fff;
   width: 100%;
@@ -23,34 +23,32 @@
   font-weight: bold;
 }
 
-.cc-link {
+.cc-link, .cc-link:visited {
   color: #fff;
-  text-decoration: underline;
-}
-
-.cc-link {
   margin-top: 1em;
   display: block;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-.cc-opt-link {
-  display: block;
+.cc-link:hover {
+  text-decoration: none;
 }
 
-.cc-allow {
-  float: left
+.cc-allow:hover {
+  cursor: pointer;
+  background-color: #fff;
 }
 
 .cc-dismiss {
-  float: right;
   position: absolute;
   top: 0.3em;
   right: 0.5em;
   font-size: 1.2em;
   padding: 0.5em;
-  background-color: transparent !important;
+  background-color: transparent;
+  transition: color 0.3s;
 }
 
 .cc-dismiss:hover {
@@ -58,9 +56,7 @@
   text-decoration: none;
 }
 
-.cc-compliance {}
-
-.cc-compliance .btn {
+.cc-compliance .button {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
   margin-right: 0;
@@ -74,7 +70,70 @@
   display: none;
 }
 
-@media screen and (max-width: 680px) {
+#gaButton.button {
+  opacity: 0.3;
+}
+
+#gaButton.button.enabled {
+  opacity: 1
+}
+
+.switch {
+  margin-left: 0.3em;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  float: none;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(27px);
+  -ms-transform: translateX(27px);
+  transform: translateX(27px);
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 580px) {
   .cc-window {
     max-width: 100%;
     width: 100%;

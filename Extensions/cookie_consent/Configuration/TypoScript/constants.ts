@@ -2,7 +2,7 @@
 # cat=Microtemplate/microtemplatexcc; type=string; label= Cookie message
 	microtemplate.ccmessage = This website uses cookies to simplify the provision of services. By accepting you accept to activate Google Analytics.
 # cat=Microtemplate/microtemplatexcc; type=string; label= Read more link text
-	microtemplate.ccmore = Cookies, privacy & settings
+	microtemplate.ccmore = Privacy, cookies & settings
 # cat=Microtemplate/microtemplatexcc; type=string; label= Allow cookies button text
 	microtemplate.ccallow = I Accept
 # cat=Microtemplate/microtemplatexcc; type=string; label= Dismiss button text
