@@ -1,9 +1,9 @@
 <div class="pagelist-card frame">
   <a href="{page.link}" <f:if condition="{page.target}">target="{page.target}"</f:if> title="{page.data.title}">
     <figure>
-      <f:if condition="{page.files.0}">
+      <f:if condition="{page.tx_pagelist_images.0}">
         <f:then>
-          <img src="<f:uri.image image="{page.files.0}" treatIdAsReference="1" width="654c" height="354c" />" />
+          <img src="<f:uri.image image="{page.tx_pagelist_images.0}" treatIdAsReference="1" width="654c" height="354c" />" />
         </f:then>
         <f:else>
           <f:image class="pagelist-img-dummy" src="EXT:pagelist/Resources/Public/Images/clear.png" width="654c" height="354c" />
