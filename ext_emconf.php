@@ -5,10 +5,10 @@
     'category' => 'templates',
     'constraints' => [
       'depends' => [
-        'typo3' => '8.7.0-8.7.99',
-        'fluid_styled_content' => '8.7.0-8.7.99',
-        'rte_ckeditor' => '8.7.0-8.7.99',
-        'gridelements' => '8.0.0-8.99.99',
+        'typo3' => '8.7.0-9.9.99',
+        'fluid_styled_content' => '8.7.0-9.9.99',
+        'rte_ckeditor' => '8.7.0-9.9.99',
+        'gridelements' => '8.0.0-9.99.99',
       ],
       'conflicts' => [
       ],
@@ -20,5 +20,5 @@
     'author' => 'Tanel Põld',
     'author_email' => 'tanel@brightside.ee',
     'author_company' => 'Brightside OÜ',
-    'version' => '1.0.1',
+    'version' => '1.0.2',
   ];

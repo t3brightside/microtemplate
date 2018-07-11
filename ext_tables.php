@@ -5,7 +5,7 @@
 	if (!is_array($microtemplateConiguration)) {
 	  $microtemplateConiguration = unserialize($microtemplateConiguration);
 	}
-	
+
 	if ($microtemplateConiguration['microtemplateBackendStyles']) {
 	  $GLOBALS['TBE_STYLES']['stylesheet'] = 'EXT:microtemplate/Resources/Public/Styles/Backend/microtemplate.css';
 	}
