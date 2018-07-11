@@ -15,7 +15,7 @@
       }
   ],
   "require": {
-    "gridelementsteam/gridelements": ">=8.2.1,<9.*"
+    "gridelementsteam/gridelements": ">=8.2.1,~9.9"
   },
   "suggest": {
     "t3brightside/metaplus": "Page title prefix & suffix, OpenGraph image and Favicon",
