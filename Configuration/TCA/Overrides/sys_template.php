@@ -18,8 +18,9 @@ call_user_func(function()
   );
 
   /**
-   * Custom templates for third party extensions
+   * Custom templates for third party extensions if you need em in template editor inclusion list
    */
+   /*
   if(TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')){
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
       $extensionKey,
@@ -34,7 +35,7 @@ call_user_func(function()
       'Microtemplate - ext: Page List'
     );
   }
-
+*/
   /**
    * Custom templates for optional scripts
    */

@@ -7,7 +7,7 @@
 					<f:then><h1>{contentHeader}</h1></f:then>
 					<f:else><h1>{data.title}</h1></f:else>
 				</f:if>
-				<f:if condition="{data.author}">By {data.author} • </f:if><f:format.date format="%e. %B %Y">{data.lastUpdated}</f:format.date>
+				<f:if condition="{data.author}">By {data.author} • </f:if><f:format.date format="%e. %B %Y">{data.tx_pagelist_datetime}</f:format.date>
 				<hr />
 		  <f:if condition="{data.subtitle}"><p><strong>{data.subtitle}</strong></p></f:if>
 		  </header>
