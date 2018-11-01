@@ -10,6 +10,7 @@ config {
 [global]
 
 [userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')]
+	page.includeCSS.personnelOverride = EXT:microtemplate/Extensions/personnel/Resources/Public/Styles/personnel.css
 [global]
 
 page {

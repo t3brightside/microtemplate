@@ -1,0 +1,17 @@
+.personnel.cards img.person {
+  max-width: 15em;
+  border-radius: 50%;
+}
+
+.personnel.cards .profession {
+  margin-bottom: 0.5em;
+}
+
+.bg-dark .personnel.cards a, .bg-dark .personnel.cards a:visited {
+  font-weight: normal;
+  color: #fff;
+}
+
+.bg-dark .personnel.cards a svg path {
+  fill: #fff;
+}
