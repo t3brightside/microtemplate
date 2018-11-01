@@ -4,6 +4,14 @@ config {
 	compressCss = 1
 	removePageCss = 1
 }
+
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('pagelist')]
+	page.includeCSS.pagelistOverride = EXT:microtemplate/Extensions/pagelist/Resources/Public/Styles/pagelist.css
+[global]
+
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')]
+[global]
+
 page {
 	includeCSS {
 		microtemplate = EXT:microtemplate/Resources/Public/Styles/Page/microtemplate.css
@@ -20,13 +28,13 @@ page {
 				a, a:visited, #menu a:hover, #menu .active a {color: {$microtemplate.accentColor}}
 				.btn:visited, .btn, .closelink:hover i, input[type="radio"]:checked, input[type="checkbox"]:checked {background-color: {$microtemplate.accentColor}}
 				.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
-			
+
 				.ge-section {background-color: {$microtemplate.ge-section.bg-default}}
 				.ge-section.bg-light {background-color: {$microtemplate.ge-section.bg-light}}
 				.ge-section.bg-dark {background-color: {$microtemplate.ge-section.bg-dark}; color: {$microtemplate.text-light}}
 				.ge-section.text-light {color: {$microtemplate.text-light}}
 				.ge-section.text-dark {color: {$microtemplate.text-dark}}
-				
+
 				.subpage {color: {$microtemplate.text-dark}}
 			</style>
 		)

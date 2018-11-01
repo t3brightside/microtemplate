@@ -1,0 +1,4 @@
+
+.pagelist.list .article a {display: inline-block; border-top: 1px solid #ddd; padding-left: 3em; padding-right: 3em;padding-top: 1em;}
+.pagelist.list .article:first-child a {border-top: none; padding-top: 0;}
+.pagelist .article .author img {display: none}
