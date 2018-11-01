@@ -99,3 +99,21 @@ page {
     }
   }
 }
+
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')]
+  page.10.dataProcessing {
+    40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    40 {
+      table = tx_personnel_domain_model_person
+      uidInList.field = tx_pagelist_authors
+      pidInList = 0
+      as = authors
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10.references.table = tx_personnel_domain_model_person
+        10.references.fieldName = images
+        10.as = authorimages
+      }
+    }
+  }
+[global]
