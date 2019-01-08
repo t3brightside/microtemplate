@@ -17,28 +17,7 @@ call_user_func(function()
     'Microtemplate - Main'
   );
 
-  /**
-   * Custom templates for third party extensions if you need em in template editor inclusion list
-   */
-   /*
-  if(TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')){
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-      $extensionKey,
-      'Extensions/personnel/Configuration/TypoScript',
-      'Microtemplate - ext: Personnel'
-    );
-  }
-  if(TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('pagelist')){
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-      $extensionKey,
-      'Extensions/pagelist/Configuration/TypoScript',
-      'Microtemplate - ext: Page List'
-    );
-  }
-*/
-  /**
-   * Custom templates for optional scripts
-   */
+  
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Extensions/magnificpopup/Configuration/TypoScript',
