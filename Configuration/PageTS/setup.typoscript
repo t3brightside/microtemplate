@@ -18,9 +18,6 @@
 		  alias.disabled = 1
 		  newUntil.disabled = 1
 		  layout.disabled = 1
-		  url_scheme.disabled = 1
-		  tx_realurl_pathoverride.disabled = 1
-	#	  lastUpdated.disabled = 1
 		}
 		tt_content {
 			CType.removeItems = text, textpic, image, bullets, search
