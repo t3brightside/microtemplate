@@ -1,0 +1,2 @@
+@import 'EXT:microtemplate/Extensions/gridelements/Configuration/PageTS/*.typoscript'
+@import 'EXT:microtemplate/Extensions/pagelist/Configuration/PageTS/*.typoscript'

@@ -3,10 +3,6 @@
 	microtemplate.rootPageId =
 # cat=Microtemplate/microtemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
 	microtemplate.domainName = /
-# cat=Microtemplate/microtemplate; type=string; label= Language code:Two letter ISO code like: en, de, fr...
-	microtemplate.language = en
-# cat=Microtemplate/microtemplate; type=string; label= Locale (en_UK, de_DE...)
-	microtemplate.locale_all = en_UK
 # cat=Microtemplate/microtemplate; type=int; label= Cache max age in seconds
 	microtemplate.cacheControlMaxAge = 3600
 # cat=Microtemplate/microtemplate; type=string; label= jQuery version number

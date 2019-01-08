@@ -5,17 +5,9 @@ config {
   sendCacheHeaders=1
   absRefPrefix = {$microtemplate.domainName}
   baseURL = {$microtemplate.domainName}
-  tx_realurl_enable = {$microtemplate.realurl}
 	spamProtectEmailAddresses = -1
   spamProtectEmailAddresses_atSubst = @
   spamProtectEmailAddresses_lastDotSubst = .
-# frontend_editing = 1
-# language settings
-	sys_language_uid = 0
-	language = {$microtemplate.language}
-	locale_all = {$microtemplate.locale_all}
-  htmlTag_langKey = {$microtemplate.language}
-	linkVars = L
   sys_language_overlay = hideNonTranslated
   sys_language_mode = strict
 }
@@ -100,7 +92,7 @@ page {
   }
 }
 
-[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')]
+["{$microtemplate.personnel}" == "1"]
   page.10.dataProcessing {
     40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
     40 {
@@ -116,4 +108,4 @@ page {
       }
     }
   }
-[global]
+[END]

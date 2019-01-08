@@ -1,15 +1,16 @@
-# javascript for menus can be found in deticated typoscript files (Menus/sectionMenu.ts for example)
 config {
 	concatenateJs = 1
 	compressJs = 1
 	moveJsFromHeaderToFooter = 1
-	removeDefaultJS = 
-} 
-page.javascriptLibs {
-	jQuery = 1
-	jQuery.version = {$microtemplate.jQueryVersion}
-	jQuery.source = cloudflare
-	jQuery.noConflict = 0
+	removeDefaultJS =
+}
+
+page.includeJSLibs.jQuery = //cdnjs.cloudflare.com/ajax/libs/jquery/{$microtemplate.jQueryVersion}/jquery.min.js
+page.includeJSLibs.jQuery {
+	external = 1
+	async = 0
+	excludeFromConcatenation = 1
+	disableCompression = 1
 }
 
 # applied to all pages

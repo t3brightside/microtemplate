@@ -13,7 +13,7 @@ call_user_func(function()
    */
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     $extensionKey,
-    'Configuration/PageTS/setup.ts',
+    'Configuration/PageTS/setup.typoscript',
     'Microtemplate - Main'
   );
   /**
@@ -21,7 +21,7 @@ call_user_func(function()
    */
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     $extensionKey,
-    'Configuration/PageTS/article_page.ts',
+    'Configuration/PageTS/article_page.typoscript',
     'Microtemplate – Article page'
   );
 });

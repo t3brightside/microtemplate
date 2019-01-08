@@ -1,12 +1,5 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:microtemplate/Configuration/PageTS/Include/" extensions="ts">
-
-# set default language for the page module
-	mod {
-		SHARED {
-			defaultLanguageFlag = gb
-			defaultLanguageLabel = English
-		}
-	}
+@import 'EXT:microtemplate/Configuration/PageTS/Include/*.typoscript'
+@import 'EXT:microtemplate/Configuration/PageTS/Include/extensions.typoscript'
 
 # RTE setup defined in ext_localconf.php
 	RTE.default.preset = microtemplate
@@ -27,7 +20,7 @@
 		  layout.disabled = 1
 		  url_scheme.disabled = 1
 		  tx_realurl_pathoverride.disabled = 1
-	#	  lastUpdated.disabled = 1 
+	#	  lastUpdated.disabled = 1
 		}
 		tt_content {
 			CType.removeItems = text, textpic, image, bullets, search
