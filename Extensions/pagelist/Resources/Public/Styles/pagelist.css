@@ -1,4 +1,29 @@
+.pagelist.list .article a, .pagelist.list .event a {
+  display: inline-block;
+  border-top: 1px solid #ddd;
+  padding-right: 3em;
+  padding-top: 1em;
+}
 
-.pagelist.list .article a {display: inline-block; border-top: 1px solid #ddd; padding-left: 3em; padding-right: 3em;padding-top: 1em;}
-.pagelist.list .article:first-child a {border-top: none; padding-top: 0;}
-.pagelist .article .author img {display: none}
+.align-center .pagelist.list .article a, .align-center .pagelist.list .event a {
+  padding-left: 3em;
+}
+
+.pagelist.list .article:first-child a, .pagelist.list .event:first-child a {
+  border-top: none;
+  padding-top: 0;
+}
+
+.pagelist .article .author img {
+  display: none
+}
+
+.pagelist.list .event .dates {
+  padding: 0.4em;
+  padding-bottom: 0.3em;
+}
+
+.pagelist.list .event .dates .day {
+  font-size: 1.5em;
+  padding-bottom: 0.6em;
+}

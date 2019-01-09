@@ -15,9 +15,10 @@
 				<article>
 					<f:render partial="EventHeader" arguments="{_all}" />
 					<f:format.raw>{contentDefault}</f:format.raw>
+					<f:render partial="EventFooter" arguments="{_all}" />
 				</article>
 			</f:if>
-			<f:if condition="{data.doktype} == 137">
+			<f:if condition="{data.doktype} == 138">
 				<article>
 					<f:render partial="ProductHeader" arguments="{_all}" />
 					<f:format.raw>{contentDefault}</f:format.raw>

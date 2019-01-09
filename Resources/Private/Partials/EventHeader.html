@@ -1,25 +1,28 @@
-<header>
-  <f:if condition="{contentHeader}">
-    <f:then><h1>{contentHeader}</h1></f:then>
-    <f:else><h1>{data.title}</h1></f:else>
-  </f:if>
-  <f:for each="{authors}" as="author">
-    <f:if condition="{author.data.firstname} || {author.data.lastname}">
-      <span class="author">
-        <f:if condition="{author.authorimages.0}">
-          <figure><img style="width: 70px; height: 70px; border-radius: 50%;" src="<f:uri.image image="{author.authorimages.0}" width="120c" height="120c" />" alt="{f:if(condition:'{author.authorimages.0.alternative}', then:'{author.authorimages.0.alternative}', else:'{author.data.firstname} {author.data.lastname}')}"/></figure>
-        </f:if>
-        {author.data.firstname} {author.data.lastname}
-      </span>
-    </f:if>
-  </f:for>
-  <f:if condition="{data.tx_pagelist_datetime}">
-    <f:if condition="{authors}">/</f:if>
-    <span class="date">
+<f:if condition="{header}">
+  <f:then><f:format.raw>{contentHeader}</f:format.raw></f:then>
+  <f:else><h1>{data.title}</h1></f:else>
+</f:if>
+<p>{data.abstract}</p>
+<f:if condition="{data.tx_pagelist_datetime}">
+  <h3 class="date">
+    <f:format.date format="j. M Y">
+      {data.tx_pagelist_datetime}
+    </f:format.date>
+    <f:if condition="{data.tx_pagelist_eventfinish}">
+      –
       <f:format.date format="j. M Y">
-        {data.tx_pagelist_datetime}
+        {data.tx_pagelist_eventfinish}
       </f:format.date>
-    </span>
-  </f:if>
-  <hr />
-</header>
+    </f:if>
+    <a style="font-weight: normal; display: block; float: right" title="Add to Google Calendar" href="//www.google.com/calendar/event?action=TEMPLATE&dates={data.tx_pagelist_datetime -> f:format.date(format: 'Ymd')}T{data.tx_pagelist_datetime -> f:format.date(format: 'His')}Z%2F{data.tx_pagelist_eventfinish -> f:format.date(format: 'Ymd')}T{data.tx_pagelist_eventfinish -> f:format.date(format: 'His')}Z&text={data.title}&location={data.tx_pagelist_eventlocation}&details={data.abstract}">[add to cal]</a>
+  </h3>
+</f:if>
+<f:if condition="{data.tx_pagelist_eventlocation}">
+  <p>
+    <strong>
+      <f:link.typolink parameter="{data.tx_pagelist_eventlocationlink}" target="_blank">
+      {data.tx_pagelist_eventlocation}
+      </f:link.typolink>
+    </strong>
+  </p>
+</f:if>

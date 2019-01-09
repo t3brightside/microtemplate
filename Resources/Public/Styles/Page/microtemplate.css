@@ -642,7 +642,9 @@ form .error:before {
 .subpage h1 {
   padding-bottom: .36em;
 }
-
+.subpage .author img {
+  border-radius: 50%;
+}
 .closelink {
   border-radius: 50%;
   width: 2.6em;
