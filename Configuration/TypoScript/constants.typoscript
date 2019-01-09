@@ -54,6 +54,6 @@
 # Sets default header type for sub pages
 	styles.content.defaultHeaderType = 2
 # Sets default header type for home page
-	[globalVar = TSFE:page|backend_layout = pagets__home]
-		styles.content.defaultHeaderType = 1
-	[global]
+[page["backend_layout"] == "pagets__home"]
+	styles.content.defaultHeaderType = 1
+[END]

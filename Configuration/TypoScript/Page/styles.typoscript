@@ -5,13 +5,13 @@ config {
 	removePageCss = 1
 }
 
-[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('pagelist')]
+["{$microtemplate.pagelistIsLoaded}" == "1"]
 	page.includeCSS.pagelistOverride = EXT:microtemplate/Extensions/pagelist/Resources/Public/Styles/pagelist.css
-[global]
+[END]
 
-[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')]
+["{$microtemplate.personnelIsLoaded}" == "1"]
 	page.includeCSS.personnelOverride = EXT:microtemplate/Extensions/personnel/Resources/Public/Styles/personnel.css
-[global]
+[END]
 
 page {
 	includeCSS {
@@ -41,9 +41,9 @@ page {
 		)
 	}
 }
-[globalVar = LIT:0<{$microtemplate.ge-section-angeled-edges}]
+["{$microtemplate.ge-section-angeled-edges}" == "1"]
 	page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
-[global]
-[globalVar = LIT:0<{$microtemplate.scroll-effects}]&&[globalVar = TSFE:page|backend_layout = pagets__home]
+[END]
+["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
 	page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
-[global]
+[END]

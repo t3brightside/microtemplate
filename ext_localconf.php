@@ -13,3 +13,12 @@
 	  		microtemplate.personnelIsLoaded = 0
 	  	');
 	  }
+		if (TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('pagelist')){
+			\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('
+				microtemplate.pagelistIsLoaded = 1
+			');
+		} else {
+			\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('
+				microtemplate.pagelistIsLoaded = 0
+			');
+		}

@@ -1,21 +1,20 @@
-page.includeJSFooterlibs.section_menu = EXT:microtemplate/Resources/Public/JavaScript/Menus/section_menu.js
+	page.includeJSFooterlibs.section_menu = EXT:microtemplate/Resources/Public/JavaScript/Menus/section_menu.js
 
-# applied on main page template only
+	# applied on main page template only
 
-page {
-	includeCSS.section_menu = EXT:microtemplate/Resources/Public/Styles/Menus/section_menu.css	
-	headerData {
-		1013 = TEXT
-		1013.value (
-			<style>
-				#menu a {color: {$microtemplate.text-default}}
-				.hmbrgr i {background: {$microtemplate.text-default}}
-			</style>
-		)
+	page {
+		includeCSS.section_menu = EXT:microtemplate/Resources/Public/Styles/Menus/section_menu.css
+		headerData {
+			1013 = TEXT
+			1013.value (
+				<style>
+					#menu a {color: {$microtemplate.text-default}}
+					.hmbrgr i {background: {$microtemplate.text-default}}
+				</style>
+			)
+		}
 	}
-}
 
-[globalVar = TSFE:page|backend_layout = pagets__home]	
 # create menu items out of top most content elements, gridelements page secrions in this template
 	menuLinks = COA
 	menuLinks {
@@ -44,4 +43,3 @@ page {
 		10 < menuLinks
 	#	20 < menuContentForExample
 	}
-[global]

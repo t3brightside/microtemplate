@@ -1,3 +1,6 @@
 @import 'EXT:microtemplate/Configuration/TypoScript/Page/*.typoscript'
-@import 'EXT:microtemplate/Configuration/TypoScript/Menus/*.typoscript'
-@import 'EXT:microtemplate/Configuration/TypoScript/Content/*.typoscript'
+@import 'EXT:microtemplate/extensions/gridelements/Configuration/TypoScript/*.typoscript'
+
+[page["backend_layout"] == "pagets__home"]
+  @import 'EXT:microtemplate/Configuration/TypoScript/Menus/*.typoscript'
+[END]

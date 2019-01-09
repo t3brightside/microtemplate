@@ -1,12 +1,28 @@
 <body class="subpage-body">
 	<f:render partial="CloseLink" arguments="{_all}" />
 	<div id="p{data.uid}" class="subpage subpageContentWidth">
-		<section>
-			<f:if condition="{contentHeader}">
-				<f:then><h1>{contentHeader}</h1></f:then>
-				<f:else><h1>{data.title}</h1></f:else>
+			<f:if condition="{data.doktype} == 1">
+				<f:render partial="PageHeader" arguments="{_all}" />
+				<f:format.raw>{contentDefault}</f:format.raw>
 			</f:if>
-			<f:format.raw>{contentDefault}</f:format.raw>
-		</section>
+			<f:if condition="{data.doktype} == 136">
+				<article>
+					<f:render partial="ArticleHeader" arguments="{_all}" />
+					<f:format.raw>{contentDefault}</f:format.raw>
+				</article>
+			</f:if>
+			<f:if condition="{data.doktype} == 137">
+				<article>
+					<f:render partial="EventHeader" arguments="{_all}" />
+					<f:format.raw>{contentDefault}</f:format.raw>
+				</article>
+			</f:if>
+			<f:if condition="{data.doktype} == 137">
+				<article>
+					<f:render partial="ProductHeader" arguments="{_all}" />
+					<f:format.raw>{contentDefault}</f:format.raw>
+				</article>
+			</f:if>
+		</article>
 	</div>
 </body>

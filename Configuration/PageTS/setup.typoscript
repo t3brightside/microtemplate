@@ -1,5 +1,5 @@
-@import 'EXT:microtemplate/Configuration/PageTS/Include/*.typoscript'
-@import 'EXT:microtemplate/Configuration/PageTS/Include/extensions.typoscript'
+@import 'EXT:microtemplate/Configuration/PageTS/backendlayouts.typoscript'
+@import 'EXT:microtemplate/Configuration/PageTS/extensions.typoscript'
 
 # RTE setup defined in ext_localconf.php
 	RTE.default.preset = microtemplate

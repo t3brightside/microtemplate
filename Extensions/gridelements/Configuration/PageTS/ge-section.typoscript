@@ -8,7 +8,7 @@ tx_gridelements {
 	    	colCount = 1
 	    	rowCount = 1
 	    	rows {
-	    		1 {	
+	    		1 {
 	    			columns {
 	    				1 {
 	    					name = Section content
@@ -21,7 +21,7 @@ tx_gridelements {
 	    		}
 	    	}
 	    }
-      flexformDS = FILE:EXT:microtemplate/Configuration/FlexForm/gridelements/ge-section.xml
+      flexformDS = FILE:EXT:microtemplate/extensions/gridelements/Configuration/FlexForm/ge-section.xml
     }
 	}
 }

@@ -92,7 +92,7 @@ page {
   }
 }
 
-["{$microtemplate.personnel}" == "1"]
+["{$microtemplate.personnelIsLoaded}" == "1"]
   page.10.dataProcessing {
     40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
     40 {

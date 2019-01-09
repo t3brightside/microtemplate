@@ -7,7 +7,7 @@
 
 ## System requirements
 
-- TYPO3 8.7 LTS, 9.5 LTS only since 2.0.0
+- TYPO3 8.7 LTS, since 2.0.0 only TYPO3 9.5 LTS
 - fluid_styled_content
 - gridelements
 

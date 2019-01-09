@@ -1,0 +1,25 @@
+<header>
+  <f:if condition="{contentHeader}">
+    <f:then><h1>{contentHeader}</h1></f:then>
+    <f:else><h1>{data.title}</h1></f:else>
+  </f:if>
+  <f:for each="{authors}" as="author">
+    <f:if condition="{author.data.firstname} || {author.data.lastname}">
+      <span class="author">
+        <f:if condition="{author.authorimages.0}">
+          <figure><img style="width: 70px; height: 70px; border-radius: 50%;" src="<f:uri.image image="{author.authorimages.0}" width="120c" height="120c" />" alt="{f:if(condition:'{author.authorimages.0.alternative}', then:'{author.authorimages.0.alternative}', else:'{author.data.firstname} {author.data.lastname}')}"/></figure>
+        </f:if>
+        {author.data.firstname} {author.data.lastname}
+      </span>
+    </f:if>
+  </f:for>
+  <f:if condition="{data.tx_pagelist_datetime}">
+    <f:if condition="{authors}">/</f:if>
+    <span class="date">
+      <f:format.date format="j. M Y">
+        {data.tx_pagelist_datetime}
+      </f:format.date>
+    </span>
+  </f:if>
+  <hr />
+</header>
