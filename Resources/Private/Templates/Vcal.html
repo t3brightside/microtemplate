@@ -7,13 +7,13 @@ UID:{data.uid}-{data.tx_pagelist_datetime}
 DTSTART:<f:format.date format="Ymd">{data.tx_pagelist_datetime}</f:format.date><f:if condition="{data.tx_pagelist_starttime}">T<f:format.date format="His">{data.tx_pagelist_datetime}</f:format.date>Z</f:if>
 <f:if condition="{data.tx_pagelist_eventfinish}">DTEND:<f:format.date format="Ymd">{data.tx_pagelist_eventfinish}</f:format.date><f:if condition="{data.tx_pagelist_endtime}">T<f:format.date format="His">{data.tx_pagelist_eventfinish}</f:format.date>Z</f:if></f:if>
 SUMMARY:{data.title}
-DESCRIPTION:<f:format.raw>{contentVcal}</f:format.raw>
+DESCRIPTION:<f:if condition="{data.abstract}">{data.abstract} \n\n</f:if>More: <f:uri.page pageUid="{data.uid}" absolute="1" />
 LOCATION:{data.tx_pagelist_eventlocation}
+URL:<f:uri.page pageUid="{data.uid}" absolute="1" />
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
 END:VALARM
 TRANSP:OPAQUE
-URL:<f:uri.page pageUid="{data.uid}" absolute="1" />
 END:VEVENT
 END:VCALENDAR
