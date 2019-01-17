@@ -58,4 +58,5 @@
 	styles.content.defaultHeaderType = 1
 [END]
 
-pagelist.partialRootPaths = EXT:microtemplate/Extensions/pagelist/Resources/Private/Partials/
+# Extensions configuration
+	pagelist.partialRootPaths = EXT:microtemplate/Extensions/pagelist/Resources/Private/Partials/
