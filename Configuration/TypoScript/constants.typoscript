@@ -57,3 +57,5 @@
 [page["backend_layout"] == "pagets__home"]
 	styles.content.defaultHeaderType = 1
 [END]
+
+pagelist.partialRootPaths = EXT:microtemplate/Extensions/pagelist/Resources/Private/Partials/

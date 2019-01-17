@@ -18,12 +18,12 @@
   display: none
 }
 
-.pagelist.list .event .dates {
-  padding: 0.4em;
-  padding-bottom: 0.3em;
+.pagelist.list .event .text {
+  margin-left: 5em;
+  padding-left: 1em;
 }
 
-.pagelist.list .event .dates .day {
-  font-size: 1.5em;
-  padding-bottom: 0.6em;
+.pagelist.list .event .text {
+  margin-left: 0;
+  padding-left: 0;
 }
