@@ -40,7 +40,7 @@ page {
 
 				.subpage {color: {$microtemplate.text-default}}
 				.subpage-body {background-color: {$microtemplate.body-background}}
-				.closelink i {background: {$microtemplate.text-light}}
+				.closelink i {background: {$microtemplate.text-default}}
 			</style>
 		)
 	}
