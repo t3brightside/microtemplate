@@ -164,14 +164,13 @@ tr:last-child td {
   margin-top: 1em;
   margin-bottom: 1em;
   transition: all .4s ease;
-  border: none;
+  border: 2px solid;
   margin-right: .4em;
 }
 
 .btn:hover, .btn:visited:hover {
   text-decoration: none;
-  background-color: #000;
-  color: #fff;
+  background-color: transparent;
   cursor: pointer;
 }
 

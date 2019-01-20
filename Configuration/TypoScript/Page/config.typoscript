@@ -5,7 +5,7 @@ config {
   sendCacheHeaders=1
   absRefPrefix = {$microtemplate.domainName}
   baseURL = {$microtemplate.domainName}
-	spamProtectEmailAddresses = -1
+  spamProtectEmailAddresses = -1
   spamProtectEmailAddresses_atSubst = @
   spamProtectEmailAddresses_lastDotSubst = .
   sys_language_overlay = hideNonTranslated

@@ -1,13 +1,13 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
-DTSTAMP:20190110T010842Z
+DTSTAMP:<f:format.date format="Ymd" date="now" />T<f:format.date format="His" date="now" />Z
 STATUS:CONFIRMED
 UID:{data.uid}-{data.tx_pagelist_datetime}
 DTSTART:<f:format.date format="Ymd">{data.tx_pagelist_datetime}</f:format.date><f:if condition="{data.tx_pagelist_starttime}">T<f:format.date format="His">{data.tx_pagelist_datetime}</f:format.date>Z</f:if>
 <f:if condition="{data.tx_pagelist_eventfinish}">DTEND:<f:format.date format="Ymd">{data.tx_pagelist_eventfinish}</f:format.date><f:if condition="{data.tx_pagelist_endtime}">T<f:format.date format="His">{data.tx_pagelist_eventfinish}</f:format.date>Z</f:if></f:if>
 SUMMARY:{data.title}
-DESCRIPTION:<f:if condition="{data.abstract}">{data.abstract} \n\n</f:if>More: <f:uri.page pageUid="{data.uid}" absolute="1" />
+DESCRIPTION:<f:if condition="{data.abstract}">{data.abstract}</f:if>
 LOCATION:{data.tx_pagelist_eventlocation}
 URL:<f:uri.page pageUid="{data.uid}" absolute="1" />
 BEGIN:VALARM

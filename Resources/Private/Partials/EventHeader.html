@@ -5,18 +5,19 @@
 <p>{data.abstract}</p>
 <f:if condition="{data.tx_pagelist_datetime}">
   <h3 class="date">
-    <f:format.date format="j. M Y">
-      {data.tx_pagelist_datetime}
-    </f:format.date>
+    <f:format.date format="j. M Y">{data.tx_pagelist_datetime}</f:format.date>
+    <f:if condition="{data.tx_pagelist_starttime}">/ <f:format.date format="H:i">{data.tx_pagelist_datetime}</f:format.date></f:if>
     <f:if condition="{data.tx_pagelist_eventfinish}">
       –
       <f:format.date format="j. M Y">
         {data.tx_pagelist_eventfinish}
       </f:format.date>
     </f:if>
-    <a style="font-weight: normal; display: block; float: right" title="Add to Google Calendar" href="//www.google.com/calendar/event?action=TEMPLATE&dates={data.tx_pagelist_datetime -> f:format.date(format: 'Ymd')}T{data.tx_pagelist_datetime -> f:format.date(format: 'His')}Z%2F{data.tx_pagelist_eventfinish -> f:format.date(format: 'Ymd')}T{data.tx_pagelist_eventfinish -> f:format.date(format: 'His')}Z&text={data.title}&location={data.tx_pagelist_eventlocation}&details={data.abstract}">[add to cal]</a>
-    <f:link.page style="font-weight: normal; display: block; float: right" pageUid="{data.uid}" pageType="889966123">[ics]</f:link.page>
-    <f:link.page style="font-weight: normal; display: block; float: right" pageUid="{data.uid}" pageType="889966123" additionalAttributes="{download: '{data.title}.ics'}">[D]</f:link.page>
+    <f:comment>
+        <a style="font-weight: normal; display: block; float: right" title="Add to Google Calendar" href="//www.google.com/calendar/event?action=TEMPLATE&dates={data.tx_pagelist_datetime -> f:format.date(format: 'Ymd')}T{data.tx_pagelist_datetime -> f:format.date(format: 'His')}Z%2F{data.tx_pagelist_eventfinish -> f:format.date(format: 'Ymd')}T{data.tx_pagelist_eventfinish -> f:format.date(format:    'His')}Z&text={data.title}&location={data.tx_pagelist_eventlocation}&details={data.abstract}">[gCal]</a>
+    </f:comment>
+    <f:link.page style="font-weight: normal; display: block; float: right" pageUid="{data.uid}" pageType="889966123">[ > ]</f:link.page>
+    <f:link.page style="font-weight: normal; display: block; float: right" pageUid="{data.uid}" pageType="889966123" additionalAttributes="{download: '{data.title}.ics'}">[ + ]</f:link.page>
 
   </h3>
 </f:if>
