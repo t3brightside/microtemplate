@@ -10,8 +10,6 @@
         'rte_ckeditor' => '9.5.0-9.5.99',
         'gridelements' => '9.0.0-9.99.99',
       ],
-      'conflicts' => [
-      ],
     ],
     'state' => 'stable',
     'uploadfolder' => 0,
