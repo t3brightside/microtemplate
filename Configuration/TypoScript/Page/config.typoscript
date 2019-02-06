@@ -97,7 +97,7 @@ page {
     40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
     40 {
       table = tx_personnel_domain_model_person
-      uidInList.field = tx_pagelist_authors
+      uidInList.field = tx_personnel_authors
       pidInList = 0
       as = authors
       dataProcessing {
