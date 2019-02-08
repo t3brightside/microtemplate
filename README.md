@@ -49,11 +49,11 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 
 ## Recommended
 These extensions are preconfigured and tested in Microtemplate package.
-- [personnel](https://extensions.typo3.org/extension/personnel/)
- – Contact persons information with vCard support
-- [pagelist](https://extensions.typo3.org/extension/pagelist/) – Page teasers, article lists etc
+- [personnel](https://extensions.typo3.org/extension/personnel/) – Contact persons information with vCard support
+- [pagelist](https://extensions.typo3.org/extension/pagelist/) – Page teasers, articles, events etc
 - [youtubevideo](https://extensions.typo3.org/extension/youtubevideo/) – YouTube videos with cover images and cover text
-- [metaplus](https://extensions.typo3.org/extension/metaplus/) – Page title prefix, suffix, favicon and OpenGraph image
+- [favicon](https://extensions.typo3.org/extension/favicon/) – Favicon extension
+- [advancedtitle](https://extensions.typo3.org/extension/advancedtitle/) – Page title prefix and suffix
 
 ## Sources
 
