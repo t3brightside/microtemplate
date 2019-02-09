@@ -43,9 +43,9 @@ page {
 			}
 
 			function gaOptin() {
-		    document.cookie = disableStr + '=false; expires=Thu, 31 Dec 2098 23:59:59 UTC; path=/';
-		    window[disableStr] = false;
-		    runGA();
+			    document.cookie = disableStr + '=false; expires=Thu, 31 Dec 2098 23:59:59 UTC; path=/';
+			    window[disableStr] = false;
+			  //  runGA();
 				$("#gaSwitch").prop('checked', true);
 		  	}
 
