@@ -10,9 +10,20 @@ page {
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', '{$microtemplate.googleAnalyticsCode}', { 'anonymize_ip': true });
+		gtag('config', '{$microtemplate.googleAnalyticsCode}');
 	)
 }
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30856066-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-30856066-9');
+</script>
+
+
 [{$microtemplate.ccactive} == 1]
 page {
 	jsFooterInline {

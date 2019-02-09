@@ -23,24 +23,24 @@ page.jsFooterInline {
 	10003346.value (
 		window.addEventListener("load", function(){
 		window.cookieconsent.initialise({
-		  "type": "opt-in",
+		 	"type": "opt-in",
 			revokable: "false",
-		  "content": {
-			"message": "{$microtemplate.ccmessage}",
-		    "dismiss": "{$microtemplate.ccdismiss}",
-			"allow": "{$microtemplate.ccallow}",
-		    "link": "{$microtemplate.ccmore}",
-		    "href": "{$microtemplate.cchref}",
-		  },
-		  elements: {
-			  messagelink: '<div id="cookieconsent:desc" class="cc-message">{{message}} <a class="cc-link" href="{{href}}">{{link}}</a></div>',
-			  dismiss: '',
-			  allow: '<a class="btn cc-opt-link cc-btn cc-allow button">{{allow}}</a>',
+			"content": {
+				"message": "{$microtemplate.ccmessage}",
+				"dismiss": "{$microtemplate.ccdismiss}",
+				"allow": "{$microtemplate.ccallow}",
+				"link": "{$microtemplate.ccmore}",
+				"href": "{$microtemplate.cchref}",
+			},
+			elements: {
+				messagelink: '<div id="cookieconsent:desc" class="cc-message">{{message}} <a class="cc-link" href="{{href}}">{{link}}</a></div>',
+				dismiss: '',
+				allow: '<a class="btn cc-opt-link cc-btn cc-allow button">{{allow}}</a>',
 			},
 		/*	onStatusChange: function(status, chosenBefore) {
-			  if (status == cookieconsent.status.allow) {
-			    gaOptin();
-			  }
+				if (status == cookieconsent.status.allow) {
+					gaOptin();
+				}
 			}, */
 		})});
 	)
