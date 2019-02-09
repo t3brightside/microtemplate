@@ -17,8 +17,8 @@ page {
 [{$microtemplate.ccactive} == 1]
 page {
 	jsFooterInline {
-		100033486 = TEXT
-		100033486.value (
+		1000334856 = TEXT
+		1000334856.value (
 			// Set to the same value as the web property used on the site
 			var gaProperty = '{$microtemplate.googleAnalyticsCode}';
 
