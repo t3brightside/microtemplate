@@ -26,8 +26,9 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 - IE 9 friendly except cards that use display: flex
 
 ## Install
-- Install from TER **microtemplate** or composer **t3brightside/microtemplate**, include static templates you need, adjust template constants.
-- **Note:** Include in that order fluid_styled_content, gridelements, personnel, pagelist, youtubevideo etc, microtemplate.
+- Install from TER **microtemplate** or composer **t3brightside/microtemplate**.
+- **Note:** Include static templates in that order fluid_styled_content, gridelements, personnel, pagelist, youtubevideo etc, microtemplate, microtemplate scripts.
+- Edit constants for your needs.
 - **Edit home page** to set _'Resources -> Include Page TSConfig -> Microtemplate – Main'_ and save
 - **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_
 
