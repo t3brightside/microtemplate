@@ -38,7 +38,7 @@
 
 .cc-allow:hover {
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .cc-dismiss {

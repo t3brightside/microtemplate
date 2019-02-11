@@ -4,9 +4,9 @@
 # cat=Microtemplate/microtemplatexcc; type=string; label= Read more link text
 	microtemplate.ccmore = Privacy, cookies & settings
 # cat=Microtemplate/microtemplatexcc; type=string; label= Allow cookies button text
-	microtemplate.ccallow = I Accept
+	microtemplate.ccallow = Accept
 # cat=Microtemplate/microtemplatexcc; type=string; label= Dismiss button text
-	microtemplate.ccdismiss = 
+	microtemplate.ccdismiss =
 # cat=Microtemplate/microtemplatexcc; type=string; label= URL to read more page
 	microtemplate.cchref = /privacy/
 
