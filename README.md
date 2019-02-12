@@ -27,7 +27,7 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 
 ## Install
 - Install from TER **microtemplate** or composer **t3brightside/microtemplate**.
-- **Note:** Include static templates in that order: _fluidstyledcontent, gridelements, personnel, pagelist, youtubevideo etc, microtemplate, microtemplate scripts_.
+- **Note:** Include static templates in that order: _fluidstyledcontent, personnel, pagelist, youtubevideo etc, microtemplate, microtemplate scripts_.
 - Edit constants for your needs.
 - **Edit home page** to set _'Resources -> Include Page TSConfig -> Microtemplate – Main'_ and save
 - **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_
