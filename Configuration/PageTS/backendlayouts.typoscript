@@ -20,9 +20,9 @@ mod.web_layout.BackendLayouts {
 			}
 		}
 	}
-  sub {
-    title = Sub page
-    config {
+  	sub {
+	    title = Sub
+	    config {
 			backend_layout {
 				colCount = 1
 				rowCount = 2
@@ -49,38 +49,6 @@ mod.web_layout.BackendLayouts {
 				  }
 				}
 			}
-    }
-  }
-  article {
-    title = Article page
-    config {
-			backend_layout {
-				colCount = 1
-				rowCount = 2
-				rows {
-				  1 {
-				    columns {
-				      1 {
-				        name = Article title (overrides automatic title)
-				        allowed = header
-				        colPos = 5
-				      }
-				    }
-				  }
-				  2 {
-				    columns {
-				      1 {
-				        name = Article content
-				        disabledGridTypes = ge-section
-				        colPos = 0
-				        disallowed {
-				          tx_gridelements_backend_layout = ge-section
-				        }
-				      }
-				    }
-				  }
-				}
-			}
-    }
-  }
+	    }
+  	}
 }

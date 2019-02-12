@@ -27,10 +27,10 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 
 ## Install
 - Install from TER **microtemplate** or composer **t3brightside/microtemplate**.
-- **Note:** Include static templates in that order: _fluidstyledcontent, personnel, pagelist, youtubevideo etc, microtemplate, microtemplate scripts_.
+- **Note:** Include static templates in that order: **fluid_styled_content**, advancedpagetitle, personnel, pagelist, youtubevideo etc, **microtemplate, microtemplate scripts**.
 - Edit constants for your needs.
 - **Edit home page** to set _'Resources -> Include Page TSConfig -> Microtemplate – Main'_ and save
-- **Edit home page** to set _'Appearance -> Page layout -> Backend layout -> Home'_
+- **Edit home page** to set _'Appearance -> Page layout -> Backend layout  (this page only) -> Home'_ and _'Appearance -> Page layout (subpages of this page) -> Backend layout -> Sub'_
 
 ## Editors
 - Logo can be added to home page _'Resources -> Media'_.
