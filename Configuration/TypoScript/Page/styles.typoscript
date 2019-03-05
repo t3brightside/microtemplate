@@ -50,7 +50,7 @@ page {
 		)
 	}
 }
-["{$microtemplate.ge-section-angeled-edges}" == "1"]
+["{$microtemplate.ge-section-angeled-edges}" == "1"] && [page["backend_layout"] == "pagets__home"]
 	page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
 [END]
 ["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
