@@ -38,6 +38,11 @@ page {
 				.ge-section.text-light {color: {$microtemplate.text-light}}
 				.ge-section.text-dark {color: {$microtemplate.text-dark}}
 
+				a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$microtemplate.text-default}}
+				a.ge-accordion-section-title:hover {color: {$microtemplate.accentColor}}
+				.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$microtemplate.text-default}}
+				.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$microtemplate.accentColor}}
+
 				.subpage {color: {$microtemplate.text-default}}
 				.subpage-body {background-color: {$microtemplate.body-background}}
 				.closelink i {background: {$microtemplate.text-default}}

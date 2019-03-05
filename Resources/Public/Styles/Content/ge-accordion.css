@@ -7,10 +7,31 @@
   box-sizing: border-box;
   display: block;
   font-weight: 500;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect y="12" width="26" height="2" style="fill:#111"/><rect y="12" width="26" height="2" transform="translate(0 26) rotate(-90)" style="fill:#111"/></svg>') no-repeat right .76em;
-  background-size: 1.1em 1.1em;
+  padding-right: 3em;
 }
-
+.ge-accordion-section-title::after, .ge-accordion-section-title::before {
+    top: 1.37em;
+    position: absolute;
+    content: '';
+}
+.ge-accordion-section-title::before {
+    height: 0.8em;
+    width: 2px;
+    right: 0.4em;
+    margin-right: -1px;
+    margin-top:-0.4em;
+ }
+.ge-accordion-section-title::after {
+    width: 0.8em;
+    height: 2px;
+    right: 0;
+    margin-top: -1px;
+}
+.ge-accordion-section-title.active::before {
+    transition: all 0.3s ease;
+    height: 0;
+    margin-top: 0;
+}
 .ge-accordion-section-content {
   display: none;
 }
@@ -33,6 +54,4 @@
 
 .ge-accordion-section-title.active {
   border-bottom: none;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect y="12" width="26" height="2" style="fill:#1b1b1c"/></svg>') no-repeat right .76em;
-  background-size: 1.1em 1.1em;
 }
