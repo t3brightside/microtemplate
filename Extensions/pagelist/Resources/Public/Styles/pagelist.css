@@ -30,5 +30,7 @@
 
 .ge-section .f3-widget-paginator {
     max-width: 100%;
-    padding-top: 2.5em;
+}
+.ge-section .f3-widget-paginator li {
+    margin-top: 2.5em;
 }
