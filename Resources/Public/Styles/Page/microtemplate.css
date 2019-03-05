@@ -558,12 +558,14 @@ form>.form-group>label, form>.form-group>.input>label {
 input, select, textarea, button {
     font-family: sans-serif;
 }
+
 input, textarea, select {
     border: 1px solid #666;
     padding: .3em;
     font-size: 1em;
     border-radius: 0;
 }
+
 input, textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -590,11 +592,12 @@ input[type="radio"] {
 input[type="radio"]:checked, input[type="checkbox"]:checked {
     border-color: #db0500;
 }
+
 input[type="date"] {
     width: auto;
 }
 
-form .error {
+form span.error {
     display: block;
     position: relative;
     padding-left: 1.2em;
@@ -604,16 +607,12 @@ form .error {
     font-size: .9em;
 }
 
-form .error:before {
+form span.error:before {
     content: '↑';
     font-size: 1em;
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.subpage-body {
-    background-color: #fff
 }
 
 .subpage {
