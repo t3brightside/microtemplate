@@ -710,7 +710,7 @@ form span.error:before {
     }
 
     input, select, textarea {
-        width: 100%;
+        max-width: 100%;
     }
 }
 
