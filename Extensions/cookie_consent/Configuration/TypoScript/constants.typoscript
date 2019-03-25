@@ -8,7 +8,7 @@
 # cat=Microtemplate/microtemplatexcc; type=string; label= Dismiss button text
 	microtemplate.ccdismiss =
 # cat=Microtemplate/microtemplatexcc; type=string; label= URL to read more page
-	microtemplate.cchref = /privacy/
+	microtemplate.cchref = /privacy-settings/
 
 	microtemplate.ccactive = 1
 #[globalVar = GP:L = 1]
