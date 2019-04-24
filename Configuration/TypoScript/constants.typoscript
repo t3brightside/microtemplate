@@ -7,8 +7,6 @@
 	microtemplate.cacheControlMaxAge = 3600
 # cat=Microtemplate/microtemplate; type=string; label= jQuery version number
 	microtemplate.jQueryVersion = 3.3.1
-# cat=Microtemplate/microtemplate; type=boolean; label= Enable realURL:RealURL extension has to be installed
-	microtemplate.realurl = 1
 
 # customsubcategory=microtemplatestyles=Microtemplate styles & design
 # cat=Microtemplate/microtemplatestyles; type=string; label=Logo file location: Or add file in home page settings 'Resources' -> 'Media'
