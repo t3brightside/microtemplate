@@ -13,6 +13,10 @@
 # customsubcategory=microtemplatestyles=Microtemplate styles & design
 # cat=Microtemplate/microtemplatestyles; type=string; label=Logo file location: Or add file in home page settings 'Resources' -> 'Media'
 	microtemplate.logoFile = typo3conf/ext/microtemplate/Resources/Public/Images/brightside_logo.svg
+# cat=Microtemplate/microtemplatestyles; type=string; label=Google Fonts link
+	microtemplate.header-font-link = https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500
+# cat=Microtemplate/microtemplatestyles; type=string; label=Name of the header & menu font
+	microtemplate.header-font-name = Fira Sans Extra Condensed
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default text color: Body, headers, main menu
 	microtemplate.text-default = #111111
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default background color

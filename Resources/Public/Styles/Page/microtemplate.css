@@ -1,5 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500";
-
 /*
 	Link, button etc colors and dynamic container widths are set in:
 	Configuration/TypoScript/Setup/styles.ts and can be edited through TS constant editor
@@ -58,7 +56,6 @@ p, ul, ol, table, form {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
     padding-bottom: .21em;
     font-weight: 500;
 }
@@ -440,7 +437,6 @@ tr:last-child td {
 }
 
 .ce-bodytext .headerFont {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-weight: 400;
 }
 

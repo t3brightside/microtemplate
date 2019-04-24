@@ -16,12 +16,16 @@ config {
 page {
 	includeCSS {
 		microtemplate = EXT:microtemplate/Resources/Public/Styles/Page/microtemplate.css
+		googleFonts = {$microtemplate.header-font-link}
+		googleFonts.external = 1
+		googleFonts.media = all
 	}
 	headerData {
 		1001 = TEXT
 		1001.value (
 			<style>
 				body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
+				h1,h2,h3,h4,.ce-bodytext .headerFont,#menu {font-family: {$microtemplate.header-font-name}, sans-serif}
 				.header-bg {background: {$microtemplate.header-bg}}
 				.pageWidth {max-width: {$microtemplate.pageWidth}}
 				.contentWidth {max-width: {$microtemplate.contentWidth}}
