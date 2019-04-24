@@ -25,7 +25,7 @@ page {
 		1001.value (
 			<style>
 				body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
-				body, input, select, textarea, button {font-samily: {$microtemplate.main-font-family}}
+				body, input, select, textarea, button {font-family: {$microtemplate.main-font-family}}
 				h1,h2,h3,h4,.ce-bodytext .headerFont,#menu {font-family: {$microtemplate.header-font-name}, {$microtemplate.main-font-family}}
 				.header-bg {background: {$microtemplate.header-bg}}
 				.pageWidth {max-width: {$microtemplate.pageWidth}}
