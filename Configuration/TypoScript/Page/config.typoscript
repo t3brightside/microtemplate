@@ -1,6 +1,4 @@
 config {
-  metaCharset = utf-8
-  typolinkEnableLinksAcrossDomains = 1
   cache_period = {$microtemplate.cacheControlMaxAge}
   sendCacheHeaders=1
   absRefPrefix = {$microtemplate.domainName}
