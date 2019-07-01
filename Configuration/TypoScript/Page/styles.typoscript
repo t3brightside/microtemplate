@@ -15,7 +15,7 @@ config {
 
 page {
 	includeCSS {
-		microtemplate = EXT:microtemplate/Resources/Public/Styles/Page/microtemplate.css
+		microtemplate = {$microtemplate.mainCSS}
 		googleFonts = {$microtemplate.google-font-link}
 		googleFonts.external = 1
 		googleFonts.media = all
@@ -55,6 +55,10 @@ page {
 		)
 	}
 }
+["{$microtemplate.additionalCSS}" != "0"]
+	page.includeCSS.additionalCSS = {$microtemplate.additionalCSS}
+[END]
+
 ["{$microtemplate.ge-section-angeled-edges}" == "1"] && [page["backend_layout"] == "pagets__home"]
 	page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
 [END]

@@ -9,6 +9,11 @@
 	microtemplate.jQueryVersion = 3.3.1
 
 # customsubcategory=microtemplatestyles=Microtemplate styles & design
+# cat=Microtemplate/microtemplatestyles; type=string; label=Main CSS file
+	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Styles/Page/microtemplate.css
+# cat=Microtemplate/microtemplatestyles; type=string; label=Additional CSS file
+	microtemplate.additionalCSS = 
+
 # cat=Microtemplate/microtemplatestyles; type=string; label=Logo file location: Or add file in home page settings 'Resources' -> 'Media'
 	microtemplate.logoFile = typo3conf/ext/microtemplate/Resources/Public/Images/brightside_logo.svg
 # cat=Microtemplate/microtemplatestyles; type=string; label=Google Fonts link
