@@ -12,9 +12,9 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label=Logo file location: Or add file in home page settings 'Resources' -> 'Media'
 	microtemplate.logoFile = typo3conf/ext/microtemplate/Resources/Public/Images/brightside_logo.svg
 # cat=Microtemplate/microtemplatestyles; type=string; label=Google Fonts link
-	microtemplate.header-font-link = https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500
+	microtemplate.google-font-link = https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500
 # cat=Microtemplate/microtemplatestyles; type=string; label=Name of the header & menu font
-	microtemplate.header-font-name = Fira Sans Extra Condensed
+	microtemplate.header-font-family = Fira Sans Extra Condensed
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main font family
 	microtemplate.main-font-family = sans-serif
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default text color: Body, headers, main menu
@@ -61,6 +61,10 @@
 [page["backend_layout"] == "pagets__home"]
 	styles.content.defaultHeaderType = 1
 [END]
+
+# Template
+	microtemplate.partialRootPath = EXT:microtemplate/Resources/Private/Partials/
+	microtemplate.templateRootPath = EXT:microtemplate/Resources/Private/Templates/
 
 # Extensions configuration
 	pagelist.partialRootPaths = EXT:microtemplate/Extensions/pagelist/Resources/Private/Partials/

@@ -16,7 +16,7 @@ config {
 page {
 	includeCSS {
 		microtemplate = EXT:microtemplate/Resources/Public/Styles/Page/microtemplate.css
-		googleFonts = {$microtemplate.header-font-link}
+		googleFonts = {$microtemplate.google-font-link}
 		googleFonts.external = 1
 		googleFonts.media = all
 	}
@@ -26,7 +26,7 @@ page {
 			<style>
 				body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 				body, input, select, textarea, button {font-family: {$microtemplate.main-font-family}}
-				h1,h2,h3,h4,.ce-bodytext .headerFont,#menu {font-family: {$microtemplate.header-font-name}, {$microtemplate.main-font-family}}
+				h1,h2,h3,h4,.ce-bodytext .headerFont,#menu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
 				.header-bg {background: {$microtemplate.header-bg}}
 				.pageWidth {max-width: {$microtemplate.pageWidth}}
 				.contentWidth {max-width: {$microtemplate.contentWidth}}

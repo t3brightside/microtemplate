@@ -1,6 +1,7 @@
 config {
   cache_period = {$microtemplate.cacheControlMaxAge}
-  sendCacheHeaders=1
+  sendCacheHeaders=1õõ
+
   absRefPrefix = {$microtemplate.domainName}
   baseURL = {$microtemplate.domainName}
   spamProtectEmailAddresses = -1
@@ -35,12 +36,14 @@ page {
 	typeNum = 0
 	10 = FLUIDTEMPLATE
 	10 {
-		partialRootPath = EXT:microtemplate/Resources/Private/Partials/
-		layoutRootPath = EXT:microtemplate/Resources/Private/Layouts/
-		templateRootPaths = EXT:microtemplate/Resources/Private/Templates/
+        partialRootPaths.10 = EXT:microtemplate/Resources/Private/Partials/
+        partialRootPaths.20 = {$microtemplate.partialRootPath}
 
-    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-    dataProcessing.10.references.fieldName = media
+        templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/
+        templateRootPaths.20 = {$microtemplate.templateRootPath}
+
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        dataProcessing.10.references.fieldName = media
 		variables {
 			logoFile = TEXT
 			logoFile.value = {$microtemplate.logoFile}
@@ -70,24 +73,22 @@ page {
 					10.stdWrap.wrap = |
 				}
 			}
-		#	contentFooter < .contentDefault
-		#	contentFooter.20.select.where = colPos = 6
-		#	contentFooter.20.slide = -1
 		}
-    file.stdWrap.cObject = CASE
-    file.stdWrap.cObject {
-      key.data = levelfield:-1, backend_layout_next_level, slide
-      key.override.field = backend_layout
-      default = TEXT
-      default.value = EXT:microtemplate/Resources/Private/Templates/Home.html
-      pagets__home = TEXT
-      pagets__home.value = EXT:microtemplate/Resources/Private/Templates/Home.html
-      pagets__sub = TEXT
-      pagets__sub.value = EXT:microtemplate/Resources/Private/Templates/Sub.html
-      pagets__article = TEXT
-      pagets__article.value = EXT:microtemplate/Resources/Private/Templates/Article.html
+        templateName.stdWrap.cObject = CASE
+        templateName.stdWrap.cObject {
+            key.data = pagelayout
+            key.data = levelfield:-1, backend_layout_next_level, slide
+            key.override.field = backend_layout
+            default = TEXT
+            default.value = Home
+            pagets__home = TEXT
+            pagets__home.value = Home
+            pagets__sub = TEXT
+            pagets__sub.value = Sub
+            pagets__article = TEXT
+            pagets__article.value = Article
+        }
     }
-  }
 }
 
 ["{$microtemplate.personnelIsLoaded}" == "1"]
