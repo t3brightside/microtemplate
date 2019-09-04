@@ -543,7 +543,8 @@ label {
     float: left;
 }
 
-form>.form-group>label, form>.form-group>.input>label {
+form>.form-group>label {
+    display: none;
     font-weight: bold;
     padding-bottom: 0.2em;
 }
@@ -566,7 +567,9 @@ input, textarea {
 textarea {
     height: 8em;
 }
-
+form input.error, form select.error, form textarea.error {
+    background-color: #ffe2e2;
+}
 input[type="checkbox"] {
     width: auto;
     margin-right: .5em;
