@@ -5,13 +5,14 @@
 				<div class="header-bg"></div>
 				<div class="pageWidth">
 					<div class="contentWidth">
-							<a href="#cTop" aria-label="scroll to top" title="{data.title}">
-								<f:if condition="{files.0}">
-									<f:then><img src="{files.0.publicUrl}" id="logo" alt="{data.title}" /></f:then>
-									<f:else><img src="{logoFile}" id="logo" alt="{data.title}" /></f:else>
-								</f:if>
-							</a>
-							<nav><f:cObject typoscriptObjectPath="mainMenu" /></nav>
+						<a href="#cTop" aria-label="scroll to top" title="{data.title}">
+							<f:if condition="{files.0}">
+								<f:then><img src="{files.0.publicUrl}" id="logo" alt="{data.title}" /></f:then>
+								<f:else><img src="{logoFile}" id="logo" alt="{data.title}" /></f:else>
+							</f:if>
+						</a>
+						<f:render partial="SectionMenu" arguments="{_all}" />
+						<f:render partial="LanguageMenu" arguments="{_all}" />
 					</div>
 				</div>
 			</div>

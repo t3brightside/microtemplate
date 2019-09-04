@@ -19,6 +19,7 @@ page.includeJSFooterlibs.all = EXT:microtemplate/Resources/Public/JavaScript/Pag
 # applied to home page only
 [page["backend_layout"] == "pagets__home"]
 	page.includeJSFooterlibs.home = EXT:microtemplate/Resources/Public/JavaScript/Page/home.js
+	page.includeJSFooterlibs.sectionMenu = EXT:microtemplate/Resources/Public/JavaScript/Page/section_menu.js
 [END]
 
 ["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
