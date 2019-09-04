@@ -58,7 +58,7 @@
   transition: all .3s ease-in-out;
 }
 
-#menu {
+#sectionmenu {
   font-weight: 500;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -68,30 +68,30 @@
   box-sizing: border-box;
 }
 
-#menu ul {
+#sectionmenu ul {
   padding: 0;
   margin: 0;
   width: auto;
 }
 
-#menu li {
+#sectionmenu li {
   display: inline-block;
   list-style: none;
-  margin-left: 3.556em;
+  margin-left: 3em;
 }
 
-#menu a {
+#sectionmenu a {
   display: inline-block;
   padding: .9em 0;
   line-height: 1em;
   transition: color .4s;
 }
 
-#menu a:hover, #menu .active a {
+#sectionmenu a:hover, #sectionmenu .active a {
   text-decoration: none;
 }
 
-#header.scrolled #menu {
+#header.scrolled #sectionmenu {
   font-weight: 400;
   letter-spacing: .1px;
 }
@@ -111,25 +111,25 @@
     margin-right: -1em;
     margin-top: -.26em;
   }
-  #menu {
+  #sectionmenu {
     display: none;
     text-align: center;
     width: 100%;
     padding-top: 3em;
     padding-bottom: 2em;
   }
-  #menu ul {
+  #sectionmenu ul {
     width: 100%;
     padding: 0;
     margin: 0;
     max-width: 100%;
   }
-  #menu ul li {
+  #sectionmenu ul li {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  #menu ul li a {
+  #sectionmenu ul li a {
     display: block;
     width: 100%;
     box-sizing: border-box;

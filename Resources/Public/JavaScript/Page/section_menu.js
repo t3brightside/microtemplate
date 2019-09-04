@@ -4,15 +4,15 @@ $(document).ready(function() {
   $(window).resize(function() {
     if ($(window).width() != lastWidth) {
       if ($(window).width() < 1100) {
-        $('#menu').removeClass('mobile');
-        $('#menu').hide();
+        $('#sectionmenu').removeClass('mobile');
+        $('#sectionmenu').hide();
         $('.hmbrgr').removeClass('open');
         if (!$('#header').hasClass("scrolled")) {
           $(".header-bg").removeClass("show");
         }
       }
       if ($(window).width() > 1100) {
-        $('#menu').show();
+        $('#sectionmenu').show();
         if (!$('#header').hasClass("scrolled")) {
           $(".header-bg").removeClass("show");
         }
@@ -22,8 +22,8 @@ $(document).ready(function() {
   });
   // open-close mobile menu with the hamburger
   $('.hmbrgr').click(function() {
-    $('#menu').slideToggle();
-    $('#menu').toggleClass('mobile');
+    $('#sectionmenu').slideToggle();
+    $('#sectionmenu').toggleClass('mobile');
     $('.hmbrgr').toggleClass('open');
     $('.header-bg').addClass('show');
     if (!$('#header').hasClass("scrolled")) {
@@ -33,22 +33,22 @@ $(document).ready(function() {
     }
   });
   // close menu if clicking menu links
-  $('#menu a').on('click', function(e) {
-    $('#menu.mobile').slideUp();
+  $('#sectionmenu a').on('click', function(e) {
+    $('#sectionmenu.mobile').slideUp();
     $('.hmbrgr').removeClass('open');
-    $('#menu').removeClass('mobile');
+    $('#sectionmenu').removeClass('mobile');
   });
   // close menu if clicking logo
   $('#logo').on('click', function(e) {
-    $('#menu.mobile').slideUp();
-    $('#menu').removeClass('mobile');
+    $('#sectionmenu.mobile').slideUp();
+    $('#sectionmenu').removeClass('mobile');
     $('.hmbrgr').removeClass('open');
     $(".header-bg").removeClass("show");
   });
   // close menu if clicking outside menu container
   $('#content, #footer').on('click', function(e) {
-    $('#menu.mobile').slideUp();
-    $('#menu').removeClass('mobile');
+    $('#sectionmenu.mobile').slideUp();
+    $('#sectionmenu').removeClass('mobile');
     $('.hmbrgr').removeClass('open');
     if (!$('#header').hasClass("scrolled")) {
       $(".header-bg").removeClass("show");
@@ -58,7 +58,7 @@ $(document).ready(function() {
 // set active menu item by scrolling to a section
 $(window).ready(function(jQuery) {
   $(window).scrollTop($(window).scrollTop() + 1);
-  var topMenu = jQuery("#menu"),
+  var topMenu = jQuery("#sectionmenu"),
     offset = 70,
     menuItems = topMenu.find('a[href*="#"]'),
     scrollItems = menuItems.map(function() {

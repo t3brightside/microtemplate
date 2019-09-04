@@ -32,15 +32,15 @@ page {
 				body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 				body, input, select, textarea, button {font-family: {$microtemplate.main-font-family}}
 
-				#menu a {color: {$microtemplate.text-default}}
+				#sectionmenu a {color: {$microtemplate.text-default}}
 				.hmbrgr i {background: {$microtemplate.text-default}}
 
-				h1,h2,h3,h4,.ce-bodytext .headerFont,#menu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
+				h1,h2,h3,h4,.ce-bodytext .headerFont,#sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
 				.header-bg {background: {$microtemplate.header-bg}}
 				.pageWidth {max-width: {$microtemplate.pageWidth}}
 				.contentWidth {max-width: {$microtemplate.contentWidth}}
 				.subpageContentWidth {max-width: {$microtemplate.subpageContentWidth}}
-				a, a:visited, #menu a:hover, #menu .active a {color: {$microtemplate.accentColor}}
+				a, a:visited, #sectionmenu a:hover, #sectionmenu .active a {color: {$microtemplate.accentColor}}
 				.btn:visited, .btn, .closelink:hover i, input[type="radio"]:checked, input[type="checkbox"]:checked {background-color: {$microtemplate.accentColor}}
 				.btn:visited, .btn {border-color: {$microtemplate.accentColor}}
 				.btn:hover {color: {$microtemplate.accentColor}}
