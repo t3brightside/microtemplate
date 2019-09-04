@@ -532,6 +532,9 @@ ul.ce-uploads li .ce-uploads-filesize {
 }
 
 /* ext:forms */
+form {
+    margin-top: 2em;
+}
 form>.form-group {
     margin-bottom: 1.5em;
     float: left;

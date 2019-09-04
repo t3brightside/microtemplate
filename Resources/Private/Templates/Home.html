@@ -11,8 +11,8 @@
 								<f:else><img src="{logoFile}" id="logo" alt="{data.title}" /></f:else>
 							</f:if>
 						</a>
-						<f:render partial="SectionMenu" arguments="{_all}" />
-						<f:render partial="LanguageMenu" arguments="{_all}" />
+						<f:if condition="{sectionMenu}"><f:render partial="SectionMenu" arguments="{_all}" /></f:if>
+						<f:if condition="{languageMenu}"><f:render partial="LanguageMenu" arguments="{_all}" /></f:if>
 					</div>
 				</div>
 			</div>
@@ -21,14 +21,14 @@
 			<div id="content">
 				<div class="pageWidth">
 					<f:format.raw>{contentDefault}</f:format.raw>
-		    </div>
+		    	</div>
 			</div>
 		</main>
 		<footer>
 			<div id="footer">
 				<div class="pageWidth">
 					<f:format.raw>{contentFooter}</f:format.raw>
-		    </div>
+		    	</div>
 			</div>
 		</footer>
 	</div>
