@@ -1,0 +1,56 @@
+#languagemenu {
+  float: left;
+  font-size: 0.8em;
+  margin-left: 3em;
+  margin-top: 0.68em;
+  position: relative;
+}
+#languagemenu::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #555 transparent transparent transparent;
+  z-index: 99;
+  top: 50%;
+  right: -1.1em;
+  margin-top: -3px;
+  -webkit-transform:rotate(360deg);
+}
+#languagemenu ul {
+  list-style: none;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s;
+  position: absolute;
+  margin: 0;
+  padding-top: 1.5em;
+  top: 0;
+  left: -1.15em;
+  overflow: hidden;
+}
+#languagemenu:hover ul, #languagemenu:focus-within ul {
+  height: auto;
+  opacity: 1;
+}
+#languagemenu li a, #languagemenu li.text-muted {
+  background: #fff;
+  display: block;
+  line-height: 1em;
+  padding: 0.5em 1em;
+}
+#languagemenu li.text-muted {
+  color: #999;
+}
+
+#languagemenu svg {
+  width: 1.12em;
+  height: 1.12em;
+  display: block;
+}
+
+#languagemenu li a, #languagemenu li a:visited {
+  color: #333;
+}

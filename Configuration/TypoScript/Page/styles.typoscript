@@ -15,6 +15,7 @@ config {
 
 [page["backend_layout"] == "pagets__home"]
 	page.includeCSS.sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/section_menu.css
+	page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/language_menu.css
 [END]
 
 page {
