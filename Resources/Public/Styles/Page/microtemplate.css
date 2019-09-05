@@ -533,30 +533,44 @@ ul.ce-uploads li .ce-uploads-filesize {
 
 /* ext:forms */
 form {
-    margin-top: 2em;
+    margin: auto;
+    margin-top: 4em;
+    max-width: 48em;
 }
-form>.form-group {
-    margin-bottom: 1.5em;
+form>.row {
+    width: 45%;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+form>.actions {
+    width: 100%;
+    float: left;
+}
+form>.actions .btn {
+    margin-top: 0;
+}
+form .form-group {
+    margin-bottom: 2.68em;
+    width: auto;
+    position: relative;
     float: left;
     width: 100%;
 }
-
-label {
-    width: 100%;
-    float: left;
-}
-
-form>.form-group>label {
-    display: none;
-    font-weight: bold;
-    padding-bottom: 0.2em;
+form .form-group label {
+    position: absolute;
+    top: -1.5em;
+    left: 0.5em;
+    width: auto;
 }
 
 input, textarea, select {
     border: 1px solid #666;
-    padding: .3em;
+    padding: 0.7em;
     font-size: 1em;
     border-radius: 0;
+    float: left;
+    width: 100%;
 }
 
 input, textarea {
