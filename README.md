@@ -47,7 +47,7 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 ```
 
 ## Admins
-- Back end language flag, title and other settings can be altered in: _Configuration/TypoScript/PageTS/setup.ts_
+- BE settings can be altered in: _Configuration/TypoScript/PageTS/setup.ts_
 
 ## Recommended
 These extensions are preconfigured and tested in Microtemplate package.
