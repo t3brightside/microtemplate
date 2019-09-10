@@ -46,8 +46,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 p, ul, ol, table, form {
     margin-bottom: 1em;
 }
@@ -298,23 +296,71 @@ tr:last-child td {
 
 .ge-section.has-bg-video {
     background-color: transparent !important;
+    overflow: hidden;
 }
 
 .ge-section .bg-video {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
-.ge-section.fullheight .bg-video {
-    min-height: 100vh;
+.ge-section.bg1 .bg-video {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ge-section.bg2 .bg-video {
+    left: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ge-section.bg3 .bg-video {
+    left: 0;
+    top: 0;
+    transform: none;
+}
+
+.ge-section.bg4 .bg-video {
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.ge-section.bg5 .bg-video {
+    top: 0;
+    left: auto;
+    right: 0;
+    transform: none;
+}
+
+.ge-section.bg6 .bg-video {
+    left: 0;
+    bottom :0;
+    top: auto;
+    transform: none;
+}
+
+.ge-section.bg7 .bg-video {
+    bottom: 0;
+    top: auto;
+    transform: translateX(-50%);
+}
+
+.ge-section.bg8 .bg-video {
+    left: auto;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    transform: none;
 }
 
 .ge-section.vcenter.fullheight .contentWidth {
@@ -537,31 +583,34 @@ form {
     margin-top: 4em;
     max-width: 48em;
 }
+
 form>.row {
     width: 45%;
     float: left;
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
+
 form>.actions {
     width: 100%;
     float: left;
 }
+
 form>.actions .btn {
-    margin-top: 0;
+    padding-top: 0.86em;
+    padding-bottom: 0.86em;
 }
+
 form .form-group {
-    margin-bottom: 2.68em;
+    margin-bottom: 1.24em;
     width: auto;
-    position: relative;
     float: left;
     width: 100%;
 }
+
 form .form-group label {
-    position: absolute;
-    top: -1.5em;
-    left: 0.5em;
     width: auto;
+    float: left;
 }
 
 input, textarea, select {
@@ -584,9 +633,11 @@ input, textarea {
 textarea {
     height: 8em;
 }
+
 form input.error, form select.error, form textarea.error {
     background-color: #ffe2e2;
 }
+
 input[type="checkbox"] {
     width: auto;
     margin-right: .5em;
