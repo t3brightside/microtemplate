@@ -580,7 +580,7 @@ ul.ce-uploads li .ce-uploads-filesize {
 /* ext:forms */
 form {
     margin: auto;
-    margin-top: 4em;
+    margin-top: 2em;
     max-width: 48em;
 }
 
@@ -594,6 +594,7 @@ form>.row {
 form>.actions {
     width: 100%;
     float: left;
+    margin-top: 0.5em;
 }
 
 form>.actions .btn {
