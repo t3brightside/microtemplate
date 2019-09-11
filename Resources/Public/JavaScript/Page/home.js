@@ -5,11 +5,11 @@
 		var scroll = $(window).scrollTop();
 		if (scroll >= 45) {
 			$("#header").addClass("scrolled");
-			$(".header-bg").addClass("show");
+			$("#header").addClass("force-bg");
 		} else {
 			$("#header").removeClass("scrolled");
-			if (!$('#menu').hasClass("mobile")) {
-				$(".header-bg").removeClass("show");
+			if (!$('#menu').hasClass("mobile") && !$('.hmbrgr').hasClass("open")) {
+				$("#header").removeClass("force-bg");
 			}
 		}
 

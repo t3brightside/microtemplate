@@ -36,7 +36,8 @@ page {
 				.hmbrgr i {background: {$microtemplate.text-default}}
 
 				h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
-				.header-bg {background: {$microtemplate.header-bg}}
+				#header.scrolled, #header.force-bg {background-color: {$microtemplate.header-bg}}
+
 				.pageWidth {max-width: {$microtemplate.pageWidth}}
 				.contentWidth {max-width: {$microtemplate.contentWidth}}
 				.subpageContentWidth {max-width: {$microtemplate.subpageContentWidth}}
