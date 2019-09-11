@@ -32,11 +32,13 @@ page {
 				body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 				body, input, select, textarea, button {font-family: {$microtemplate.main-font-family}}
 
-				#sectionmenu a {color: {$microtemplate.text-default}}
+				#sectionmenu a, #languagemenu li a {color: {$microtemplate.text-default}}
 				.hmbrgr i {background: {$microtemplate.text-default}}
+				svg .a, svg .b{stroke:{$microtemplate.text-default} !important;}
+				#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
 
 				h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
-				#header.scrolled, #header.force-bg {background-color: {$microtemplate.header-bg}}
+				#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a {background-color: {$microtemplate.header-bg}}
 
 				.pageWidth {max-width: {$microtemplate.pageWidth}}
 				.contentWidth {max-width: {$microtemplate.contentWidth}}

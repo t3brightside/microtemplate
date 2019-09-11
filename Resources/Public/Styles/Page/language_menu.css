@@ -13,7 +13,7 @@
   height: 0;
   border-style: solid;
   border-width: 6px 4px 0 4px;
-  border-color: #555 transparent transparent transparent;
+
   z-index: 99;
   top: 50%;
   right: -1.1em;
@@ -36,22 +36,17 @@
   height: auto;
   opacity: 1;
 }
-#languagemenu li a, #languagemenu li.text-muted {
-  background: #fff;
+#languagemenu li a {
   display: block;
   line-height: 1em;
-  padding: 0.5em 1em;
+  padding: 0.6em 1em 0.6em 1em;
 }
 #languagemenu li.text-muted {
-  color: #999;
+    display: none;
 }
 
 #languagemenu svg {
   width: 1.12em;
   height: 1.12em;
   display: block;
-}
-
-#languagemenu li a, #languagemenu li a:visited {
-  color: #333;
 }
