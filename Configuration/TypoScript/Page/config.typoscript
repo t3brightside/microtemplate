@@ -52,11 +52,13 @@ page {
             orderBy = sorting
             as = sectionMenu
         }
+
         dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
         dataProcessing.30 {
           languages = auto
           as = languageMenu
         }
+        
 		variables {
 			logoFile = TEXT
 			logoFile.value = {$microtemplate.logoFile}
