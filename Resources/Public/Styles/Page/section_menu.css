@@ -92,7 +92,7 @@
 }
 
 #header.scrolled #sectionmenu {
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: .1px;
 }
 
@@ -115,9 +115,13 @@
     display: none;
     text-align: center;
     width: 100%;
-    padding-top: 3em;
+    padding-top: 1em;
     padding-bottom: 2em;
   }
+   #header.scrolled #sectionmenu {
+       padding-top: 0;
+       font-weight: 500;
+   }
   #sectionmenu ul {
     width: 100%;
     padding: 0;
@@ -133,7 +137,7 @@
     display: block;
     width: 100%;
     box-sizing: border-box;
-    padding: 1.5em;
+    padding: 1.2em;
   }
 }
 
