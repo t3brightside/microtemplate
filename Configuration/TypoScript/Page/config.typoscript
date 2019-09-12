@@ -42,6 +42,8 @@ page {
         templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/
         templateRootPaths.20 = {$microtemplate.templateRootPath}
 
+        dataProcessing.5 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+        dataProcessing.5.as = site
         dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         dataProcessing.10.references.fieldName = media
         dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
@@ -58,13 +60,14 @@ page {
           languages = auto
           as = languageMenu
         }
-        
+
 		variables {
 			logoFile = TEXT
 			logoFile.value = {$microtemplate.logoFile}
 
-			rootPageId = TEXT
-			rootPageId.value = {$microtemplate.rootPageId}
+
+
+
 
 			contentDefault = COA
 			contentDefault {
