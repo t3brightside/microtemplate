@@ -37,7 +37,7 @@ page {
 				svg .a, svg .b{stroke:{$microtemplate.text-default} !important;}
 				#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
 
-				h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
+				h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
 				#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a, #languagemenu.mobile .language-icon {background-color: {$microtemplate.header-bg}}
 
 				.pageWidth {max-width: {$microtemplate.pageWidth}}

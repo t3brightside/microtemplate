@@ -590,8 +590,9 @@ form .form-group {
 }
 
 form .form-group label {
-    width: auto;
+    width: 100%;
     float: left;
+    text-align: left;
 }
 
 input, textarea, select {
@@ -619,15 +620,15 @@ form input.error, form select.error, form textarea.error {
     background-color: #ffe2e2;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
     width: auto;
     margin-right: .5em;
+    padding: 0.5em;
+    margin-top: 0.2em;
 }
 
 input[type="radio"] {
     border-radius: 50%;
-    width: auto;
-    margin-right: .5em;
 }
 
 input[type="radio"]:checked, input[type="checkbox"]:checked {
@@ -637,13 +638,16 @@ input[type="radio"]:checked, input[type="checkbox"]:checked {
 input[type="date"] {
     width: auto;
 }
-
+.inputs-list label {
+    font-size: 0.9em;
+}
 form span.error {
     display: block;
     position: relative;
     padding-left: 1.2em;
     width: 100%;
     float: left;
+    text-align: left;
     color: red;
     font-size: .9em;
 }
