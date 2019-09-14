@@ -638,9 +638,11 @@ input[type="radio"]:checked, input[type="checkbox"]:checked {
 input[type="date"] {
     width: auto;
 }
+
 .inputs-list label {
     font-size: 0.9em;
 }
+
 form span.error {
     display: block;
     position: relative;
@@ -757,6 +759,7 @@ form span.error:before {
     input, select, textarea {
         max-width: 100%;
     }
+
     form>.row {
         width: 100%;
         margin-left: 0;
