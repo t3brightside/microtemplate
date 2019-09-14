@@ -1,7 +1,8 @@
 <a class="hmbrgr" href="javascript:void(0)"><b><i class="f"></i><i class="m"></i><i class="l"></i></b></a>
 <div id="sectionmenu">
 	<nav>
-		<ul>
+
+			<ul<f:if condition="{f:count(subject: sectionMenu)} > 4"> class="two-columns"</f:if>>
 			<f:for each="{sectionMenu}" as="section">
 				<f:if condition="{section.data.header}">
 					<li id="m{section.data.uid}">
