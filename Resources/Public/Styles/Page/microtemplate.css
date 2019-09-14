@@ -757,6 +757,11 @@ form span.error:before {
     input, select, textarea {
         max-width: 100%;
     }
+    form>.row {
+        width: 100%;
+        margin-left: 0;
+        marrgin-right: 0;
+    }
 }
 
 @media screen and (max-width: 520px) {
