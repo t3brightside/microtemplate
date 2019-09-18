@@ -1,7 +1,6 @@
 config {
   cache_period = {$microtemplate.cacheControlMaxAge}
-  sendCacheHeaders=1õõ
-
+  sendCacheHeaders=1
   absRefPrefix = {$microtemplate.domainName}
   baseURL = {$microtemplate.domainName}
   spamProtectEmailAddresses = -1
@@ -57,18 +56,13 @@ page {
 
         dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
         dataProcessing.30 {
-          languages = auto
-          as = languageMenu
+            languages = auto
+            as = languageMenu
         }
 
 		variables {
 			logoFile = TEXT
 			logoFile.value = {$microtemplate.logoFile}
-
-
-
-
-
 			contentDefault = COA
 			contentDefault {
 				10 = LOAD_REGISTER
