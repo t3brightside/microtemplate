@@ -24,7 +24,7 @@ tt_content.gridelements_pi1 {
 								references.fieldName = image
 								renderObj = COA
 								renderObj {
-									# first get the image cropped and scaled
+# first get the image cropped and scaled
 									5 = LOAD_REGISTER
 									5.theImage.cObject = IMG_RESOURCE
 									5.theImage.cObject.file {
@@ -43,7 +43,7 @@ tt_content.gridelements_pi1 {
 										    5 = IMAGE
 										    5.file.import.data = REGISTER:theImage
 
-										    # predefined image effects
+# predefined image effects
 
 										    10 = SCALE
 										    10.params = -fill white -colorize 40%
