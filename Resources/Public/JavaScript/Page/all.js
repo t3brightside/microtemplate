@@ -23,33 +23,4 @@ $(document).ready(function() {
             $(this).removeClass("error")
         }
     });
-
-/* unmute and clear BG video on click */
-    $(".sound").click( function(){
-        if( $(this).siblings('.bg-video').prop('muted') ) {
-            $(this).siblings('.bg-video').prop('muted', false);
-        } else {
-            $(this).siblings('.bg-video').prop('muted', true);
-        }
-        $("#header").fadeToggle();
-        $(this).toggleClass('active');
-        $(this).siblings('.contentWidth, .overlay').fadeToggle();
-    });
 });
-
-/* unmute and clear BG video on scroll down */
-    var position = $(window).scrollTop();
-    jQuery(window).scroll(function() {
-        var scroll = jQuery(window).scrollTop();
-        if ((scroll > position) && (scroll > 245)) {
-            if( $('.sound').hasClass('active'))
-            {
-                $('#header').fadeToggle();
-                $('.sound').siblings('.contentWidth, .overlay').fadeToggle();
-                $('.sound').siblings('.bg-video').prop('muted', true);
-                $('.sound').removeClass('active');
-            }
-        }
-        else { }
-        position = scroll;
-    });
