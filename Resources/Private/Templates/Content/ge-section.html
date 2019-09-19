@@ -24,14 +24,16 @@
 		{f:if(condition: '{sectionBg}', then: 'background: url(/{sectionBg}) no-repeat;')} {f:if(condition: '{sectionBg}', then: 'background-size: cover;')}
 		{f:if(condition: '{data.flexform_bgcolor}', then: 'background-color: {data.flexform_bgcolor};')}
 	">
-	<f:if condition="{data.flexform_bgvideo}">
-		<div class="video-container">
-			<video id="videoid{data.uid}" class="bg-video" playsinline autoplay muted {f:if(condition: '{data.flexform_noloop}', then: '', else: 'loop')}>
-			 <f:for each="{files}" as="file">
-		      <source src="{file.publicUrl}" type="{file.mimetype}">
-		    </f:for>
+	<f:if condition="{files.0.uid}">
+		<button class="sound">Sound</button>
+		<video id="videoid{data.uid}" class="bg-video" playsinline autoplay muted {f:if(condition: '{data.flexform_noloop}', then: '', else: 'loop')}>
+			<f:for each="{files}" as="file">
+	    		<source src="{file.publicUrl}" type="{file.mimetype}">
+	    	</f:for>
 		</video>
-		</div>
+	</f:if>
+	<f:if condition="{data.flexform_overlaycolor}">
+		<div class="overlay" style="background: {data.flexform_overlaycolor}; opacity: {data.flexform_overlayopacity * 0.1}"></div>
 	</f:if>
 	<div class="contentWidth">
 		<section><f:format.raw>{data.tx_gridelements_view_column_101}</f:format.raw></section>

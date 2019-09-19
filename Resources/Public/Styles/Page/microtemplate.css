@@ -278,7 +278,29 @@ tr:last-child td {
     background-color: transparent !important;
     overflow: hidden;
 }
-
+.ge-section.has-bg-video .contentWidth {
+    z-index: 1;
+}
+.ge-section.has-bg-video .sound {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.6em;
+    font-size: 0.6em;
+    line-height: 1em;
+    position: absolute;
+    bottom: 6em;
+    right: 4em;
+    z-index: 3;
+}
+.ge-section .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 .ge-section .bg-video {
     min-width: 100%;
     min-height: 100%;
@@ -288,7 +310,7 @@ tr:last-child td {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 1;
 }
 
 .ge-section.bg1 .bg-video {

@@ -22,37 +22,37 @@
 				</TCEforms>
 			</alignment>
 			<nopadding>
-		    <TCEforms>
-	        <label>No padding</label>
-	        <config>
-	          <type>check</type>
-	        </config>
-		    </TCEforms>
-	    </nopadding>
-	    <fullwidth>
-	      <TCEforms>
-	        <label>Full page width content</label>
-	        <config>
-	          <type>check</type>
-	        </config>
-	      </TCEforms>
-	    </fullwidth>
-	    <fullheight>
-	      <TCEforms>
-	        <label>100% of browser height</label>
-	        <config>
-	          <type>check</type>
-	        </config>
-	      </TCEforms>
-	    </fullheight>
+				<TCEforms>
+					<label>No padding</label>
+					<config>
+						<type>check</type>
+					</config>
+				</TCEforms>
+			</nopadding>
+			<fullwidth>
+				<TCEforms>
+					<label>Full page width content</label>
+					<config>
+						<type>check</type>
+					</config>
+				</TCEforms>
+			</fullwidth>
+			<fullheight>
+				<TCEforms>
+					<label>100% of browser height</label>
+					<config>
+						<type>check</type>
+					</config>
+				</TCEforms>
+			</fullheight>
 			<vcenter>
-	      <TCEforms>
-	        <label>Content vertically centred (works only with the setting above)</label>
-	        <config>
-	          <type>check</type>
-	        </config>
-	      </TCEforms>
-	    </vcenter>
+				<TCEforms>
+					<label>Content vertically centred (works only with the setting above)</label>
+					<config>
+						<type>check</type>
+					</config>
+				</TCEforms>
+			</vcenter>
 			<class type="array">
 				<TCEforms type="array">
 					<config type="array">
@@ -123,62 +123,62 @@
 				</TCEforms>
 			</bgcolor>
 			<image type="array">
-	      <TCEforms  type="array">
-	        <label>Background image</label>
-	        <config type="array">
-	          <type>inline</type>
-            <appearance type="array">
-              <useSortable>TRUE</useSortable>
-              <showAllLocalizationLink>FALSE</showAllLocalizationLink>
-              <showPossibleLocalizationRecords>FALSE</showPossibleLocalizationRecords>
-              <showRemovedLocalizationRecords>FALSE</showRemovedLocalizationRecords>
-              <showSynchronizationLink>FALSE</showSynchronizationLink>
-              <enabledControls type="array">
-                <info>FALSE</info>
-                <new>FALSE</new>
-                <dragdrop>1</dragdrop>
-                <sort>FALSE</sort>
-                <hide>TRUE</hide>
-                <delete>TRUE</delete>
-                <localize>TRUE</localize>
-              </enabledControls>
-              <levelLinksPosition>both</levelLinksPosition>
-              <headerThumbnail type="array">
-                <field>uid_local</field>
-                <height>60c</height>
-                <width>110c</width>
-              </headerThumbnail>
-            </appearance>
-            <behaviour type="array">
-              <localizationMode>select</localizationMode>
-              <localizeChildrenAtParentLocalization>TRUE</localizeChildrenAtParentLocalization>
-            </behaviour>
-            <foreign_table>sys_file_reference</foreign_table>
-            <foreign_field>uid_foreign</foreign_field>
-            <foreign_sortby>sorting_foreign</foreign_sortby>
-            <foreign_table_field>tablenames</foreign_table_field>
-            <foreign_match_fields type="array">
-              <fieldname>image</fieldname>
-            </foreign_match_fields>
-            <foreign_label>uid_local</foreign_label>
-            <foreign_selector>uid_local</foreign_selector>
-            <foreign_selector_fieldTcaOverride type="array">
-              <config type="array">
-                <appearance type="array">
-                  <elementBrowserAllowed>gif,jpg,jpeg,tif,tiff,bmp,png</elementBrowserAllowed>
-                  <elementBrowserType>file</elementBrowserType>
-                </appearance>
-              </config>
-            </foreign_selector_fieldTcaOverride>
-            <foreign_types type="array">
-              <numIndex index="2" type="array">
-                <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>
-              </numIndex>
-            </foreign_types>
-	        </config>
-	      </TCEforms>
-	    </image>
-	    <bgimgeffect type="array">
+				<TCEforms type="array">
+					<label>Background image</label>
+					<config type="array">
+						<type>inline</type>
+						<appearance type="array">
+							<useSortable>TRUE</useSortable>
+							<showAllLocalizationLink>FALSE</showAllLocalizationLink>
+							<showPossibleLocalizationRecords>FALSE</showPossibleLocalizationRecords>
+							<showRemovedLocalizationRecords>FALSE</showRemovedLocalizationRecords>
+							<showSynchronizationLink>FALSE</showSynchronizationLink>
+							<enabledControls type="array">
+								<info>FALSE</info>
+								<new>FALSE</new>
+								<dragdrop>1</dragdrop>
+								<sort>FALSE</sort>
+								<hide>TRUE</hide>
+								<delete>TRUE</delete>
+								<localize>TRUE</localize>
+							</enabledControls>
+							<levelLinksPosition>both</levelLinksPosition>
+							<headerThumbnail type="array">
+								<field>uid_local</field>
+								<height>60c</height>
+								<width>110c</width>
+							</headerThumbnail>
+						</appearance>
+						<behaviour type="array">
+							<localizationMode>select</localizationMode>
+							<localizeChildrenAtParentLocalization>TRUE</localizeChildrenAtParentLocalization>
+						</behaviour>
+						<foreign_table>sys_file_reference</foreign_table>
+						<foreign_field>uid_foreign</foreign_field>
+						<foreign_sortby>sorting_foreign</foreign_sortby>
+						<foreign_table_field>tablenames</foreign_table_field>
+						<foreign_match_fields type="array">
+							<fieldname>image</fieldname>
+						</foreign_match_fields>
+						<foreign_label>uid_local</foreign_label>
+						<foreign_selector>uid_local</foreign_selector>
+						<foreign_selector_fieldTcaOverride type="array">
+							<config type="array">
+								<appearance type="array">
+									<elementBrowserAllowed>gif,jpg,jpeg,tif,tiff,bmp,png</elementBrowserAllowed>
+									<elementBrowserType>file</elementBrowserType>
+								</appearance>
+							</config>
+						</foreign_selector_fieldTcaOverride>
+						<foreign_types type="array">
+							<numIndex index="2" type="array">
+								<showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>
+							</numIndex>
+						</foreign_types>
+					</config>
+				</TCEforms>
+			</image>
+			<bgimgeffect type="array">
 				<TCEforms type="array">
 					<label>Image effects</label>
 					<config type="array">
@@ -219,17 +219,18 @@
 				</TCEforms>
 			</bgimagewidth>
 
-	    <bgvideo type="array">
-	      <TCEforms  type="array">
-	        <label>Background video</label>
-	        <config>
+			<bgvideo type="array">
+				<TCEforms type="array">
+					<label>Background video</label>
+					<config>
 						<type>inline</type>
 						<foreign_table>sys_file_reference</foreign_table>
 						<foreign_field>uid_foreign</foreign_field>
 						<foreign_sortby>sorting_foreign</foreign_sortby>
 						<foreign_table_field>tablenames</foreign_table_field>
 						<foreign_match_fields>
-							<fieldname>assets</fieldname> <!-- Name of variable! -->
+							<fieldname>assets</fieldname>
+							<!-- Name of variable! -->
 						</foreign_match_fields>
 						<foreign_label>uid_local</foreign_label>
 						<foreign_selector>uid_local</foreign_selector>
@@ -269,17 +270,17 @@
 							<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
 						</behaviour>
 					</config>
-	      </TCEforms>
-	    </bgvideo>
+				</TCEforms>
+			</bgvideo>
 			<noloop>
-	      <TCEforms>
-	        <label>Disable video loop</label>
-	        <config>
-	          <type>check</type>
-	        </config>
-	      </TCEforms>
-	    </noloop>
-		<bgimgplacement type="array">
+				<TCEforms>
+					<label>Disable video loop</label>
+					<config>
+						<type>check</type>
+					</config>
+				</TCEforms>
+			</noloop>
+			<bgimgplacement type="array">
 				<TCEforms type="array">
 					<label>Background alignment</label>
 					<config type="array">
@@ -325,14 +326,46 @@
 					</config>
 				</TCEforms>
 			</bgimgplacement>
-	    <bgfixed>
-	      <TCEforms>
-	        <label>Fixed background</label>
-	        <config>
-	          <type>check</type>
-	        </config>
-	      </TCEforms>
-	    </bgfixed>
+			<overlaycolor>
+				<TCEforms type="array">
+					<config type="array">
+						<type>input</type>
+						<size>48</size>
+						<eval>trim</eval>
+						<renderType>colorpicker</renderType>
+					</config>
+					<label>Overlay color</label>
+				</TCEforms>
+			</overlaycolor>
+			<overlayopacity>
+				<TCEforms>
+					<label>Overlay opacity</label>
+					<config>
+						<type>input</type>
+						<size>1</size>
+						<default>5</default>
+						<eval>int</eval>
+						<range>
+							<lower>0</lower>
+							<upper>10</upper>
+						</range>
+						<wizards>
+							<slider>
+								<type>slider</type>
+								<step>1</step>
+							</slider>
+						</wizards>
+					</config>
+				</TCEforms>
+			</overlayopacity>
+			<bgfixed>
+				<TCEforms>
+					<label>Fixed background</label>
+					<config>
+						<type>check</type>
+					</config>
+				</TCEforms>
+			</bgfixed>
 		</el>
 	</ROOT>
 </T3DataStructure>

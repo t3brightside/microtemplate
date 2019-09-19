@@ -67,6 +67,16 @@
 			)
 		}
 	}
+	["{$microtemplate.nontransparent-header}" != "0"]
+		page.headerData {
+			1002 = TEXT
+			1002.value (
+				<style>
+					#header {background-color: {$microtemplate.header-bg}
+				</style>
+			)
+		}
+	[END]
 
 	["{$microtemplate.additionalCSS}" != "0"]
 		page.includeCSS.additionalCSS = {$microtemplate.additionalCSS}
@@ -75,7 +85,7 @@
 	["{$microtemplate.ge-section-angeled-edges}" == "1"] && [page["backend_layout"] == "pagets__home"]
 		page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
 	[END]
-	
+
 	["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
 		page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
 	[END]
