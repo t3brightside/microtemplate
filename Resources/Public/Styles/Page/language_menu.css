@@ -58,6 +58,7 @@
     #languagemenu {
         display: none
     }
+
     #languagemenu.mobile svg {
         width: 1.3em;
         height: 1.3em;
@@ -72,6 +73,7 @@
         width: 100%;
         position: relative;
     }
+
     #languagemenu.mobile .language-icon {
         display: block;
         top: -0.68em;
@@ -83,6 +85,7 @@
         padding-right: 1em;
         z-index: 60;
     }
+
     #languagemenu.mobile ul {
         border-top: 1px solid #ddd;
         display: block;
