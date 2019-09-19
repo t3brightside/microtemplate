@@ -32,7 +32,7 @@ $(document).ready(function() {
             $(this).siblings('.bg-video').prop('muted', true);
         }
         $("#header").fadeToggle();
-        $(this).addClass('active');
+        $(this).toggleClass('active');
         $(this).siblings('.contentWidth, .overlay').fadeToggle();
     });
 });
