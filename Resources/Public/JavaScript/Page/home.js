@@ -22,12 +22,13 @@ $(window).scroll(function() {
 	    } else {
 	    	$(this)[0].pause();
 /* bring back hidden menu and content if out of viewport */
-			if( $('.sound').hasClass('active'))
+			if( $(this).parent().hasClass('active'))
             {
                 $('#header').fadeToggle();
-                $('.sound').siblings('.contentWidth, .overlay').fadeToggle();
-                $('.sound').siblings('.bg-video').prop('muted', true);
-                $('.sound').removeClass('active');
+                $(this).parent().children('.contentWidth, .overlay').fadeToggle();
+                $(this).prop('muted', true);
+                $(this).parent().children('.sound').removeClass('active');
+				$(this).parent().removeClass('active');
             }
 	    }
 	});
@@ -36,28 +37,29 @@ $(window).scroll(function() {
 /* hide header and content if sound button is clicked */
 $(document).ready(function() {
 	$(".sound").click( function(){
-        if( $(this).siblings('.bg-video').prop('muted') ) {
-            $(this).siblings('.bg-video').prop('muted', false);
+        if( $(this).next('.bg-video').prop('muted') ) {
+            $(this).next('.bg-video').prop('muted', false);
         } else {
-            $(this).siblings('.bg-video').prop('muted', true);
+            $(this).next('.bg-video').prop('muted', true);
         }
         $("#header").fadeToggle();
         $(this).toggleClass('active');
-        $(this).siblings('.contentWidth, .overlay').fadeToggle();
+		$(this).parent().toggleClass('active');
+        $(this).parent().children('.contentWidth, .overlay').fadeToggle();
     });
  });
 
 /* Keep scroll position after post-back / postback / refresh. */
-(function($) {
-	window.onbeforeunload = function(e) {
-		window.name += ' [' + $(window).scrollTop().toString() + '[' + $(window).scrollLeft().toString();
-	};
-	$.maintainscroll = function() {
-		if (window.name.indexOf('[') > 0) {
-			var parts = window.name.split('[');
-			window.name = $.trim(parts[0]);
-			window.scrollTo(parseInt(parts[parts.length - 1]), parseInt(parts[parts.length - 2]));
-		}
-	};
-	$.maintainscroll();
-})(jQuery);
+	(function($) {
+		window.onbeforeunload = function(e) {
+			window.name += ' [' + $(window).scrollTop().toString() + '[' + $(window).scrollLeft().toString();
+		};
+		$.maintainscroll = function() {
+			if (window.name.indexOf('[') > 0) {
+				var parts = window.name.split('[');
+				window.name = $.trim(parts[0]);
+				window.scrollTo(parseInt(parts[parts.length - 1]), parseInt(parts[parts.length - 2]));
+			}
+		};
+		$.maintainscroll();
+	})(jQuery);
