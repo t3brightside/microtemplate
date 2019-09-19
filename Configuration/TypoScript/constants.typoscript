@@ -1,5 +1,5 @@
 # customsubcategory=microtemplate=Microtemplate setup
-# cat=Microtemplate/microtemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
+# cat=Microtemplate/microtemplate; type=string; label= Root page ID, if root is a sub page
 	microtemplate.rootPageId =
 # cat=Microtemplate/microtemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
 	microtemplate.domainName = /
