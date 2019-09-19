@@ -8,17 +8,17 @@ page {
 		disableCompression = 1
 	}
 	jsFooterInline {
-    10 = TEXT
-    10.value (
-      $('.ce-textpic').each(function() {
-      	$(this).magnificPopup({ 
-      		delegate: 'a.lightbox', // child items selector, by clicking on it popup will open
-      		gallery: {
-      			enabled: true
-      		},
-      		type: 'image'
-      	});
+	    10 = TEXT
+	    10.value (
+			$('.ce-textpic').each(function() {
+				$(this).magnificPopup({
+					delegate: 'a.lightbox', // child items selector, by clicking on it popup will open
+					gallery: {
+						enabled: true
+					},
+					type: 'image'
+				});
 			});
-    )
+	    )
 	}
 }
