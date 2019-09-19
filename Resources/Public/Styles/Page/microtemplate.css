@@ -190,6 +190,8 @@ tr:last-child td {
     margin: auto;
     clear: both;
     padding: 0 3em;
+    position: relative;
+    z-index: 1;
 }
 
 #header, #content, #footer {
@@ -278,9 +280,7 @@ tr:last-child td {
     background-color: transparent !important;
     overflow: hidden;
 }
-.ge-section.has-bg-video .contentWidth {
-    z-index: 1;
-}
+
 .ge-section.has-bg-video .sound {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
