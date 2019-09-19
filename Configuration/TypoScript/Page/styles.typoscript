@@ -21,6 +21,7 @@ config {
 page {
 	includeCSS {
 		microtemplate = {$microtemplate.mainCSS}
+		additionalCSS = {$microtemplate.additionalCSS}
 		googleFonts = {$microtemplate.google-font-link}
 		googleFonts.external = 1
 		googleFonts.media = all
