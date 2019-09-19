@@ -1,5 +1,7 @@
 # customsubcategory=microtemplate=Microtemplate setup
 # cat=Microtemplate/microtemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
+	microtemplate.rootPageId =
+# cat=Microtemplate/microtemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
 	microtemplate.domainName = /
 # cat=Microtemplate/microtemplate; type=int; label= Cache max age in seconds
 	microtemplate.cacheControlMaxAge = 3600

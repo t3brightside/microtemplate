@@ -6,8 +6,6 @@ config {
   spamProtectEmailAddresses = -1
   spamProtectEmailAddresses_atSubst = @
   spamProtectEmailAddresses_lastDotSubst = .
-  sys_language_overlay = hideNonTranslated
-  sys_language_mode = strict
 }
 
 # header data
@@ -61,6 +59,8 @@ page {
         }
 
 		variables {
+            rootPageId = TEXT
+            rootPageId.value = {$microtemplate.rootPageId}
 			logoFile = TEXT
 			logoFile.value = {$microtemplate.logoFile}
 			contentDefault = COA
