@@ -1,11 +1,34 @@
 <div id="languagemenu">
-    <div class="language-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.08 30.09"><defs><style>.a,.b{fill:none;stroke:#111;stroke-miterlimit:10;}.a{stroke-linecap:round;}</style></defs><title>clobe</title><circle class="a" cx="15.04" cy="15.05" r="14.54"/><ellipse class="a" cx="15.04" cy="15.05" rx="7.27" ry="14.55"/><path class="b" d="M3.75,24.4A22.3,22.3,0,0,1,15,21.71a22.44,22.44,0,0,1,11.18,2.62"/><path class="b" d="M26.33,5.69A22.25,22.25,0,0,1,15,8.38,22.46,22.46,0,0,1,3.86,5.76"/><line class="b" x1="0.5" y1="15.05" x2="29.58" y2="15.05"/><line class="b" x1="15.04" y1="0.5" x2="15.04" y2="29.59"/></svg></div>
+    <div class="language-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.08 30.09">
+            <defs>
+                <style>
+                    .a,
+                    .b {
+                        fill: none;
+                        stroke: #111;
+                        stroke-miterlimit: 10;
+                    }
+
+                    .a {
+                        stroke-linecap: round;
+                    }
+                </style>
+            </defs>
+            <title>clobe</title>
+            <circle class="a" cx="15.04" cy="15.05" r="14.54" />
+            <ellipse class="a" cx="15.04" cy="15.05" rx="7.27" ry="14.55" />
+            <path class="b" d="M3.75,24.4A22.3,22.3,0,0,1,15,21.71a22.44,22.44,0,0,1,11.18,2.62" />
+            <path class="b" d="M26.33,5.69A22.25,22.25,0,0,1,15,8.38,22.46,22.46,0,0,1,3.86,5.76" />
+            <line class="b" x1="0.5" y1="15.05" x2="29.58" y2="15.05" />
+            <line class="b" x1="15.04" y1="0.5" x2="15.04" y2="29.59" />
+        </svg></div>
     <ul>
         <f:for each="{languageMenu}" as="item">
             <f:if condition="{item.available}">
                 <li class="{f:if(condition: item.active, then: 'active')}">
                     <a href="{item.link}" hreflang="{item.hreflang}" title="{item.navigationTitle}">
-                       {item.navigationTitle}
+                        {item.navigationTitle}
                     </a>
                 </li>
             </f:if>
