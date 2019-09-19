@@ -293,6 +293,7 @@ tr:last-child td {
     right: 4em;
     z-index: 3;
 }
+
 .ge-section .overlay {
     position: absolute;
     left: 0;
@@ -301,6 +302,7 @@ tr:last-child td {
     height: 100%;
     z-index: 1;
 }
+
 .ge-section .bg-video {
     min-width: 100%;
     min-height: 100%;
