@@ -39,7 +39,7 @@
 # cat=Microtemplate/microtemplatestyles; type=color; label= Header background
 	microtemplate.header-bg = #ffffff
 # cat=Microtemplate/microtemplatestyles; type=boolean; type=color; label= Non transparent header at home page
-	microtemplate.nontransparent-header = 1
+	microtemplate.nontransparent-header = 0
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum home page width (px, em or %)
 	microtemplate.pageWidth = 100%
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum home page content width (px, em or %)
