@@ -1,34 +1,35 @@
-microtemplate_vCal = PAGE
-microtemplate_vCal  {
-  typeNum = 889966123
-  config {
-    disableAllHeaderCode = 1
-    xhtml_cleaning = 0
-    debug = 0
-    disableCharsetHeader = 1
-  }
-	10 = FLUIDTEMPLATE
-	10 {
-		templateName = Vcal
-		templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/
-    templateRootPaths.20 = {$microtemplate.vCal.templateRootPaths}
-    variables {
-      contentVcal = CONTENT
-			contentVcal.table = tt_content
-			contentVcal {
-				select.orderBy = sorting
-				select.where = colPos=0
-				renderObj = COA
-				renderObj {
-			  	10 = TEXT
-					10.stdWrap.field = header
-					10.stdWrap.wrap = <h2>|</h2>
-          10.stdWrap.if.isTrue.field = header
-          20 = TEXT
-					20.stdWrap.field = bodytext
-          20.stdWrap.if.isTrue.field = bodytext
-				}
-			}
+# vCal page type template definitions
+    microtemplate_vCal = PAGE
+    microtemplate_vCal  {
+        typeNum = 889966123
+        config {
+            disableAllHeaderCode = 1
+            xhtml_cleaning = 0
+            debug = 0
+            disableCharsetHeader = 1
+        }
+        10 = FLUIDTEMPLATE
+        10 {
+            templateName = Vcal
+            templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/
+            templateRootPaths.20 = {$microtemplate.vCal.templateRootPaths}
+            variables {
+                contentVcal = CONTENT
+                contentVcal.table = tt_content
+                contentVcal {
+                    select.orderBy = sorting
+                    select.where = colPos=0
+                    renderObj = COA
+                    renderObj {
+                        10 = TEXT
+                        10.stdWrap.field = header
+                        10.stdWrap.wrap = <h2>|</h2>
+                        10.stdWrap.if.isTrue.field = header
+                        20 = TEXT
+                        20.stdWrap.field = bodytext
+                        20.stdWrap.if.isTrue.field = bodytext
+                    }
+                }
+            }
+        }
     }
-	}
-}

@@ -38,11 +38,13 @@ page {
 
         templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/
         templateRootPaths.20 = {$microtemplate.templateRootPath}
-
+# site config
         dataProcessing.5 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
         dataProcessing.5.as = site
+# page media files
         dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         dataProcessing.10.references.fieldName = media
+# main menu
         dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
         dataProcessing.20 {
             table = tt_content
@@ -51,7 +53,7 @@ page {
             orderBy = sorting
             as = sectionMenu
         }
-
+# language menu
         dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
         dataProcessing.30 {
             languages = auto
@@ -59,10 +61,13 @@ page {
         }
 
 		variables {
+# needed for if home is not in page tree root level
             rootPageId = TEXT
             rootPageId.value = {$microtemplate.rootPageId}
+# logo file location
 			logoFile = TEXT
 			logoFile.value = {$microtemplate.logoFile}
+# default page content
 			contentDefault = COA
 			contentDefault {
 				10 = LOAD_REGISTER
@@ -71,11 +76,12 @@ page {
 				20.select.where = colPos = 0
 				30 = RESTORE_REGISTER
 			}
+# override automatic page title with content element if available
 			contentHeader = CONTENT
 			contentHeader.table = tt_content
 			contentHeader {
 				select {
-			  	orderBy = sorting
+			  	    orderBy = sorting
 					where = colPos=5
 				}
 				renderObj = COA
@@ -103,6 +109,7 @@ page {
     }
 }
 
+# enable page authors if ext:personnel is loaded
 ["{$microtemplate.personnelIsLoaded}" == "1"]
   page.10.dataProcessing {
     40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor

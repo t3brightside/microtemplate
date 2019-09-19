@@ -1,80 +1,81 @@
-# CSS includes and inline dynamic parametres from template constants
-config {
-	concatenateCss = 1
-	compressCss = 1
-	removePageCss = 1
-}
-
-["{$microtemplate.pagelistIsLoaded}" == "1"]
-	page.includeCSS.pagelistOverride = EXT:microtemplate/Extensions/pagelist/Resources/Public/Styles/pagelist.css
-[END]
-
-["{$microtemplate.personnelIsLoaded}" == "1"]
-	page.includeCSS.personnelOverride = EXT:microtemplate/Extensions/personnel/Resources/Public/Styles/personnel.css
-[END]
-
-[page["backend_layout"] == "pagets__home"]
-	page.includeCSS.sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/section_menu.css
-	page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/language_menu.css
-[END]
-
-page {
-	includeCSS {
-		microtemplate = {$microtemplate.mainCSS}
-		additionalCSS = {$microtemplate.additionalCSS}
-		googleFonts = {$microtemplate.google-font-link}
-		googleFonts.external = 1
-		googleFonts.media = all
+# CSS inclusions and inline dynamic parametres from template constants
+	config {
+		concatenateCss = 1
+		compressCss = 1
+		removePageCss = 1
 	}
-	headerData {
-		1001 = TEXT
-		1001.value (
-			<style>
-				body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
-				body, input, select, textarea, button {font-family: {$microtemplate.main-font-family}}
 
-				#sectionmenu a, #languagemenu li a {color: {$microtemplate.text-default}}
-				.hmbrgr i {background: {$microtemplate.text-default}}
-				svg .a, svg .b{stroke:{$microtemplate.text-default} !important;}
-				#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
+	["{$microtemplate.pagelistIsLoaded}" == "1"]
+		page.includeCSS.pagelistOverride = EXT:microtemplate/Extensions/pagelist/Resources/Public/Styles/pagelist.css
+	[END]
 
-				h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
-				#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a, #languagemenu.mobile .language-icon {background-color: {$microtemplate.header-bg}}
+	["{$microtemplate.personnelIsLoaded}" == "1"]
+		page.includeCSS.personnelOverride = EXT:microtemplate/Extensions/personnel/Resources/Public/Styles/personnel.css
+	[END]
 
-				.pageWidth {max-width: {$microtemplate.pageWidth}}
-				.contentWidth {max-width: {$microtemplate.contentWidth}}
-				.subpageContentWidth {max-width: {$microtemplate.subpageContentWidth}}
-				a, a:visited, #sectionmenu a:hover, #sectionmenu .active a {color: {$microtemplate.accentColor}}
-				.btn:visited, .btn, .closelink:hover i, input[type="radio"]:checked, input[type="checkbox"]:checked {background-color: {$microtemplate.accentColor}}
-				.btn:visited, .btn {border-color: {$microtemplate.accentColor}}
-				.btn:hover {color: {$microtemplate.accentColor}}
-				.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
+	[page["backend_layout"] == "pagets__home"]
+		page.includeCSS.sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/section_menu.css
+		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/language_menu.css
+	[END]
 
-				.ge-section {background-color: {$microtemplate.ge-section.bg-default}}
-				.ge-section.bg-light {background-color: {$microtemplate.ge-section.bg-light}}
-				.ge-section.bg-dark {background-color: {$microtemplate.ge-section.bg-dark}; color: {$microtemplate.text-light}}
-				.ge-section.text-light {color: {$microtemplate.text-light}}
-				.ge-section.text-dark {color: {$microtemplate.text-dark}}
+	page {
+		includeCSS {
+			microtemplate = {$microtemplate.mainCSS}
+			googleFonts = {$microtemplate.google-font-link}
+			googleFonts.external = 1
+			googleFonts.media = all
+		}
+		headerData {
+			1001 = TEXT
+			1001.value (
+				<style>
+					body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
+					body, input, select, textarea, button {font-family: {$microtemplate.main-font-family}}
 
-				a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$microtemplate.text-default}}
-				a.ge-accordion-section-title:hover {color: {$microtemplate.accentColor}}
-				.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$microtemplate.text-default}}
-				.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$microtemplate.accentColor}}
+					#sectionmenu a, #languagemenu li a {color: {$microtemplate.text-default}}
+					.hmbrgr i {background: {$microtemplate.text-default}}
+					svg .a, svg .b{stroke:{$microtemplate.text-default} !important;}
+					#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
 
-				.subpage {color: {$microtemplate.text-default}}
-				.subpage-body {background-color: {$microtemplate.body-background}}
-				.closelink i {background: {$microtemplate.text-default}}
-			</style>
-		)
+					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
+					#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a, #languagemenu.mobile .language-icon {background-color: {$microtemplate.header-bg}}
+
+					.pageWidth {max-width: {$microtemplate.pageWidth}}
+					.contentWidth {max-width: {$microtemplate.contentWidth}}
+					.subpageContentWidth {max-width: {$microtemplate.subpageContentWidth}}
+					a, a:visited, #sectionmenu a:hover, #sectionmenu .active a {color: {$microtemplate.accentColor}}
+					.btn:visited, .btn, .closelink:hover i, input[type="radio"]:checked, input[type="checkbox"]:checked {background-color: {$microtemplate.accentColor}}
+					.btn:visited, .btn {border-color: {$microtemplate.accentColor}}
+					.btn:hover {color: {$microtemplate.accentColor}}
+					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
+
+					.ge-section {background-color: {$microtemplate.ge-section.bg-default}}
+					.ge-section.bg-light {background-color: {$microtemplate.ge-section.bg-light}}
+					.ge-section.bg-dark {background-color: {$microtemplate.ge-section.bg-dark}; color: {$microtemplate.text-light}}
+					.ge-section.text-light {color: {$microtemplate.text-light}}
+					.ge-section.text-dark {color: {$microtemplate.text-dark}}
+
+					a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$microtemplate.text-default}}
+					a.ge-accordion-section-title:hover {color: {$microtemplate.accentColor}}
+					.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$microtemplate.text-default}}
+					.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$microtemplate.accentColor}}
+
+					.subpage {color: {$microtemplate.text-default}}
+					.subpage-body {background-color: {$microtemplate.body-background}}
+					.closelink i {background: {$microtemplate.text-default}}
+				</style>
+			)
+		}
 	}
-}
-["{$microtemplate.additionalCSS}" != "0"]
-	page.includeCSS.additionalCSS = {$microtemplate.additionalCSS}
-[END]
 
-["{$microtemplate.ge-section-angeled-edges}" == "1"] && [page["backend_layout"] == "pagets__home"]
-	page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
-[END]
-["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
-	page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
-[END]
+	["{$microtemplate.additionalCSS}" != "0"]
+		page.includeCSS.additionalCSS = {$microtemplate.additionalCSS}
+	[END]
+
+	["{$microtemplate.ge-section-angeled-edges}" == "1"] && [page["backend_layout"] == "pagets__home"]
+		page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
+	[END]
+	
+	["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
+		page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
+	[END]

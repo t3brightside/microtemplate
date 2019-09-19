@@ -5,23 +5,25 @@ config {
 	removeDefaultJS =
 }
 
-page.includeJSLibs.jQuery = //cdnjs.cloudflare.com/ajax/libs/jquery/{$microtemplate.jQueryVersion}/jquery.min.js
-page.includeJSLibs.jQuery {
-	external = 1
-	async = 0
-	excludeFromConcatenation = 1
-	disableCompression = 1
-}
+# include jQuery from CDN
+	page.includeJSLibs.jQuery = //cdnjs.cloudflare.com/ajax/libs/jquery/{$microtemplate.jQueryVersion}/jquery.min.js
+	page.includeJSLibs.jQuery {
+		external = 1
+		async = 0
+		excludeFromConcatenation = 1
+		disableCompression = 1
+	}
 
-# applied to all pages
-page.includeJSFooterlibs.all = EXT:microtemplate/Resources/Public/JavaScript/Page/all.js
+# include in all pages
+	page.includeJSFooterlibs.all = EXT:microtemplate/Resources/Public/JavaScript/Page/all.js
 
-# applied to home page only
-[page["backend_layout"] == "pagets__home"]
-	page.includeJSFooterlibs.home = EXT:microtemplate/Resources/Public/JavaScript/Page/home.js
-	page.includeJSFooterlibs.menus = EXT:microtemplate/Resources/Public/JavaScript/Page/menus.js
-[END]
+# include in home page only
+	[page["backend_layout"] == "pagets__home"]
+		page.includeJSFooterlibs.home = EXT:microtemplate/Resources/Public/JavaScript/Page/home.js
+		page.includeJSFooterlibs.menus = EXT:microtemplate/Resources/Public/JavaScript/Page/menus.js
+	[END]
 
-["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
-	page.includeJSFooterlibs.scroll-effects = EXT:microtemplate/Resources/Public/JavaScript/Page/scroll-effects.js
-[END]
+# load scroll effects if enabled in constants
+	["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
+		page.includeJSFooterlibs.scroll-effects = EXT:microtemplate/Resources/Public/JavaScript/Page/scroll-effects.js
+	[END]
