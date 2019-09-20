@@ -281,7 +281,7 @@ tr:last-child td {
     overflow: hidden;
 }
 
-.ge-section.has-bg-video .sound {
+.ge-section .videobuttons  {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     text-transform: uppercase;
@@ -289,10 +289,26 @@ tr:last-child td {
     font-size: 0.6em;
     line-height: 1em;
     position: absolute;
-    bottom: 6em;
+    bottom: 4em;
     right: 4em;
     z-index: 3;
+    width: auto;
 }
+.ge-section .sound.hasclearframebutton {
+    right: 7.5em;
+}
+.ge-section .videobuttons svg {
+    height: 1.5em;
+    width: auto;
+}
+.ge-section .sound .on, .ge-section .clearframe .on {
+display: none;
+}
+.ge-section .sound .off, .ge-section .clearframe .off {
+    display: block;
+}
+.ge-section .sound.active .on, .ge-section .clearframe.active .on {display: block}
+.ge-section .sound.active .off, .ge-section .clearframe.active .off {display: none}
 
 .ge-section .overlay {
     position: absolute;

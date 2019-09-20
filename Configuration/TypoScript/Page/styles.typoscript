@@ -34,7 +34,7 @@
 
 					#sectionmenu a, #languagemenu li a {color: {$microtemplate.text-default}}
 					.hmbrgr i {background: {$microtemplate.text-default}}
-					svg .a, svg .b{stroke:{$microtemplate.text-default} !important;}
+					#logo svg .a, #logo svg .b{stroke:{$microtemplate.text-default} !important;}
 					#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
 
 					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
@@ -63,6 +63,21 @@
 					.subpage {color: {$microtemplate.text-default}}
 					.subpage-body {background-color: {$microtemplate.body-background}}
 					.closelink i {background: {$microtemplate.text-default}}
+
+					.videobuttons svg .a, .videobuttons svg .st0, .videobuttons svg rect {fill:{$microtemplate.text-default} !important}
+					.ge-section.text-light .videobuttons  .a, .ge-section.text-light .videobuttons polygon.st0, .ge-section.text-light .videobuttons rect {fill:{$microtemplate.text-light} !important}
+					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark} !important}
+
+				#languagemenu svg	.a,
+					#languagemenu svg .b {
+						fill: none;
+						stroke: {$microtemplate.text-default};
+						stroke-miterlimit: 10;
+					}
+
+					#languagemenu svg .a {
+						stroke-linecap: round;
+					}
 				</style>
 			)
 		}

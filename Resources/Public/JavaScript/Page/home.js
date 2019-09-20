@@ -25,10 +25,27 @@ $(window).scroll(function() {
             if ($(this).parent().hasClass('active')) {
                 $('#header').fadeToggle();
                 $(this).parent().children('.contentWidth, .overlay').fadeToggle();
-                $(this).prop('muted', true);
-                $(this).parent().children('.sound').removeClass('active');
+                $(this).parent().children('.clearframe').removeClass('active');
                 $(this).parent().removeClass('active');
                 $(this).parent().css('height', '');
+            }
+        }
+    });
+    $('.ge-section').each(function() {
+        var top_of_element = $(this).offset().top;
+        var bottom_of_element = $(this).offset().top + $(this).height();
+        var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+        var top_of_screen = $(window).scrollTop();
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+
+        } else {
+            /* bring back hidden menu and content if out of viewport */
+            if ($(this).hasClass('active')) {
+                $('#header').fadeToggle();
+                $(this).children('.contentWidth, .overlay').fadeToggle();
+                $(this).children('.clearframe').removeClass('active');
+                $(this).removeClass('active');
+                $(this).css('height', '');
             }
         }
     });
@@ -37,18 +54,21 @@ $(window).scroll(function() {
 /* hide header and content if sound button is clicked */
 $(document).ready(function() {
     $(".sound").click(function() {
+        if ($(this).parent().children('.bg-video').prop('muted')) {
+            $(this).parent().children('.bg-video').prop('muted', false);
+        } else {
+            $(this).parent().children('.bg-video').prop('muted', true);
+        }
+        $(this).toggleClass('active');
+
+    });
+    $(".clearframe").click(function() {
         var height = $(this).parent().height();
         if (!$(this).parent().hasClass('fullheight')) {
             $(this).parent().height( height );
         }
         if ($(this).parent().css('height') && $(this).parent().hasClass('active')){
             $(this).parent().css('height', '');
-        }
-        // alert(height);
-        if ($(this).next('.bg-video').prop('muted')) {
-            $(this).next('.bg-video').prop('muted', false);
-        } else {
-            $(this).next('.bg-video').prop('muted', true);
         }
         $("#header").fadeToggle();
         $(this).toggleClass('active');

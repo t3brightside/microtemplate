@@ -272,32 +272,22 @@
 					</config>
 				</TCEforms>
 			</bgvideo>
-			<bgvideobutton type="array">
-				<TCEforms type="array">
-					<label>Video buttons</label>
-					<config type="array">
-						<type>select</type>
-						<items type="array">
-							<numIndex index="0" type="array">
-								<numIndex index="0">None</numIndex>
-								<numIndex index="1">0</numIndex>
-							</numIndex>
-							<numIndex index="1" type="array">
-								<numIndex index="0">Sound / hide content</numIndex>
-								<numIndex index="1">1</numIndex>
-							</numIndex>
-							<numIndex index="2" type="array">
-								<numIndex index="0">Sound</numIndex>
-								<numIndex index="1">2</numIndex>
-							</numIndex>
-							<numIndex index="3" type="array">
-								<numIndex index="0">Hide content</numIndex>
-								<numIndex index="1">3</numIndex>
-							</numIndex>
-						</items>
+			<bgvideosound>
+				<TCEforms>
+					<label>Video unmute button</label>
+					<config>
+						<type>check</type>
 					</config>
 				</TCEforms>
-			</bgvideobutton>
+			</bgvideosound>
+			<bgvideoclearframe>
+				<TCEforms>
+					<label>Clear frame content button</label>
+					<config>
+						<type>check</type>
+					</config>
+				</TCEforms>
+			</bgvideoclearframe>
 			<noloop>
 				<TCEforms>
 					<label>Disable video loop</label>
