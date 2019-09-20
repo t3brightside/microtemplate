@@ -28,6 +28,7 @@ $(window).scroll(function() {
                 $(this).prop('muted', true);
                 $(this).parent().children('.sound').removeClass('active');
                 $(this).parent().removeClass('active');
+                $(this).parent().css('height', '');
             }
         }
     });
@@ -36,6 +37,14 @@ $(window).scroll(function() {
 /* hide header and content if sound button is clicked */
 $(document).ready(function() {
     $(".sound").click(function() {
+        var height = $(this).parent().height();
+        if (!$(this).parent().hasClass('fullheight')) {
+            $(this).parent().height( height );
+        }
+        if ($(this).parent().css('height') && $(this).parent().hasClass('active')){
+            $(this).parent().css('height', '');
+        }
+        // alert(height);
         if ($(this).next('.bg-video').prop('muted')) {
             $(this).next('.bg-video').prop('muted', false);
         } else {
