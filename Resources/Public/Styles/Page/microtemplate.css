@@ -815,6 +815,13 @@ form span.error:before {
     .no-br-on-mobile br {
         display: none;
     }
+    .ge-section .videobuttons {
+        right: 2.5em;
+        bottom: 2.5em;
+    }
+    .ge-section .sound.hasclearframebutton {
+        right: 6em;
+    }
 }
 
 @media screen and (max-height: 590px) {
