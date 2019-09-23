@@ -1,3 +1,13 @@
+#languagemenu svg .a,
+#languagemenu svg .b {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+
+#languagemenu svg .a {
+    stroke-linecap: round;
+}
+
 #languagemenu {
     float: left;
     font-size: 0.85em;

@@ -64,20 +64,11 @@
 					.subpage-body {background-color: {$microtemplate.body-background}}
 					.closelink i {background: {$microtemplate.text-default}}
 
-					.videobuttons svg .a, .videobuttons svg .st0, .videobuttons svg rect {fill:{$microtemplate.text-default} !important}
 					.ge-section.text-light .videobuttons  .a, .ge-section.text-light .videobuttons polygon.st0, .ge-section.text-light .videobuttons rect {fill:{$microtemplate.text-light} !important}
 					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark} !important}
 
-				#languagemenu svg	.a,
-					#languagemenu svg .b {
-						fill: none;
-						stroke: {$microtemplate.text-default};
-						stroke-miterlimit: 10;
-					}
-
-					#languagemenu svg .a {
-						stroke-linecap: round;
-					}
+					.videobuttons svg .a, .videobuttons svg .st0, .videobuttons svg rect {fill:{$microtemplate.text-default} !important}
+					#languagemenu svg .a, #languagemenu svg .b {stroke: {$microtemplate.text-default};}
 				</style>
 			)
 		}
