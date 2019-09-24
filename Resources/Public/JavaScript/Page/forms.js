@@ -16,11 +16,12 @@ $(document).ready(function() {
     });
     $("form .btn").click(function() {
         if (!$(this).parents('form')[0].checkValidity()) {
-            $("select, input, textarea").each(function() {
+            $(this).closest('form').find('input,textarea,select').each(function() {
                 if ($(this).is(":invalid")) {
                     $(this).addClass("error")
                 }
-            })
+            });
+            $(this).closest('form').reportValidity();
             return false;
         } else {
             $(this).html("Sending - please wait...");
