@@ -1,6 +1,6 @@
 /*
 	Link, button etc colors and dynamic container widths are set in:
-	Configuration/TypoScript/Setup/styles.ts and can be edited through TS constant editor
+	Configuration/TypoScript/Setup/styles.typoscript and can be edited through TS constant editor
 */
 html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input, textarea, figure, button {
     margin: 0;
