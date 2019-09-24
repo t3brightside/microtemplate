@@ -32,43 +32,59 @@
 					body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 					body, input, select, textarea, button {font-family: {$microtemplate.main-font-family}}
 
-					#sectionmenu a, #languagemenu li a {color: {$microtemplate.text-default}}
-					.hmbrgr i {background: {$microtemplate.text-default}}
-					#logo svg .a, #logo svg .b{stroke:{$microtemplate.text-default} !important;}
-					#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
-
 					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
 					#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a, #languagemenu.mobile .language-icon {background-color: {$microtemplate.header-bg}}
 
+				/* page containers */
 					.pageWidth {max-width: {$microtemplate.pageWidth}}
 					.contentWidth {max-width: {$microtemplate.contentWidth}}
 					.subpageContentWidth {max-width: {$microtemplate.subpageContentWidth}}
+
+				/* links and buttons */
+					#sectionmenu a {color: {$microtemplate.text-default}}
+					.hmbrgr i {background: {$microtemplate.text-default}}
 					a, a:visited, #sectionmenu a:hover, #sectionmenu .active a {color: {$microtemplate.accentColor}}
 					.btn:visited, .btn, .closelink:hover i, input[type="radio"]:checked, input[type="checkbox"]:checked {background-color: {$microtemplate.accentColor}}
 					.btn:visited, .btn {border-color: {$microtemplate.accentColor}}
 					.btn:hover {color: {$microtemplate.accentColor}}
-					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
 
+				/* content sections */
 					.ge-section {background-color: {$microtemplate.ge-section.bg-default}}
 					.ge-section.bg-light {background-color: {$microtemplate.ge-section.bg-light}}
 					.ge-section.bg-dark {background-color: {$microtemplate.ge-section.bg-dark}; color: {$microtemplate.text-light}}
 					.ge-section.text-light {color: {$microtemplate.text-light}}
 					.ge-section.text-dark {color: {$microtemplate.text-dark}}
+					.ge-section .videobuttons svg .a, .ge-section .videobuttons svg .st0, .ge-section .videobuttons svg rect {fill:{$microtemplate.text-default}}
+					.ge-section.text-light .videobuttons  .a, .ge-section.text-light .videobuttons polygon.st0, .ge-section.text-light .videobuttons rect {fill:{$microtemplate.text-light}}
+					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark}}
 
+				/* accordion */
 					a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$microtemplate.text-default}}
 					a.ge-accordion-section-title:hover {color: {$microtemplate.accentColor}}
 					.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$microtemplate.text-default}}
 					.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$microtemplate.accentColor}}
 
+				/* sub pages */
 					.subpage {color: {$microtemplate.text-default}}
 					.subpage-body {background-color: {$microtemplate.body-background}}
 					.closelink i {background: {$microtemplate.text-default}}
 
-					.ge-section.text-light .videobuttons  .a, .ge-section.text-light .videobuttons polygon.st0, .ge-section.text-light .videobuttons rect {fill:{$microtemplate.text-light} !important}
-					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark} !important}
+				/* logo */
+					#logo svg .a, #logo svg .b{stroke:{$microtemplate.text-default} !important;}
 
-					.videobuttons svg .a, .videobuttons svg .st0, .videobuttons svg rect {fill:{$microtemplate.text-default} !important}
+				/* language menu */
+					#languagemenu li a {color: {$microtemplate.text-default}}
+					#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
 					#languagemenu svg .a, #languagemenu svg .b {stroke: {$microtemplate.text-default};}
+
+				/* ext:youtubevideo */
+					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
+
+				/* ext:pagelist styles */
+					.pagelist .info, .pagelist .abstract {color: {$microtemplate.text-default};}
+
+				/* ext:personnel */
+					.personnel svg path {fill: {$microtemplate.text-default} !important}
 				</style>
 			)
 		}

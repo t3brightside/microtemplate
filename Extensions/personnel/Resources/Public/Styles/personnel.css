@@ -7,11 +7,6 @@
   margin-bottom: 0.5em;
 }
 
-.bg-dark .personnel.cards a, .bg-dark .personnel.cards a:visited {
-  font-weight: normal;
-  color: #fff;
-}
-
-.bg-dark .personnel.cards a svg path {
-  fill: #fff;
+.personnel a, .personnel a:visited {
+  font-weight: normal !important;
 }
