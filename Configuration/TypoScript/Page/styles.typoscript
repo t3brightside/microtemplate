@@ -82,9 +82,13 @@
 
 				/* ext:pagelist styles */
 					.pagelist .info, .pagelist .abstract {color: {$microtemplate.text-default};}
+					.pagelist ul.f3-widget-paginator>li>a, .pagelist ul.f3-widget-paginator>li.current {background: {$microtemplate.ge-section.bg-light};}
 
 				/* ext:personnel */
-					.personnel svg path {fill: {$microtemplate.text-default} !important}
+					.personnel svg path {fill: {$microtemplate.text-default}}
+					.ge-section.bg-dark .personnel svg path {fill: {$microtemplate.text-light}}
+					.ge-section.text-light .personnel svg path {fill: {$microtemplate.text-light}}
+					.ge-section.text-dark .personnel svg path {fill: {$microtemplate.text-dark}}
 				</style>
 			)
 		}

@@ -16,6 +16,7 @@ config {
 
 # include in all pages
 	page.includeJSFooterlibs.all = EXT:microtemplate/Resources/Public/JavaScript/Page/all.js
+	page.includeJSFooterlibs.forms = EXT:microtemplate/Resources/Public/JavaScript/Page/forms.js
 
 # include in home page only
 	[page["backend_layout"] == "pagets__home"]
