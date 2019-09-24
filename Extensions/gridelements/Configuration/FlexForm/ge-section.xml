@@ -350,7 +350,7 @@
 						<eval>trim</eval>
 						<renderType>colorpicker</renderType>
 					</config>
-					<label>Overlay color</label>
+					<label>Background overlay color</label>
 				</TCEforms>
 			</overlaycolor>
 			<overlayopacity>
