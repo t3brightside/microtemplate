@@ -160,7 +160,7 @@ tr:last-child td {
     margin-right: .4em;
 }
 
-.btn:hover, .btn:visited:hover {
+.btn:hover, .btn:visited:hover, button.btn:disabled {
     text-decoration: none;
     background-color: transparent;
     cursor: pointer;
