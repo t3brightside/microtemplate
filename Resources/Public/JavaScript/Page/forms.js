@@ -24,7 +24,7 @@ $(document).ready(function() {
             });
         } else {
             $(this).hide();
-            $(this).after( "<b>Sending - please wait...</b>" );
+            $(this).after( "<button disabled class='btn'>Sending - please wait...</button>" );
         }
     });
 });

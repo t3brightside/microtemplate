@@ -45,8 +45,8 @@
 					.hmbrgr i {background: {$microtemplate.text-default}}
 					a, a:visited, #sectionmenu a:hover, #sectionmenu .active a {color: {$microtemplate.accentColor}}
 					.btn:visited, .btn, .closelink:hover i, input[type="radio"]:checked, input[type="checkbox"]:checked {background-color: {$microtemplate.accentColor}}
-					.btn:visited, .btn, button.btn:disabled {border-color: {$microtemplate.accentColor}}
-					.btn:hover {color: {$microtemplate.accentColor}}
+					.btn:visited, .btn, .btn:disabled {border-color: {$microtemplate.accentColor}}
+					.btn:hover, .btn:disabled {color: {$microtemplate.accentColor}}
 
 				/* content sections */
 					.ge-section {background-color: {$microtemplate.ge-section.bg-default}}
