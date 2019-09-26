@@ -13,7 +13,7 @@ config {
 		excludeFromConcatenation = 1
 		disableCompression = 1
 	}
-
+	
 # include in all pages
 	page.includeJSFooterlibs.all = EXT:microtemplate/Resources/Public/JavaScript/Page/all.js
 	page.includeJSFooterlibs.forms = EXT:microtemplate/Resources/Public/JavaScript/Page/forms.js

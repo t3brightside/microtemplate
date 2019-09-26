@@ -1,0 +1,245 @@
+.control-label {
+    margin-bottom: 0.3em;
+}
+
+.input {
+    width: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.helper {
+    font-style: normal;
+}
+
+.help-block {
+    font-size: 0.85em;
+}
+
+div.valid, div.error {
+    position: relative;
+    clear: both;
+    width: auto !important;
+    overflow: visible;
+}
+
+i.validation-icon {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 1px;
+    right: 1em;
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    padding: 0.5em;
+    z-index: 99;
+}
+
+.error i.validation-icon {
+    opacity: 1;
+    transition: all 0.5s;
+    width: 2.2em;
+    right: 0;
+}
+
+.valid i.validation-icon {
+    opacity: 1;
+    transition: width 1s, right 1s, opacity 0.5s;
+    width: 1px;
+    right: 1em;
+}
+
+i.validation-icon svg {
+    display: block;
+    transition: all 0.5s;
+    padding: 0.2em;
+}
+
+form {
+    margin: auto;
+    margin-top: 2em;
+    max-width: 48em;
+}
+
+form>.row {
+    width: 45%;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+form>.actions {
+    width: 100%;
+    float: left;
+    margin-top: 0.5em;
+}
+
+form>.actions .btn {
+    padding-top: 0.86em;
+    padding-bottom: 0.86em;
+}
+
+form .form-group {
+    margin-bottom: 1.9em;
+    width: auto;
+    float: left;
+    width: 100%;
+}
+
+form .form-group .form-group {
+    margin-bottom: 0;
+}
+
+form .form-group label {
+    font-weight: 500;
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+label {
+    position: relative;
+    width: auto;
+}
+
+input, button, textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+}
+
+input, textarea, select {
+    border: 1px solid #666;
+    padding: 0.7em;
+    font-size: 1em;
+    border-radius: 0;
+    float: left;
+    width: 100%;
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    position: relative;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.0) inset;
+    transition: background-color 5000s ease-in-out 0s;
+    box-sizing: border-box;
+}
+.error input, .error textarea, .error select {
+    padding-right: 2.3em;
+}
+select {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPScyNCcgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBmaWxsPScjNDQ0JyBkPSdNNy40MDYgNy44MjhsNC41OTQgNC41OTQgNC41OTQtNC41OTQgMS40MDYgMS40MDYtNiA2LTYtNnonPjwvcGF0aD48L3N2Zz4=");
+    background-position: right 0.5em top 50%;
+    background-repeat: no-repeat;
+    transition: background-position 1s;
+}
+
+select.xlarge {
+    background-image: none;
+}
+
+.error select {
+    background-position: right 1.5em top 50%;
+}
+
+input:checked+.helper::before {
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    line-height: 1em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: .5em;
+    padding: 0.5em;
+    margin-top: 0.2em;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked+.helper::before {
+    content: "✓";
+    left: 0.1em;
+    top: 0.3em;
+}
+
+input[type="radio"]:checked+.helper::before {
+    content: '●';
+    left: 0.24em;
+    top: 0.22em;
+}
+
+.radio label span, .checkbox label span {
+    display: inline-block;
+    font-size: 0.8em;
+    padding-top: 0.08em;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    transform: scale(2);
+    margin-left: -1em;
+    margin-right: 0.5em;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    margin-left: -1em;
+    margin-right: -0.2em;
+    -webkit-appearance: none;
+    color: transparent;
+    appearance: none;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPScyNCcgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBmaWxsPScjNDQ0JyBkPSdNNy40MDYgNy44MjhsNC41OTQgNC41OTQgNC41OTQtNC41OTQgMS40MDYgMS40MDYtNiA2LTYtNnonPjwvcGF0aD48L3N2Zz4=");
+}
+
+
+
+textarea {
+    height: 8.26em;
+}
+
+form span.error {
+    display: block;
+    position: relative;
+    padding-left: 1.2em;
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: red;
+    font-size: .9em;
+}
+
+form span.error:before {
+    content: '↑';
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Custom forms */
+form#contactUs-91 .form-group, form#contactUs-126 .form-group {
+    margin-bottom: 1.12em !important;
+}
+
+@media screen and (max-width: 680px) {
+    form>.row {
+        width: 100%;
+        margin-left: 0;
+        marrgin-right: 0;
+    }
+}

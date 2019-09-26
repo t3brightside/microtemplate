@@ -21,6 +21,7 @@
 	page {
 		includeCSS {
 			microtemplate = {$microtemplate.mainCSS}
+			forms = EXT:microtemplate/Resources/Public/Styles/Page/forms.css
 			googleFonts = {$microtemplate.google-font-link}
 			googleFonts.external = 1
 			googleFonts.media = all
@@ -29,8 +30,8 @@
 			1001 = TEXT
 			1001.value (
 				<style>
-					body {color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
-					body, input, select, textarea, button {font-family: {$microtemplate.main-font-family}}
+					body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
+
 
 					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
 					#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a, #languagemenu.mobile .language-icon {background-color: {$microtemplate.header-bg}}
@@ -44,7 +45,7 @@
 					#sectionmenu a {color: {$microtemplate.text-default}}
 					.hmbrgr i {background: {$microtemplate.text-default}}
 					a, a:visited, #sectionmenu a:hover, #sectionmenu .active a {color: {$microtemplate.accentColor}}
-					.btn:visited, .btn, .closelink:hover i, input[type="radio"]:checked, input[type="checkbox"]:checked {background-color: {$microtemplate.accentColor}}
+					.btn:visited, .btn, .closelink:hover i {background-color: {$microtemplate.accentColor}}
 					.btn:visited, .btn, .btn:disabled {border-color: {$microtemplate.accentColor}}
 					.btn:hover, .btn:disabled {color: {$microtemplate.accentColor}}
 
@@ -77,6 +78,10 @@
 					#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
 					#languagemenu svg .a, #languagemenu svg .b {stroke: {$microtemplate.text-default};}
 
+				/* forms */
+					input, select, textarea {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; border-color: {$microtemplate.text-default}; -webkit-text-fill-color: {$microtemplate.text-default};}
+					i.validation-icon svg path {fill: {$microtemplate.text-default}}
+					
 				/* ext:youtubevideo */
 					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
 

@@ -60,7 +60,6 @@ $(document).ready(function() {
             $(this).parent().children('.bg-video').prop('muted', true);
         }
         $(this).toggleClass('active');
-
     });
     $(".clearframe").click(function() {
         var height = $(this).parent().height();
