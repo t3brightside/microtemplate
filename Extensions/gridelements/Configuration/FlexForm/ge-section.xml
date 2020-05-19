@@ -7,7 +7,7 @@
 				<TCEforms type="array">
 					<label>Content alignment</label>
 					<config type="array">
-						<type>select</type>
+						<type>selectSingle</type>
 						<items type="array">
 							<numIndex index="0" type="array">
 								<numIndex index="0">Default</numIndex>
@@ -67,7 +67,7 @@
 				<TCEforms type="array">
 					<label>Text color</label>
 					<config type="array">
-						<type>select</type>
+						<type>selectSingle</type>
 						<items type="array">
 							<numIndex index="0" type="array">
 								<numIndex index="0">Default</numIndex>
@@ -89,7 +89,7 @@
 				<TCEforms type="array">
 					<label>Background color predefined</label>
 					<config type="array">
-						<type>select</type>
+						<type>selectSingle</type>
 						<items type="array">
 							<numIndex index="0" type="array">
 								<numIndex index="0">Default</numIndex>
@@ -122,67 +122,68 @@
 					<label>Background color (overrides setting above)</label>
 				</TCEforms>
 			</bgcolor>
-			<image type="array">
-				<TCEforms type="array">
-					<label>Background image</label>
-					<config type="array">
-						<type>inline</type>
-						<appearance type="array">
-							<useSortable>TRUE</useSortable>
-							<showAllLocalizationLink>FALSE</showAllLocalizationLink>
-							<showPossibleLocalizationRecords>FALSE</showPossibleLocalizationRecords>
-							<showRemovedLocalizationRecords>FALSE</showRemovedLocalizationRecords>
-							<showSynchronizationLink>FALSE</showSynchronizationLink>
-							<enabledControls type="array">
-								<info>FALSE</info>
-								<new>FALSE</new>
-								<dragdrop>1</dragdrop>
-								<sort>FALSE</sort>
-								<hide>TRUE</hide>
-								<delete>TRUE</delete>
-								<localize>TRUE</localize>
-							</enabledControls>
-							<levelLinksPosition>both</levelLinksPosition>
-							<headerThumbnail type="array">
-								<field>uid_local</field>
-								<height>60c</height>
-								<width>110c</width>
-							</headerThumbnail>
-						</appearance>
-						<behaviour type="array">
+			<image>
+                    <label>Background mage</label>
+                    <config>
+                        <type>inline</type>
+                        <foreign_table>sys_file_reference</foreign_table>
+                        <foreign_field>uid_foreign</foreign_field>
+                        <foreign_sortby>sorting_foreign</foreign_sortby>
+                        <foreign_table_field>tablenames</foreign_table_field>
+                        <foreign_match_fields>
+                            <fieldname>image</fieldname>
+                        </foreign_match_fields>
+                        <foreign_label>uid_local</foreign_label>
+                        <foreign_selector>uid_local</foreign_selector>
+                        <overrideChildTca>
+                            <columns>
+                                <uid_local>
+                                    <config>
+                                        <appearance>
+                                            <elementBrowserType>file</elementBrowserType>
+                                            <elementBrowserAllowed>gif,jpg,jpeg,tif,tiff,bmp,png</elementBrowserAllowed>
+                                        </appearance>
+                                    </config>
+                                </uid_local>
+                            </columns>
+                        </overrideChildTca>
+                        <filter>
+                            <userFunc>TYPO3\CMS\Core\Resource\Filter\FileExtensionFilter->filterInlineChildren</userFunc>
+                            <parameters>
+                                <allowedFileExtensions></allowedFileExtensions>
+                                <disallowedFileExtensions></disallowedFileExtensions>
+                            </parameters>
+                        </filter>
+                        <appearance>
+                            <useSortable>1</useSortable>
+                            <headerThumbnail>
+                                <field>uid_local</field>
+                                <width>45</width>
+                                <height>45c</height>
+                            </headerThumbnail>
+							<showPossibleLocalizationRecords>1</showPossibleLocalizationRecords>
+							<showRemovedLocalizationRecords>1</showRemovedLocalizationRecords>
+							<showSynchronizationLink>1</showSynchronizationLink>
+                            <enabledControls>
+                                <info>1</info>
+                                <new>0</new>
+                                <dragdrop>1</dragdrop>
+                                <sort>0</sort>
+                                <hide>1</hide>
+                                <delete>1</delete>
+                            </enabledControls>
+                        </appearance>
+						<behaviour>
 							<localizationMode>select</localizationMode>
-							<localizeChildrenAtParentLocalization>TRUE</localizeChildrenAtParentLocalization>
+							<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
 						</behaviour>
-						<foreign_table>sys_file_reference</foreign_table>
-						<foreign_field>uid_foreign</foreign_field>
-						<foreign_sortby>sorting_foreign</foreign_sortby>
-						<foreign_table_field>tablenames</foreign_table_field>
-						<foreign_match_fields type="array">
-							<fieldname>image</fieldname>
-						</foreign_match_fields>
-						<foreign_label>uid_local</foreign_label>
-						<foreign_selector>uid_local</foreign_selector>
-						<foreign_selector_fieldTcaOverride type="array">
-							<config type="array">
-								<appearance type="array">
-									<elementBrowserAllowed>gif,jpg,jpeg,tif,tiff,bmp,png</elementBrowserAllowed>
-									<elementBrowserType>file</elementBrowserType>
-								</appearance>
-							</config>
-						</foreign_selector_fieldTcaOverride>
-						<foreign_types type="array">
-							<numIndex index="2" type="array">
-								<showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>
-							</numIndex>
-						</foreign_types>
-					</config>
-				</TCEforms>
-			</image>
+                    </config>
+                </image>
 			<bgimgeffect type="array">
 				<TCEforms type="array">
 					<label>Image effects</label>
 					<config type="array">
-						<type>select</type>
+						<type>selectSingle</type>
 						<items type="array">
 							<numIndex index="0" type="array">
 								<numIndex index="0">None</numIndex>
@@ -218,60 +219,63 @@
 					<label>Image width (px)</label>
 				</TCEforms>
 			</bgimagewidth>
-
-			<bgvideo type="array">
-				<TCEforms type="array">
-					<label>Background video</label>
-					<config>
-						<type>inline</type>
-						<foreign_table>sys_file_reference</foreign_table>
-						<foreign_field>uid_foreign</foreign_field>
-						<foreign_sortby>sorting_foreign</foreign_sortby>
-						<foreign_table_field>tablenames</foreign_table_field>
-						<foreign_match_fields>
-							<fieldname>assets</fieldname>
-							<!-- Name of variable! -->
-						</foreign_match_fields>
-						<foreign_label>uid_local</foreign_label>
-						<foreign_selector>uid_local</foreign_selector>
-						<foreign_selector_fieldTcaOverride>
-							<config>
-								<appearance>
-									<elementBrowserType>file</elementBrowserType>
-									<elementBrowserAllowed>move,mp4,off,webm</elementBrowserAllowed>
-								</appearance>
-							</config>
-						</foreign_selector_fieldTcaOverride>
-						<minitems>0</minitems>
-						<maxitems>6</maxitems>
-						<appearance>
-							<useSortable>1</useSortable>
-							<headerThumbnail>
-								<field>uid_local</field>
-								<width>64</width>
-								<height>64</height>
-							</headerThumbnail>
-							<showPossibleLocalizationRecords>1</showPossibleLocalizationRecords>
-							<showRemovedLocalizationRecords>1</showRemovedLocalizationRecords>
-							<showSynchronizationLink>1</showSynchronizationLink>
-							<enabledControls>
-								<info>0</info>
-								<new>0</new>
-								<dragdrop>0</dragdrop>
-								<sort>1</sort>
-								<hide>1</hide>
-								<delete>1</delete>
-								<localize>1</localize>
-							</enabledControls>
-							<createNewRelationLinkTitle>LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference</createNewRelationLinkTitle>
-						</appearance>
-						<behaviour>
-							<localizationMode>select</localizationMode>
-							<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
-						</behaviour>
-					</config>
-				</TCEforms>
-			</bgvideo>
+			<bgvideo>
+                <label>Background video</label>
+                <config>
+                    <type>inline</type>
+                    <foreign_table>sys_file_reference</foreign_table>
+                    <foreign_field>uid_foreign</foreign_field>
+                    <foreign_sortby>sorting_foreign</foreign_sortby>
+                    <foreign_table_field>tablenames</foreign_table_field>
+                    <foreign_match_fields>
+                        <fieldname>assets</fieldname>
+                    </foreign_match_fields>
+                    <foreign_label>uid_local</foreign_label>
+                    <foreign_selector>uid_local</foreign_selector>
+                    <overrideChildTca>
+                        <columns>
+                            <uid_local>
+                                <config>
+                                    <appearance>
+                                        <elementBrowserType>file</elementBrowserType>
+                                        <elementBrowserAllowed>move,mp4,off,webm</elementBrowserAllowed>
+                                    </appearance>
+                                </config>
+                            </uid_local>
+                        </columns>
+                    </overrideChildTca>
+                    <filter>
+                        <userFunc>TYPO3\CMS\Core\Resource\Filter\FileExtensionFilter->filterInlineChildren</userFunc>
+                        <parameters>
+                            <allowedFileExtensions></allowedFileExtensions>
+                            <disallowedFileExtensions></disallowedFileExtensions>
+                        </parameters>
+                    </filter>
+                    <appearance>
+                        <useSortable>1</useSortable>
+                        <headerThumbnail>
+                            <field>uid_local</field>
+                            <width>45</width>
+                            <height>45c</height>
+                        </headerThumbnail>
+						<showPossibleLocalizationRecords>1</showPossibleLocalizationRecords>
+						<showRemovedLocalizationRecords>1</showRemovedLocalizationRecords>
+						<showSynchronizationLink>1</showSynchronizationLink>
+                        <enabledControls>
+                            <info>1</info>
+                            <new>0</new>
+                            <dragdrop>1</dragdrop>
+                            <sort>0</sort>
+                            <hide>1</hide>
+                            <delete>1</delete>
+                        </enabledControls>
+                    </appearance>
+					<behaviour>
+						<localizationMode>select</localizationMode>
+						<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+					</behaviour>
+                </config>
+            </bgvideo>
 			<bgvideosound>
 				<TCEforms>
 					<label>Video unmute button</label>
@@ -300,7 +304,7 @@
 				<TCEforms type="array">
 					<label>Background alignment</label>
 					<config type="array">
-						<type>select</type>
+						<type>selectSingle</type>
 						<items type="array">
 							<numIndex index="0" type="array">
 								<numIndex index="0">Center Center</numIndex>
