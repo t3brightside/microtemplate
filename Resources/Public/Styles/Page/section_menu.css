@@ -59,8 +59,6 @@
 }
 
 #sectionmenu {
-    font-weight: 500;
-    text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     width: auto;
     float: right;
@@ -68,37 +66,43 @@
     box-sizing: border-box;
 }
 
-#sectionmenu ul {
+#sectionmenu nav ul {
+    font-weight: 500;
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
     width: auto;
 }
 
-#sectionmenu li {
+#sectionmenu nav li {
     display: inline-block;
     list-style: none;
     margin-left: 3em;
 }
 
-#sectionmenu a {
+#sectionmenu nav a {
     display: inline-block;
     padding: .9em 0;
     line-height: 1em;
     transition: color .4s;
 }
 
-#sectionmenu a:hover, #sectionmenu .active a {
+#sectionmenu nav a:hover, #sectionmenu nav .active a {
     text-decoration: none;
 }
 
-#header.scrolled #sectionmenu {
+#header.scrolled #sectionmenu nav {
     font-weight: 400;
     letter-spacing: .1px;
 }
 
+#mobilemenu-content {
+    display: none;
+}
+
 /* mobile menu breakpoint for jQuery is defined in menu TS file, if you change it here you have to change it in TS as well */
 @media screen and (max-width: 1100px) {
-    .hmbrgr {
+    .hmbrgr, #mobilemenu-content {
         display: block;
     }
 
@@ -123,39 +127,49 @@
 
     #header.scrolled #sectionmenu {
         padding-top: 0.5;
+    }
+
+    #header.scrolled #sectionmenu nav {
         font-weight: 500;
     }
 
-    #sectionmenu ul {
+    #sectionmenu nav ul {
         width: 100%;
         padding: 0;
         margin: 0;
         max-width: 100%;
     }
 
-    #sectionmenu ul.two-columns {
+    #sectionmenu nav ul.two-columns {
         columns: 2;
         -webkit-columns: 2;
         -moz-columns: 2;
     }
 
-    #sectionmenu ul li {
+    #sectionmenu nav ul li {
         display: block;
         padding: 0;
         margin: 0;
     }
 
-    #sectionmenu ul.two-columns li {
+    #sectionmenu nav ul.two-columns li {
         -moz-column-break-inside: avoid;
         -webkit-column-break-inside: avoid;
         column-break-inside: avoid;
     }
 
-    #sectionmenu ul li a {
+    #sectionmenu nav ul li a {
         display: block;
         width: 100%;
         box-sizing: border-box;
         padding: 1.2em;
+    }
+    #mobilemenu-content {
+        font-weight: normal;
+    }
+    #mobilemenu-content a {
+        font-weight: normal;
+        font-size: 0.9em;
     }
 }
 

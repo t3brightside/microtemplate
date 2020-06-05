@@ -76,6 +76,7 @@ page {
 				20.select.where = colPos = 0
 				30 = RESTORE_REGISTER
 			}
+
 # override automatic page title with content element if available
 			contentHeader = CONTENT
 			contentHeader.table = tt_content
@@ -109,6 +110,17 @@ page {
     }
 }
 
+# mobile menu content elements
+menucontent = CONTENT
+menucontent {
+   table = tt_content
+   select {
+      uidInList = {$microtemplate.mobilemenu-content-items}
+      pidInList = 0
+      orderBy = sorting
+   }
+   renderObj = < tt_content
+}
 # enable page authors if ext:personnel is loaded
 ["{$microtemplate.personnelIsLoaded}" == "1"]
   page.10.dataProcessing {

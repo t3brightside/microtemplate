@@ -33,7 +33,7 @@
 					body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 
 
-					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
+					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu nav {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
 					#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a, #languagemenu.mobile .language-icon {background-color: {$microtemplate.header-bg}}
 
 				/* page containers */
@@ -81,7 +81,7 @@
 				/* forms */
 					input, select, textarea {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; border-color: {$microtemplate.text-default}; -webkit-text-fill-color: {$microtemplate.text-default};}
 					i.validation-icon svg path {fill: {$microtemplate.text-default}}
-					
+
 				/* ext:youtubevideo */
 					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
 

@@ -11,4 +11,9 @@
 			</f:for>
 		</ul>
 	</nav>
+	<f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
+		<div id="mobilemenu-content">
+			<f:cObject typoscriptObjectPath="menucontent" />
+		</div>
+	</f:if>
 </div>
