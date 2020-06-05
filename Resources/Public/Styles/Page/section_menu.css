@@ -164,9 +164,11 @@
         box-sizing: border-box;
         padding: 1.2em;
     }
+
     #mobilemenu-content {
         font-weight: normal;
     }
+
     #mobilemenu-content a {
         font-weight: normal;
         font-size: 0.9em;
