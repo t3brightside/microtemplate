@@ -170,6 +170,8 @@
     #mobilemenu-content a {
         font-weight: normal;
         font-size: 0.9em;
+        display: inline-block;
+        padding: 0.2em;
     }
 }
 
