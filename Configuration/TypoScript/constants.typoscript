@@ -54,8 +54,8 @@
 	microtemplate.ge-section-angeled-edges = 0
 # cat=Microtemplate/microtemplatestyles; type=boolean; label= Enable content fade in on scrolling
 	microtemplate.scroll-effects = 0
-# cat=Microtemplate/microtemplatestyles; type=string; label= List of content elements UID's shown in mobile menu (contact element etc)
-	microtemplate.mobilemenu-content-items = 0
+# cat=Microtemplate/microtemplatestyles; type=string; label= Mobile menu content page ID (shows elements from this page)
+	microtemplate.mobilemenu-content-page = 0
 
 # cat=Microtemplate/microtemplatestyles; type=int; label= Maximum image width (px)
 	styles.content.textmedia.maxW = 1200

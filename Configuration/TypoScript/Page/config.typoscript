@@ -110,13 +110,12 @@ page {
     }
 }
 
-# mobile menu content elements
+# mobile menu content page
 menucontent = CONTENT
 menucontent {
    table = tt_content
    select {
-      uidInList = {$microtemplate.mobilemenu-content-items}
-      pidInList = 0
+      pidInList = {$microtemplate.mobilemenu-content-page}
       orderBy = sorting
    }
    renderObj = < tt_content
