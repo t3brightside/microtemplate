@@ -1,5 +1,5 @@
 # Microtemplate
-[![Packagist](https://img.shields.io/packagist/v/t3brightside/pagelist.svg?style=flat)](https://packagist.org/packages/t3brightside/microtemplate)
+[![Packagist](https://img.shields.io/packagist/v/t3brightside/microtemplate.svg?style=flat)](https://packagist.org/packages/t3brightside/microtemplate)
 [![Software License](https://img.shields.io/badge/license-GPLv2-brightgreen.svg?style=flat)](LICENSE)
 [![Brightside](https://img.shields.io/badge/by-t3brightside.com-orange.svg?style=flat)](https://t3brightside.com)
 
