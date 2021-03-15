@@ -22,8 +22,13 @@
   "suggest": {
     "t3brightside/advancedtitle": "Page title prefix & suffix",
     "t3brightside/favicon": "Favicon control in page settings",
-	"t3brightside/pagelist": "Page teasers, article lists, cards etc",
+	  "t3brightside/pagelist": "Page teasers, article lists, cards etc",
     "t3brightside/personnel": "Contact lists with vCard support",
     "t3brightside/youtubevideo": "Responsive YouTube videos with cover image"
-	}
+	},
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "microtemplate"
+    }
+  }
 }
