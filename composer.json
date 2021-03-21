@@ -24,7 +24,8 @@
     "t3brightside/favicon": "Favicon control in page settings",
 	  "t3brightside/pagelist": "Page teasers, article lists, cards etc",
     "t3brightside/personnel": "Contact lists with vCard support",
-    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image"
+    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image",
+    "t3brightside/gallerycontent": "Image content gallery with crop ratios"
 	},
   "extra": {
     "typo3/cms": {
