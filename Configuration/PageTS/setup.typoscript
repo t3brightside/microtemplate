@@ -18,6 +18,8 @@
 		  alias.disabled = 0
 		  newUntil.disabled = 1
 		  layout.disabled = 1
+			tx_advancedtitle_prefix.disabled = 1
+			tx_advancedtitle_absolute.disabled = 1
 		}
 		tt_content {
 			CType.removeItems = text, textpic, image, bullets, search

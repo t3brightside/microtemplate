@@ -84,6 +84,8 @@ $(window).ready(function(jQuery) {
         menuItems.parent().removeClass("active");
         if (id) {
             menuItems.parent().end().filter("[href$='#" + id + "']").parent().addClass("active");
+            var text = menuItems.parent().end().filter("[href$='#" + id + "']").text();
+            document.title = text + ' ' + pageTitleSufix;
         }
     });
 
