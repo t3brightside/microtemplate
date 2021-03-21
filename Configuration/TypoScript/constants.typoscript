@@ -54,6 +54,8 @@
 	microtemplate.ge-section-angeled-edges = 1
 # cat=Microtemplate/microtemplatestyles; type=boolean; label= Enable content fade in on scrolling
 	microtemplate.scroll-effects = 1
+# cat=Microtemplate/microtemplatestyles; type=boolean; label= Enable changing page title as scrolling through sections
+	microtemplate.title-change-scroll = 1
 # cat=Microtemplate/microtemplatestyles; type=string; label= Mobile menu content page ID (shows elements from this page)
 	microtemplate.mobilemenu-content-page = 0
 

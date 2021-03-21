@@ -62,11 +62,14 @@ page {
 
 		variables {
 # needed for if home is not in page tree root level
-            rootPageId = TEXT
-            rootPageId.value = {$microtemplate.rootPageId}
+      rootPageId = TEXT
+      rootPageId.value = {$microtemplate.rootPageId}
 # logo file location
 			logoFile = TEXT
 			logoFile.value = {$microtemplate.logoFile}
+# logo file location
+			titleChangeScroll = TEXT
+			titleChangeScroll.value = {$microtemplate.title-change-scroll}
 # default page content
 			contentDefault = COA
 			contentDefault {
