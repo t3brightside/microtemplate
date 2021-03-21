@@ -4,3 +4,4 @@
 * 2.1.1
   - Add ext key to composer file
   - jQuery 3.6.0
+  – ext:gallerycontent lightbox support
