@@ -13,7 +13,7 @@ config {
 		excludeFromConcatenation = 1
 		disableCompression = 1
 	}
-	
+
 # include in all pages
 	page.includeJSFooterlibs.all = EXT:microtemplate/Resources/Public/JavaScript/Page/all.js
 	page.includeJSFooterlibs.forms = EXT:microtemplate/Resources/Public/JavaScript/Page/forms.js
@@ -25,6 +25,6 @@ config {
 	[END]
 
 # load scroll effects if enabled in constants
-	["{$microtemplate.scroll-effects}" == "1"] && [page["backend_layout"] == "pagets__home"]
+	["{$microtemplate.scroll-effects}" == "1"]
 		page.includeJSFooterlibs.scroll-effects = EXT:microtemplate/Resources/Public/JavaScript/Page/scroll-effects.js
 	[END]
