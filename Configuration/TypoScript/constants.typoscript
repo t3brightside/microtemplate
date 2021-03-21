@@ -6,7 +6,7 @@
 # cat=Microtemplate/microtemplate; type=int; label= Cache max age in seconds
 	microtemplate.cacheControlMaxAge = 3600
 # cat=Microtemplate/microtemplate; type=string; label= jQuery version number
-	microtemplate.jQueryVersion = 3.5.1
+	microtemplate.jQueryVersion = 3.6.0
 # customsubcategory=microtemplatestyles=Microtemplate styles & design
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main CSS file
 	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Styles/Page/microtemplate.css
