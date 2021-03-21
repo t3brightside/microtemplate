@@ -6,3 +6,4 @@
   - jQuery 3.6.0
   – ext:gallerycontent lightbox support and recommendation in composer
   – Change page title while scrolling through sections
+  – Fix loading CSS effect files
