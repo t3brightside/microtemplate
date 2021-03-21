@@ -2,10 +2,12 @@
 	<f:then>
 		<script>
 			var pageTitleSufix = "{data.tx_advancedtitle_sufix}";
+			var pageTitle = "{data.title}";
 		</script>
 	</f:then>
 	<f:else>
 		<script>
+			var pageTitle = "{data.title}";
 			var pageTitleSufix = "";
 		</script>
 	</f:else>
@@ -34,7 +36,7 @@
 			<div id="content">
 				<div class="pageWidth">
 					<f:format.raw>{contentDefault}</f:format.raw>
-		    	</div>
+		    </div>
 			</div>
 		</main>
 	</div>
