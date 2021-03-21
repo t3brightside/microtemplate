@@ -5,5 +5,5 @@
   - Add ext key to composer file
   - jQuery 3.6.0
   – ext:gallerycontent lightbox support and recommendation in composer
-  – Change page title while scrolling through sections
+  – Change page title while scrolling through sections, disable in constants
   – Fix loading CSS effect files
