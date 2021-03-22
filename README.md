@@ -56,6 +56,7 @@ It's a plug & play template that works out of the box. It's based on TYPO3 FLUID
 These extensions are preconfigured and tested in Microtemplate package.
 - [personnel](https://extensions.typo3.org/extension/personnel/) – Contact persons information with vCard support
 - [pagelist](https://extensions.typo3.org/extension/pagelist/) – Page teasers, articles, events etc
+- [gallerycontent](https://extensions.typo3.org/extension/gallerycontent) – Gallery with preset crop ratios
 - [youtubevideo](https://extensions.typo3.org/extension/youtubevideo/) – YouTube videos with cover images and cover text
 - [favicon](https://extensions.typo3.org/extension/favicon/) – Favicon extension
 - [advancedtitle](https://extensions.typo3.org/extension/advancedtitle/) – Page title prefix and suffix
@@ -68,4 +69,4 @@ These extensions are preconfigured and tested in Microtemplate package.
 
 ## Development and maintenance
 
-[Brightside OÜ – TYPO3 development and hosting specialised web agency](https://t3brightside.com/) 
+[Brightside OÜ – TYPO3 development and hosting specialised web agency](https://t3brightside.com/)
