@@ -2,7 +2,7 @@
   "name": "t3brightside/microtemplate",
   "description": "TYPO3 CMS template – sectioned one pager with light box like sub pages.",
   "type": "typo3-cms-extension",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "keywords": ["TYPO3 CMS", "Template", "Design", "Fluid"],
   "homepage": "https://microtemplate.t3brightside.com/",
   "license": "GPL-2.0+",
@@ -16,8 +16,9 @@
   ],
   "require": {
     "typo3/cms-core": "^9.5 || ^10.4",
-    "typo3/cms-fluid-styled-content": "^9.5 || ^10.4",
-    "gridelementsteam/gridelements": "^9.3 || ^10.0"
+    "typo3/cms-fluid-styled-content": "^9.5 || ^10.4 || ^11",
+    "gridelementsteam/gridelements": "^9.3 || ^11 || dev-master"
+
   },
   "suggest": {
     "t3brightside/advancedtitle": "Page title prefix & suffix",
