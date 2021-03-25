@@ -7,3 +7,5 @@
   – ext:gallerycontent lightbox support and recommendation in composer
   – Change page title while scrolling through sections, can be disabled in constants
   – Fix loading CSS effect files
+* 2.1.2
+  - TYPO3 11 basic testing
