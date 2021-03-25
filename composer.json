@@ -15,7 +15,7 @@
       }
   ],
   "require": {
-    "typo3/cms-core": "^9.5 || ^10.4",
+    "typo3/cms-core": "^9.5 || ^10.4 || ^11",
     "typo3/cms-fluid-styled-content": "^9.5 || ^10.4 || ^11",
     "gridelementsteam/gridelements": "^9.3 || ^11 || dev-master"
 
