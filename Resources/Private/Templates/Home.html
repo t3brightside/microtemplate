@@ -1,21 +1,3 @@
-<f:if condition="{titleChangeScroll}">
-	<f:if condition="{data.tx_advancedtitle_sufix} || {data.tx_advancedtitle_prefix}">
-		<f:then>
-			<script>
-				var scrollTitleEnabled = 1;
-				var pageTitleSufix = "{data.tx_advancedtitle_sufix}";
-				var pageTitle = "{data.title}";
-			</script>
-		</f:then>
-		<f:else>
-			<script>
-				var scrollTitleEnabled = 1;
-				var pageTitle = "{data.title}";
-				var pageTitleSufix = "";
-			</script>
-		</f:else>
-	</f:if>
-</f:if>
 <div id="cTop">
 	<div id="p{data.uid}">
 		<header>

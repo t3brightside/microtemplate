@@ -37,14 +37,8 @@ $(window).ready(function(jQuery) {
         menuItems.parent().removeClass("active");
         if (id) {
             menuItems.parent().end().filter("[href$='#" + id + "']").parent().addClass("active");
-            if ( scrollTitleEnabled ) {
-              var text = menuItems.parent().end().filter("[href$='#" + id + "']").text();
-              document.title = text + ' ' + pageTitleSufix;
-            }
         } else {
-          if ( scrollTitleEnabled ) {
-            document.title = pageTitle + ' ' + pageTitleSufix;
-          }
+          
         }
     });
 
