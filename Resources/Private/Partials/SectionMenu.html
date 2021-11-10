@@ -1,19 +1,11 @@
-<a class="hmbrgr" href="javascript:void(0)"><b><i class="f"></i><i class="m"></i><i class="l"></i></b></a>
-<div id="sectionmenu">
-	<nav>
-		<ul<f:if condition="{f:count(subject: sectionMenu)} > 4"> class="two-columns"</f:if>>
-			<f:for each="{sectionMenu}" as="section">
-				<f:if condition="{section.data.header}">
-					<li id="m{section.data.uid}">
-						<a href="{section.link}#c{section.data.uid}" title="{section.data.header}">{section.data.header}</a>
-					</li>
-				</f:if>
-			</f:for>
-		</ul>
-	</nav>
-	<f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
-		<div id="mobilemenu-content">
-			<f:cObject typoscriptObjectPath="menucontent" />
-		</div>
-	</f:if>
-</div>
+<nav>
+	<ul id="sectionmenu">
+		<f:for each="{sectionMenu}" as="section">
+			<f:if condition="{section.data.header}">
+				<li id="m{section.data.uid}">
+					<a href="{section.link}#c{section.data.uid}" title="{section.data.header}">{section.data.header}</a>
+				</li>
+			</f:if>
+		</f:for>
+	</ul>
+</nav>

@@ -14,8 +14,8 @@
 	[END]
 
 	[page["backend_layout"] == "pagets__home"]
-		page.includeCSS.sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/section_menu.css
-		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/language_menu.css
+		page.includeCSS.menu = EXT:microtemplate/Resources/Public/Styles/Page/menu.css
+		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languagemenu.css
 	[END]
 
 	page {
@@ -32,8 +32,7 @@
 				<style>
 					body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 
-
-					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #sectionmenu nav {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
+					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
 					#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a, #languagemenu.mobile .language-icon {background-color: {$microtemplate.header-bg}}
 
 				/* page containers */
@@ -42,9 +41,9 @@
 					.subpageContentWidth {max-width: {$microtemplate.subpageContentWidth}}
 
 				/* links and buttons */
-					#sectionmenu a {color: {$microtemplate.text-default}}
+					#menu a {color: {$microtemplate.text-default}}
 					.hmbrgr i {background: {$microtemplate.text-default}}
-					a, a:visited, #sectionmenu a:hover, #sectionmenu .active a {color: {$microtemplate.accentColor}}
+					a, a:visited, #menu a:hover, #menu .active a {color: {$microtemplate.accentColor}}
 					.btn:visited, .btn, .closelink:hover i {background-color: {$microtemplate.accentColor}}
 					.btn:visited, .btn, .btn:disabled {border-color: {$microtemplate.accentColor}}
 					.btn:hover, .btn:disabled {color: {$microtemplate.accentColor}}

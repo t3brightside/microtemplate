@@ -3,725 +3,737 @@
 	Configuration/TypoScript/Setup/styles.typoscript and can be edited through TS constant editor
 */
 html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input, textarea, figure, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 fieldset, img {
-    border: none;
+  border: none;
 }
 
 caption, th {
-    text-align: left;
+  text-align: left;
 }
 
 table {
-    border-spacing: 0;
+  border-spacing: 0;
 }
 
 iframe {
-    border: none;
+  border: none;
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 html {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 body {
-    font-size: 100%;
-    line-height: 1.5em;
-    font-weight: 400;
-    color: #000;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p, ul, ol, table, form {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 h1, h2, h3, h4 {
-    padding-bottom: .21em;
-    font-weight: 500;
+  padding-bottom: .21em;
+  font-weight: 500;
 }
 
 h1 {
-    font-size: 3em;
-    line-height: 1.2em;
-    margin-bottom: .2em;
+  font-size: 3em;
+  line-height: 1.2em;
+  margin-bottom: .2em;
 }
 
 h2 {
-    font-size: 1.7em;
-    line-height: 1.26em;
-    margin-bottom: .2em;
-    margin-top: 1em;
+  font-size: 1.7em;
+  line-height: 1.26em;
+  margin-bottom: .2em;
+  margin-top: 1em;
 }
 
 h3 {
-    font-size: 1.26em;
-    margin-top: 1em;
-    margin-bottom: .2em;
+  font-size: 1.26em;
+  margin-top: 1em;
+  margin-bottom: .2em;
 }
 
 h4 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 h2, h3, h4 {
-    padding-top: .3em;
+  padding-top: .3em;
 }
 
 b, strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 a, a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 ul, ol {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 ul {
-    list-style: disc;
+  list-style: disc;
 }
 
 hr {
-    border: none;
-    background-color: #ddd;
-    color: #ddd;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    line-height: 1em;
-    padding: 0;
-    height: 1px;
+  border: none;
+  background-color: #ddd;
+  color: #ddd;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1em;
+  padding: 0;
+  height: 1px;
 }
 
 table {
-    width: 100%;
-    font-size: .9em;
+  width: 100%;
+  font-size: .9em;
 }
 
 th {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 th, td {
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    padding: .2em;
-    padding-left: .6em;
-    padding-right: .6em;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: .2em;
+  padding-left: .6em;
+  padding-right: .6em;
 }
 
 th:last-child, td:last-child {
-    border-right: none;
-    padding-right: 0;
+  border-right: none;
+  padding-right: 0;
 }
 
 tr:last-child td {
-    border-bottom: none;
-    padding-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 .btn, .btn:visited {
-    font-size: .86em;
-    font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    display: inline-block;
-    text-transform: uppercase;
-    color: #fff;
-    padding: .6em 1.7em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    transition: all .4s ease;
-    border: 2px solid;
-    margin-right: .4em;
+  font-size: .86em;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  padding: .6em 1.7em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all .4s ease;
+  border: 2px solid;
+  margin-right: .4em;
 }
 
 .btn:hover, .btn:visited:hover, button.btn:disabled {
-    text-decoration: none;
-    background-color: transparent;
-    cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .align-center .btn {
-    margin-left: .2em;
-    margin-right: .2em;
+  margin-left: .2em;
+  margin-right: .2em;
 }
 
 .align-right .btn {
-    margin-left: .4em;
-    margin-right: 0;
+  margin-left: .4em;
+  margin-right: 0;
 }
 
 .youtubeVideo {
-    width: 100%;
-    float: left;
+  width: 100%;
+  float: left;
 }
 
 .pageWidth {
-    margin: auto;
-    clear: both;
+  margin: auto;
+  clear: both;
 }
 
 .contentWidth {
-    margin: auto;
-    clear: both;
-    padding: 0 3em;
-    position: relative;
-    z-index: 1;
+  margin: auto;
+  clear: both;
+  padding: 0 3em;
+  position: relative;
+  z-index: 1;
 }
 
 #header, #content, #footer {
-    margin: auto;
+  margin: auto;
 }
 
 #header {
-    transition: all .4s;
-    position: fixed;
-    z-index: 12;
-    width: 100%;
-    padding: 1.333em 0;
-    top: 0;
+  transition: all .2s;
+  position: fixed;
+  z-index: 12;
+  width: 100%;
+  padding: 1.333em 0;
+  top: 0;
 }
 
 #logo {
-    float: left;
-    margin-top: .65em;
-    margin-bottom: 0;
-    height: 1.5em;
-    transition: height .4s;
+  float: left;
+  margin-top: .65em;
+  margin-bottom: 0;
+  height: 1.5em;
+  transition: height .4s;
 }
 
 #header.scrolled #logo {
-    height: 1.2em;
+  height: 1.2em;
 }
 
 #header.scrolled {
-    padding: .2em;
-    padding-top: .36em;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
-}
-
-#header.scrolled #menu {
-    margin-top: -.11em;
+  padding: .2em;
+  padding-top: .36em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
 }
 
 /* gridelements page sections and column layouts */
 .ge-section {
-    padding-top: 7em;
-    padding-bottom: 7em;
-    float: left;
-    width: 100%;
-    background-position: center center !important;
-    background-size: cover !important;
-    position: relative;
+  padding-top: 7em;
+  padding-bottom: 7em;
+  float: left;
+  width: 100%;
+  background-position: center center !important;
+  background-size: cover !important;
+  position: relative;
 }
 
 .ge-section.bg1 {
-    background-position: left center !important;
+  background-position: left center !important;
 }
 
 .ge-section.bg2 {
-    background-position: right center !important;
+  background-position: right center !important;
 }
 
 .ge-section.bg3 {
-    background-position: left top !important;
+  background-position: left top !important;
 }
 
 .ge-section.bg4 {
-    background-position: center top !important;
+  background-position: center top !important;
 }
 
 .ge-section.bg5 {
-    background-position: right top !important;
+  background-position: right top !important;
 }
 
 .ge-section.bg6 {
-    background-position: left bottom !important;
+  background-position: left bottom !important;
 }
 
 .ge-section.bg7 {
-    background-position: center bottom !important;
+  background-position: center bottom !important;
 }
 
 .ge-section.bg8 {
-    background-position: right bottom !important;
+  background-position: right bottom !important;
 }
 
 .ge-section.fixed {
-    background-attachment: fixed !important;
+  background-attachment: fixed !important;
 }
 
 .ge-section.has-bg-video {
-    background-color: transparent !important;
-    overflow: hidden;
+  background-color: transparent !important;
+  overflow: hidden;
 }
 
-.ge-section .videobuttons  {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    text-transform: uppercase;
-    padding: 0.6em;
-    font-size: 0.6em;
-    line-height: 1em;
-    position: absolute;
-    bottom: 4em;
-    right: 4em;
-    z-index: 3;
-    width: auto;
+.ge-section .videobuttons {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.6em;
+  font-size: 0.7em;
+  line-height: 1em;
+  position: absolute;
+  bottom: 3.5em;
+  right: 3.5em;
+  width: auto;
+  z-index: 3;
 }
+
+.ge-section .videobuttons:hover {
+  cursor: pointer;
+}
+
 .ge-section .sound.hasclearframebutton {
-    right: 7.5em;
+  right: 7.5em;
 }
+
 .ge-section .videobuttons svg {
-    height: 1.5em;
-    width: auto;
+  height: 1.5em;
+  width: auto;
 }
+
 .ge-section .sound .on, .ge-section .clearframe .on {
-display: none;
+  display: none;
 }
+
 .ge-section .sound .off, .ge-section .clearframe .off {
-    display: block;
+  display: block;
 }
-.ge-section .sound.active .on, .ge-section .clearframe.active .on {display: block}
-.ge-section .sound.active .off, .ge-section .clearframe.active .off {display: none}
+
+.ge-section .sound.active .on, .ge-section .clearframe.active .on {
+  display: block
+}
+
+.ge-section .sound.active .off, .ge-section .clearframe.active .off {
+  display: none
+}
 
 .ge-section .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .ge-section .bg-video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .ge-section.bg1 .bg-video {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .ge-section.bg2 .bg-video {
-    left: auto;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  left: auto;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .ge-section.bg3 .bg-video {
-    left: 0;
-    top: 0;
-    transform: none;
+  left: 0;
+  top: 0;
+  transform: none;
 }
 
 .ge-section.bg4 .bg-video {
-    top: 0;
-    transform: translateX(-50%);
+  top: 0;
+  transform: translateX(-50%);
 }
 
 .ge-section.bg5 .bg-video {
-    top: 0;
-    left: auto;
-    right: 0;
-    transform: none;
+  top: 0;
+  left: auto;
+  right: 0;
+  transform: none;
 }
 
 .ge-section.bg6 .bg-video {
-    left: 0;
-    bottom: 0;
-    top: auto;
-    transform: none;
+  left: 0;
+  bottom: 0;
+  top: auto;
+  transform: none;
 }
 
 .ge-section.bg7 .bg-video {
-    bottom: 0;
-    top: auto;
-    transform: translateX(-50%);
+  bottom: 0;
+  top: auto;
+  transform: translateX(-50%);
 }
 
 .ge-section.bg8 .bg-video {
-    left: auto;
-    right: 0;
-    bottom: 0;
-    top: auto;
-    transform: none;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  transform: none;
 }
 
 .ge-section.vcenter.fullheight .contentWidth {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .ge-section.nopadding {
-    padding: 0;
+  padding: 0;
 }
 
 .ge-section.fullwidth .contentWidth {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    width: 100% !important;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100% !important;
 }
 
 .ge-section.fullheight {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .ge-section.align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .ge-section.align-center p, .ge-section.align-center ol, .ge-section.align-center ul, .ge-section.align-center {
-    margin: auto;
+  margin: auto;
 }
 
 /* dark and light BG colors are set in template constants */
 .ge-section.bg-dark {
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 .ge-section.bg-black {
-    background-color: #000;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
+  background-color: #000;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 
 .ge-section p, .ge-section ol, .ge-section ul {
-    max-width: 41em;
+  max-width: 41em;
 }
 
 /* custom section classes */
 .ge-section.home h1 {
-    font-size: 5vw;
+  font-size: 5vw;
 }
 
 /* ext:fluid_styled_content */
 .align-right {
-    text-align: right;
+  text-align: right;
 }
 
 .align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .frame {
-    clear: both;
-    float: left;
-    width: 100%;
+  clear: both;
+  float: left;
+  width: 100%;
 }
 
 .frame-space-before-extra-small {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .frame-space-after-extra-small {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .frame-space-before-small {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .frame-space-after-small {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .frame-space-before-medium {
-    margin-top: 3em;
+  margin-top: 3em;
 }
 
 .frame-space-after-medium {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
 
 .frame-space-before-large {
-    margin-top: 4em;
+  margin-top: 4em;
 }
 
 .frame-space-after-large {
-    margin-bottom: 4em;
+  margin-bottom: 4em;
 }
 
 .frame-space-before-extra-large {
-    margin-top: 5em;
+  margin-top: 5em;
 }
 
 .frame-space-after-extra-large {
-    margin-top: 5em;
+  margin-top: 5em;
 }
 
 .ce-bodytext a {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .ce-bodytext .blueText {
-    color: #000e9b;
-    font-weight: 100;
+  color: #000e9b;
+  font-weight: 100;
 }
 
 .ce-bodytext .headerFont {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .ce-gallery {
-    display: table;
+  display: table;
 }
 
 .ce-gallery .ce-row {
-    display: table-row;
+  display: table-row;
 }
 
 .ce-gallery .ce-column {
-    display: table-cell;
-    vertical-align: top;
-    padding: .3em;
+  display: table-cell;
+  vertical-align: top;
+  padding: .3em;
 }
 
 .ce-gallery .image {
-    line-height: 0;
+  line-height: 0;
 }
 
 .ce-gallery img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .ce-textpic.ce-above .ce-gallery {
-    margin-bottom: 1.3em;
+  margin-bottom: 1.3em;
 }
 
 .ce-textpic.ce-below .ce-gallery {
-    margin-top: 1.3em;
+  margin-top: 1.3em;
 }
 
 .ce-textpic.ce-above .ce-gallery, .ce-textpic.ce-below .ce-gallery {
-    width: 101.5%;
-    margin-left: -.3em;
+  width: 101.5%;
+  margin-left: -.3em;
 }
 
 .ce-textpic.ce-right.ce-intext .ce-gallery, .ce-textpic.ce-left.ce-intext .ce-gallery {
-    margin-bottom: 1em;
-    max-width: 55%;
+  margin-bottom: 1em;
+  max-width: 55%;
 }
 
 .ce-textpic.ce-right.ce-intext .ce-gallery {
-    float: right;
-    padding-left: 1em;
-    margin-right: -.3em;
+  float: right;
+  padding-left: 1em;
+  margin-right: -.3em;
 }
 
 .ce-textpic.ce-left.ce-intext .ce-gallery {
-    float: left;
-    padding-right: 1em;
-    margin-left: -.3em;
+  float: left;
+  padding-right: 1em;
+  margin-left: -.3em;
 }
 
 ul.ce-uploads {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul.ce-uploads li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul.ce-uploads li a {
-    padding-left: 1.8em;
-    padding-right: 1em;
-    display: inline-block;
-    position: relative;
+  padding-left: 1.8em;
+  padding-right: 1em;
+  display: inline-block;
+  position: relative;
 }
 
 ul.ce-uploads li a:before {
-    content: '▼';
-    font-size: .7em;
-    margin-top: .64em;
-    position: absolute;
-    text-align: center;
-    left: .2em;
-    line-height: 1em;
+  content: '▼';
+  font-size: .7em;
+  margin-top: .64em;
+  position: absolute;
+  text-align: center;
+  left: .2em;
+  line-height: 1em;
 }
 
 ul.ce-uploads li .ce-uploads-filesize {
-    color: #666;
-    font-size: .9em;
+  color: #666;
+  font-size: .9em;
 }
 
 /* ext:youtubevideo */
 #content .youtubeVideo {
-    max-width: 110vh;
-    margin: auto;
-    float: none;
+  max-width: 110vh;
+  margin: auto;
+  float: none;
 }
 
 .subpage {
-    padding: 5em 1.6em;
-    margin: auto;
-    overflow-x: auto;
+  padding: 5em 1.6em;
+  margin: auto;
+  overflow-x: auto;
 }
 
 .subpage h1 {
-    padding-bottom: .36em;
+  padding-bottom: .36em;
 }
 
 .subpage .author img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .closelink {
-    border-radius: 50%;
-    width: 2.6em;
-    height: 2.6em;
-    display: block;
-    position: fixed;
-    margin: 1em;
-    top: 0;
-    right: 0;
-    z-index: 9;
-    transition: all .4s ease-in-out;
+  border-radius: 50%;
+  width: 2.6em;
+  height: 2.6em;
+  display: block;
+  position: fixed;
+  margin: 1em;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  transition: all .4s ease-in-out;
 }
 
 .closelink i {
-    display: block;
-    height: 3px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    background: #000;
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  background: #000;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
 
 .closelink i.l {
-    transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
 }
 
 .closelink:hover {
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
 }
 
 /* responsive layout */
 @media screen and (min-width: 1600px) {
-    .ge-section.home h1 {
-        font-size: 4em;
-    }
+  .ge-section.home h1 {
+    font-size: 4em;
+  }
 }
 
 @media screen and (max-width: 1180px) {
-    .ge-section.home h1 {
-        font-size: 3em;
-    }
+  .ge-section.home h1 {
+    font-size: 3em;
+  }
 }
 
 @media screen and (max-width: 1506px) {
-    html {
-        font-size: 19px;
-    }
+  html {
+    font-size: 19px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .ge-section.fixed {
-        background-attachment: scroll !important;
-    }
+  .ge-section.fixed {
+    background-attachment: scroll !important;
+  }
 }
 
 @media screen and (max-width: 960px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 
-    .ge-section {
-        padding-top: 4em;
-        padding-bottom: 4em;
-    }
+  .ge-section {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
 }
 
 @media screen and (max-width: 680px) {
-    .ge-section.home h1, h1 {
-        font-size: 2.3em;
-        line-height: 1.2em;
-    }
+  .ge-section.home h1, h1 {
+    font-size: 2.3em;
+    line-height: 1.2em;
+  }
 
-    h2 {
-        font-size: 1.5em;
-    }
+  h2 {
+    font-size: 1.5em;
+  }
 
-    input, select, textarea {
-        max-width: 100%;
-    }
+  input, select, textarea {
+    max-width: 100%;
+  }
 
-    form>.row {
-        width: 100%;
-        margin-left: 0;
-        marrgin-right: 0;
-    }
+  form>.row {
+    width: 100%;
+    margin-left: 0;
+    marrgin-right: 0;
+  }
 }
 
 @media screen and (max-width: 520px) {
-    .contentWidth {
-        padding: 0 1.667em;
-    }
+  .contentWidth {
+    padding: 0 1.667em;
+  }
 
-    .no-br-on-mobile br {
-        display: none;
-    }
-    .ge-section .videobuttons {
-        right: 2.5em;
-        bottom: 2.5em;
-    }
-    .ge-section .sound.hasclearframebutton {
-        right: 6em;
-    }
+  .no-br-on-mobile br {
+    display: none;
+  }
+
+  .ge-section .videobuttons {
+    right: 2.5em;
+    bottom: 2.5em;
+  }
+
+  .ge-section .sound.hasclearframebutton {
+    right: 6em;
+  }
 }
 
 @media screen and (max-height: 590px) {
-    .ge-section.fullheight {
-        min-height: 25em;
-        height: 100vh;
-    }
+  .ge-section.fullheight {
+    min-height: 25em;
+    height: 100vh;
+  }
 }

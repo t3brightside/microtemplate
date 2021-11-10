@@ -6,7 +6,7 @@ $(window).scroll(function() {
         $("#header").addClass("force-bg");
     } else {
         $("#header").removeClass("scrolled");
-        if (!$('#menu').hasClass("mobile") && !$('.hmbrgr').hasClass("open")) {
+        if (!$('#menu').hasClass("open") && !$('.hmbrgr').hasClass("open")) {
             $("#header").removeClass("force-bg");
         }
     }

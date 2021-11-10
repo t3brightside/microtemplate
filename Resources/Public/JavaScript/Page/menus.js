@@ -1,69 +1,22 @@
 $(document).ready(function() {
-    // add remove mobile class on page resize
-    var lastWidth = $(window).width();
-    $(window).resize(function() {
-        if ($(window).width() != lastWidth) {
-            if ($(window).width() < 1100) {
-                $('#sectionmenu').removeClass('mobile');
-                $('#languagemenu').removeClass('mobile');
-                $('#sectionmenu').hide();
-                $('.hmbrgr').removeClass('open');
-                if (!$('#header').hasClass("scrolled")) {
-                    $("#header").removeClass("force-bg");
-                }
-            }
-            if ($(window).width() > 1100) {
-                $('#sectionmenu').show();
-                if (!$('#header').hasClass("scrolled")) {
-                    $("#header").removeClass("force-bg");
-                }
-            }
-            lastWidth = $(window).width();
-        }
-    });
     // open-close mobile menu with the hamburger
     $('.hmbrgr').click(function() {
-        $('#sectionmenu').slideToggle();
-        $('#sectionmenu').toggleClass('mobile');
-        $('#languagemenu').toggleClass('mobile');
+        $('#menu').toggleClass('open');
         $('.hmbrgr').toggleClass('open');
-        $('#header').addClass('force-bg');
-        if (!$('#header').hasClass("scrolled")) {
-            if (!$(this).hasClass("open")) {
-                $("#header").removeClass("force-bg");
-            }
-        }
+        $('#header').toggleClass('force-bg');
     });
     // close menu if clicking menu links
-    $('#sectionmenu a, #languagemenu a').on('click', function(e) {
-        $('#sectionmenu.mobile').slideUp();
+    $('#menu a, #languagemenu a, #logo').on('click', function(e) {
         $('.hmbrgr').removeClass('open');
-        $('#sectionmenu').removeClass('mobile');
-        $('#languagemenu').removeClass('mobile');
-    });
-    // close menu if clicking logo
-    $('#logo').on('click', function(e) {
-        $('#sectionmenu.mobile').slideUp();
-        $('#sectionmenu').removeClass('mobile');
-        $('#languagemenu').removeClass('mobile');
-        $('.hmbrgr').removeClass('open');
+        $('#menu').removeClass('open');
         $("#header").removeClass("force-bg");
-    });
-    // close menu if clicking outside menu container
-    $('#content, #footer').on('click', function(e) {
-        $('#sectionmenu.mobile').slideUp();
-        $('#sectionmenu').removeClass('mobile');
-        $('#languagemenu').removeClass('mobile');
-        $('.hmbrgr').removeClass('open');
-        if (!$('#header').hasClass("scrolled")) {
-            $("#header").removeClass("force-bg");
-        }
+
     });
 });
 // set active menu item by scrolling to a section
 $(window).ready(function(jQuery) {
     $(window).scrollTop($(window).scrollTop() + 1);
-    var topMenu = jQuery("#sectionmenu"),
+    var topMenu = jQuery("#menu"),
         offset = 70,
         menuItems = topMenu.find('a[href*="#"]'),
         scrollItems = menuItems.map(function() {

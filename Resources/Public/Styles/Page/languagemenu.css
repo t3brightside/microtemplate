@@ -1,0 +1,23 @@
+#languagemenu {
+  text-transform: uppercase;
+  font-size: .9em;
+  margin-top: 3em;
+  text-align: center;
+  float: left;
+}
+
+#languagemenu>nav>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #111;
+}
+
+#languagemenu>nav>ul>li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+#languagemenu>nav>ul>li:last-child {
+  margin-right: 0;
+}
