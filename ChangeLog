@@ -9,3 +9,7 @@
   – Fix loading CSS effect files
 * 2.1.2
   - TYPO3 11 basic testing
+* 3.0.0
+  - Menu redesign
+  – Remove change page title on scrolling
+  – Install instructions and README clean up
