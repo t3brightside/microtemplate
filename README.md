@@ -6,8 +6,8 @@
 
 **TYPO3 CMS template extension for one page sites with light box like sub pages.**
 
-<a href="#" class="button">[Demo](https://microtemplate.t3brightside.com)</a>
-<a href="#" class="button">[Hosted Package](https://t3brightside.com/typo3-hosting)</a>
+- **[Demo](https://microtemplate.t3brightside.com)**
+- **[Hosted Package](https://t3brightside.com/typo3-hosting)**
 
 ## System requirements
 
