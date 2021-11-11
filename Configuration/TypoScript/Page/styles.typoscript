@@ -16,6 +16,7 @@
 	[page["backend_layout"] == "pagets__home"]
 		page.includeCSS.menu = EXT:microtemplate/Resources/Public/Styles/Page/menu.css
 		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languagemenu.css
+		page.includeCSS.pagination = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
 	[END]
 
 	page {
@@ -42,6 +43,7 @@
 
 				/* links and buttons */
 					#menu a {color: {$microtemplate.text-default}}
+					#menu>nav>ul>li, #languagemenu>nav>ul {border-color: {$microtemplate.text-default}}
 					.hmbrgr i {background: {$microtemplate.text-default}}
 					a, a:visited, #menu a:hover, #menu .active a {color: {$microtemplate.accentColor}}
 					.btn:visited, .btn, .closelink:hover i {background-color: {$microtemplate.accentColor}}
@@ -74,8 +76,6 @@
 
 				/* language menu */
 					#languagemenu li a {color: {$microtemplate.text-default}}
-					#languagemenu::after {border-color: {$microtemplate.text-default} transparent transparent transparent;}
-					#languagemenu svg .a, #languagemenu svg .b {stroke: {$microtemplate.text-default};}
 
 				/* forms */
 					input, select, textarea {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; border-color: {$microtemplate.text-default}; -webkit-text-fill-color: {$microtemplate.text-default};}
@@ -86,7 +86,9 @@
 
 				/* ext:pagelist styles */
 					.pagelist .info, .pagelist .abstract {color: {$microtemplate.text-default};}
-					.pagelist ul.f3-widget-paginator>li>a, .pagelist ul.f3-widget-paginator>li.current {background: {$microtemplate.ge-section.bg-light};}
+
+				/* pagination */
+					 ul.pagination>li>a, ul.pagination>li.current {background: {$microtemplate.ge-section.bg-light};}
 
 				/* ext:personnel */
 					.personnel svg path {fill: {$microtemplate.text-default}}
