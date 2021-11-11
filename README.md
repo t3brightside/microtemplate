@@ -4,8 +4,10 @@
 [![Downloads](https://poser.pugx.org/t3brightside/microtemplate/downloads)](https://packagist.org/packages/t3brightside/microtemplate)
 [![Brightside](https://img.shields.io/badge/by-t3brightside.com-orange.svg?style=flat)](https://t3brightside.com)
 
-**TYPO3 CMS template extension for one page templates with light box like sub pages.**
-**[Demo with recommended extensions](https://microtemplate.t3brightside.com/)**
+**TYPO3 CMS template extension for one page sites with light box like sub pages.**
+
+<a href="#" class="button">[Demo](https://microtemplate.t3brightside.com)</a>
+<a href="#" class="button">[Hosted Package](https://t3brightside.com/typo3-hosting)</a>
 
 ## System requirements
 
@@ -15,12 +17,11 @@
 
 ## Features
 - Can be installed in multi domain setup or just for a sub page
-- Modular architecture
 - Lightweight (no CSS frameworks)
 - Configurable color schemes
-- Automatic main menu of section titles
-- Change page title according to the on screen section name
-- Content grids, accordion, cards
+- Automatic menu of section titles
+- Automatic language menu
+- Content grids, accordions, cards
 - Section background (colour, image with effects, video)
 - Section scroll in effect and angled edges
 
