@@ -16,8 +16,9 @@
 	[page["backend_layout"] == "pagets__home"]
 		page.includeCSS.menu = EXT:microtemplate/Resources/Public/Styles/Page/menu.css
 		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languagemenu.css
-		page.includeCSS.pagination = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
 	[END]
+
+	page.includeCSS.pagination = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
 
 	page {
 		includeCSS {
@@ -34,7 +35,7 @@
 					body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 
 					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
-					#header.scrolled, #header.force-bg, #header.scrolled #languagemenu li a, #languagemenu.mobile .language-icon {background-color: {$microtemplate.header-bg}}
+					#header.scrolled, #header.force-bg {background-color: {$microtemplate.header-bg}}
 
 				/* page containers */
 					.pageWidth {max-width: {$microtemplate.pageWidth}}
@@ -46,7 +47,7 @@
 					#menu>nav>ul>li, #languagemenu>nav>ul {border-color: {$microtemplate.text-default}}
 					.hmbrgr i {background: {$microtemplate.text-default}}
 					a, a:visited, #menu a:hover, #menu .active a {color: {$microtemplate.accentColor}}
-					.btn:visited, .btn, .closelink:hover i {background-color: {$microtemplate.accentColor}}
+					.btn:visited, .btn, .closelink:hover i, a.hmbrgr:hover i {background-color: {$microtemplate.accentColor}}
 					.btn:visited, .btn, .btn:disabled {border-color: {$microtemplate.accentColor}}
 					.btn:hover, .btn:disabled {color: {$microtemplate.accentColor}}
 
@@ -85,10 +86,11 @@
 					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
 
 				/* ext:pagelist styles */
-					.pagelist .info, .pagelist .abstract {color: {$microtemplate.text-default};}
+					.pagelist .info, .pagelist .abstract {color: {$microtemplate.text-default}}
 
 				/* pagination */
-					 ul.pagination>li>a, ul.pagination>li.current {background: {$microtemplate.ge-section.bg-light};}
+					 ul.pagination>li>a {boreder-color: {$microtemplate.accentColor}}
+					 ul.pagination>li.current {$microtemplate.text-default}}
 
 				/* ext:personnel */
 					.personnel svg path {fill: {$microtemplate.text-default}}
@@ -110,14 +112,14 @@
 		}
 	[END]
 
+		["{$microtemplate.scroll-effects}" == 0]
+			page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
+		[END]
+
 	["{$microtemplate.additionalCSS}" != "0"]
 		page.includeCSS.additionalCSS = {$microtemplate.additionalCSS}
 	[END]
 
 	["{$microtemplate.ge-section-angeled-edges}" == "1"]
 		page.includeCSS.enable-ge-section-angeled-edges = EXT:microtemplate/Resources/Public/Styles/Page/ge-section-angeled-edges.css
-	[END]
-
-	["{$microtemplate.scroll-effects}" == "1"]
-		page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
 	[END]
