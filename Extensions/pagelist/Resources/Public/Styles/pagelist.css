@@ -1,29 +1,32 @@
-.pagelist.list .item a {
-  display: inline-block;
-  border-top: 1px solid #ddd;
-  padding-right: 3em;
-  padding-top: 1em;
+.pagelist.list>.item a {
+    display: inline-block;
+    border-top: 1px solid #ddd;
+    padding-right: 3em;
+    padding-top: 1em;
 }
 
-.align-center .pagelist.list .article a, .align-center .pagelist.list .event a {
-  padding-left: 3em;
+.align-center .pagelist.list>.item a {
+    padding-left: 3em;
 }
 
-.pagelist.list .article:first-child a, .pagelist.list .event:first-child a {
-  border-top: none;
-  padding-top: 0;
+.pagelist.list>.item:first-child a {
+    border-top: none;
+    padding-top: 0;
 }
 
-.pagelist .article .author img {
-  display: none
+.pagelist.list>.item .author img {
+    display: none
 }
 
-.pagelist.list .event .text {
-  margin-left: 5em;
-  padding-left: 1em;
+.pagelist.list>.item .abstract {
+    font-size: 0.9em;
 }
 
-.pagelist.list .event .text {
-  margin-left: 0;
-  padding-left: 0;
+.pagelist.list>.item .text {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.pagelist.list>.pagination {
+    padding-top: 3em;
 }
