@@ -10,7 +10,7 @@
 						<f:variable name="languageCount"><f:for each="{languageMenu}" as="language"><f:if condition="{language.available}">1</f:if></f:for></f:variable>
 						<f:if condition="{sectionMenu} || {languageCount} && {languageMenu}">
 							<a class="hmbrgr" href="javascript:void(0)"><b><i class="f"></i><i class="m"></i><i class="l"></i></b></a>
-							<div id="menu">
+							<div class="menu-container"><div id="menu">
 								<f:if condition="{sectionMenu}"><f:render partial="SectionMenu" arguments="{_all}" /></f:if>
 								<f:if condition="{languageCount} > 1 && {languageMenu}"><f:render partial="LanguageMenu" arguments="{_all}" /></f:if>
 								<f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
@@ -18,7 +18,7 @@
 									<f:cObject typoscriptObjectPath="menucontent" />
 								</div>
 								</f:if>
-							</div>
+							</div></div>
 						</f:if>
 					</div>
 				</div>
