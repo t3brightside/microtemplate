@@ -1,137 +1,137 @@
 .hmbrgr {
-  position: relative;
-  float: right;
-  box-sizing: border-box;
-  margin-right: -.95em;
-  transition: all .4s;
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+    margin-right: -.95em;
+    transition: all .4s;
 }
 
 .hmbrgr b {
-  position: relative;
-  display: block;
-  margin: .94em;
-  margin-top: .66em;
-  width: 2em;
-  height: 1.5em;
+    position: relative;
+    display: block;
+    margin: .94em;
+    margin-top: .66em;
+    width: 2em;
+    height: 1.5em;
 }
 
 .hmbrgr i {
-  display: block;
-  position: absolute;
-  background: #000;
-  width: 100%;
-  height: 2px;
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 2px;
 }
 
 .hmbrgr i.f {
-  top: 0;
+    top: 0;
 }
 
 .hmbrgr i.m {
-  top: 50%;
-  margin-top: -1px;
+    top: 50%;
+    margin-top: -1px;
 }
 
 .hmbrgr i.l {
-  bottom: 0;
+    bottom: 0;
 }
 
 .hmbrgr.open i.m {
-  opacity: 0;
+    opacity: 0;
 }
 
 .hmbrgr.open i.f, .hmbrgr.open i.l {
-  top: 50%;
-  margin-top: -1px;
+    top: 50%;
+    margin-top: -1px;
 }
 
 .hmbrgr.open i.f {
-  transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 .hmbrgr.open i.l {
-  transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 .hmbrgr b, .hmbrgr i {
-  transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #header.scrolled .hmbrgr b {
-  margin: .94em;
-  height: 1.12em;
-  width: 1.7em;
+    margin: .94em;
+    height: 1.12em;
+    width: 1.7em;
 }
 
 #header.scrolled .hmbrgr {
-  margin-right: -1em;
-  margin-top: -.26em;
+    margin-right: -1em;
+    margin-top: -.26em;
 }
 
 #menu {
-  clear: both;
-  height: 0px;
-  width: 100%;
-  transition: all .2s;
-  box-sizing: border-box;
-  overflow: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    clear: both;
+    height: 0px;
+    width: 100%;
+    transition: all .2s;
+    box-sizing: border-box;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 #menu::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 #menu.open {
-  height: 100vh;
-  overflow-y: auto;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 #menu>nav>ul {
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 4em 0 3em 0;
-  margin: 0;
-  width: 100%;
-  min-height: calc(100vh - 150px);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4em 0 3em 0;
+    margin: 0;
+    width: 100%;
+    min-height: calc(100vh - 150px);
 }
 
 #menu>nav>ul>li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-bottom: 2px solid #111;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #111;
 }
 
 #menu>nav>ul>li:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 #menu>nav>ul>li>a {
-  opacity: 0;
-  display: block;
-  box-sizing: border-box;
-  line-height: 1em;
-  padding: 1.5em 0;
-  transition: all .2s;
+    opacity: 0;
+    display: block;
+    box-sizing: border-box;
+    line-height: 1em;
+    padding: 1.5em 0;
+    transition: all .2s;
 }
 
 #menu.open>nav>ul>li>a {
-  opacity: 1;
+    opacity: 1;
 }
 
 #menu nav a:hover, #menu nav .active a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #header.scrolled #menu {
-  padding-top: 0.5;
+    padding-top: 0.5;
 }
 
 @media screen and (max-width: 960px) {
-  .hmbrgr {
-    margin-right: -1em;
-  }
+    .hmbrgr {
+        margin-right: -1em;
+    }
 }

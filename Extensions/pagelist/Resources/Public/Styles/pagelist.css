@@ -1,4 +1,4 @@
-.pagelist.list .article a, .pagelist.list .event a {
+.pagelist.list .item a {
   display: inline-block;
   border-top: 1px solid #ddd;
   padding-right: 3em;

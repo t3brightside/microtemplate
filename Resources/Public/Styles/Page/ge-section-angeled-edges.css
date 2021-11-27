@@ -1,6 +1,7 @@
 #content>.pageWidth {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
+
 .ge-section-angeled-edges:first-child {
     margin-top: -3em;
 }
