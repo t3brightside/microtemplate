@@ -25,6 +25,6 @@ config {
 	[END]
 
 # load scroll effects if enabled in constants
-	["{$microtemplate.scroll-effects}" == "1"]
-		page.includeJSFooterlibs.scroll-effects = EXT:microtemplate/Resources/Public/JavaScript/Page/scroll-effects.js
-	[END]
+["{$microtemplate.fade-in-content}" == "1"]
+		page.includeJSFooterlibs.fade-in-content = EXT:microtemplate/Resources/Public/JavaScript/Page/fadeInContent.js
+[END]

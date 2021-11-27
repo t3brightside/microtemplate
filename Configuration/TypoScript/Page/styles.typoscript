@@ -18,6 +18,9 @@
 		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languagemenu.css
 	[END]
 
+  ["{$microtemplate.fade-in-content}" == "1"]
+    page.includeCSS.fadeIncontent = EXT:microtemplate/Resources/Public/Styles/Page/fadeInContent.css
+  [END]
 	page.includeCSS.pagination = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
 
 	page {
