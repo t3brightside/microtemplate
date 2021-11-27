@@ -9,34 +9,34 @@ tt_content.gridelements_pi1 {
 				default < lib.gridelements.defaultGridSetup
 			    ge-section < .default
 			    ge-section {
-			    cObject = FLUIDTEMPLATE
+			      cObject = FLUIDTEMPLATE
 	        	cObject.file = EXT:microtemplate/Resources/Private/Templates/Content/ge-section.html
 	        	cObject {
 		        	dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-				    dataProcessing.10.references.fieldName = assets
+				      dataProcessing.10.references.fieldName = assets
 		        	variables {
-					    ge-section-angeled-edges = TEXT
-						ge-section-angeled-edges.value = {$microtemplate.ge-section-angeled-edges}
-					    sectionBg = FILES
-							sectionBg  {
-								begin = 0
-								maxItems = 1
-								references.fieldName = image
-								renderObj = COA
-								renderObj {
+  					    ge-section-angeled-edges = TEXT
+  						  ge-section-angeled-edges.value = {$microtemplate.ge-section-angeled-edges}
+  					    sectionBg = FILES
+  							sectionBg  {
+  								begin = 0
+  								maxItems = 1
+  								references.fieldName = image
+  								renderObj = COA
+  								renderObj {
 # first get the image cropped and scaled
-									5 = LOAD_REGISTER
-									5.theImage.cObject = IMG_RESOURCE
-									5.theImage.cObject.file {
-								    	import.data = file:current:publicUrl
-								    	crop.data = file:current:crop
-								    	width = {$microtemplate.ge-section.bg-width}
-										width.override.field = flexform_bgimagewidth
-									}
-									10 = IMG_RESOURCE
-									10 {
-										file = GIFBUILDER
-										file {
+  									5 = LOAD_REGISTER
+  									5.theImage.cObject = IMG_RESOURCE
+  									5.theImage.cObject.file {
+  								    import.data = file:current:publicUrl
+  								    crop.data = file:current:crop
+  								    width = {$microtemplate.ge-section.bg-width}
+  										width.override.field = flexform_bgimagewidth
+  									}
+  									10 = IMG_RESOURCE
+  									10 {
+  										file = GIFBUILDER
+  										file {
 										    format = jpg
 										    quality = {$microtemplate.ge-section.bg-quality}
 										    XY = [5.w],[5.h]
