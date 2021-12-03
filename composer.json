@@ -1,34 +1,33 @@
 {
-  "name": "t3brightside/microtemplate",
-  "description": "TYPO3 CMS template – sectioned one pager with light box like sub pages",
-  "type": "typo3-cms-extension",
-  "keywords": ["TYPO3", "Template", "Design", "Fluid"],
-  "homepage": "https://microtemplate.t3brightside.com/",
-  "license": "GPL-2.0-or-later",
-  "authors": [
-    {
-      "name": "Tanel Põld",
-      "role": "Developer",
-      "homepage": "https://t3brightside.com"
-    }
-  ],
-  "require": {
-    "typo3/cms-core": "^11.5",
-    "typo3/cms-fluid-styled-content": "^11.5",
-    "gridelementsteam/gridelements": "^11 || dev-master"
+	"name": "t3brightside/microtemplate",
+	"description": "TYPO3 CMS template – sectioned one pager with light box like sub pages",
+	"type": "typo3-cms-extension",
+	"keywords": ["TYPO3", "Template", "Design", "Fluid"],
+	"homepage": "https://microtemplate.t3brightside.com/",
+	"license": "GPL-2.0-or-later",
+	"authors": [{
+		"name": "Tanel Põld",
+		"role": "Developer",
+		"homepage": "https://t3brightside.com"
+	}],
+	"require": {
+		"typo3/cms-core": "^11.5",
+		"typo3/cms-fluid-styled-content": "^11.5",
+		"gridelementsteam/gridelements": "^11 || dev-master"
 
-  },
-  "suggest": {
-    "t3brightside/advancedtitle": "Page title prefix & suffix",
-    "t3brightside/favicon": "Favicon control in page settings",
-	  "t3brightside/pagelist": "Page teasers, article lists, cards etc",
-    "t3brightside/personnel": "Contact lists with vCard support",
-    "t3brightside/youtubevideo": "Responsive YouTube videos with cover image",
-    "t3brightside/gallerycontent": "Image content gallery with crop ratios"
 	},
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "microtemplate"
-    }
-  }
+	"suggest": {
+		"t3brightside/advancedtitle": "Page title prefix & suffix",
+		"t3brightside/favicon": "Favicon control in page settings",
+		"t3brightside/pagelist": "Page teasers, article lists, cards etc",
+		"t3brightside/personnel": "Contact lists with vCard support",
+		"t3brightside/youtubevideo": "Responsive YouTube videos with cover image",
+		"t3brightside/gallerycontent": "Image content gallery with crop ratios",
+		"t3brightside/paginatedprocessors": "DataProcessors with pagination"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "microtemplate"
+		}
+	}
 }
