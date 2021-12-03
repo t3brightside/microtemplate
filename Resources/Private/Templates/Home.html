@@ -1,35 +1,40 @@
 <div id="cTop">
-	<div id="p{data.uid}">
-		<header>
-			<div id="header">
-				<div class="pageWidth">
-					<div class="contentWidth">
-						<a href="#cTop" aria-label="scroll to top" title="{data.title}">
-							<img src="{logoFile}" id="logo" alt="{data.title}" />
-						</a>
-						<f:variable name="languageCount"><f:for each="{languageMenu}" as="language"><f:if condition="{language.available}">1</f:if></f:for></f:variable>
-						<f:if condition="{sectionMenu} || {languageCount} && {languageMenu}">
-							<a class="hmbrgr" href="javascript:void(0)"><b><i class="f"></i><i class="m"></i><i class="l"></i></b></a>
-							<div class="menu-container"><div id="menu">
-								<f:if condition="{sectionMenu}"><f:render partial="SectionMenu" arguments="{_all}" /></f:if>
-								<f:if condition="{languageCount} > 1 && {languageMenu}"><f:render partial="LanguageMenu" arguments="{_all}" /></f:if>
-								<f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
-								<div id="menucontent">
-									<f:cObject typoscriptObjectPath="menucontent" />
-								</div>
-								</f:if>
-							</div></div>
-						</f:if>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main>
-			<div id="content">
-				<div class="pageWidth">
-					<f:format.raw>{contentDefault}</f:format.raw>
-		    </div>
-			</div>
-		</main>
-	</div>
+    <div id="p{data.uid}">
+        <header>
+            <div id="header">
+                <div class="pageWidth">
+                    <div class="contentWidth">
+                        <f:link.page section="cTop" id="logo" title="{data.title}">
+                            <f:format.raw>{logo}</f:format.raw>
+                        </f:link.page>
+                        <f:if condition="{sectionMenu} || {languageMenu -> f:count()} > 1">
+                            <a class="hmbrgr" href="javascript:void(0)"><b><i class="f"></i><i class="m"></i><i class="l"></i></b></a>
+                            <div class="menu-container">
+                                <div id="menu">
+                                    <f:if condition="{sectionMenu}">
+                                        <f:render partial="SectionMenu" arguments="{_all}" />
+                                    </f:if>
+                                    <f:if condition="{languageMenu -> f:count()} > 1">
+                                        <f:render partial="LanguageMenu" arguments="{_all}" />
+                                    </f:if>
+                                    <f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
+                                        <div id="menucontent">
+                                            <f:cObject typoscriptObjectPath="menucontent" />
+                                        </div>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </f:if>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="content">
+                <div class="pageWidth">
+                    <f:format.raw>{contentDefault}</f:format.raw>
+                </div>
+            </div>
+        </main>
+    </div>
 </div>
