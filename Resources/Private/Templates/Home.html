@@ -4,9 +4,9 @@
             <div id="header">
                 <div class="pageWidth">
                     <div class="contentWidth">
-                        <f:link.page section="cTop" id="logo" title="{data.title}">
+                        <a href="{currentURL}#cTop" id="logo" title="{data.header}">
                             <f:format.raw>{logo}</f:format.raw>
-                        </f:link.page>
+                        </a>
                         <f:if condition="{sectionMenu} || {languageMenu -> f:count()} > 1">
                             <a class="hmbrgr" href="javascript:void(0)"><b><i class="f"></i><i class="m"></i><i class="l"></i></b></a>
                             <div class="menu-container">
