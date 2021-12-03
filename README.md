@@ -11,7 +11,7 @@
 
 ## System requirements
 
-- TYPO3 11.5
+- TYPO3
 - fluid_styled_content
 - gridelements
 
@@ -26,7 +26,7 @@
 - Section scroll in effect and angled edges
 
 ## Install
-- **composer req t3brightside/microtemplate** or from TYPO3 extension repository **[microtemplate](https://extensions.typo3.org/extension/microtemplate/)**
+- `composer req t3brightside/microtemplate` or from TYPO3 extension repository **[microtemplate](https://extensions.typo3.org/extension/microtemplate/)**
 - Include static templates in that order: **fluid_styled_content**, advancedpagetitle, personnel, pagelist, youtubevideo, etc, **microtemplate scripts**, **microtemplate**
 - Use TypoScript constant editor for customisation
 - **Edit home page** to set _'Resources -> Include Page TSConfig -> Microtemplate – Main'_ and save
@@ -34,15 +34,6 @@
 
 ## Editors
 - To exclude content section from main menu uncheck _'Appearance -> Show in Section Menus'_ in section settings.
-- To add Google Analytics on/off switch to the privacy page add following HTML as page content:
-```html
-<p>Google Analytics <b>Off/On</b>:
-    <label class="switch">
-      <input id="gaSwitch" type="checkbox">
-      <span class="slider"></span>
-    </label>
-</p>
-```
 
 ## Admins
 - To alter back end settings see: _Configuration/TypoScript/PageTS/setup.ts_
