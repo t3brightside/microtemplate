@@ -9,7 +9,11 @@
   – Fix loading CSS effect files
 * 2.1.2
   - TYPO3 11 basic testing
-* 3.0.0
-  - Menu redesign
+* 3.0.0 !!! BREAKING !!! Not compatible with earlier versions
+  - Menu redesign & menu links improvement
+  - Language selection in main menu
+  - Better handling of smooth scrolling anchor links
   – Remove change page title on scrolling
   – Install instructions and README clean up
+  - Inline SVG logo from TS constant only
+  - Add pagination styles for ext:paginatedprocessors
