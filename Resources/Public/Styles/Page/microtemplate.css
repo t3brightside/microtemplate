@@ -207,15 +207,16 @@ tr:last-child td {
     top: 0;
 }
 
-#logo {
+#logo svg {
     float: left;
     margin-top: .65em;
     margin-bottom: 0;
     height: 1.5em;
+    width: auto;
     transition: height .4s;
 }
 
-#header.scrolled #logo {
+#header.scrolled #logo svg {
     height: 1.2em;
 }
 
