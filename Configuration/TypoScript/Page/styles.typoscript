@@ -18,9 +18,6 @@
 		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languagemenu.css
 	[END]
 
-  ["{$microtemplate.fade-in-content}" == "1"]
-    page.includeCSS.fadeIncontent = EXT:microtemplate/Resources/Public/Styles/Page/fadeInContent.css
-  [END]
 	page.includeCSS.pagination = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
 
 	page {
@@ -32,6 +29,7 @@
 			googleFonts.media = all
 		}
 		headerData {
+      # styles to set content colours from constants
 			1001 = TEXT
 			1001.value (
 				<style>
@@ -75,9 +73,6 @@
 					.subpage-body {background-color: {$microtemplate.body-background}}
 					.closelink i {background: {$microtemplate.text-default}}
 
-				/* logo */
-					#logo svg .a, #logo svg .b{stroke:{$microtemplate.text-default} !important;}
-
 				/* language menu */
 					#languagemenu li a {color: {$microtemplate.text-default}}
 
@@ -115,12 +110,12 @@
 		}
 	[END]
 
-		["{$microtemplate.scroll-effects}" == 0]
-			page.includeCSS.scroll-effects = EXT:microtemplate/Resources/Public/Styles/Page/scroll-effects.css
-		[END]
+  ["{$microtemplate.fade-in-content}" == "1"]
+    page.includeCSS.fadeIncontent = EXT:microtemplate/Resources/Public/Styles/Page/fadeInContent.css
+  [END]
 
-	["{$microtemplate.additionalCSS}" != "0"]
-		page.includeCSS.additionalCSS = {$microtemplate.additionalCSS}
+	["{$microtemplate.customCSS}" != "0"]
+		page.includeCSS.customlCSS = {$microtemplate.customCSS}
 	[END]
 
 	["{$microtemplate.ge-section-angeled-edges}" == "1"]
