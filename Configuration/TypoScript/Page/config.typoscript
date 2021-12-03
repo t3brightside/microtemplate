@@ -12,9 +12,9 @@ config {
 page {
 	config {
   	headerComment (
-**********************************************************************
-*   Based on Microtemplate: https://mirotemplate.t3brightside.com    *
-**********************************************************************
+*************************************************************
+*   Microtemplate: https://mirotemplate.t3brightside.com    *
+*************************************************************
   	)
   }
 	meta.viewport.value = width=device-width, initial-scale=1.0
@@ -33,34 +33,38 @@ page {
 	typeNum = 0
 	10 = FLUIDTEMPLATE
 	10 {
-        partialRootPaths.10 = EXT:microtemplate/Resources/Private/Partials/
-        partialRootPaths.20 = {$microtemplate.partialRootPath}
+    partialRootPaths.10 = EXT:microtemplate/Resources/Private/Partials/
+    partialRootPaths.20 = {$microtemplate.partialRootPath}
 
-        templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/
-        templateRootPaths.20 = {$microtemplate.templateRootPath}
+    templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/
+    templateRootPaths.20 = {$microtemplate.templateRootPath}
 # site config
-        dataProcessing.5 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
-        dataProcessing.5.as = site
+    dataProcessing.5 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+    dataProcessing.5.as = site
 # page media files
-        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        dataProcessing.10.references.fieldName = media
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10.references.fieldName = media
 # main menu
-        dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-        dataProcessing.20 {
-            table = tt_content
-            pidInList.field = uid
-            where = colPos=0 AND sectionIndex=1
-            orderBy = sorting
-            as = sectionMenu
-        }
+    dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.20 {
+      table = tt_content
+      pidInList.field = uid
+      where = colPos=0 AND sectionIndex=1
+      orderBy = sorting
+      as = sectionMenu
+    }
 # language menu
-        dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-        dataProcessing.30 {
-            languages = auto
-            as = languageMenu
-        }
+    dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+    dataProcessing.30 {
+      languages = auto
+      as = languageMenu
+    }
 
 		variables {
+# logo settings
+      logo = SVG
+      logo.renderMode = inline
+      logo.src = {$microtemplate.logoFile}
 # needed for if home is not in page tree root level
       rootPageId = TEXT
       rootPageId.value = {$microtemplate.rootPageId}
@@ -79,13 +83,16 @@ page {
 				20.select.where = colPos = 0
 				30 = RESTORE_REGISTER
 			}
+      currentURL = TEXT
+      currentURL.data = getIndpEnv:TYPO3_REQUEST_URL
+
 
 # override automatic page title with content element if available
 			contentHeader = CONTENT
 			contentHeader.table = tt_content
 			contentHeader {
 				select {
-			  	    orderBy = sorting
+	  	    orderBy = sorting
 					where = colPos=5
 				}
 				renderObj = COA
@@ -96,21 +103,21 @@ page {
 				}
 			}
 		}
-        templateName.stdWrap.cObject = CASE
-        templateName.stdWrap.cObject {
-            key.data = pagelayout
-            key.data = levelfield:-1, backend_layout_next_level, slide
-            key.override.field = backend_layout
-            default = TEXT
-            default.value = Home
-            pagets__home = TEXT
-            pagets__home.value = Home
-            pagets__sub = TEXT
-            pagets__sub.value = Sub
-            pagets__article = TEXT
-            pagets__article.value = Article
-        }
+    templateName.stdWrap.cObject = CASE
+    templateName.stdWrap.cObject {
+      key.data = pagelayout
+      key.data = levelfield:-1, backend_layout_next_level, slide
+      key.override.field = backend_layout
+      default = TEXT
+      default.value = Home
+      pagets__home = TEXT
+      pagets__home.value = Home
+      pagets__sub = TEXT
+      pagets__sub.value = Sub
+      pagets__article = TEXT
+      pagets__article.value = Article
     }
+  }
 }
 
 # mobile menu content page
