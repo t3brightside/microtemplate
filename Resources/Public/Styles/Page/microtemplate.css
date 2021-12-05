@@ -226,8 +226,8 @@ tr:last-child td {
 }
 #header.scrolled, #header.force-bg {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
-    -webkit-backdrop-filter: saturate(180%) blur(10px);
-    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 /* gridelements page sections and column layouts */
 .ge-section {
