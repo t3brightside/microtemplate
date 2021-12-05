@@ -11,7 +11,7 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main CSS file
 	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Styles/Page/microtemplate.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
-	microtemplate.customCSS = EXT:microtemplate/Resources/Public/Styles/Page/custom.css
+	microtemplate.customCSS =
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
 	microtemplate.logoFile = typo3conf/ext/microtemplate/Resources/Public/Images/brightside_logo.svg
 # cat=Microtemplate/microtemplatestyles; type=string; label=Google Fonts link
