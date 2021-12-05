@@ -45,7 +45,10 @@
 
   				/* forms */
   					input, select, textarea {font-family: {$microtemplate.darkMode-main-font-family}; color: {$microtemplate.darkMode-text-default}; border-color: {$microtemplate.darkMode-text-default}; -webkit-text-fill-color: {$microtemplate.darkMode-text-default};}
-  					i.validation-icon svg path {fill: {$microtemplate.darkMode-text-default}}
+            .ge-section.text-dark input, .ge-section.text-dark select, .ge-section.text-dark textarea {color: {$microtemplate.darkMode-text-dark}; border-color: {$microtemplate.darkMode-text-dark}; -webkit-text-fill-color: {$microtemplate.darkMode-text-dark};}
+            .ge-section.text-light input, .ge-section.text-light select, .ge-section.text-light textarea {color: {$microtemplate.darkMode-text-light}; border-color: {$microtemplate.darkMode-text-light}; -webkit-text-fill-color: {$microtemplate.darkMode-text-light};}
+
+            i.validation-icon svg path {fill: {$microtemplate.darkMode-text-default}}
             .ge-section.text-dark i.validation-icon svg path {fill: {$microtemplate.darkMode-text-dark}}
             .ge-section.text-light i.validation-icon svg path {fill: {$microtemplate.darkMode-text-light}}
 

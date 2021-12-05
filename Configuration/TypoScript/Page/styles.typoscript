@@ -57,9 +57,7 @@
 					.ge-section.bg-light {background-color: {$microtemplate.ge-section.bg-light}}
 					.ge-section.bg-dark {background-color: {$microtemplate.ge-section.bg-dark}; color: {$microtemplate.text-light}}
 					.ge-section.text-light {color: {$microtemplate.text-light}}
-          .ge-section.text-light input, .ge-section.text-light select, .ge-section.text-light textarea {border-color: {$microtemplate.darkMode-text-light}}
 					.ge-section.text-dark {color: {$microtemplate.text-dark}}
-          .ge-section.text-dark input, .ge-section.text-dark select, .ge-section.text-dark textarea {border-color: {$microtemplate.darkMode-text-dark}}
 					.ge-section .videobuttons svg .a, .ge-section .videobuttons svg .st0, .ge-section .videobuttons svg rect {fill:{$microtemplate.text-default}}
 					.ge-section.text-light .videobuttons  .a, .ge-section.text-light .videobuttons polygon.st0, .ge-section.text-light .videobuttons rect {fill:{$microtemplate.text-light}}
 					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark}}
@@ -80,9 +78,12 @@
 
 				/* forms */
 					input, select, textarea {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; border-color: {$microtemplate.text-default}; -webkit-text-fill-color: {$microtemplate.text-default};}
-					i.validation-icon svg path {fill: {$microtemplate.text-default}}
+          .ge-section.text-dark input, .ge-section.text-dark select, .ge-section.text-dark textarea {color: {$microtemplate.text-dark}; border-color: {$microtemplate.text-dark}; -webkit-text-fill-color: {$microtemplate.text-dark};}
+          .ge-section.text-light input, .ge-section.text-light select, .ge-section.text-light textarea {color: {$microtemplate.text-light}; border-color: {$microtemplate.text-light}; -webkit-text-fill-color: {$microtemplate.text-light};}
+
+          i.validation-icon svg path {fill: {$microtemplate.text-default}}
           .ge-section.text-dark i.validation-icon svg path {fill: {$microtemplate.text-dark}}
-          .ge-section.text-light i.validation-icon svg path {fill: {$microtemplate.darkMode-text-light}}
+          .ge-section.text-light i.validation-icon svg path {fill: {$microtemplate.text-light}}
 
 				/* ext:youtubevideo */
 					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
