@@ -34,8 +34,7 @@
 				<rect y="5" class="st0" width="4" height="9.9"/>
 				<g>
 					<rect x="18.7" y="5.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1.2715 16.7804)" class="st0" width="1.9" height="9.6"/>
-
-						<rect x="18.7" y="5.1" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 26.4754 30.8165)" class="st0" width="1.9" height="9.6"/>
+					<rect x="18.7" y="5.1" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 26.4754 30.8165)" class="st0" width="1.9" height="9.6"/>
 				</g>
 				</svg>
 				<svg class="on" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -72,7 +71,7 @@
 			</video>
 		</f:if>
 		<f:if condition="{data.flexform_overlaycolor}">
-			<div class="overlay" style="background: {data.flexform_overlaycolor}; opacity: {data.flexform_overlayopacity * 0.1}"></div>
+			<div id="overlay-{data.uid}" class="overlay" style="background: {data.flexform_overlaycolor}; opacity: {data.flexform_overlayopacity * 0.1}"></div>
 		</f:if>
 		<div class="contentWidth">
 			<section><f:format.raw>{data.tx_gridelements_view_column_101}</f:format.raw></section>
@@ -81,3 +80,8 @@
 <f:if condition="{ge-section-angeled-edges}">
 </div>
 </f:if>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) { // If media query matches
+      document.getElementById('overlay-{data.uid}').style.backgroundColor = '{data.flexform_overlaycolordarkmode}';
+    }
+</script>

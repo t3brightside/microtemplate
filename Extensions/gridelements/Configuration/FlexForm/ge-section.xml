@@ -357,6 +357,17 @@
 					<label>Background overlay color</label>
 				</TCEforms>
 			</overlaycolor>
+			<overlaycolordarkmode>
+				<TCEforms type="array">
+					<config type="array">
+						<type>input</type>
+						<size>48</size>
+						<eval>trim</eval>
+						<renderType>colorpicker</renderType>
+					</config>
+					<label>Background overlay color in Dark Mode</label>
+				</TCEforms>
+			</overlaycolordarkmode>
 			<overlayopacity>
 				<TCEforms>
 					<label>Overlay opacity</label>
