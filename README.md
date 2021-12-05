@@ -24,6 +24,7 @@
 - Content grids, accordions, cards
 - Section background (colour, image with effects, video)
 - Section scroll in effect and angled edges
+- Dark mode support
 
 ## Install
 - `composer req t3brightside/microtemplate` or from TYPO3 extension repository **[microtemplate](https://extensions.typo3.org/extension/microtemplate/)**
