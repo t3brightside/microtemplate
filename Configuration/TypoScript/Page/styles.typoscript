@@ -81,6 +81,8 @@
 				/* forms */
 					input, select, textarea {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; border-color: {$microtemplate.text-default}; -webkit-text-fill-color: {$microtemplate.text-default};}
 					i.validation-icon svg path {fill: {$microtemplate.text-default}}
+          .ge-section.text-dark i.validation-icon svg path {fill: {$microtemplate.text-dark}}
+          .ge-section.text-light i.validation-icon svg path {fill: {$microtemplate.darkMode-text-light}}
 
 				/* ext:youtubevideo */
 					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}

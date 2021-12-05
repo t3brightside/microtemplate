@@ -46,6 +46,8 @@
   				/* forms */
   					input, select, textarea {font-family: {$microtemplate.darkMode-main-font-family}; color: {$microtemplate.darkMode-text-default}; border-color: {$microtemplate.darkMode-text-default}; -webkit-text-fill-color: {$microtemplate.darkMode-text-default};}
   					i.validation-icon svg path {fill: {$microtemplate.darkMode-text-default}}
+            .ge-section.text-dark i.validation-icon svg path {fill: {$microtemplate.darkMode-text-dark}}
+            .ge-section.text-light i.validation-icon svg path {fill: {$microtemplate.darkMode-text-light}}
 
   				/* ext:youtubevideo */
   					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.darkMode-accentColor}}
