@@ -15,4 +15,4 @@
 # cat=Microtemplate Dark Mode/microtemplatedarkmode; type=color; label= Dark section background
 	microtemplate.darkMode-ge-section.bg-dark = #1A1A1A
 # cat=Microtemplate Dark Mode/microtemplatedarkmode; type=color; label= Header background
-	microtemplate.darkMode-header-bg = #171717
+	microtemplate.darkMode-header-bg = rgba(23,23,23,0.9)

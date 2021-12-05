@@ -223,9 +223,12 @@ tr:last-child td {
 #header.scrolled {
     padding: .2em;
     padding-top: .36em;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
 }
-
+#header.force-bg {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+}
 /* gridelements page sections and column layouts */
 .ge-section {
     padding-top: 7em;
