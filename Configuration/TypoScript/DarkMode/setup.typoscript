@@ -1,0 +1,81 @@
+# CSS for Dark Mode
+	page {
+		headerData {
+      # styles to set content colours from constants
+			10565 = TEXT
+			10565.value (
+				<style>
+          @media (prefers-color-scheme: dark) {
+  					body {color: {$microtemplate.darkMode-text-default}; background-color: {$microtemplate.darkMode-body-background}}
+            #header.scrolled, #header.force-bg {background-color: {$microtemplate.darkMode-header-bg}}
+
+  				/* links and buttons */
+  					#menu a {color: {$microtemplate.darkMode-text-default}}
+  					#menu>nav>ul>li, #languagemenu>nav>ul {border-color: {$microtemplate.darkMode-text-default}}
+  					.hmbrgr i {background: {$microtemplate.darkMode-text-default}}
+  					a, a:visited, #menu a:hover, #menu .active a {color: {$microtemplate.darkMode-accentColor}}
+  					.btn:visited, .btn, .closelink:hover i, a.hmbrgr:hover i {background-color: {$microtemplate.darkMode-accentColor}}
+  					.btn:visited, .btn, .btn:disabled {border-color: {$microtemplate.darkMode-accentColor}}
+  					.btn:hover, .btn:disabled {color: {$microtemplate.darkMode-accentColor}}
+
+  				/* content sections */
+  					.ge-section {background-color: {$microtemplate.darkMode-ge-section.bg-default}}
+  					.ge-section.bg-light {background-color: {$microtemplate.darkMode-ge-section.bg-light}}
+  					.ge-section.bg-dark {background-color: {$microtemplate.darkMode-ge-section.bg-dark}; color: {$microtemplate.darkMode-text-light}}
+  					.ge-section.text-light {color: {$microtemplate.darkMode-text-light}}
+  					.ge-section.text-dark {color: {$microtemplate.darkMode-text-dark}}
+  					.ge-section .videobuttons svg .a, .ge-section .videobuttons svg .st0, .ge-section .videobuttons svg rect {fill:{$microtemplate.darkMode-text-default}}
+  					.ge-section.text-light .videobuttons  .a, .ge-section.text-light .videobuttons polygon.st0, .ge-section.text-light .videobuttons rect {fill:{$microtemplate.darkMode-text-light}}
+  					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.darkMode-text-dark}}
+
+  				/* accordion */
+  					a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$microtemplate.darkMode-text-default}}
+  					a.ge-accordion-section-title:hover {color: {$microtemplate.darkMode-accentColor}}
+  					.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$microtemplate.darkMode-text-default}}
+  					.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$microtemplate.darkMode-accentColor}}
+
+  				/* sub pages */
+  					.subpage {color: {$microtemplate.darkMode-text-default}}
+  					.subpage-body {background-color: {$microtemplate.darkMode-body-background}}
+  					.closelink i {background: {$microtemplate.darkMode-text-default}}
+
+  				/* language menu */
+  					#languagemenu li a {color: {$microtemplate.darkMode-text-default}}
+
+  				/* forms */
+  					input, select, textarea {font-family: {$microtemplate.darkMode-main-font-family}; color: {$microtemplate.darkMode-text-default}; border-color: {$microtemplate.darkMode-text-default}; -webkit-text-fill-color: {$microtemplate.darkMode-text-default};}
+  					i.validation-icon svg path {fill: {$microtemplate.darkMode-text-default}}
+
+  				/* ext:youtubevideo */
+  					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.darkMode-accentColor}}
+
+  				/* ext:pagelist styles */
+  					.pagelist .info, .pagelist .abstract {color: {$microtemplate.darkMode-text-default}}
+
+  				/* pagination */
+  					 ul.pagination>li>a {boreder-color: {$microtemplate.darkMode-accentColor}}
+  					 ul.pagination>li.current {$microtemplate.darkMode-text-default}}
+
+  				/* ext:personnel */
+  					.personnel svg path {fill: {$microtemplate.darkMode-text-default}}
+  					.ge-section.bg-dark .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
+  					.ge-section.text-light .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
+  					.ge-section.text-dark .personnel svg path {fill: {$microtemplate.darkMode-text-dark}}
+          }
+        </style>
+			)
+		}
+	}
+
+  ["{$microtemplate.nontransparent-header}" != "0"]
+		page.headerData {
+			10566 = TEXT
+			10566.value (
+				<style>
+          @media (prefers-color-scheme: dark) {
+					       #header {background-color: {$microtemplate.darkMode-header-bg}
+          }
+				</style>
+			)
+		}
+	[END]

@@ -17,7 +17,11 @@ call_user_func(function()
     'Microtemplate - Main'
   );
 
-  
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    $extensionKey,
+    'Configuration/TypoScript/DarkMode',
+    'Microtemplate - Dark Mode'
+  );
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Extensions/magnificpopup/Configuration/TypoScript',
