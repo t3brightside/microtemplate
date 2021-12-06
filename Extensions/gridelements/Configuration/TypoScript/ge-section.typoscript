@@ -33,6 +33,16 @@ tt_content.gridelements_pi1 {
   								    width = {$microtemplate.ge-section.bg-width}
   										width.override.field = flexform_bgimagewidth
   									}
+                    7 = LOAD_REGISTER
+                    7.theImage.cObject = COA
+                    7.theImage.cObject {
+                      10 = TEXT
+                      10.value.data = REGISTER:theImage
+                      10.stdWrap.replacement {
+                        10.search = /fileadmin/
+                        10.replace = fileadmin/
+                      }
+                    }
   									10 = IMG_RESOURCE
   									10 {
   										file = GIFBUILDER
