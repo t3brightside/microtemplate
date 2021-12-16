@@ -96,7 +96,7 @@
 					 ul.pagination>li.current {$microtemplate.text-default}}
 
 				/* ext:personnel */
-					.personnel svg path {fill: {$microtemplate.text-default}}
+					.ge-section .personnel svg path {fill: {$microtemplate.text-default}}
 					.ge-section.bg-dark .personnel svg path {fill: {$microtemplate.text-light}}
 					.ge-section.text-light .personnel svg path {fill: {$microtemplate.text-light}}
 					.ge-section.text-dark .personnel svg path {fill: {$microtemplate.text-dark}}
