@@ -11,8 +11,9 @@ mod.web_layout.BackendLayouts {
 							1 {
 								name = Page content
 								colPos = 0
-								allowedGridTypes = ge-section
-								allowed.CType = gridelements_pi1
+								allowed {
+                  CType = containerSection
+                }
 							}
 						}
 					}
@@ -41,9 +42,7 @@ mod.web_layout.BackendLayouts {
 				      1 {
 				        name = Page content
 				        colPos = 0
-				        disallowed {
-				          tx_gridelements_backend_layout = ge-section
-				        }
+				        disallowed.CType = containerSection
 				      }
 				    }
 				  }
