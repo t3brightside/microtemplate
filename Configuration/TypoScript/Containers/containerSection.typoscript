@@ -1,3 +1,4 @@
+page.includeCSS.containerSection = EXT:microtemplate/Resources/Public/Styles/Containers/containerSection.css
 tt_content.containerSection =< lib.contentElement
 tt_content.containerSection {
   templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/Containers/
