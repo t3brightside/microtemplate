@@ -1,0 +1,12 @@
+
+<div class="frame frame-default ge-accordion frame-space-before-{data.space_before_class} frame-space-after-{data.space_after_class}">
+    <f:for each="{children_101}" as="element">
+        <div class="ge-accordion-section">
+            <a href="#acc{element.uid}" class="ge-accordion-section-title">{element.header}</a>
+            <div id="acc{element.uid}" class="ge-accordion-section-content">
+			      {element.renderedContent -> f:format.raw()}
+                  <div class="clear"></div>
+            </div>
+        </div>
+	</f:for>
+</div>

@@ -1,0 +1,82 @@
+	<div
+		id="c{data.uid}"
+		class="ge-section {data.tx_microtemplate_c_classes}
+
+            {f:if(condition: '{data.tx_microtemplate_c_aligncontent}', then: 'align-{data.tx_microtemplate_c_aligncontent}')}
+            {f:if(condition: '{data.tx_microtemplate_c_framepadding}', then: 'frame-padding-{data.tx_microtemplate_c_framepadding}')}
+			{f:if(condition: '{data.tx_microtemplate_c_fullheight}==1', then: 'fullheight')}
+			{f:if(condition: '{data.tx_microtemplate_c_fullheight}==1&&{data.tx_microtemplate_c_vcenter}==1', then: 'vcenter')}
+			{f:if(condition: '{data.tx_microtemplate_c_fullwidth}==1', then: 'fullwidth')}
+			{f:if(condition: '{data.tx_microtemplate_c_bgcolorselect}', then: '{data.tx_microtemplate_c_bgcolorselect}')}
+			{f:if(condition: '{data.tx_microtemplate_c_textcolorselect}', then: '{data.tx_microtemplate_c_textcolorselect}')}
+			{f:if(condition: '{data.space_before_class}', then: 'frame-space-before-{data.space_before_class}')}
+			{f:if(condition: '{data.space_after_class}', then: 'frame-space-after-{data.space_after_class}')}
+			{f:if(condition: '{data.tx_microtemplate_c_bgplacement}', then: 'bg{data.tx_microtemplate_c_bgplacement}', else: 'bg0')}
+			{f:if(condition: '{data.assets}', then: 'has-bg-video')}
+			{f:if(condition: '{data.tx_microtemplate_c_bgfixed}', then: 'fixed')}
+		"
+		style="
+			{f:if(condition: '{sectionBgImage}', then: 'background: url(/{sectionBgImage}) no-repeat;')}
+			{f:if(condition: '{sectionBgImage}', then: 'background-size: cover;')}
+            {f:if(condition: '{data.tx_microtemplate_c_textcolor}', then: 'color: {data.tx_microtemplate_c_textcolor};')}
+			{f:if(condition: '{data.tx_microtemplate_c_bgcolor}', then: 'background-color: {data.tx_microtemplate_c_bgcolor};')}
+		">
+		<f:if condition="{data.tx_microtemplate_c_bgvideosound} && {assets.0.uid}">
+			<button class="videobuttons sound {f:if(condition: '{data.tx_microtemplate_c_bgvideoclearframe}', then: 'hasclearframebutton')}" style="border: none">
+				<svg class="off" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 23.8 19.9" style="enable-background:new 0 0 23.8 19.9;" xml:space="preserve">
+				<title>Sound</title>
+				<polygon class="st0" points="6,5 13.9,0 13.9,19.9 6,14.9 "/>
+				<rect y="5" class="st0" width="4" height="9.9"/>
+				<g>
+					<rect x="18.7" y="5.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1.2715 16.7804)" class="st0" width="1.9" height="9.6"/>
+					<rect x="18.7" y="5.1" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 26.4754 30.8165)" class="st0" width="1.9" height="9.6"/>
+				</g>
+				</svg>
+				<svg class="on" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 23.8 19.9" style="enable-background:new 0 0 23.8 19.9;" xml:space="preserve">
+				<title>Mute</title>
+				<path class="st0" d="M6,5l7.9-5v19.9l-7.9-5V5z M0,14.9h4V5H0V14.9z M20.1,1.7l-1.5,1.5c1.9,1.7,3,4.2,3,6.7c0,2.6-1.1,5-3,6.7
+					l1.5,1.5c2.3-2.1,3.7-5.1,3.7-8.2C23.8,6.8,22.4,3.8,20.1,1.7z M19.6,9.9c0-2-0.9-4-2.4-5.3l-1.5,1.5c1,1,1.6,2.4,1.6,3.9
+					c0,1.4-0.6,2.8-1.6,3.9l1.5,1.5C18.7,13.9,19.6,12,19.6,9.9z"/>
+				</svg>
+			</button>
+		</f:if>
+		<f:if condition="{data.tx_microtemplate_c_bgvideoclearframe}">
+			<button class="videobuttons clearframe" style="border: none">
+				<svg class="off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.81 17.86"><title>Hide Content</title><polygon class="a" points="23.82 5.95 21.83 5.95 21.83 1.99 17.86 1.99 17.86 0 23.82 0 23.82 5.95"/><polygon class="a" points="17.86 17.86 17.86 15.88 21.83 15.88 21.83 11.91 23.82 11.91 23.82 17.86 17.86 17.86"/><polygon class="a" points="0 11.91 1.99 11.91 1.99 15.88 5.95 15.88 5.95 17.86 0 17.86 0 11.91"/><polygon class="a" points="5.95 0 5.95 1.99 1.99 1.99 1.99 5.95 0 5.95 0 0 5.95 0"/><rect class="a" x="3.97" y="3.97" width="15.88" height="9.92"/></svg>
+				<svg class="on" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 23.8 17.9" style="enable-background:new 0 0 23.8 17.9;" xml:space="preserve">
+				<title>Show Content</title>
+				<g>
+					<polygon class="st0" points="23.8,6 21.8,6 21.8,2 17.9,2 17.9,0 23.8,0 	"/>
+					<polygon class="st0" points="17.9,17.9 17.9,15.9 21.8,15.9 21.8,11.9 23.8,11.9 23.8,17.9 	"/>
+					<polygon class="st0" points="0,11.9 2,11.9 2,15.9 6,15.9 6,17.9 0,17.9 	"/>
+					<polygon class="st0" points="6,0 6,2 2,2 2,6 0,6 0,0 	"/>
+				</g>
+				</svg>
+			</button>
+		</f:if>
+		<f:if condition="{assets.0.uid}">
+			<video id="videoid{data.uid}" class="bg-video" playsinline autoplay muted {f:if(condition: '{data.tx_microtemplate_c_bgvideoonoloop}', then: '', else: 'loop')}>
+				<f:for each="{assets}" as="asset">
+		    		<source src="{asset.publicUrl}" type="{asset.mimetype}">
+		    	</f:for>
+			</video>
+		</f:if>
+		<f:if condition="{data.tx_microtemplate_c_bgoverlay} || {data.tx_microtemplate_c_bgoverlaydark}">
+			<div id="overlay-{data.uid}" class="overlay" style="background: {data.tx_microtemplate_c_bgoverlay}; opacity: 0.{data.tx_microtemplate_c_bgoverlayopacity}"></div>
+		</f:if>
+		<div class="contentWidth">
+            <f:for each="{children_101}" as="element">
+    			{element.renderedContent -> f:format.raw()}
+    		</f:for>
+		</div>
+	</div>
+<f:if condition="{data.tx_microtemplate_c_bgoverlaydark}">
+    <script>
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) { // If media query matches
+          document.getElementById('overlay-{data.uid}').style.backgroundColor = '{data.tx_microtemplate_c_bgoverlaydark}';
+        }
+    </script>
+</f:if>

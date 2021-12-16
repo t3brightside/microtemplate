@@ -1,0 +1,19 @@
+page.includeCSS.containerGrids = EXT:microtemplate/Resources/Public/Styles/Containers/containerGrids.css
+
+lib.containerGridsDefault =< lib.contentElement
+lib.containerGridsDefault {
+  templateRootPaths.10 = EXT:microtemplate/Resources/Private/Templates/Containers/
+  partialRootPaths.10 = EXT:microtemplate/Resources/Private/Partials/Containers/
+  dataProcessing.13 = B13\Container\DataProcessing\ContainerProcessor
+}
+tt_content.containerGrid-1-1 =< lib.containerGridsDefault
+tt_content.containerGrid-1-1.templateName = ContainerGrid-1-1
+
+tt_content.containerGrid-2-1 =< lib.containerGridsDefault
+tt_content.containerGrid-2-1.templateName = ContainerGrid-2-1
+
+tt_content.containerGrid-1-2 =< lib.containerGridsDefault
+tt_content.containerGrid-1-2.templateName = ContainerGrid-1-2
+
+tt_content.containerGrid-1-1-1 =< lib.containerGridsDefault
+tt_content.containerGrid-1-1-1.templateName = ContainerGrid-1-1-1

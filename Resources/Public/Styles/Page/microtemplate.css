@@ -235,21 +235,21 @@ tr:last-child td {
     padding-bottom: 7em;
     float: left;
     width: 100%;
-    background-position: center center !important;
-    background-size: cover !important;
     position: relative;
 }
-
+.ge-section.bg0 {
+    background-position: center center !important;
+}
 .ge-section.bg1 {
-    background-position: left center !important;
+    background-position: left top !important;
 }
 
 .ge-section.bg2 {
-    background-position: right center !important;
+    background-position: left center !important;
 }
 
 .ge-section.bg3 {
-    background-position: left top !important;
+    background-position: left bottom !important;
 }
 
 .ge-section.bg4 {
@@ -257,15 +257,15 @@ tr:last-child td {
 }
 
 .ge-section.bg5 {
-    background-position: right top !important;
+    background-position: center bottom !important;
 }
 
 .ge-section.bg6 {
-    background-position: left bottom !important;
+    background-position: right top !important;
 }
 
 .ge-section.bg7 {
-    background-position: center bottom !important;
+    background-position: right center !important;
 }
 
 .ge-section.bg8 {

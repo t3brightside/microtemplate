@@ -13,8 +13,7 @@
 	"require": {
 		"typo3/cms-core": "^11.5",
 		"typo3/cms-fluid-styled-content": "^11.5",
-		"gridelementsteam/gridelements": "^11 || dev-master"
-
+		"b13/container": "^1.4"
 	},
 	"suggest": {
 		"t3brightside/advancedtitle": "Page title prefix & suffix",
