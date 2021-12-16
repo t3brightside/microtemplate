@@ -1,5 +1,5 @@
 
-page.includeJSFooterlibs.ge-accordion = EXT:microtemplate/Resources/Public/JavaScript/Content/ge-accordion.js
+page.includeJSFooterlibs.containerAccordion = EXT:microtemplate/Resources/Public/JavaScript/Containers/containerAccordion.js
 page {
 	includeCSS.containerAccordion = EXT:microtemplate/Resources/Public/Styles/Containers/containerAccordion.css
 	headerData {
