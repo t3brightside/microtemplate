@@ -19,15 +19,15 @@
   					.btn:hover, .btn:disabled {color: {$microtemplate.darkMode-accentColor}}
 
   				/* content sections */
-  					.ge-section {background-color: {$microtemplate.darkMode-ge-section.bg-default}}
-  					.ge-section.bg-light {background-color: {$microtemplate.darkMode-ge-section.bg-light}}
-  					.ge-section.bg-dark {background-color: {$microtemplate.darkMode-ge-section.bg-dark}; color: {$microtemplate.darkMode-text-light}}
-  					.ge-section.text-light {color: {$microtemplate.darkMode-text-light}}
-  					.ge-section.text-dark {color: {$microtemplate.darkMode-text-dark}}
-            .ge-section.text-dark input, .ge-section.text-dark select, .ge-section.text-dark textarea {border-color: {$microtemplate.darkMode-text-dark}}
-  					.ge-section .videobuttons svg .a, .ge-section .videobuttons svg .st0, .ge-section .videobuttons svg rect {fill:{$microtemplate.darkMode-text-default}}
-  					.ge-section.text-light .videobuttons  .a, .ge-section.text-light .videobuttons polygon.st0, .ge-section.text-light .videobuttons rect {fill:{$microtemplate.darkMode-text-light}}
-  					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.darkMode-text-dark}}
+  					.containerSection {background-color: {$microtemplate.darkMode-containerSection.bg-default}}
+  					.containerSection.bg-light {background-color: {$microtemplate.darkMode-containerSection.bg-light}}
+  					.containerSection.bg-dark {background-color: {$microtemplate.darkMode-containerSection.bg-dark}; color: {$microtemplate.darkMode-text-light}}
+  					.containerSection.text-light {color: {$microtemplate.darkMode-text-light}}
+  					.containerSection.text-dark {color: {$microtemplate.darkMode-text-dark}}
+            .containerSection.text-dark input, .containerSection.text-dark select, .containerSection.text-dark textarea {border-color: {$microtemplate.darkMode-text-dark}}
+  					.containerSection .videobuttons svg .a, .containerSection .videobuttons svg .st0, .containerSection .videobuttons svg rect {fill:{$microtemplate.darkMode-text-default}}
+  					.containerSection.text-light .videobuttons  .a, .containerSection.text-light .videobuttons polygon.st0, .containerSection.text-light .videobuttons rect {fill:{$microtemplate.darkMode-text-light}}
+  					.containerSection.text-dark .videobuttons  .a, .containerSection.text-dark .videobuttons polygon.st0, .containerSection.text-dark .videobuttons rect {fill:{$microtemplate.darkMode-text-dark}}
 
           /* accordion */
             .containerAccordion-title, .containerAccordion-title:visited {color: {$microtemplate.darkMode-text-default}}
@@ -45,12 +45,12 @@
 
   				/* forms */
   					input, select, textarea {font-family: {$microtemplate.darkMode-main-font-family}; color: {$microtemplate.darkMode-text-default}; border-color: {$microtemplate.darkMode-text-default}; -webkit-text-fill-color: {$microtemplate.darkMode-text-default};}
-            .ge-section.text-dark input, .ge-section.text-dark select, .ge-section.text-dark textarea {color: {$microtemplate.darkMode-text-dark}; border-color: {$microtemplate.darkMode-text-dark}; -webkit-text-fill-color: {$microtemplate.darkMode-text-dark};}
-            .ge-section.text-light input, .ge-section.text-light select, .ge-section.text-light textarea {color: {$microtemplate.darkMode-text-light}; border-color: {$microtemplate.darkMode-text-light}; -webkit-text-fill-color: {$microtemplate.darkMode-text-light};}
+            .containerSection.text-dark input, .containerSection.text-dark select, .containerSection.text-dark textarea {color: {$microtemplate.darkMode-text-dark}; border-color: {$microtemplate.darkMode-text-dark}; -webkit-text-fill-color: {$microtemplate.darkMode-text-dark};}
+            .containerSection.text-light input, .containerSection.text-light select, .containerSection.text-light textarea {color: {$microtemplate.darkMode-text-light}; border-color: {$microtemplate.darkMode-text-light}; -webkit-text-fill-color: {$microtemplate.darkMode-text-light};}
 
             i.validation-icon svg path {fill: {$microtemplate.darkMode-text-default}}
-            .ge-section.text-dark i.validation-icon svg path {fill: {$microtemplate.darkMode-text-dark}}
-            .ge-section.text-light i.validation-icon svg path {fill: {$microtemplate.darkMode-text-light}}
+            .containerSection.text-dark i.validation-icon svg path {fill: {$microtemplate.darkMode-text-dark}}
+            .containerSection.text-light i.validation-icon svg path {fill: {$microtemplate.darkMode-text-light}}
 
   				/* ext:youtubevideo */
   					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.darkMode-accentColor}}
@@ -63,10 +63,10 @@
   					 ul.pagination>li.current {color: {$microtemplate.darkMode-text-default}}
 
   				/* ext:personnel */
-  					.ge-section .personnel svg path {fill: {$microtemplate.darkMode-text-default}}
-  					.ge-section.bg-dark .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
-  					.ge-section.text-light .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
-  					.ge-section.text-dark .personnel svg path {fill: {$microtemplate.darkMode-text-dark}}
+  					.containerSection .personnel svg path {fill: {$microtemplate.darkMode-text-default}}
+  					.containerSection.bg-dark .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
+  					.containerSection.text-light .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
+  					.containerSection.text-dark .personnel svg path {fill: {$microtemplate.darkMode-text-dark}}
           }
         </style>
 			)

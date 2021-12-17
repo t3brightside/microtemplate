@@ -9,10 +9,10 @@
 # cat=Microtemplate Dark Mode/microtemplatedarkmode; type=color; label= Dark text:Used on light background or if set in section settings
 	microtemplate.darkMode-text-dark = #000000
 # cat=Microtemplate Dark Mode/microtemplatedarkmode; type=color; label= Default section background
-	microtemplate.darkMode-ge-section.bg-default = #171717
+	microtemplate.darkMode-containerSection.bg-default = #171717
 # cat=Microtemplate Dark Mode/microtemplatedarkmode; type=color; label= Light section background
-	microtemplate.darkMode-ge-section.bg-light = #242424
+	microtemplate.darkMode-containerSection.bg-light = #242424
 # cat=Microtemplate Dark Mode/microtemplatedarkmode; type=color; label= Dark section background
-	microtemplate.darkMode-ge-section.bg-dark = #1A1A1A
+	microtemplate.darkMode-containerSection.bg-dark = #1A1A1A
 # cat=Microtemplate Dark Mode/microtemplatedarkmode; type=color; label= Header background
 	microtemplate.darkMode-header-bg = rgba(23,23,23,0.9)

@@ -31,11 +31,11 @@
 # cat=Microtemplate/microtemplatestyles; type=color; label= Dark text:Used on light background or if set in section settings
 	microtemplate.text-dark = #000000
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default section background
-	microtemplate.ge-section.bg-default = #ffffff
+	microtemplate.containerSection.bg-default = #ffffff
 # cat=Microtemplate/microtemplatestyles; type=color; label= Light section background
-	microtemplate.ge-section.bg-light = #f2f2f2
+	microtemplate.containerSection.bg-light = #f2f2f2
 # cat=Microtemplate/microtemplatestyles; type=color; label= Dark section background
-	microtemplate.ge-section.bg-dark = #353535
+	microtemplate.containerSection.bg-dark = #353535
 # cat=Microtemplate/microtemplatestyles; type=color; label= Header background
 	microtemplate.header-bg = rgba(255,255,255,0.9)
 # cat=Microtemplate/microtemplatestyles; type=boolean; type=color; label= Non transparent header at home page
@@ -47,11 +47,11 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum sub page content width (px, em or %)
 	microtemplate.subpageContentWidth = 860px
 # cat=Microtemplate/microtemplatestyles; type=int; label= Content section background image width (px)
-	microtemplate.ge-section.bg-width = 1400
+	microtemplate.containerSection.bg-width = 1400
 # cat=Microtemplate/microtemplatestyles; type=int[10-100]; label= Content section background jpg quality
-	microtemplate.ge-section.bg-quality = 80
+	microtemplate.containerSection.bg-quality = 80
 # cat=Microtemplate/microtemplatestyles; type=boolean; label= Enable 3 degree angled edges between content sections:Experimental, fixed backgrounds won't work in some browsers if activated
-	microtemplate.ge-section-angeled-edges = 0
+	microtemplate.containerSection-angeled-edges = 0
 # cat=Microtemplate/microtemplatestyles; type=boolean; label= Enable content fade in on scrolling
 	microtemplate.fade-in-content = 0
 # cat=Microtemplate/microtemplatestyles; type=string; label= Mobile menu content page ID (shows elements from this page)
