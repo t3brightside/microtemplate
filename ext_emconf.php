@@ -13,7 +13,7 @@
       'depends' => [
         'typo3' => '11.5.0-11.5.99',
         'fluid_styled_content' => '11.5.0-11.5.99',
-        'gridelements' => '11.0.0-11.99.99',
+        'container' => '1.4.0-1.4.99',
       ],
     ],
   ];
