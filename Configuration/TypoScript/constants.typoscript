@@ -46,12 +46,6 @@
 	microtemplate.contentWidth = 1240px
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum sub page content width (px, em or %)
 	microtemplate.subpageContentWidth = 860px
-# cat=Microtemplate/microtemplatestyles; type=int; label= Content section background image width (px)
-	microtemplate.containerSection.bg-width = 1400
-# cat=Microtemplate/microtemplatestyles; type=int[10-100]; label= Content section background jpg quality
-	microtemplate.containerSection.bg-quality = 80
-# cat=Microtemplate/microtemplatestyles; type=boolean; label= Enable 3 degree angled edges between content sections:Experimental, fixed backgrounds won't work in some browsers if activated
-	microtemplate.containerSection-angeled-edges = 0
 # cat=Microtemplate/microtemplatestyles; type=boolean; label= Enable content fade in on scrolling
 	microtemplate.fade-in-content = 0
 # cat=Microtemplate/microtemplatestyles; type=string; label= Mobile menu content page ID (shows elements from this page)
@@ -79,3 +73,6 @@
 # Favicon
 favicon.svgPath = data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cg transform='translate(-481 -613)'%3E%3Cg transform='translate(-280 -278)'%3E%3Cpath d='M0,0H36V36H0Z' transform='translate(761 891)' fill='%23bc0000'/%3E%3C/g%3E%3Crect width='22' height='7' transform='translate(488 620)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(488 631)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(501 631)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A
 favicon.pngPath = typo3conf/ext/microtemplate/Resources/Public/Icons/Extension.png
+
+# Containeritems
+containerSection.bgImageWidth = 1800
