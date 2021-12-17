@@ -60,7 +60,7 @@
 
   				/* pagination */
   					 ul.pagination>li>a {boreder-color: {$microtemplate.darkMode-accentColor}}
-  					 ul.pagination>li.current {$microtemplate.darkMode-text-default}}
+  					 ul.pagination>li.current {color: {$microtemplate.darkMode-text-default}}
 
   				/* ext:personnel */
   					.ge-section .personnel svg path {fill: {$microtemplate.darkMode-text-default}}
