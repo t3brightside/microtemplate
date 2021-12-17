@@ -29,11 +29,11 @@
   					.ge-section.text-light .videobuttons  .a, .ge-section.text-light .videobuttons polygon.st0, .ge-section.text-light .videobuttons rect {fill:{$microtemplate.darkMode-text-light}}
   					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.darkMode-text-dark}}
 
-  				/* accordion */
-  					a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$microtemplate.darkMode-text-default}}
-  					a.ge-accordion-section-title:hover {color: {$microtemplate.darkMode-accentColor}}
-  					.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$microtemplate.darkMode-text-default}}
-  					.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$microtemplate.darkMode-accentColor}}
+          /* accordion */
+            .containerAccordion-title, .containerAccordion-title:visited {color: {$microtemplate.darkMode-text-default}}
+            .containerAccordion-title:hover {color: {$microtemplate.darkMode-accentColor}}
+            .containerAccordion-title::after, .containerAccordion-title::before {background-color: {$microtemplate.darkMode-text-default}}
+            .containerAccordion-title:hover::after, .containerAccordion-title:hover::before {background-color: {$microtemplate.darkMode-accentColor}}
 
   				/* sub pages */
   					.subpage {color: {$microtemplate.darkMode-text-default}}

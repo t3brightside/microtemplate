@@ -35,7 +35,7 @@
 				<style>
 					body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 
-					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
+					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav, .containerAccordion-title {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
 					#header.scrolled, #header.force-bg {background-color: {$microtemplate.header-bg}}
 
 				/* page containers */
@@ -63,10 +63,10 @@
 					.ge-section.text-dark .videobuttons  .a, .ge-section.text-dark .videobuttons polygon.st0, .ge-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark}}
 
 				/* accordion */
-					a.ge-accordion-section-title, a.ge-accordion-section-title:visited {color: {$microtemplate.text-default}}
-					a.ge-accordion-section-title:hover {color: {$microtemplate.accentColor}}
-					.ge-accordion-section-title::after, .ge-accordion-section-title::before {background-color: {$microtemplate.text-default}}
-					.ge-accordion-section-title:hover::after, .ge-accordion-section-title:hover::before {background-color: {$microtemplate.accentColor}}
+					.containerAccordion-title, .containerAccordion-title:visited {font-weight: 500; color: {$microtemplate.text-default}}
+					.containerAccordion-title:hover {color: {$microtemplate.accentColor}}
+					.containerAccordion-title::after, .containerAccordion-title::before {background-color: {$microtemplate.text-default}}
+					.containerAccordion-title:hover::after, .containerAccordion-title:hover::before {background-color: {$microtemplate.accentColor}}
 
 				/* sub pages */
 					.subpage {color: {$microtemplate.text-default}}
