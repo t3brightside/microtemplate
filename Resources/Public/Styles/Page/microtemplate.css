@@ -119,7 +119,7 @@ table {
 }
 
 th {
-    font-weight: 700;
+    font-weight: bold;
 }
 
 th, td {
@@ -135,7 +135,7 @@ th:last-child, td:last-child {
     padding-right: 0;
 }
 
-tr:last-child td {
+tbody tr:last-child th, tbody tr:last-child td {
     border-bottom: none;
     padding-bottom: 0;
 }
