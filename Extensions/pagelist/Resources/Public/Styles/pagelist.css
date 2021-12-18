@@ -9,6 +9,15 @@
     padding-left: 3em;
 }
 
+.pagelist.list>.item .title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.pagelist.list>.item .info {
+    margin-top: 0.3em;
+}
+
 .pagelist.list>.item:first-child a {
     border-top: none;
     padding-top: 0;
