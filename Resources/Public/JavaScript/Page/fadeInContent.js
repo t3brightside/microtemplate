@@ -25,3 +25,7 @@ $(window).scroll(function() {
 $(window).on('pageshow', function() {
   $addTo.addInViewport();
 });
+
+$('.containerAccordion-title').click(function() {
+  $addTo.addInViewport();
+});
