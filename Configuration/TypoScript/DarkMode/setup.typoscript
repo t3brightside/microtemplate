@@ -63,7 +63,7 @@
   					 ul.pagination>li.current {color: {$microtemplate.darkMode-text-default}}
 
   				/* ext:personnel */
-  					.containerSection .personnel svg path {fill: {$microtemplate.darkMode-text-default}}
+  					.containerSection .personnel svg path, .subpage .personnel svg path {fill: {$microtemplate.darkMode-text-default}}
   					.containerSection.bg-dark .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
   					.containerSection.text-light .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
   					.containerSection.text-dark .personnel svg path {fill: {$microtemplate.darkMode-text-dark}}

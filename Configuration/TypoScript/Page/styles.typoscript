@@ -95,7 +95,7 @@
 					 ul.pagination>li>a {boreder-color: {$microtemplate.accentColor}}
 
 				/* ext:personnel */
-					.containerSection .personnel svg path {fill: {$microtemplate.text-default}}
+					.containerSection .personnel svg path, .subpage .personnel svg path {fill: {$microtemplate.text-default}}
 					.containerSection.bg-dark .personnel svg path {fill: {$microtemplate.text-light}}
 					.containerSection.text-light .personnel svg path {fill: {$microtemplate.text-light}}
 					.containerSection.text-dark .personnel svg path {fill: {$microtemplate.text-dark}}
