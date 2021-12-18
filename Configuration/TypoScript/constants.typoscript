@@ -76,3 +76,4 @@ favicon.pngPath = typo3conf/ext/microtemplate/Resources/Public/Icons/Extension.p
 
 # Containeritems
 containerSection.bgImageWidth = 1800
+containerSection.defaultAlignment = center
