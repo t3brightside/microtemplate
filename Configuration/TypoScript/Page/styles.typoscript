@@ -93,7 +93,6 @@
 
 				/* pagination */
 					 ul.pagination>li>a {boreder-color: {$microtemplate.accentColor}}
-					 ul.pagination>li.current {color: {$microtemplate.text-default}}
 
 				/* ext:personnel */
 					.containerSection .personnel svg path {fill: {$microtemplate.text-default}}
