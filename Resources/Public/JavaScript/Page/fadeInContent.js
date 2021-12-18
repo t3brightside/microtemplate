@@ -1,7 +1,7 @@
 /*
 Set .in-viewport class to every .frame to create fade in effect with CSS
 */
-var $addTo = $('.frame');
+var $addTo = $('#content .frame');
 $.fn.addRemoveInViewport = function() {
   var $effectMe = $(this);
   var bottom_of_window = $(window).scrollTop() + $(window).height();
