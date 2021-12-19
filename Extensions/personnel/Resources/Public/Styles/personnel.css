@@ -24,3 +24,8 @@
 .personnel a, .personnel a:visited {
   font-weight: normal !important;
 }
+
+
+.personnel.list .text {
+    margin-top: 0.5em;
+}
