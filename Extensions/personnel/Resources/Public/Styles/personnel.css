@@ -1,3 +1,17 @@
+
+
+.personnel.cards.break-two>.card {
+  max-width: 320px;
+}
+.align-center .personnel.cards.break-two>.card  {
+    margin: auto;
+    float: none;
+
+}
+.personnel.cards.break-two>.card-space {
+  width: 100%
+}
+
 .personnel img.person {
   max-width: 15em;
   border-radius: 50%;
