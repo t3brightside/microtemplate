@@ -5,13 +5,32 @@
 <p>{data.abstract}</p>
 <f:if condition="{data.tx_pagelist_datetime}">
   <h3 class="date">
-    <f:format.date format="j. M Y">{data.tx_pagelist_datetime}</f:format.date>
-    <f:if condition="{data.tx_pagelist_starttime}">/ <f:format.date format="H:i">{data.tx_pagelist_datetime}</f:format.date></f:if>
+    <f:comment><f:format.date format="j. M Y">{data.tx_pagelist_datetime}</f:format.date></f:comment>
+    <f:if condition="{data.tx_pagelist_eventstart}">
+        <f:if condition="{f:format.date(format: 'Y', date: '{data.tx_pagelist_eventstart}')} == {f:format.date(format: 'Y', date: '{data.tx_pagelist_eventfinish}')}">
+            <f:then>
+                <f:format.date format="j. M">
+                    {data.tx_pagelist_eventstart}
+                </f:format.date>
+            </f:then>
+            <f:else>
+                <f:format.date format="j. M Y">
+                    {data.tx_pagelist_eventstart}
+                </f:format.date>
+            </f:else>
+        </f:if>
+        <f:if condition="{data.tx_pagelist_starttime}">
+            / <f:format.date format="H:i">{data.tx_pagelist_eventstart}</f:format.date>
+        </f:if>
+    </f:if>
     <f:if condition="{data.tx_pagelist_eventfinish}">
       –
       <f:format.date format="j. M Y">
         {data.tx_pagelist_eventfinish}
       </f:format.date>
+      <f:if condition="{data.tx_pagelist_endtime}">
+          / <f:format.date format="H:i">{data.tx_pagelist_eventfinish}</f:format.date>
+      </f:if>
     </f:if>
     <f:comment>
         <a style="font-weight: normal; display: block; float: right" title="Add to Google Calendar" href="//www.google.com/calendar/event?action=TEMPLATE&dates={data.tx_pagelist_datetime -> f:format.date(format: 'Ymd')}T{data.tx_pagelist_datetime -> f:format.date(format: 'His')}Z%2F{data.tx_pagelist_eventfinish -> f:format.date(format: 'Ymd')}T{data.tx_pagelist_eventfinish -> f:format.date(format:    'His')}Z&text={data.title}&location={data.tx_pagelist_eventlocation}&details={data.abstract}">[gCal]</a>

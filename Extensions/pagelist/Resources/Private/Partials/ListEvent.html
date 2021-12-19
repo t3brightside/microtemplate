@@ -4,7 +4,19 @@
       <h3 class="title">{page.data.title}</h3>
       <f:if condition="{page.data.tx_pagelist_eventlocation}">
         <p class="startdate info location">
-          <f:if condition="{page.data.tx_pagelist_datetime}"><f:format.date format="j. M Y">{page.data.tx_pagelist_datetime}</f:format.date></f:if> ☉ {page.data.tx_pagelist_eventlocation}
+            <f:if condition="{f:format.date(format: 'Y', date: '{page.data.tx_pagelist_eventstart}')} == {f:format.date(format: 'Y', date: '{page.data.tx_pagelist_eventfinish}')}">
+                <f:then>
+                    <f:format.date format="j. M">
+                        {page.data.tx_pagelist_eventstart}
+                    </f:format.date>
+                </f:then>
+                <f:else>
+                    <f:format.date format="j. M Y">
+                        {page.data.tx_pagelist_eventstart}
+                    </f:format.date>
+                </f:else>
+            </f:if>
+            <f:if condition="{page.data.tx_pagelist_eventstart} && {page.data.tx_pagelist_eventfinish}">– <f:format.date format="j. M Y">{page.data.tx_pagelist_eventfinish}</f:format.date></f:if> ☉ {page.data.tx_pagelist_eventlocation}
         </p>
       </f:if>
       <f:if condition="{data.tx_pagelist_disableabstract} == 0">
