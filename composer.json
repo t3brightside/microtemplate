@@ -13,9 +13,8 @@
 	"require": {
 		"typo3/cms-core": "^11.5",
 		"typo3/cms-fluid-styled-content": "^11.5",
-		"t3brightside/containeritems": "dev-main",
-		"b13/container": "^1.4",
-		"ichhabrecht/content-defender": "^3.2"
+		"t3brightside/containeritems": "^1",
+		"ichhabrecht/content-defender": "^3"
 	},
 	"suggest": {
 		"t3brightside/advancedtitle": "Page title prefix & suffix",
