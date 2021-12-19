@@ -29,7 +29,7 @@
 
 ## Install
 - `composer req t3brightside/microtemplate` or from TYPO3 extension repository **[microtemplate](https://extensions.typo3.org/extension/microtemplate/)**
-- Include static templates in that order: **fluid_styled_content**, advancedpagetitle, personnel, pagelist, youtubevideo, etc, **microtemplate scripts**, **microtemplate**
+- Include static templates in that order: **fluid_styled_content**, advancedpagetitle, personnel, pagelist, youtubevideo, etc, **containeritems section**, **microtemplate scripts**, **microtemplate**
 - Use TypoScript constant editor for customisation
 - **Edit home page** to set _'Resources -> Include Page TSConfig -> Microtemplate – Main'_ and save
 - **Edit home page** to set _'Appearance -> Page layout -> Backend layout  (this page only) -> Home'_ and _'Appearance -> Page layout (subpages of this page) -> Backend layout -> Sub'_
