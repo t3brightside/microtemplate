@@ -84,8 +84,11 @@
 }
 
 #menu.open {
+    position: relative;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow-y: auto;
+    padding-bottom: 6em;
 }
 
 #menu>nav>ul {
@@ -95,7 +98,6 @@
     padding: 4em 0 3em 0;
     margin: 0;
     width: 100%;
-    min-height: calc(100vh - 150px);
 }
 
 #menu>nav>ul>li {

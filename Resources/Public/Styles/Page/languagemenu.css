@@ -2,14 +2,19 @@
     text-transform: uppercase;
     font-size: .9em;
     text-align: center;
-    float: left;
     transition: all .2s;
-    padding-bottom: 6em;
+    box-sizing: border-box;
+    width: auto;
+    align: center;
+    margin: auto;
+    width: 100%;
 }
 
 #languagemenu>nav>ul {
+    width: auto;
+    display: inline-block;
     list-style: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     border-top: 1px solid #111;
 }
