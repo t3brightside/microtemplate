@@ -14,6 +14,7 @@
 - TYPO3
 - fluid_styled_content
 - gridelements
+- containeritems
 
 ## Features
 - Can be installed in multi domain setup or just for a sub page
@@ -21,9 +22,9 @@
 - Configurable color schemes
 - Automatic menu of section titles
 - Automatic language menu
-- Content grids, accordions, cards
+- Content columns & accordions
 - Section background (colour, image with effects, video)
-- Section scroll in effect and angled edges
+- Section scroll in effect
 - Dark mode support
 
 ## Install
