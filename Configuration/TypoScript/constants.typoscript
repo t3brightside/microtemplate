@@ -15,7 +15,7 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
 	microtemplate.logoFile = typo3conf/ext/microtemplate/Resources/Public/Images/brightside_logo.svg
 # cat=Microtemplate/microtemplatestyles; type=string; label=Google Fonts link
-	microtemplate.google-font-link = https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500
+	microtemplate.google-font-link = https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;500&display=swap
 # cat=Microtemplate/microtemplatestyles; type=string; label=Name of the header & menu font
 	microtemplate.header-font-family = Fira Sans Extra Condensed
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main font family
