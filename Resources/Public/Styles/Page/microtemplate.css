@@ -454,6 +454,9 @@ ul.ce-uploads li .ce-uploads-filesize {
     html {
         font-size: 16px;
     }
+    h1 {
+        font-size: 2.5em;
+    }
 }
 
 @media screen and (max-width: 680px) {
