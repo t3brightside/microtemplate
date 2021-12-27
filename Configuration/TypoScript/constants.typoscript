@@ -46,8 +46,6 @@
 	microtemplate.contentWidth = 1240px
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum sub page content width (px, em or %)
 	microtemplate.subpageContentWidth = 860px
-# cat=Microtemplate/microtemplatestyles; type=boolean; label= Enable content fade in on scrolling
-	microtemplate.fade-in-content = 0
 # cat=Microtemplate/microtemplatestyles; type=string; label= Mobile menu content page ID (shows elements from this page)
 	microtemplate.mobilemenu-content-page = 0
 
@@ -67,6 +65,7 @@ gallerycontent.imageWidth = 800
   styles.content.textmedia.maxW = 1126
   gallerycontent.imageWidth = 1126
 [END]
+
 # Template
 	microtemplate.partialRootPath = EXT:microtemplate/Resources/Private/Partials/
 	microtemplate.templateRootPath = EXT:microtemplate/Resources/Private/Templates/

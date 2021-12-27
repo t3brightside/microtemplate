@@ -114,9 +114,6 @@
 		}
 	[END]
 
-  ["{$microtemplate.fade-in-content}" == "1"]
-    page.includeCSS.fadeIncontent = EXT:microtemplate/Resources/Public/Styles/Page/fadeInContent.css
-  [END]
 
 	["{$microtemplate.customCSS}" != "0"]
 		page.includeCSS.customlCSS = {$microtemplate.customCSS}

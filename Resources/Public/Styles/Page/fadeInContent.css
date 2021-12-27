@@ -1,8 +1,0 @@
-#content .frame {
-    opacity: 0;
-    transition: opacity .4s ease-in;
-}
-
-#content .frame.in-viewport {
-    opacity: 1;
-}
