@@ -44,7 +44,7 @@
   					#languagemenu li a {color: {$microtemplate.darkMode-text-default}}
 
   				/* forms */
-  					input, select, textarea {font-family: {$microtemplate.darkMode-main-font-family}; color: {$microtemplate.darkMode-text-default}; border-color: {$microtemplate.darkMode-text-default}; -webkit-text-fill-color: {$microtemplate.darkMode-text-default};}
+  					input, select, textarea {color: {$microtemplate.darkMode-text-default}; border-color: {$microtemplate.darkMode-text-default}; -webkit-text-fill-color: {$microtemplate.darkMode-text-default};}
             .c-section.text-dark input, .c-section.text-dark select, .c-section.text-dark textarea {color: {$microtemplate.darkMode-text-dark}; border-color: {$microtemplate.darkMode-text-dark}; -webkit-text-fill-color: {$microtemplate.darkMode-text-dark};}
             .c-section.text-light input, .c-section.text-light select, .c-section.text-light textarea {color: {$microtemplate.darkMode-text-light}; border-color: {$microtemplate.darkMode-text-light}; -webkit-text-fill-color: {$microtemplate.darkMode-text-light};}
 
