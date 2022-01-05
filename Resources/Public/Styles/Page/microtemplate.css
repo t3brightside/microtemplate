@@ -199,12 +199,12 @@ tbody tr:last-child th, tbody tr:last-child td {
 }
 
 #header {
-    transition: all .2s;
     position: fixed;
     z-index: 12;
     width: 100%;
     padding: 1.333em 0;
     top: 0;
+    transition: all .3s;
 }
 
 #logo svg {
