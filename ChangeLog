@@ -18,3 +18,10 @@
   – Install instructions and README clean up
   - Inline SVG logo from TS
   - Add pagination styles for ext:paginatedprocessors
+* 3.1.0
+  - Remove vCal page type option and use one from ext:pagelist instead
+  - Update GoogleFonts link with &swap
+  - Remove section content fade-in/out and use the function from ext:containeritems
+  - Improved header font size handling on mobile screens
+  - Content fade-in/out on scroll is set from ext:containeritems now
+  - Default image size constants improved to fit in content more precise
