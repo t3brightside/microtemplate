@@ -19,21 +19,21 @@
   					.btn:hover, .btn:disabled {color: {$microtemplate.darkMode-accentColor}}
 
   				/* content sections */
-  					.containerSection {background-color: {$microtemplate.darkMode-containerSection.bg-default}}
-  					.containerSection.bg-light {background-color: {$microtemplate.darkMode-containerSection.bg-light}}
-  					.containerSection.bg-dark {background-color: {$microtemplate.darkMode-containerSection.bg-dark}; color: {$microtemplate.darkMode-text-light}}
-  					.containerSection.text-light {color: {$microtemplate.darkMode-text-light}}
-  					.containerSection.text-dark {color: {$microtemplate.darkMode-text-dark}}
-            .containerSection.text-dark input, .containerSection.text-dark select, .containerSection.text-dark textarea {border-color: {$microtemplate.darkMode-text-dark}}
-  					.containerSection .videobuttons svg .a, .containerSection .videobuttons svg .st0, .containerSection .videobuttons svg rect {fill:{$microtemplate.darkMode-text-default}}
-  					.containerSection.text-light .videobuttons  .a, .containerSection.text-light .videobuttons polygon.st0, .containerSection.text-light .videobuttons rect {fill:{$microtemplate.darkMode-text-light}}
-  					.containerSection.text-dark .videobuttons  .a, .containerSection.text-dark .videobuttons polygon.st0, .containerSection.text-dark .videobuttons rect {fill:{$microtemplate.darkMode-text-dark}}
+  					.c-section {background-color: {$microtemplate.darkMode-containerSection.bg-default}}
+  					.c-section.bg-light {background-color: {$microtemplate.darkMode-containerSection.bg-light}}
+  					.c-section.bg-dark {background-color: {$microtemplate.darkMode-containerSection.bg-dark}; color: {$microtemplate.darkMode-text-light}}
+  					.c-section.text-light {color: {$microtemplate.darkMode-text-light}}
+  					.c-section.text-dark {color: {$microtemplate.darkMode-text-dark}}
+            .c-section.text-dark input, .c-section.text-dark select, .c-section.text-dark textarea {border-color: {$microtemplate.darkMode-text-dark}}
+  					.c-section .videobuttons svg .a, .c-section .videobuttons svg .st0, .c-section .videobuttons svg rect {fill:{$microtemplate.darkMode-text-default}}
+  					.c-section.text-light .videobuttons  .a, .c-section.text-light .videobuttons polygon.st0, .c-section.text-light .videobuttons rect {fill:{$microtemplate.darkMode-text-light}}
+  					.c-section.text-dark .videobuttons  .a, .c-section.text-dark .videobuttons polygon.st0, .c-section.text-dark .videobuttons rect {fill:{$microtemplate.darkMode-text-dark}}
 
           /* accordion */
-            .containerAccordion-title, .containerAccordion-title:visited {color: {$microtemplate.darkMode-text-default}}
-            .containerAccordion-title:hover {color: {$microtemplate.darkMode-accentColor}}
-            .containerAccordion-title::after, .containerAccordion-title::before {background-color: {$microtemplate.darkMode-text-default}}
-            .containerAccordion-title:hover::after, .containerAccordion-title:hover::before {background-color: {$microtemplate.darkMode-accentColor}}
+            .c-accordion-title, .c-accordion-title:visited {color: {$microtemplate.darkMode-text-default}}
+            .c-accordion-title:hover {color: {$microtemplate.darkMode-accentColor}}
+            .c-accordion-title::after, .c-accordion-title::before {background-color: {$microtemplate.darkMode-text-default}}
+            .c-accordion-title:hover::after, .c-accordion-title:hover::before {background-color: {$microtemplate.darkMode-accentColor}}
 
   				/* sub pages */
   					.subpage {color: {$microtemplate.darkMode-text-default}}
@@ -45,12 +45,12 @@
 
   				/* forms */
   					input, select, textarea {font-family: {$microtemplate.darkMode-main-font-family}; color: {$microtemplate.darkMode-text-default}; border-color: {$microtemplate.darkMode-text-default}; -webkit-text-fill-color: {$microtemplate.darkMode-text-default};}
-            .containerSection.text-dark input, .containerSection.text-dark select, .containerSection.text-dark textarea {color: {$microtemplate.darkMode-text-dark}; border-color: {$microtemplate.darkMode-text-dark}; -webkit-text-fill-color: {$microtemplate.darkMode-text-dark};}
-            .containerSection.text-light input, .containerSection.text-light select, .containerSection.text-light textarea {color: {$microtemplate.darkMode-text-light}; border-color: {$microtemplate.darkMode-text-light}; -webkit-text-fill-color: {$microtemplate.darkMode-text-light};}
+            .c-section.text-dark input, .c-section.text-dark select, .c-section.text-dark textarea {color: {$microtemplate.darkMode-text-dark}; border-color: {$microtemplate.darkMode-text-dark}; -webkit-text-fill-color: {$microtemplate.darkMode-text-dark};}
+            .c-section.text-light input, .c-section.text-light select, .c-section.text-light textarea {color: {$microtemplate.darkMode-text-light}; border-color: {$microtemplate.darkMode-text-light}; -webkit-text-fill-color: {$microtemplate.darkMode-text-light};}
 
             i.validation-icon svg path {fill: {$microtemplate.darkMode-text-default}}
-            .containerSection.text-dark i.validation-icon svg path {fill: {$microtemplate.darkMode-text-dark}}
-            .containerSection.text-light i.validation-icon svg path {fill: {$microtemplate.darkMode-text-light}}
+            .c-section.text-dark i.validation-icon svg path {fill: {$microtemplate.darkMode-text-dark}}
+            .c-section.text-light i.validation-icon svg path {fill: {$microtemplate.darkMode-text-light}}
 
   				/* ext:youtubevideo */
   					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.darkMode-accentColor}}
@@ -63,10 +63,10 @@
   					 ul.pagination>li.current {color: {$microtemplate.darkMode-text-default}}
 
   				/* ext:personnel */
-  					.containerSection .personnel svg path, .subpage .personnel svg path {fill: {$microtemplate.darkMode-text-default}}
-  					.containerSection.bg-dark .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
-  					.containerSection.text-light .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
-  					.containerSection.text-dark .personnel svg path {fill: {$microtemplate.darkMode-text-dark}}
+  					.c-section .personnel svg path, .subpage .personnel svg path {fill: {$microtemplate.darkMode-text-default}}
+  					.c-section.bg-dark .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
+  					.c-section.text-light .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
+  					.c-section.text-dark .personnel svg path {fill: {$microtemplate.darkMode-text-dark}}
           }
         </style>
 			)
