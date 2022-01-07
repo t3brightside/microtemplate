@@ -14,7 +14,7 @@
         'typo3' => '11.5.0-11.5.99',
         'fluid_styled_content' => '11.5.0-11.5.99',
         'container' => '1.4.0-1.99.99',
-        'containeritems' => '1.1.0-1.99.99',
+        'containeritems' => '2.0.0-2.99.99',
         'content_defender' => '3.2.0-3.99.99',
       ],
     ],
