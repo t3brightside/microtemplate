@@ -8,6 +8,14 @@ html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, b
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.c-section:target {
+    scroll-margin-top: 3.25em;
+}
+
 ul {
     list-style: none;
 }
@@ -224,12 +232,12 @@ tbody tr:last-child th, tbody tr:last-child td {
     padding: .2em;
     padding-top: .36em;
 }
+
 #header.scrolled, #header.force-bg {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
-
 
 /* ext:fluid_styled_content */
 .align-right {
@@ -442,8 +450,6 @@ ul.ce-uploads li .ce-uploads-filesize {
 }
 
 /* responsive layout */
-
-
 @media screen and (max-width: 1506px) {
     html {
         font-size: 19px;
@@ -454,6 +460,7 @@ ul.ce-uploads li .ce-uploads-filesize {
     html {
         font-size: 16px;
     }
+
     h1 {
         font-size: 2.5em;
     }
