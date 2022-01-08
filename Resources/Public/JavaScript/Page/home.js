@@ -1,13 +1,16 @@
-$(window).scroll(function() {
-  /* Set #header to .scrolled */
-  var scroll = $(window).scrollTop();
-  if (scroll >= 45) {
-    $("#header").addClass("scrolled");
-    $("#header").addClass("force-bg");
+var sp = window.scrollY;
+var logo = document.getElementById('header');
+var menu = document.getElementById('menu');
+
+window.addEventListener('scroll', function() {
+  sp = window.scrollY;
+  if (sp >= 45) {
+    header.classList.add('scrolled');
+    header.classList.add('force-bg');
   } else {
-    $("#header").removeClass("scrolled");
-    if (!$('#menu').hasClass("open") && !$('.hmbrgr').hasClass("open")) {
-      $("#header").removeClass("force-bg");
+    header.classList.remove('scrolled');
+    if (!menu.classList.contains('open')) {
+      header.classList.remove('force-bg');
     }
   }
 });
