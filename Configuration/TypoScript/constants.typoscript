@@ -9,7 +9,7 @@
 	microtemplate.jQueryVersion = 3.6.0
 # customsubcategory=microtemplatestyles=Microtemplate styles & design
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main CSS file
-	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Styles/Page/microtemplate.css
+	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Styles/Page/default.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
 	microtemplate.customCSS =
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location

@@ -8,14 +8,6 @@ html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, b
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-.c-section:target {
-    scroll-margin-top: 3.25em;
-}
-
 ul {
     list-style: none;
 }
