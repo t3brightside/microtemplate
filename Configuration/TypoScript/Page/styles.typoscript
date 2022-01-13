@@ -15,7 +15,7 @@
 
 	[page["backend_layout"] == "pagets__home"]
 		page.includeCSS.menu = EXT:microtemplate/Resources/Public/Styles/Page/menu.css
-		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languagemenu.css
+		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Menus/languageMenu.css
 	[END]
 
 	page.includeCSS.pagination = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
