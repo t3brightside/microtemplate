@@ -5,6 +5,15 @@ config {
 	removeDefaultJS =
 }
 
+page.jsInline {
+    10 = TEXT
+    10.value (
+      const header = document.getElementById('header');
+      const logo = document.getElementById('logo');
+      const menu = document.getElementById('menu');
+      const hmbrgr = document.getElementById('hmbrgr');
+    )
+}
 # include jQuery from CDN
 	page.includeJSLibs.jQuery = //cdnjs.cloudflare.com/ajax/libs/jquery/{$microtemplate.jQueryVersion}/jquery.min.js
 	page.includeJSLibs.jQuery {

@@ -1,7 +1,5 @@
-var sp = window.scrollY;
-var logo = document.getElementById('header');
-var menu = document.getElementById('menu');
 
+var sp = window.scrollY;
 window.addEventListener('scroll', function() {
   sp = window.scrollY;
   if (sp >= 45) {
@@ -15,7 +13,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
-/* Keep scroll position after post-back / postback / refresh. */
+// keep scroll position after post-back / postback / refresh.
 (function($) {
   window.onbeforeunload = function(e) {
     window.name += ' [' + $(window).scrollTop().toString() + '[' + $(window).scrollLeft().toString();
