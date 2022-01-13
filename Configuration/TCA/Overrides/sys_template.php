@@ -16,7 +16,11 @@ call_user_func(function()
     'Configuration/TypoScript',
     'Microtemplate - Main'
   );
-
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    $extensionKey,
+    'Configuration/TypoScript/Menus/SectionMenu',
+    'Microtemplate - menu: Sections'
+  );
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Configuration/TypoScript/DarkMode',

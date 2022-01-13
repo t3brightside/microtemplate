@@ -8,14 +8,14 @@
                             <f:format.raw>{logo}</f:format.raw>
                         </a>
                         <f:if condition="{sectionMenu} || {languageMenu -> f:count()} > 1">
-                            <a id="hmbrgr" class="hmbrgr" href="javascript:void(0)"><b><i class="f"></i><i class="m"></i><i class="l"></i></b></a>
+                            <f:render partial="Menus/Hmbrgr" arguments="{_all}" />
                             <div class="menu-container">
                                 <div id="menu">
                                     <f:if condition="{sectionMenu}">
-                                        <f:render partial="SectionMenu" arguments="{_all}" />
+                                        <f:render partial="Menus/SectionMenu" arguments="{_all}" />
                                     </f:if>
                                     <f:if condition="{languageMenu -> f:count()} > 1">
-                                        <f:render partial="LanguageMenu" arguments="{_all}" />
+                                        <f:render partial="Menus/LanguageMenu" arguments="{_all}" />
                                     </f:if>
                                     <f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
                                         <div id="menucontent">

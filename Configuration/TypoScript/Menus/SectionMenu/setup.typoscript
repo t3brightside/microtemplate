@@ -1,0 +1,15 @@
+page.includeCSS.sectionMenu = EXT:microtemplate/Resources/Public/Styles/Menus/sectionMenu.css
+page.includeJSFooterlibs.sectionMenu = EXT:microtemplate/Resources/Public/JavaScript/Menus/sectionMenu.js
+
+page {
+	10 {
+    dataProcessing.20010 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.20010 {
+      table = tt_content
+      pidInList.field = uid
+      where = colPos=0 AND sectionIndex=1
+      orderBy = sorting
+      as = sectionMenu
+    }
+  }
+}

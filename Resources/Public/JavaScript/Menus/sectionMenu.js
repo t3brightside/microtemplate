@@ -1,18 +1,27 @@
-$(document).ready(function() {
-  // open-close mobile menu with the hamburger
-  $('.hmbrgr').click(function() {
-    $('#menu').toggleClass('open');
-    $('.hmbrgr').toggleClass('open');
-    $('#header').toggleClass('force-bg');
-  });
-  // close menu if clicking menu links
-  $('#menu a, #languagemenu a, #logo').on('click', function(e) {
-    $('.hmbrgr').removeClass('open');
-    $('#menu').removeClass('open');
-    $("#header").removeClass("force-bg");
 
+function removeMenuClasses() {
+  hmbrgr.classList.remove('open');
+  menu.classList.remove('open');
+  header.classList.remove('force-bg');
+}
+
+hmbrgr.onclick = function() {
+  hmbrgr.classList.toggle('open');
+  menu.classList.toggle('open');
+  header.classList.toggle('force-bg');
+}
+
+const menuLinks = menu.querySelectorAll("a");
+menuLinks.forEach(link => {
+  link.addEventListener("click", function() {
+    removeMenuClasses();
   });
 });
+
+logo.onclick = function() {
+  removeMenuClasses();
+}
+
 // set active menu item by scrolling to a section
 $(window).ready(function(jQuery) {
   $(window).scrollTop($(window).scrollTop() + 1);
