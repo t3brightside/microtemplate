@@ -15,13 +15,10 @@ page.jsInline {
     )
 }
 # include jQuery from CDN
-	page.includeJSLibs.jQuery = //cdnjs.cloudflare.com/ajax/libs/jquery/{$microtemplate.jQueryVersion}/jquery.min.js
-	page.includeJSLibs.jQuery {
-		external = 1
-		async = 0
-		excludeFromConcatenation = 1
-		disableCompression = 1
-	}
+["{$microtemplate.jQuery}" == "1"]
+  page.includeJSFooterlibs.jQuery = EXT:microtemplate/Resources/Public/JavaScript/Contrib/jQuery/jquery.min.js
+  page.includeJSFooterlibs.jQuery.forceOnTop = 1
+[END]
 
 # include in all pages
 	page.includeJSFooterlibs.all = EXT:microtemplate/Resources/Public/JavaScript/Page/all.js
