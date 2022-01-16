@@ -1,13 +1,13 @@
-# customsubcategory=microtemplatexcc=Microtemplate Cookie Consent
-# cat=Microtemplate/microtemplatexcc; type=string; label= Cookie message
+# customsubcategory=microtemplatexcc=Microtemplate - Cookie Consent
+# cat=Microtemplate - Cookie Consent/microtemplatexcc; type=string; label= Cookie message
 	microtemplate.ccmessage = This website uses cookies to simplify the provision of services.
-# cat=Microtemplate/microtemplatexcc; type=string; label= Read more link text
+# cat=Microtemplate - Cookie Consent/microtemplatexcc; type=string; label= Read more link text
 	microtemplate.ccmore = Privacy, cookies & settings
-# cat=Microtemplate/microtemplatexcc; type=string; label= Allow cookies button text
+# cat=Microtemplate - Cookie Consent/microtemplatexcc; type=string; label= Allow cookies button text
 	microtemplate.ccallow = Accept
-# cat=Microtemplate/microtemplatexcc; type=string; label= Dismiss button text
+# cat=Microtemplate - Cookie Consent/microtemplatexcc; type=string; label= Dismiss button text
 	microtemplate.ccdismiss =
-# cat=Microtemplate/microtemplatexcc; type=string; label= URL to read more page
+# cat=Microtemplate - Cookie Consent/microtemplatexcc; type=string; label= URL to read more page
 	microtemplate.cchref = /privacy-settings/
 
 	microtemplate.ccactive = 1
