@@ -1,0 +1,11 @@
+# customsubcategory=microtemplateumami=Microtemplate - Umami Analytics
+# cat=Microtemplate - Umami/microtemplateumami; type=string; label=JS location : example: https://myumamiserver.io/umami.js
+  microtemplate.umami.src =
+# cat=Microtemplate - Umami/microtemplateumami; type=string; label=Website ID : example: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
+	microtemplate.umami.data-website-id =
+# cat=Microtemplate - Umami/microtemplateumami; type=string; label= Domains to track : example: domain.one,domain.two
+  microtemplate.umami.data-domains =
+# cat=Microtemplate - Umami/microtemplateumami; type=options[true,false]; label=Respect 'do not track' setting from users
+	microtemplate.umami.data-do-not-track = true
+# cat=Microtemplate - Umami/microtemplateumami; type=options[false,true]; label= Use cache : This will use session storage so you may need to inform your users.
+	microtemplate.umami.data-cache = false
