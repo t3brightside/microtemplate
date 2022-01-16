@@ -29,16 +29,21 @@ call_user_func(function()
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Extensions/magnificpopup/Configuration/TypoScript',
-    'Microtemplate - script: Magnificpopup'
+    'Microtemplate - Magnificpopup'
+  );
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    $extensionKey,
+    'Extensions/umami/Configuration/TypoScript',
+    'Microtemplate - Umami'
   );
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Extensions/google_analytics/Configuration/TypoScript',
-    'Microtemplate - script: Google Analytics'
+    'Microtemplate - Google Analytics'
   );
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Extensions/cookie_consent/Configuration/TypoScript',
-    'Microtemplate - script: Cookie Consent'
+    'Microtemplate - Cookie Consent'
   );
 });
