@@ -19,9 +19,9 @@
   					.btn:hover, .btn:disabled {color: {$microtemplate.darkMode-accentColor}}
 
   				/* content sections */
-  					.c-section {background-color: {$microtemplate.darkMode-containerSection.bg-default}}
-  					.c-section.bg-light {background-color: {$microtemplate.darkMode-containerSection.bg-light}}
-  					.c-section.bg-dark {background-color: {$microtemplate.darkMode-containerSection.bg-dark}; color: {$microtemplate.darkMode-text-light}}
+  					.c-section {background-color: {$microtemplate.darkMode-containerSection.bg-default} !important}
+  					.c-section.bg-light {background-color: {$microtemplate.darkMode-containerSection.bg-light} !important}
+  					.c-section.bg-dark {background-color: {$microtemplate.darkMode-containerSection.bg-dark} !important; color: {$microtemplate.darkMode-text-light}}
   					.c-section.text-light {color: {$microtemplate.darkMode-text-light}}
   					.c-section.text-dark {color: {$microtemplate.darkMode-text-dark}}
             .c-section.text-dark input, .c-section.text-dark select, .c-section.text-dark textarea {border-color: {$microtemplate.darkMode-text-dark}}

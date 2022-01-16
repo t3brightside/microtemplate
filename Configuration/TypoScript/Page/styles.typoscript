@@ -86,9 +86,9 @@
 					.btn:hover, .btn:disabled {color: {$microtemplate.accentColor}}
 
 				/* content sections */
-					.c-section {background-color: {$microtemplate.containerSection.bg-default}}
-					.c-section.bg-light {background-color: {$microtemplate.containerSection.bg-light}}
-					.c-section.bg-dark {background-color: {$microtemplate.containerSection.bg-dark}; color: {$microtemplate.text-light}}
+					.c-section {background-color: {$microtemplate.containerSection.bg-default} !important}
+					.c-section.bg-light {background-color: {$microtemplate.containerSection.bg-light} !important}
+					.c-section.bg-dark {background-color: {$microtemplate.containerSection.bg-dark} !important; color: {$microtemplate.text-light}}
 					.c-section.text-light {color: {$microtemplate.text-light}}
 					.c-section.text-dark {color: {$microtemplate.text-dark}}
 					.c-section .videobuttons svg .a, .c-section .videobuttons svg .st0, .c-section .videobuttons svg rect {fill:{$microtemplate.text-default}}
