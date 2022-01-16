@@ -29,6 +29,37 @@
 			googleFonts.media = all
 		}
 		headerData {
+      # read fonts from fonts folder
+      10090 = COA
+      10090 {
+        10 = FILES
+        10 {
+          folders = {$microtemplate.fonts-folder}
+          renderObj = COA
+          renderObj {
+            1 = TEXT
+            1.value = @font-face {
+            5 = TEXT
+            5.data = file:current:name
+            5.stdWrap.replacement {
+              10 {
+                search = (.woff2|.woff|.ttf)
+                replace =
+                useRegExp = 1
+              }
+            }
+            5.wrap = font-family: '|';
+            10 = TEXT
+            10.data = file:current:publicUrl
+            10.wrap = src: url('|');
+            100 = TEXT
+            100.value = }
+            if.isInList.data = file:current:extension
+            if.value = woff2,woff,ttf
+          }
+        }
+        wrap = <style>|</style>
+      }
       # styles to set content colours from constants
 			1001 = TEXT
 			1001.value (

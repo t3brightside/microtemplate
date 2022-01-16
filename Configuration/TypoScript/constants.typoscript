@@ -14,10 +14,12 @@
 	microtemplate.customCSS =
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
 	microtemplate.logoFile = typo3conf/ext/microtemplate/Resources/Public/Images/brightside_logo.svg
+# cat=Microtemplate/microtemplatestyles; type=string; label=Fonts folder
+	microtemplate.fonts-folder = typo3conf/ext/microtemplate/Resources/Public/Fonts/
 # cat=Microtemplate/microtemplatestyles; type=string; label=Google Fonts link
-	microtemplate.google-font-link = https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;500&display=swap
-# cat=Microtemplate/microtemplatestyles; type=string; label=Name of the header & menu font
-	microtemplate.header-font-family = Fira Sans Extra Condensed
+	microtemplate.google-font-link =
+# cat=Microtemplate/microtemplatestyles; type=string; label=Name of the header & menu font : File name of the font from fonts folder (no extension) or Google font name
+	microtemplate.header-font-family = fira-sans-extra-condensed-v5-latin-500
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main font family
 	microtemplate.main-font-family = sans-serif
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default text color: Body, headers, main menu
