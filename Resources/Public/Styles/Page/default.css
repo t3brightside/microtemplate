@@ -2,6 +2,7 @@
 	Link, button etc colors and dynamic container widths are set in:
 	Configuration/TypoScript/Setup/styles.typoscript and can be edited through TS constant editor
 */
+
 html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input, textarea, figure, button {
     margin: 0;
     padding: 0;
@@ -287,16 +288,12 @@ tbody tr:last-child th, tbody tr:last-child td {
 }
 
 .ce-bodytext a {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .ce-bodytext .blueText {
     color: #000e9b;
     font-weight: 100;
-}
-
-.ce-bodytext .headerFont {
-    font-weight: 400;
 }
 
 .ce-gallery {
