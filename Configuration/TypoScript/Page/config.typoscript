@@ -20,10 +20,6 @@ page {
 	meta.viewport.value = width=device-width, initial-scale=1.0
 	meta.keywords.data = page:keywords
 	meta.description.data = page:description
-	headerData.899 = TEXT
-	headerData.899.value (
-		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  )
 }
 
 # fluidtemplat settings and variables
