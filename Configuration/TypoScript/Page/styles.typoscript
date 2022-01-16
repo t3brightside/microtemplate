@@ -49,6 +49,8 @@
               }
             }
             5.wrap = font-family: '|';
+						6 = TEXT
+						6.value = font-display: swap;
             10 = TEXT
             10.data = file:current:publicUrl
             10.wrap = src: url('|');
