@@ -1,1 +1,2 @@
 @import 'EXT:microtemplate/Configuration/TypoScript/Page/*.typoscript'
+@import 'EXT:microtemplate/Configuration/TypoScript/Menus/*.typoscript'
