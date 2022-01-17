@@ -22,9 +22,9 @@
   - !Breaking: See changes in ext:containeritems 2.0.0
   - !Breaking: Content fade-in/out on scroll is set in ext:containeritems now
   - Remove vCal page type option and use one from ext:pagelist instead
-  - Update GoogleFonts link with &swap
   - Improved header font size handling on mobile screens
   - Default image size constants improved to fit in content more precise
   - Remove section content fade-in/out and use the function from ext:containeritems
-  - Read fonts from specified folder
+  - Option to read fonts from specified folder to host fonts locally
   - Use cssInline instead of headerData
+  - Add Umami analytics option
