@@ -3,6 +3,7 @@
 		concatenateCss = 1
 		compressCss = 1
 		removePageCss = 1
+    inlineStyle2TempFile = 0
 	}
 
 	["{$microtemplate.pagelistIsLoaded}" == "1"]
@@ -28,44 +29,41 @@
 			googleFonts.external = 1
 			googleFonts.media = all
 		}
-		headerData {
+		cssInline {
       # read fonts from fonts folder
-      10090 = COA
-      10090 {
+      10 = COA
+      10 {
         10 = FILES
         10 {
           folders = {$microtemplate.fonts-folder}
           renderObj = COA
           renderObj {
-            1 = TEXT
-            1.value = @font-face {
-            5 = TEXT
-            5.data = file:current:name
-            5.stdWrap.replacement {
+            10 = TEXT
+            10.value = @font-face {
+            20 = TEXT
+            20.data = file:current:name
+            20.stdWrap.replacement {
               10 {
                 search = (.woff2|.woff|.ttf)
                 replace =
                 useRegExp = 1
               }
             }
-            5.wrap = font-family: '|';
-						6 = TEXT
-						6.value = font-display: swap;
-            10 = TEXT
-            10.data = file:current:publicUrl
-            10.wrap = src: url('|');
+            20.wrap = font-family: '|';
+						30 = TEXT
+						30.value = font-display: swap;
+            40 = TEXT
+            40.data = file:current:publicUrl
+            40.wrap = src: url('|');
             100 = TEXT
             100.value = }
             if.isInList.data = file:current:extension
             if.value = woff2,woff,ttf
           }
         }
-        wrap = <style>|</style>
       }
-      # styles to set content colours from constants
-			1001 = TEXT
-			1001.value (
-				<style>
+      20 = TEXT
+			20.value (
 					body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 
 					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav, .c-accordion-title {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
@@ -96,7 +94,7 @@
 					.c-section.text-dark .videobuttons  .a, .c-section.text-dark .videobuttons polygon.st0, .c-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark}}
 
 				/* accordion */
-					.c-accordion-title, .c-accordion-title:visited {font-weight: 500; color: {$microtemplate.text-default}}
+					.c-accordion-title, .c-accordion-title:visited {color: {$microtemplate.text-default}}
 					.c-accordion-title:hover {color: {$microtemplate.accentColor}}
 					.c-accordion-title::after, .c-accordion-title::before {background-color: {$microtemplate.text-default}}
 					.c-accordion-title:hover::after, .c-accordion-title:hover::before {background-color: {$microtemplate.accentColor}}
@@ -132,17 +130,14 @@
 					.c-section.bg-dark .personnel svg path {fill: {$microtemplate.text-light}}
 					.c-section.text-light .personnel svg path {fill: {$microtemplate.text-light}}
 					.c-section.text-dark .personnel svg path {fill: {$microtemplate.text-dark}}
-				</style>
 			)
 		}
 	}
 	["{$microtemplate.nontransparent-header}" != "0"]
-		page.headerData {
+		page.cssInline {
 			1002 = TEXT
 			1002.value (
-				<style>
 					#header {background-color: {$microtemplate.header-bg}
-				</style>
 			)
 		}
 	[END]

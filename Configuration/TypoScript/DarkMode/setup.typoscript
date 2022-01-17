@@ -1,10 +1,9 @@
 # CSS for Dark Mode
 	page {
-		headerData {
+		cssInline {
       # styles to set content colours from constants
-			10565 = TEXT
-			10565.value (
-				<style>
+			30 = TEXT
+			30.value (
           @media (prefers-color-scheme: dark) {
   					body {color: {$microtemplate.darkMode-text-default}; background-color: {$microtemplate.darkMode-body-background}}
             #header.scrolled, #header.force-bg {background-color: {$microtemplate.darkMode-header-bg}}
@@ -68,20 +67,18 @@
   					.c-section.text-light .personnel svg path {fill: {$microtemplate.darkMode-text-light}}
   					.c-section.text-dark .personnel svg path {fill: {$microtemplate.darkMode-text-dark}}
           }
-        </style>
 			)
 		}
 	}
 
   ["{$microtemplate.nontransparent-header}" != "0"]
-		page.headerData {
+		page.cssInline {
 			10566 = TEXT
 			10566.value (
 				<style>
           @media (prefers-color-scheme: dark) {
-					       #header {background-color: {$microtemplate.darkMode-header-bg}
+					    #header {background-color: {$microtemplate.darkMode-header-bg}
           }
-				</style>
 			)
 		}
 	[END]
