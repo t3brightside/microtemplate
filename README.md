@@ -7,13 +7,12 @@
 **TYPO3 CMS template extension for one page sites with light box like sub pages.**
 
 - **[Demo](https://microtemplate.t3brightside.com)**
-- **[In TYPO3 Now Package](https://t3brightside.com/typo3-now)**
+- **[TYPO3 Now Package](https://t3brightside.com/typo3-now)**
 
 ## System requirements
 
 - TYPO3
 - fluid_styled_content
-- gridelements
 - containeritems
 
 ## Features
