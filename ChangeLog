@@ -26,3 +26,5 @@
   - Improved header font size handling on mobile screens
   - Default image size constants improved to fit in content more precise
   - Remove section content fade-in/out and use the function from ext:containeritems
+  - Read fonts from specified folder
+  - Use cssInline instead of headerData
