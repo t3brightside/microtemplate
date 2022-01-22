@@ -1,11 +1,7 @@
 @import 'EXT:microtemplate/Configuration/PageTS/backendlayouts.typoscript'
-@import 'EXT:microtemplate/Configuration/PageTS/extensions.typoscript'
 
 # RTE setup defined in ext_localconf.php
 	RTE.default.preset = microtemplate
-# only for 'bodytext' field example
-#	RTE.config.tt_content.bodytext.preset = microtemplate
-
 
 # set default back end group permissions
 	TCEMAIN {
