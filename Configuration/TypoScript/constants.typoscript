@@ -62,7 +62,7 @@
 
 gallerycontent.imageWidth = 800
 
-[page["backend_layout"] == "pagets__home"]
+[tree.pagelayout == "pagets__home"]
 	styles.content.defaultHeaderType = 1
   styles.content.textmedia.maxW = 1126
   gallerycontent.imageWidth = 1126

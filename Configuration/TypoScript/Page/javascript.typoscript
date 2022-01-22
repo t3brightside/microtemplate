@@ -25,7 +25,7 @@ page.jsInline {
 	page.includeJSFooterlibs.forms = EXT:microtemplate/Resources/Public/JavaScript/Page/forms.js
 
 # include in home page only
-	[page["backend_layout"] == "pagets__home"]
+  [tree.pagelayout == "pagets__home"]
 		page.includeJSFooterlibs.home = EXT:microtemplate/Resources/Public/JavaScript/Page/home.js
 		page.includeJSFooterlibs.menus = EXT:microtemplate/Resources/Public/JavaScript/Page/menus.js
 	[END]

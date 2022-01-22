@@ -14,7 +14,7 @@
 		page.includeCSS.personnelOverride = EXT:microtemplate/Extensions/personnel/Resources/Public/Styles/personnel.css
 	[END]
 
-	[page["backend_layout"] == "pagets__home"]
+  [tree.pagelayout == "pagets__home"]
 		page.includeCSS.menu = EXT:microtemplate/Resources/Public/Styles/Page/menu.css
 		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Menus/languageMenu.css
 	[END]
