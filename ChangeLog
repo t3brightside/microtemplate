@@ -31,3 +31,5 @@
   - Add Umami analytics option
   - Option to read fonts from specified folder to host fonts locally
   - Make sectionMenu to load without manual TS inclusion
+* 3.2.1
+  - [BUGFIX] Change page layout conditions to tree.pageLayout
