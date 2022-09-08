@@ -34,3 +34,5 @@
 * 3.3.0
   - [BUGFIX] Change page layout conditions to tree.pageLayout
   - [TASK] Use containeritems 3
+* 3.3.1
+  - [BUGFIX] ext:container / containeritems version dependency

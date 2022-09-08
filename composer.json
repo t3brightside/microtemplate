@@ -13,7 +13,7 @@
 	"require": {
 		"typo3/cms-core": "^11.5",
 		"typo3/cms-fluid-styled-content": "^11.5",
-		"t3brightside/containeritems": "^3",
+		"t3brightside/containeritems": "^2 || ^3",
 		"ichhabrecht/content-defender": "^3"
 	},
 	"suggest": {
