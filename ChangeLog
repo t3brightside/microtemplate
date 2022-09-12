@@ -38,3 +38,5 @@
   - [BUGFIX] ext:container / containeritems version dependency
 * 3.3.1
   - [TASK] fix version numbers
+* 3.4.0
+  - [FEATURE] improve font and layout handling on huge screens
