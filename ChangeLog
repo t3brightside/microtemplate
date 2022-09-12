@@ -36,5 +36,7 @@
   - [TASK] Use containeritems 3
 * 3.3.1
   - [BUGFIX] ext:container / containeritems version dependency
-* 3.3.1
+* 3.3.2
   - [TASK] fix version numbers
+* 3.3.3
+  - [TASK] improve font and layout handling on huge screens
