@@ -1,0 +1,29 @@
+#languagemenu {
+    text-transform: uppercase;
+    font-size: .9em;
+    text-align: center;
+    transition: all .2s;
+    box-sizing: border-box;
+    width: auto;
+    align: center;
+    margin: auto;
+    width: 100%;
+}
+
+#languagemenu>nav>ul {
+    width: auto;
+    display: inline-block;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    border-top: 1px solid #111;
+}
+
+#languagemenu>nav>ul>li {
+    display: inline-block;
+    margin-right: 1.4em;
+}
+
+#languagemenu>nav>ul>li:last-child {
+    margin-right: 0;
+}

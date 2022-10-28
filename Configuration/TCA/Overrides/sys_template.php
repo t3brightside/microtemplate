@@ -25,11 +25,6 @@ call_user_func(function()
   );
   ExtensionManagementUtility::addStaticFile(
     $extensionKey,
-    'Configuration/Extensions/SimpleLightbox/TypoScript',
-    'Microtemplate - SimpleLightbox'
-  );
-  ExtensionManagementUtility::addStaticFile(
-    $extensionKey,
     'Configuration/Extensions/Umami/TypoScript',
     'Microtemplate - Umami'
   );
