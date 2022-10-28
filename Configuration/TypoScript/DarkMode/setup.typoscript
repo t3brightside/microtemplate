@@ -2,8 +2,8 @@
 	page {
 		cssInline {
       # styles to set content colours from constants
-			30 = TEXT
-			30.value (
+			300 = TEXT
+			300.value (
           @media (prefers-color-scheme: dark) {
   					body {color: {$microtemplate.darkMode-text-default}; background-color: {$microtemplate.darkMode-body-background}}
             #header.scrolled, #header.force-bg {background-color: {$microtemplate.darkMode-header-bg}}

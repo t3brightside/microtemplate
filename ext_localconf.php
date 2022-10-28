@@ -1,6 +1,5 @@
 <?php
-
-defined('TYPO3_MODE') || die();
+defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['microtemplate'] = 'EXT:microtemplate/Configuration/RTE/Default.yaml';
 

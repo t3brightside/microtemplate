@@ -40,3 +40,10 @@
   - [TASK] fix version numbers
 * 3.3.3
   - [TASK] improve font and layout handling on huge screens
+* 4.0.0
+  - [TASK] TYPO3 12 compatibility
+  - [TASK] update to jQuery 3.6.1
+  - [TASK] (!BREAKING!) Restructure font handling
+  - [TASK] (!BREAKING!) Remove Google Analytics
+  – [TASK] (!BREAKING!) Remove Lightbox (use one in ext:gallerycontent)
+  - [TASK] Restructure extension configuration and resource files

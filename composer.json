@@ -11,10 +11,9 @@
 		"homepage": "https://t3brightside.com"
 	}],
 	"require": {
-		"typo3/cms-core": "^11.5",
-		"typo3/cms-fluid-styled-content": "^11.5",
-		"t3brightside/containeritems": "^2 || ^3",
-		"ichhabrecht/content-defender": "^3"
+		"typo3/cms-core": "^11.5  || ^12",
+		"typo3/cms-fluid-styled-content": "^11.5 || ^12",
+		"t3brightside/containeritems": "^4 || @dev"
 	},
 	"suggest": {
 		"t3brightside/advancedtitle": "Page title prefix & suffix",

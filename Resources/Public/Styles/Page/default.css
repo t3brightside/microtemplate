@@ -7,6 +7,17 @@ html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, b
     padding: 0;
     box-sizing: border-box;
 }
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
 
 ul {
     list-style: none;

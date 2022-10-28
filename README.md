@@ -17,7 +17,6 @@
 
 ## Features
 - Can be installed in multi domain setup or just for a sub page
-- Lightweight (no CSS frameworks)
 - Configurable color schemes
 - Automatic menu of section titles
 - Automatic language menu
@@ -25,7 +24,7 @@
 - Section background (colour, image with effects, video)
 - Section scroll in effect
 - Dark mode support
-- Can run with no third party media to be GDPR friendly
+- No third party media to be GDPR friendly
 
 ## Install
 - `composer req t3brightside/microtemplate` or from TYPO3 extension repository **[microtemplate](https://extensions.typo3.org/extension/microtemplate/)**

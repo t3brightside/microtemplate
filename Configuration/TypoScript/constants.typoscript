@@ -13,13 +13,9 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
 	microtemplate.customCSS =
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
-	microtemplate.logoFile = typo3conf/ext/microtemplate/Resources/Public/Images/brightside_logo.svg
-# cat=Microtemplate/microtemplatestyles; type=string; label=Fonts folder
-	microtemplate.fonts-folder = typo3conf/ext/microtemplate/Resources/Public/Fonts/
-# cat=Microtemplate/microtemplatestyles; type=string; label=Google Fonts link
-	microtemplate.google-font-link =
-# cat=Microtemplate/microtemplatestyles; type=string; label=Name of the header & menu font : File name of the font from fonts folder (no extension) or Google font name
-	microtemplate.header-font-family = fira-sans-extra-condensed-v5-latin-500
+	microtemplate.logoFile = EXT:microtemplate/Resources/Public/Images/brightside_logo.svg
+# cat=Microtemplate/microtemplatestyles; type=string; label=Menu & Header font file
+	microtemplate.header-font-file = EXT:microtemplate/Resources/Public/Fonts/fira-sans-extra-condensed-v5-latin-500.woff2
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main font family
 	microtemplate.main-font-family = sans-serif
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default text color: Body, headers, main menu
@@ -60,8 +56,6 @@
 	styles.content.defaultHeaderType = 2
 # Sets default header type for home page
 
-gallerycontent.imageWidth = 800
-
 [tree.pagelayout == "pagets__home"]
 	styles.content.defaultHeaderType = 1
   styles.content.textmedia.maxW = 1126
@@ -72,16 +66,24 @@ gallerycontent.imageWidth = 800
 	microtemplate.partialRootPath = EXT:microtemplate/Resources/Private/Partials/
 	microtemplate.templateRootPath = EXT:microtemplate/Resources/Private/Templates/
 
+# Gallerycontent
+  gallerycontent.imageWidth = 800
+  gallerycontent.enableLightbox = 1
+
 # Personnel
   personnel.cardImageWidth = 300
   personnel.cardImageHeight = 300
   personnel.cardsBreakThree = 8000
-	pagelist.partialRootPaths = EXT:microtemplate/Extensions/pagelist/Resources/Private/Partials/
+  personnel.stylesPath = EXT:microtemplate/Resources/Public/Extensions/Personnel/Styles/personnel.css
+
+# Pagelist
+	pagelist.partialRootPaths = EXT:microtemplate/Resources/Private/Partials/Pagelist/
+  pagelist.styles = EXT:microtemplate/Resources/Public/Extensions/Pagelist/Styles/pagelist.css
 
 # Favicon
-favicon.svgPath = data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cg transform='translate(-481 -613)'%3E%3Cg transform='translate(-280 -278)'%3E%3Cpath d='M0,0H36V36H0Z' transform='translate(761 891)' fill='%23bc0000'/%3E%3C/g%3E%3Crect width='22' height='7' transform='translate(488 620)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(488 631)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(501 631)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A
-favicon.pngPath = typo3conf/ext/microtemplate/Resources/Public/Icons/Extension.png
+  favicon.svgPath = data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cg transform='translate(-481 -613)'%3E%3Cg transform='translate(-280 -278)'%3E%3Cpath d='M0,0H36V36H0Z' transform='translate(761 891)' fill='%23bc0000'/%3E%3C/g%3E%3Crect width='22' height='7' transform='translate(488 620)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(488 631)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(501 631)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A
+  favicon.pngPath = EXT:microtemplate/Resources/Public/Icons/Extension.png
 
 # Containeritems
-containerSection.bgImageWidth = 1800
-containerSection.defaultAlignment = center
+  containerSection.bgImageWidth = 1800
+  containerSection.defaultAlignment = center

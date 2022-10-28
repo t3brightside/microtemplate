@@ -5,15 +5,7 @@ config {
 	removeDefaultJS =
 }
 
-page.jsInline {
-    10 = TEXT
-    10.value (
-      const header = document.getElementById('header');
-      const logo = document.getElementById('logo');
-      const menu = document.getElementById('menu');
-      const hmbrgr = document.getElementById('hmbrgr');
-    )
-}
+
 # load jQuery
 ["{$microtemplate.jQuery}" == "1"]
   page.includeJSFooterlibs.jQuery = EXT:microtemplate/Resources/Public/JavaScript/Contrib/jQuery/jquery.min.js
@@ -28,4 +20,13 @@ page.jsInline {
   [tree.pagelayout == "pagets__home"]
 		page.includeJSFooterlibs.home = EXT:microtemplate/Resources/Public/JavaScript/Page/home.js
 		page.includeJSFooterlibs.menus = EXT:microtemplate/Resources/Public/JavaScript/Page/menus.js
+    page.jsInline {
+        10990 = TEXT
+        10990.value (
+          const header = document.getElementById('header');
+          const logo = document.getElementById('logo');
+          const menu = document.getElementById('menu');
+          const hmbrgr = document.getElementById('hmbrgr');
+        )
+    }
 	[END]

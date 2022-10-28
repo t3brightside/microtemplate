@@ -1,7 +1,5 @@
-@import 'EXT:microtemplate/Configuration/PageTS/backendlayouts.typoscript'
-
 # RTE setup defined in ext_localconf.php
-	RTE.default.preset = microtemplate
+#	RTE.default.preset = microtemplate
 
 # set default back end group permissions
 	TCEMAIN {
@@ -33,3 +31,56 @@
 			layout.disabled = 1
 		}
 	}
+
+# Page layouts
+  mod.web_layout.BackendLayouts {
+    home {
+      title = Microtemplate – Home
+      config {
+        backend_layout {
+          colCount = 1
+          rowCount = 1
+          rows {
+            1 {
+              columns {
+                1 {
+                  name = Page content
+                  colPos = 0
+                  allowed = containerSection
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    sub {
+      title = Microtemplate – Sub
+      config {
+        backend_layout {
+          colCount = 1
+          rowCount = 2
+          rows {
+            1 {
+              columns {
+                1 {
+                  name = Content title (overrides automatic title)
+                  allowed = header
+                  colPos = 5
+                }
+              }
+            }
+            2 {
+              columns {
+                1 {
+                  name = Page content
+                  colPos = 0
+                  disallowed.CType = containerSection
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

@@ -15,8 +15,8 @@
 	[END]
 
   [tree.pagelayout == "pagets__home"]
-		page.includeCSS.menu = EXT:microtemplate/Resources/Public/Styles/Page/menu.css
-		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Menus/languageMenu.css
+		page.includeCSS.sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/sectionMenu.css
+		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languageMenu.css
 	[END]
 
 	page.includeCSS.pagination = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
@@ -25,48 +25,53 @@
 		includeCSS {
 			microtemplate = {$microtemplate.mainCSS}
 			forms = EXT:microtemplate/Resources/Public/Styles/Page/forms.css
-			googleFonts = {$microtemplate.google-font-link}
-			googleFonts.external = 1
-			googleFonts.media = all
 		}
 		cssInline {
-      # read fonts from fonts folder
       10 = COA
       10 {
-        10 = FILES
-        10 {
-          folders = {$microtemplate.fonts-folder}
-          renderObj = COA
-          renderObj {
-            10 = TEXT
-            10.value = @font-face {
-            20 = TEXT
-            20.data = file:current:name
-            20.stdWrap.replacement {
+        10 = TEXT
+        10.value = @font-face {
+        20 = LOAD_REGISTER
+        20 {
+          headerFont.cObject = TEXT
+          headerFont.cObject {
+            value = {$microtemplate.header-font-file}
+            stdWrap.replacement {
+              5 {
+                search = (^(.*[\\\/]))
+                replace =
+                useRegExp = 1
+              }
               10 {
                 search = (.woff2|.woff|.ttf)
                 replace =
                 useRegExp = 1
               }
             }
-            20.wrap = font-family: '|';
-						30 = TEXT
-						30.value = font-display: swap;
-            40 = TEXT
-            40.data = file:current:publicUrl
-            40.wrap = src: url('|');
-            100 = TEXT
-            100.value = }
-            if.isInList.data = file:current:extension
-            if.value = woff2,woff,ttf
           }
         }
+        25 = TEXT
+        25.value = {register:headerFont}
+        25.wrap = font-family: '|';
+        25.stdWrap.insertData = 1
+				30 = TEXT
+				30.value = font-display: swap;
+        40 = TEXT
+        40.value = {path : {$microtemplate.header-font-file}}
+        40.insertData = 1
+        40.wrap = src: url('|');
+        100 = TEXT
+        100.value = }
       }
       20 = TEXT
-			20.value (
+      20.value = {register:headerFont}
+      20.wrap = h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav, .c-accordion-title {font-family: |, {$microtemplate.main-font-family}}
+      20.stdWrap.insertData = 1
+      30 = TEXT
+			30.value (
 					body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
 
-					h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav, .c-accordion-title {font-family: {$microtemplate.header-font-family}, {$microtemplate.main-font-family}}
+
 					#header.scrolled, #header.force-bg {background-color: {$microtemplate.header-bg}}
 
 				/* page containers */
@@ -132,6 +137,7 @@
 					.c-section.text-dark .personnel svg path {fill: {$microtemplate.text-dark}}
 			)
 		}
+
 	}
 	["{$microtemplate.nontransparent-header}" != "0"]
 		page.cssInline {

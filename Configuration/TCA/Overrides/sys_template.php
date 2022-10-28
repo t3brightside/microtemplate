@@ -1,5 +1,7 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
+
+use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 call_user_func(function()
 {
@@ -11,34 +13,24 @@ call_user_func(function()
   /**
    * Default TypoScript for Microtemplate
    */
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+  ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Configuration/TypoScript',
     'Microtemplate - Main'
   );
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+  ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Configuration/TypoScript/DarkMode',
     'Microtemplate - Dark Mode'
   );
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+  ExtensionManagementUtility::addStaticFile(
     $extensionKey,
-    'Extensions/magnificpopup/Configuration/TypoScript',
-    'Microtemplate - Magnificpopup'
+    'Configuration/Extensions/SimpleLightbox/TypoScript',
+    'Microtemplate - SimpleLightbox'
   );
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+  ExtensionManagementUtility::addStaticFile(
     $extensionKey,
-    'Extensions/umami/Configuration/TypoScript',
+    'Configuration/Extensions/Umami/TypoScript',
     'Microtemplate - Umami'
-  );
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    $extensionKey,
-    'Extensions/google_analytics/Configuration/TypoScript',
-    'Microtemplate - Google Analytics'
-  );
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    $extensionKey,
-    'Extensions/cookie_consent/Configuration/TypoScript',
-    'Microtemplate - Cookie Consent'
   );
 });
