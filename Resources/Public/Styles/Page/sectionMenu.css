@@ -3,7 +3,7 @@
     float: right;
     box-sizing: border-box;
     margin-right: -.95em;
-    transition: margin .4s, opacity .4s, height .4s, width .4s;
+    transition: opacity .4s, height .4s, width .4s;
     cursor: pointer;
 }
 
