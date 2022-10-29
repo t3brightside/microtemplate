@@ -5,16 +5,8 @@ config {
 	removeDefaultJS =
 }
 
-
-# load jQuery
-["{$microtemplate.jQuery}" == "1"]
-  page.includeJSFooterlibs.jQuery = EXT:microtemplate/Resources/Public/JavaScript/Contrib/jQuery/jquery.min.js
-  page.includeJSFooterlibs.jQuery.forceOnTop = 1
-[END]
-
 # load in all pages
-	page.includeJSFooterlibs.all = EXT:microtemplate/Resources/Public/JavaScript/Page/all.js
-	page.includeJSFooterlibs.forms = EXT:microtemplate/Resources/Public/JavaScript/Page/forms.js
+#	page.includeJSFooterlibs.forms = EXT:microtemplate/Resources/Public/JavaScript/Page/forms.js
 
 # load in home page only
   [tree.pagelayout == "pagets__home"]
@@ -27,6 +19,21 @@ config {
           const logo = document.getElementById('logo');
           const menu = document.getElementById('menu');
           const hmbrgr = document.getElementById('hmbrgr');
+          document
+              .querySelectorAll('a[href*="#"]:not([href="#"])')
+              .forEach(trigger => {
+                  trigger.onclick = function(e) {
+                      e.preventDefault();
+                      let hash = '#' + this.getAttribute('href').split('#')[1];
+                      let target = document.querySelector(hash);
+                      let headerOffset = 65;
+                      let elementPosition = target.offsetTop;
+                      let offsetPosition = elementPosition - headerOffset;
+                      window.scrollTo({
+                          top: offsetPosition
+                      });
+                  };
+              });
         )
     }
 	[END]

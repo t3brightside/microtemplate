@@ -8,10 +8,6 @@
     overflow: visible;
 }
 
-.helper {
-    font-style: normal;
-}
-
 .help-block {
     font-size: 0.85em;
 }
@@ -21,42 +17,6 @@ div.valid, div.error {
     clear: both;
     width: auto !important;
     overflow: visible;
-}
-
-i.validation-icon {
-    display: block;
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 1px;
-    right: 1em;
-    opacity: 0;
-    transition-timing-function: ease-in-out;
-    transition: all 0.5s;
-    background-color: rgba(255, 255, 255, 0);
-    box-sizing: border-box;
-    padding: 0.5em;
-    z-index: 99;
-}
-
-.error i.validation-icon {
-    opacity: 1;
-    transition: all 0.5s;
-    width: 2.2em;
-    right: 0;
-}
-
-.valid i.validation-icon {
-    opacity: 1;
-    transition: width 1s, right 1s, opacity 0.5s;
-    width: 1px;
-    right: 1em;
-}
-
-i.validation-icon svg {
-    display: block;
-    transition: all 0.5s;
-    padding: 0.2em;
 }
 
 form {
@@ -152,16 +112,6 @@ select.xlarge {
     background-position: right 1.5em top 50%;
 }
 
-input:checked+.helper::before {
-    display: block;
-    position: absolute;
-    font-weight: bold;
-    display: block;
-    width: 0.5em;
-    height: 0.5em;
-    line-height: 1em;
-}
-
 input[type="checkbox"], input[type="radio"] {
     width: auto;
     margin-right: .5em;
@@ -171,18 +121,6 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type="radio"] {
     border-radius: 50%;
-}
-
-input[type="checkbox"]:checked+.helper::before {
-    content: "✓";
-    left: 0.1em;
-    top: 0.3em;
-}
-
-input[type="radio"]:checked+.helper::before {
-    content: '●';
-    left: 0.24em;
-    top: 0.22em;
 }
 
 .radio label span, .checkbox label span {

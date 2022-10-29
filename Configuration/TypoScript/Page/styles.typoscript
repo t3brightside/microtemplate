@@ -7,11 +7,11 @@
 	}
 
 	["{$microtemplate.pagelistIsLoaded}" == "1"]
-		page.includeCSS.pagelistOverride = EXT:microtemplate/Extensions/pagelist/Resources/Public/Styles/pagelist.css
+		page.includeCSS.pagelistOverride = {$pagelist.styles}
 	[END]
 
 	["{$microtemplate.personnelIsLoaded}" == "1"]
-		page.includeCSS.personnelOverride = EXT:microtemplate/Extensions/personnel/Resources/Public/Styles/personnel.css
+		page.includeCSS.personnelOverride = {$personnel.stylesPath}
 	[END]
 
   [tree.pagelayout == "pagets__home"]
