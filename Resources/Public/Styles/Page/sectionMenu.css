@@ -129,10 +129,6 @@
     text-decoration: none;
 }
 
-#header.scrolled #menu {
-    padding-top: 0.5em;
-}
-
 @media screen and (max-width: 960px) {
     .hmbrgr {
         margin-right: -1em;
