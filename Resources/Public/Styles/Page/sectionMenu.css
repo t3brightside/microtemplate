@@ -3,7 +3,7 @@
     float: right;
     box-sizing: border-box;
     margin-right: -.95em;
-    transition: all .4s;
+    transition: margin .4s, opacity .4s, height .4, width .4;
     cursor: pointer;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .hmbrgr b, .hmbrgr i {
-    transition: all .3s ease-in-out;
+    transition: transform .3s ease-in-out, opacity .3s, width .3s, height .3s;
 }
 
 #header.scrolled .hmbrgr b {
@@ -73,7 +73,7 @@
     clear: both;
     height: 0px;
     width: 100%;
-    transition: all .2s;
+    transition: height .2s, opacity .2s;
     box-sizing: border-box;
     overflow: hidden;
     -ms-overflow-style: none;
@@ -118,7 +118,7 @@
     box-sizing: border-box;
     line-height: 1em;
     padding: 1.5em 0;
-    transition: all .2s;
+    transition: color .2s;
 }
 
 #menu.open>nav>ul>li>a {
@@ -130,7 +130,7 @@
 }
 
 #header.scrolled #menu {
-    padding-top: 0.5;
+    padding-top: 0.5em;
 }
 
 @media screen and (max-width: 960px) {

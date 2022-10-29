@@ -85,5 +85,6 @@
   favicon.pngPath = EXT:microtemplate/Resources/Public/Icons/Extension.png
 
 # Containeritems
+  containerSection.fadeInContent = 1
   containerSection.bgImageWidth = 1800
   containerSection.defaultAlignment = center

@@ -59,7 +59,6 @@
 
   				/* pagination */
   					 ul.pagination>li>a {border-color: {$microtemplate.darkMode-accentColor}}
-  					 ul.pagination>li.current {color: {$microtemplate.darkMode-text-default}}
 
   				/* ext:personnel */
   					.c-section .personnel svg path, .subpage .personnel svg path {fill: {$microtemplate.darkMode-text-default}}
