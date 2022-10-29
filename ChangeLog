@@ -47,3 +47,6 @@
   - [TASK] (!BREAKING!) Remove Google Analytics
   – [TASK] (!BREAKING!) Remove Lightbox (use one in ext:gallerycontent)
   - [TASK] Restructure extension configuration and resource files
+* 4.1.0
+  - [TASK] Get rid of jQuery
+  - [BUGFIX] CSS typo fixes

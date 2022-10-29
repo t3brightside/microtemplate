@@ -30,6 +30,7 @@ config {
                       let elementPosition = target.offsetTop;
                       let offsetPosition = elementPosition - headerOffset;
                       window.scrollTo({
+                          behavior: 'smooth',
                           top: offsetPosition
                       });
                   };

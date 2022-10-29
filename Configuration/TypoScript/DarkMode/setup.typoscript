@@ -58,7 +58,7 @@
   					.pagelist .info, .pagelist .abstract {color: {$microtemplate.darkMode-text-default}}
 
   				/* pagination */
-  					 ul.pagination>li>a {boreder-color: {$microtemplate.darkMode-accentColor}}
+  					 ul.pagination>li>a {border-color: {$microtemplate.darkMode-accentColor}}
   					 ul.pagination>li.current {color: {$microtemplate.darkMode-text-default}}
 
   				/* ext:personnel */

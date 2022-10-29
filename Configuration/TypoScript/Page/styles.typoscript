@@ -128,7 +128,7 @@
 					.pagelist .info, .pagelist .abstract {color: {$microtemplate.text-default}}
 
 				/* pagination */
-					 ul.pagination>li>a {boreder-color: {$microtemplate.accentColor}}
+					 ul.pagination>li>a {border-color: {$microtemplate.accentColor}}
 
 				/* ext:personnel */
 					.c-section .personnel svg path, .subpage .personnel svg path {fill: {$microtemplate.text-default}}
