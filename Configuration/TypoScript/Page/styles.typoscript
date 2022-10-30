@@ -6,25 +6,27 @@
     inlineStyle2TempFile = 0
 	}
 
-	["{$microtemplate.pagelistIsLoaded}" == "1"]
-		page.includeCSS.pagelistOverride = {$pagelist.styles}
-	[END]
-
-	["{$microtemplate.personnelIsLoaded}" == "1"]
-		page.includeCSS.personnelOverride = {$personnel.stylesPath}
-	[END]
 
   [tree.pagelayout == "pagets__home"]
-		page.includeCSS.sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/sectionMenu.css
-		page.includeCSS.languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languageMenu.css
+		page.includeCSS {
+      sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/sectionMenu.css
+      sectionMenu.inline = 1
+      languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languageMenu.css
+      languageMenu.inline = 1
+    }
 	[END]
-
-	page.includeCSS.pagination = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
 
 	page {
 		includeCSS {
 			microtemplate = {$microtemplate.mainCSS}
+      microtemplate.inline = 1
+      microtemplate.forceOnTop = 1
 			forms = EXT:microtemplate/Resources/Public/Styles/Page/forms.css
+      forms.inline = 1
+      youtubevideo.inline = 1
+      personnel.inline = 1
+      pagelist.inline = 1
+      paginatedprocessors.inline = 1
 		}
 		cssInline {
       10 = COA

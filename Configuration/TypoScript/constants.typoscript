@@ -5,8 +5,6 @@
 	microtemplate.domainName = /
 # cat=Microtemplate/microtemplate; type=int; label= Cache max age in seconds (default 6 hours)
 	microtemplate.cacheControlMaxAge = 21600
-# cat=Microtemplate/microtemplate; type=boolean; label= Load jQuery
-	microtemplate.jQuery = 1
 # customsubcategory=microtemplatestyles=Microtemplate styles & design
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main CSS file
 	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Styles/Page/default.css
@@ -87,3 +85,9 @@
 # Containeritems
   containerSection.fadeInContent = 1
   containerSection.defaultAlignment = center
+
+# Paginated processors
+  paginatedprocessors.styles = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
+  paginatedprocessors.enableDefaultStyles = 1
+
+
