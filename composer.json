@@ -13,7 +13,8 @@
 	"require": {
 		"typo3/cms-core": "^11.5  || ^12",
 		"typo3/cms-fluid-styled-content": "^11.5 || ^12",
-		"t3brightside/containeritems": "^4 || @dev"
+		"t3brightside/containeritems": "^4.1 || @dev",
+		"ichhabrecht/content-defender": "^3.2 || @dev"
 	},
 	"suggest": {
 		"t3brightside/advancedtitle": "Page title prefix & suffix",
@@ -21,8 +22,7 @@
 		"t3brightside/pagelist": "Page teasers, article lists, cards etc",
 		"t3brightside/personnel": "Contact lists with vCard support",
 		"t3brightside/youtubevideo": "Responsive YouTube videos with cover image",
-		"t3brightside/gallerycontent": "Image content gallery with crop ratios",
-		"t3brightside/paginatedprocessors": "DataProcessors with pagination"
+		"t3brightside/gallerycontent": "Image content gallery with crop ratios"
 	},
 	"extra": {
 		"typo3/cms": {

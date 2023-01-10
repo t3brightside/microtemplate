@@ -46,7 +46,7 @@
                 1 {
                   name = Page content
                   colPos = 0
-                  allowed = containerSection
+                  allowed.CType = containerSection
                 }
               }
             }
@@ -67,6 +67,7 @@
                   name = Content title (overrides automatic title)
                   allowed = header
                   colPos = 5
+                  disallowed.CType = containerSection
                 }
               }
             }
