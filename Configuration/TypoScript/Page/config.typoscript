@@ -1,11 +1,15 @@
 config {
   cache_period = {$microtemplate.cacheControlMaxAge}
+  absRefPrefix = auto
+  forceAbsoluteUrls = 1
   sendCacheHeaders=1
-  absRefPrefix = {$microtemplate.domainName}
   spamProtectEmailAddresses = -1
   spamProtectEmailAddresses_atSubst = @
   spamProtectEmailAddresses_lastDotSubst = .
 }
+[compatVersion("11.5")]
+   config.baseURL = {$microtemplate.domainName}
+[end]
 
 # header data
 page {
@@ -117,12 +121,12 @@ page {
 # mobile menu content page
 menucontent = CONTENT
 menucontent {
-   table = tt_content
-   select {
-      pidInList = {$microtemplate.mobilemenu-content-page}
-      orderBy = sorting
-   }
-   renderObj = < tt_content
+  table = tt_content
+  select {
+    pidInList = {$microtemplate.mobilemenu-content-page}
+    orderBy = sorting
+  }
+  renderObj =< tt_content
 }
 # enable page authors if ext:personnel is loaded
 ["{$microtemplate.personnelIsLoaded}" == "1"]
