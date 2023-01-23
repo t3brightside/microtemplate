@@ -1,156 +1,152 @@
 # CSS inclusions and inline dynamic parametres from template constants
-	config {
-		concatenateCss = 1
-		compressCss = 1
-		removePageCss = 1
-    inlineStyle2TempFile = 0
+config {
+	concatenateCss = 1
+	compressCss = 1
+	removePageCss = 1
+	inlineStyle2TempFile = 0
+}
+
+[tree.pagelayout == "pagets__home"]
+	page.includeCSS {
+		sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/sectionMenu.css
+		sectionMenu.inline = 1
+		languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languageMenu.css
+		languageMenu.inline = 1
 	}
+[END]
 
-
-  [tree.pagelayout == "pagets__home"]
-		page.includeCSS {
-      sectionMenu = EXT:microtemplate/Resources/Public/Styles/Page/sectionMenu.css
-      sectionMenu.inline = 1
-      languageMenu = EXT:microtemplate/Resources/Public/Styles/Page/languageMenu.css
-      languageMenu.inline = 1
-    }
-	[END]
-
-	page {
-		includeCSS {
-			microtemplate = {$microtemplate.mainCSS}
-      microtemplate.inline = 1
-      microtemplate.forceOnTop = 1
-			forms = EXT:microtemplate/Resources/Public/Styles/Page/forms.css
-      forms.inline = 1
-      youtubevideo.inline = 1
-      personnel.inline = 1
-      pagelist.inline = 1
-      paginatedprocessors.inline = 1
-		}
-		cssInline {
-      10 = COA
-      10 {
-        10 = TEXT
-        10.value = @font-face {
-        20 = LOAD_REGISTER
-        20 {
-          headerFont.cObject = TEXT
-          headerFont.cObject {
-            value = {$microtemplate.header-font-file}
-            stdWrap.replacement {
-              5 {
-                search = (^(.*[\\\/]))
-                replace =
-                useRegExp = 1
-              }
-              10 {
-                search = (.woff2|.woff|.ttf)
-                replace =
-                useRegExp = 1
-              }
-            }
-          }
-        }
-        25 = TEXT
-        25.value = {register:headerFont}
-        25.wrap = font-family: '|';
-        25.stdWrap.insertData = 1
-				30 = TEXT
-				30.value = font-display: swap;
-        40 = TEXT
-        40.value = {path : {$microtemplate.header-font-file}}
-        40.insertData = 1
-        40.wrap = src: url('|');
-        100 = TEXT
-        100.value = }
-      }
-      20 = TEXT
-      20.value = {register:headerFont}
-      20.wrap = h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav, .c-accordion-title {font-family: |, {$microtemplate.main-font-family}}
-      20.stdWrap.insertData = 1
-      30 = TEXT
-			30.value (
-					body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
-
-
-					#header.scrolled, #header.force-bg {background-color: {$microtemplate.header-bg}}
-
-				/* page containers */
-					.pageWidth {max-width: {$microtemplate.pageWidth}}
-					.contentWidth {max-width: {$microtemplate.contentWidth}}
-					.subpageContentWidth {max-width: {$microtemplate.subpageContentWidth}}
-
-				/* links and buttons */
-					#menu a {color: {$microtemplate.text-default}}
-					#menu>nav>ul>li, #languagemenu>nav>ul {border-color: {$microtemplate.text-default}}
-					.hmbrgr i {background: {$microtemplate.text-default}}
-					a, a:visited, #menu a:hover, #menu .active a {color: {$microtemplate.accentColor}}
-					.btn:visited, .btn, .closelink:hover i, a.hmbrgr:hover i {background-color: {$microtemplate.accentColor}}
-					.btn:visited, .btn, .btn:disabled {border-color: {$microtemplate.accentColor}}
-					.btn:hover, .btn:disabled {color: {$microtemplate.accentColor}}
-
-				/* content sections */
-					.c-section {background-color: {$microtemplate.containerSection.bg-default} !important}
-					.c-section.bg-light {background-color: {$microtemplate.containerSection.bg-light} !important}
-					.c-section.bg-dark {background-color: {$microtemplate.containerSection.bg-dark} !important; color: {$microtemplate.text-light}}
-					.c-section.text-light {color: {$microtemplate.text-light}}
-					.c-section.text-dark {color: {$microtemplate.text-dark}}
-					.c-section .videobuttons svg .a, .c-section .videobuttons svg .st0, .c-section .videobuttons svg rect {fill:{$microtemplate.text-default}}
-					.c-section.text-light .videobuttons  .a, .c-section.text-light .videobuttons polygon.st0, .c-section.text-light .videobuttons rect {fill:{$microtemplate.text-light}}
-					.c-section.text-dark .videobuttons  .a, .c-section.text-dark .videobuttons polygon.st0, .c-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark}}
-
-				/* accordion */
-					.c-accordion-title, .c-accordion-title:visited {color: {$microtemplate.text-default}}
-					.c-accordion-title:hover {color: {$microtemplate.accentColor}}
-					.c-accordion-title::after, .c-accordion-title::before {background-color: {$microtemplate.text-default}}
-					.c-accordion-title:hover::after, .c-accordion-title:hover::before {background-color: {$microtemplate.accentColor}}
-
-				/* sub pages */
-					.subpage {color: {$microtemplate.text-default}}
-					.subpage-body {background-color: {$microtemplate.body-background}}
-					.closelink i {background: {$microtemplate.text-default}}
-
-				/* language menu */
-					#languagemenu li a {color: {$microtemplate.text-default}}
-
-				/* forms */
-					input, select, textarea {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; border-color: {$microtemplate.text-default}; -webkit-text-fill-color: {$microtemplate.text-default};}
-          .c-section.text-dark input, .c-section.text-dark select, .c-section.text-dark textarea {color: {$microtemplate.text-dark}; border-color: {$microtemplate.text-dark}; -webkit-text-fill-color: {$microtemplate.text-dark};}
-          .c-section.text-light input, .c-section.text-light select, .c-section.text-light textarea {color: {$microtemplate.text-light}; border-color: {$microtemplate.text-light}; -webkit-text-fill-color: {$microtemplate.text-light};}
-
-          i.validation-icon svg path {fill: {$microtemplate.text-default}}
-          .c-section.text-dark i.validation-icon svg path {fill: {$microtemplate.text-dark}}
-          .c-section.text-light i.validation-icon svg path {fill: {$microtemplate.text-light}}
-
-				/* ext:youtubevideo */
-					.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
-
-				/* ext:pagelist styles */
-					.pagelist .info, .pagelist .abstract {color: {$microtemplate.text-default}}
-
-				/* pagination */
-					 ul.pagination>li>a {border-color: {$microtemplate.accentColor}}
-
-				/* ext:personnel */
-					.c-section .personnel svg path, .subpage .personnel svg path {fill: {$microtemplate.text-default}}
-					.c-section.bg-dark .personnel svg path {fill: {$microtemplate.text-light}}
-					.c-section.text-light .personnel svg path {fill: {$microtemplate.text-light}}
-					.c-section.text-dark .personnel svg path {fill: {$microtemplate.text-dark}}
-			)
-		}
-
+page {
+	includeCSS {
+		microtemplate = {$microtemplate.mainCSS}
+		microtemplate.inline = 1
+		microtemplate.forceOnTop = 1
+		forms = EXT:microtemplate/Resources/Public/Styles/Page/forms.css
+		forms.inline = 1
+		youtubevideo.inline = 1
+		personnel.inline = 1
+		pagelist.inline = 1
+		paginatedprocessors.inline = 1
 	}
-	["{$microtemplate.nontransparent-header}" != "0"]
-		page.cssInline {
-			1002 = TEXT
-			1002.value (
-					#header {background-color: {$microtemplate.header-bg}
-			)
+	cssInline {
+		10 = COA
+		10 {
+			10 = TEXT
+			10.value = @font-face {
+			20 = LOAD_REGISTER
+			20 {
+				headerFont.cObject = TEXT
+				headerFont.cObject {
+					value = {$microtemplate.header-font-file}
+					stdWrap.replacement {
+						5 {
+							search = (^(.*[\\\/]))
+							replace =
+							useRegExp = 1
+						}
+						10 {
+							search = (.woff2|.woff|.ttf)
+							replace =
+							useRegExp = 1
+						}
+					}
+				}
+			}
+			25 = TEXT
+			25.value = {register:headerFont}
+			25.wrap = font-family: '|';
+			25.stdWrap.insertData = 1
+			30 = TEXT
+			30.value = font-display: swap;
+			40 = TEXT
+			40.value = {site:base}{path : {$microtemplate.header-font-file}}
+			40.insertData = 1
+			40.wrap = src: url('|');
+			100 = TEXT
+			100.value = }
 		}
-	[END]
+		20 = TEXT
+		20.value = {register:headerFont}
+		20.wrap = h1,h2,h3,h4,.ce-bodytext .headerFont,  .form-group>label, .control-label, #menu nav, .c-accordion-title {font-family: |, {$microtemplate.main-font-family}}
+		20.stdWrap.insertData = 1
+		30 = TEXT
+		30.value (
+			body {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; background-color: {$microtemplate.body-background}}
+			#header.scrolled, #header.force-bg {background-color: {$microtemplate.header-bg}}
 
+			/* page containers */
+			.pageWidth {max-width: {$microtemplate.pageWidth}}
+			.contentWidth {max-width: {$microtemplate.contentWidth}}
+			.subpageContentWidth {max-width: {$microtemplate.subpageContentWidth}}
 
-	["{$microtemplate.customCSS}" != "0"]
-		page.includeCSS.customlCSS = {$microtemplate.customCSS}
-	[END]
+			/* links and buttons */
+			#menu a {color: {$microtemplate.text-default}}
+			#menu>nav>ul>li, #languagemenu>nav>ul {border-color: {$microtemplate.text-default}}
+			.hmbrgr i {background: {$microtemplate.text-default}}
+			a, a:visited, #menu a:hover, #menu .active a {color: {$microtemplate.accentColor}}
+			.btn:visited, .btn, .closelink:hover i, a.hmbrgr:hover i {background-color: {$microtemplate.accentColor}}
+			.btn:visited, .btn, .btn:disabled {border-color: {$microtemplate.accentColor}}
+			.btn:hover, .btn:disabled {color: {$microtemplate.accentColor}}
+
+			/* content sections */
+			.c-section {background-color: {$microtemplate.containerSection.bg-default} !important}
+			.c-section.bg-light {background-color: {$microtemplate.containerSection.bg-light} !important}
+			.c-section.bg-dark {background-color: {$microtemplate.containerSection.bg-dark} !important; color: {$microtemplate.text-light}}
+			.c-section.text-light {color: {$microtemplate.text-light}}
+			.c-section.text-dark {color: {$microtemplate.text-dark}}
+			.c-section .videobuttons svg .a, .c-section .videobuttons svg .st0, .c-section .videobuttons svg rect {fill:{$microtemplate.text-default}}
+			.c-section.text-light .videobuttons  .a, .c-section.text-light .videobuttons polygon.st0, .c-section.text-light .videobuttons rect {fill:{$microtemplate.text-light}}
+			.c-section.text-dark .videobuttons  .a, .c-section.text-dark .videobuttons polygon.st0, .c-section.text-dark .videobuttons rect {fill:{$microtemplate.text-dark}}
+
+			/* accordion */
+			.c-accordion-title, .c-accordion-title:visited {color: {$microtemplate.text-default}}
+			.c-accordion-title:hover {color: {$microtemplate.accentColor}}
+			.c-accordion-title::after, .c-accordion-title::before {background-color: {$microtemplate.text-default}}
+			.c-accordion-title:hover::after, .c-accordion-title:hover::before {background-color: {$microtemplate.accentColor}}
+
+			/* sub pages */
+			.subpage {color: {$microtemplate.text-default}}
+			.subpage-body {background-color: {$microtemplate.body-background}}
+			.closelink i {background: {$microtemplate.text-default}}
+
+			/* language menu */
+			#languagemenu li a {color: {$microtemplate.text-default}}
+
+			/* forms */
+			input, select, textarea {font-family: {$microtemplate.main-font-family}; color: {$microtemplate.text-default}; border-color: {$microtemplate.text-default}; -webkit-text-fill-color: {$microtemplate.text-default};}
+			.c-section.text-dark input, .c-section.text-dark select, .c-section.text-dark textarea {color: {$microtemplate.text-dark}; border-color: {$microtemplate.text-dark}; -webkit-text-fill-color: {$microtemplate.text-dark};}
+			.c-section.text-light input, .c-section.text-light select, .c-section.text-light textarea {color: {$microtemplate.text-light}; border-color: {$microtemplate.text-light}; -webkit-text-fill-color: {$microtemplate.text-light};}
+
+			i.validation-icon svg path {fill: {$microtemplate.text-default}}
+			.c-section.text-dark i.validation-icon svg path {fill: {$microtemplate.text-dark}}
+			.c-section.text-light i.validation-icon svg path {fill: {$microtemplate.text-light}}
+
+			/* ext:youtubevideo */
+			.youtubeVideo:hover .customplaybutton polygon {fill: {$microtemplate.accentColor}}
+
+			/* ext:pagelist styles */
+			.pagelist .info, .pagelist .abstract {color: {$microtemplate.text-default}}
+
+			/* pagination */
+			ul.pagination>li>a {border-color: {$microtemplate.accentColor}}
+
+			/* ext:personnel */
+			.c-section .personnel svg path, .subpage .personnel svg path {fill: {$microtemplate.text-default}}
+			.c-section.bg-dark .personnel svg path {fill: {$microtemplate.text-light}}
+			.c-section.text-light .personnel svg path {fill: {$microtemplate.text-light}}
+			.c-section.text-dark .personnel svg path {fill: {$microtemplate.text-dark}}
+		)
+	}
+}
+
+["{$microtemplate.nontransparent-header}" != "0"]
+	page.cssInline {
+		1002 = TEXT
+		1002.value (
+			#header {background-color: {$microtemplate.header-bg}
+		)
+	}
+[END]
+
+["{$microtemplate.customCSS}" != "0"]
+	page.includeCSS.customlCSS = {$microtemplate.customCSS}
+[END]
