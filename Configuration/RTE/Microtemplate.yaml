@@ -17,36 +17,35 @@ editor:
 
     format_tags: "p;h1;h2;h3;h4;h5;pre"
 
-    toolbarGroups:
-      - { name: styles, groups: [ format, styles ] }
-      - { name: basicstyles, groups: [ basicstyles ] }
-      - { name: paragraph, groups: [ list, blocks, align ] }
-      - { name: links, groups: [ links ] }
-      - { name: editing, groups: [ spellchecker ] }
-      - { name: insert, groups: [ insert ] }
-      - { name: tools, groups: [ table, specialchar, cleanup ] }
-      - { name: document, groups: [ mode ] }
+    toolbar:
+      items:
+        - style
+        - heading
+        - '|'
+        - bold
+        - italic
+        - subscript
+        - superscript
+        - softhyphen
+        - '|'
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - alignment
+        - '|'
+        - findAndReplace
+        - link
+        - '|'
+        - removeFormat
+        - '|'
+        - insertTable
+        - specialCharacters
+        - horizontalLine
+        - '|'
+        - sourceEditing
 
-    justifyClasses:
-      - align-left
-      - align-center
-      - align-right
-
-    extraPlugins:
-      - justify
-
-    removePlugins:
-      - image
-
-    removeButtons:
-      - Table
-      - Justify
-      - Anchor
-      - Underline
-      - Strike
-
-# Allow s and u tag
-processing:
-  allowTags:
-    - s
-    - u
+    alignment:
+      options:
+        - left
+        - center
+        - right
