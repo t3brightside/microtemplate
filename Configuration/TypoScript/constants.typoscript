@@ -1,7 +1,7 @@
 # customsubcategory=microtemplate=Microtemplate setup
 # cat=Microtemplate/microtemplate; type=string; label= Root page ID, if root is a sub page
 	microtemplate.rootPageId =
-# cat=Microtemplate/microtemplate; type=string; label= Domain name with https(s) and ending /:Example: https://emaple.com/;
+# cat=Microtemplate/microtemplate; type=string; label= Domain name with https(s) and ending (not used in TYPO3 v12) /:Example: https://emaple.com/;
 	microtemplate.domainName = /
 # cat=Microtemplate/microtemplate; type=int; label= Cache max age in seconds (default 6 hours)
 	microtemplate.cacheControlMaxAge = 21600
