@@ -1,8 +1,9 @@
 <?php
 defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['microtemplate'] = 'EXT:microtemplate/Configuration/RTE/Default.yaml';
-
+if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['microtemplate'])) {
+    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['microtemplate'] = 'EXT:microtemplate/Configuration/RTE/Microtemplate.yaml';
+}
 # Check if ext:personnel is loaded and add TS constant
 if (TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('personnel')) {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('
