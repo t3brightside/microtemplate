@@ -24,7 +24,7 @@ config {
               .forEach(trigger => {
                   trigger.onclick = function(e) {
                       e.preventDefault();
-                      let hash = '#' + this.getAttribute('href').split('/#')[1];
+                      let hash = '#' + this.getAttribute('href').split('#')[1];
                       let target = document.querySelector(hash);
                       let headerOffset = 65;
                       let elementPosition = target.offsetTop;
