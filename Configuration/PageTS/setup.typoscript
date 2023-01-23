@@ -1,5 +1,5 @@
 # RTE setup defined in ext_localconf.php
-#	RTE.default.preset = microtemplate
+RTE.default.preset = microtemplate
 
 # set default back end group permissions
 	TCEMAIN {
