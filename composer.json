@@ -23,7 +23,8 @@
 		"t3brightside/pagelist": "Page teasers, article lists, cards etc",
 		"t3brightside/personnel": "Contact lists with vCard support",
 		"t3brightside/youtubevideo": "Responsive YouTube videos with cover image",
-		"t3brightside/gallerycontent": "Image content gallery with crop ratios"
+		"t3brightside/gallerycontent": "Image content gallery with crop ratios",
+		"lochmueller/staticfilecache": "To speed things up"
 	},
 	"extra": {
 		"typo3/cms": {
