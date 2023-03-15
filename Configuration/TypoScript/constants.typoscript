@@ -86,8 +86,7 @@
   paginatedprocessors.cssPriority = 0
 
 # Containeritems
-  containerSection.defaultAlignment = left
-  containerSection.defaultScrollInEffect = slide-from-below
+  containerItems.sectionScrollInEffect = slide-from-below
 
 # Youtubevideo
   youtubevideo.cssPriority = 0
