@@ -87,7 +87,7 @@
 
 # Containeritems
   containerSection.defaultAlignment = left
-  containerSection.default-scroll-in-effect = slide-from-below
+  containerSection.defaultScrollInEffect = slide-from-below
 
 # Youtubevideo
   youtubevideo.cssPriority = 0
