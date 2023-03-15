@@ -9,6 +9,10 @@
 - **[Demo](https://microtemplate.t3brightside.com)**
 - **[Microtemplate in TYPO3 Now Package](https://t3brightside.com/typo3-now)**
 
+## Be aware...
+Quite likely most major versions introduce breaking changes, without describing every single one.
+This is a place for us to try out and learn about new ways of doing things. Always trying to improve the speed, usability and SEO.
+
 ## System requirements
 
 - TYPO3
