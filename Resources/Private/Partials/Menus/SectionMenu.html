@@ -1,5 +1,7 @@
+{namespace ea=Brightside\Embedassets\ViewHelpers}
+<ea:asset.css embed="1" priority="1" identifier="sectionMenu" href="EXT:microtemplate/Resources/Public/Css/Menus/section-menu.css" />
 <nav>
-    <ul id="sectionmenu">
+    <ul id="section-menu">
         <f:for each="{sectionMenu}" as="section">
             <f:if condition="{section.data.header}">
                 <li id="m{section.data.uid}">
@@ -11,3 +13,5 @@
         </f:for>
     </ul>
 </nav>
+
+<ea:asset.script embed="1" identifier="sectionMenu" src="EXT:microtemplate/Resources/Public/JavaScript/Menus/section-menu.js" />

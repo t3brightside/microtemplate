@@ -1,3 +1,10 @@
+{namespace ea=Brightside\Embedassets\ViewHelpers}
+
+<f:render partial="CssSettings" arguments="{_all}" />
+<ea:asset.css embed="1" priority="1" identifier="microtemplateDefault" href="EXT:microtemplate/Resources/Public/Css/default.css" />
+<ea:asset.css embed="1" identifier="microtemplateForms" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
+<ea:asset.css embed="1" priority="1" identifier="subPage" href="EXT:microtemplate/Resources/Public/Css/Pages/sub-page.css" />
+
 <body class="subpage-body">
 	<f:render partial="Sub/CloseLink" arguments="{_all}" />
 	<div id="p{data.uid}" class="subpage subpageContentWidth">

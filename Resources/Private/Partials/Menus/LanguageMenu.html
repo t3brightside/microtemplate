@@ -1,10 +1,13 @@
-<div id="languagemenu">
+{namespace ea=Brightside\Embedassets\ViewHelpers}
+<ea:asset.css embed="1" priority="1" identifier="language" href="EXT:microtemplate/Resources/Public/Css/Menus/language-menu.css" />
+
+<div id="language-menu">
   <nav>
       <ul>
           <f:for each="{languageMenu}" as="item">
               <f:if condition="{item.available}">
-                  <li class="{f:if(condition: item.active, then: 'active')}">
-                      <a href="{item.link}" hreflang="{item.hreflang}" title="{item.navigationTitle}">
+                  <li class="{f:if(condition: item.active, then: 'act')}">
+                      <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
                           {item.navigationTitle}
                       </a>
                   </li>

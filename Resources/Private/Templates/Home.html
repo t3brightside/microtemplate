@@ -1,40 +1,43 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace ea=Brightside\Embedassets\ViewHelpers}
+
+<f:render partial="CssSettings" arguments="{_all}" />
+<ea:asset.css embed="1" priority="1" identifier="microtemplateDefault" href="EXT:microtemplate/Resources/Public/Css/default.css" />
+<ea:asset.css embed="1" identifier="microtemplateForms" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
+
 <div id="cTop">
     <div id="p{data.uid}">
-        <header>
-            <div id="header">
-                <div class="pageWidth">
-                    <div class="contentWidth">
-                        <a href="{currentURL}#cTop" id="logo" title="{data.title}">
-                            <f:format.raw>{logo}</f:format.raw>
-                        </a>
-                        <f:if condition="{sectionMenu} || {languageMenu -> f:count()} > 1">
-                            <f:render partial="Menus/Hmbrgr" arguments="{_all}" />
-                            <div class="menu-container">
-                                <div id="menu">
-                                    <f:if condition="{sectionMenu}">
-                                        <f:render partial="Menus/SectionMenu" arguments="{_all}" />
-                                    </f:if>
-                                    <f:if condition="{languageMenu -> f:count()} > 1">
-                                        <f:render partial="Menus/LanguageMenu" arguments="{_all}" />
-                                    </f:if>
-                                    <f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
-                                        <div id="menucontent">
-                                            <f:cObject typoscriptObjectPath="menucontent" />
-                                        </div>
-                                    </f:if>
-                                </div>
-                            </div>
-                        </f:if>
+        <a href="#cTop" id="logo" title="{data.title}">
+            <f:format.raw>{logo}</f:format.raw>
+        </a>
+        <f:variable name="languagesAvailable" value="0" />
+        <f:for each="{languageMenu}" as="item">
+            <f:if condition="{item.available}">
+                <f:variable name="languagesAvailable" value="{languagesAvailable + 1}" />
+            </f:if>
+        </f:for>
+        <f:if condition="{sectionMenu} || {languagesAvailable} > 1">
+            <f:render partial="Menus/Hmbrgr" arguments="{_all}" />
+            <div id="menu">
+                <f:if condition="{languagesAvailable} > 1">
+                    <f:render partial="Menus/LanguageMenu" arguments="{_all}" />
+                </f:if>
+                <f:if condition="{sectionMenu}">
+                    <f:render partial="Menus/SectionMenu" arguments="{_all}" />
+                </f:if>
+                <f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
+                    <ea:asset.css embed="1" priority="1" identifier="menuContent" href="EXT:microtemplate/Resources/Public/Css/Menus/menu-content.css" />
+                    <div id="menu-content">
+                        <f:cObject typoscriptObjectPath="menucontent" />
                     </div>
-                </div>
+                </f:if>
             </div>
-        </header>
-        <main>
-            <div id="content">
-                <div class="pageWidth">
-                    <f:format.raw>{contentDefault}</f:format.raw>
-                </div>
+        </f:if>
+        <div id="content">
+            <div class="pageWidth">
+                <f:format.raw>{contentDefault}</f:format.raw>
             </div>
-        </main>
+        </div>
     </div>
 </div>
+<ea:asset.script embed="1" identifier="home" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/home.js" />
