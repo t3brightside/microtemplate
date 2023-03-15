@@ -8,7 +8,7 @@ imports:
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
   config:
-    contentsCss: "EXT:microtemplate/Resources/Public/Styles/rte.css"
+    contentsCss: "EXT:microtemplate/Resources/Public/Css/rte.css"
     stylesSet:
       # Inline styles
       - { name: "Button", element: "a", attributes: { class: "btn"} }

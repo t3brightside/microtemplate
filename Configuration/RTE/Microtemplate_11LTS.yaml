@@ -10,7 +10,7 @@ editor:
   config:
     contentsCss:
       - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
-      - "EXT:microtemplate/Resources/Public/Styles/rte.css"
+      - "EXT:microtemplate/Resources/Public/Css/rte.css"
     stylesSet:
       # Inline styles
       - { name: "Button", element: "a", attributes: { class: "btn"} }
