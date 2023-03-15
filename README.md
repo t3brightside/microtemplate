@@ -44,7 +44,7 @@ This is a place for us to try out and learn about new ways of doing things. Alwa
 - To alter back end settings see: _Configuration/TypoScript/PageTS/setup.ts_
 
 ## Recommended
-These extensions are preconfigured and tested in Microtemplate package.
+These extensions are preconfigured and tested in Microtemplate
 - [pagelist](https://github.com/t3brightside/pagelist) – Page teasers, articles, events etc
 - [personnel](https://github.com/t3brightside/personnel) – Contact persons information with vCard support
 - [gallerycontent](https://github.com/t3brightside/gallerycontent) – Gallery with preset crop ratios
@@ -52,6 +52,8 @@ These extensions are preconfigured and tested in Microtemplate package.
 - [favicon](https://github.com/t3brightside/favicon) – Favicon extension
 - [advancedtitle](https://github.com/t3brightside/advancedtitle) – Page title prefix and suffix
 
+To speed things up
+- [staticfilecache](https://github.com/lochmueller/staticfilecache) - Write pages into HTML files to save chunk of time
 ## Sources
 - [GitHub](https://github.com/t3brightside/microtemplate)
 - [Packagist](https://packagist.org/packages/t3brightside/microtemplate)
