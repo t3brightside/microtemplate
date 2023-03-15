@@ -6,6 +6,10 @@ config {
   spamProtectEmailAddresses = -1
   spamProtectEmailAddresses_atSubst = @
   spamProtectEmailAddresses_lastDotSubst = .
+  concatenateJs = 1
+	compressJs = 1
+	moveJsFromHeaderToFooter = 1
+	removeDefaultJS =
 }
 [compatVersion("11.5")]
    config.baseURL = {$microtemplate.domainName}
@@ -57,7 +61,33 @@ page {
       languages = auto
       as = languageMenu
     }
-
+    settings {
+# CSS variables for Resources/Private/Partials/CssSettings.html
+      mainFontFamily = {$microtemplate.mainFontFamily}
+      textColor = {$microtemplate.textColor}
+      bodyBg = {$microtemplate.bodyBg}
+      menuBg = {$microtemplate.menuBg}
+      pageWidth = {$microtemplate.pageWidth}
+      contentWidth = {$microtemplate.contentWidth}
+      subpageWidth = {$microtemplate.subpageWidth}
+      accentColor = {$microtemplate.accentColor}
+      bodyBackground = {$microtemplate.bodyBackground}
+      bgLight = {$microtemplate.bgLight}
+      textLight = {$microtemplate.textLight}
+      bgDark = {$microtemplate.bgDark}
+      textDark = {$microtemplate.textDark}
+# dark mode override
+      darkModeOn = 1
+      dmTextColor = {$microtemplate.dmTextColor}
+      dmBodyBg = {$microtemplate.dmBodyBg}
+      dmMenuBg = {$microtemplate.dmMenuBg}
+      dmAccentColor = {$microtemplate.dmAccentColor}
+      dmBodyBackground = {$microtemplate.dmBodyBackground}
+      dmBgLight = {$microtemplate.dmBgLight}
+      dmTextLight = {$microtemplate.dmTextLight}
+      dmBgDark = {$microtemplate.dmBgDark}
+      dmTextDark = {$microtemplate.dmTextDark}
+    }
 		variables {
 # logo settings
       logo = SVG
@@ -66,12 +96,6 @@ page {
 # needed for if home is not in page tree root level
       rootPageId = TEXT
       rootPageId.value = {$microtemplate.rootPageId}
-# logo file location
-			logoFile = TEXT
-			logoFile.value = {$microtemplate.logoFile}
-# logo file location
-			titleChangeScroll = TEXT
-			titleChangeScroll.value = {$microtemplate.title-change-scroll}
 # default page content
 			contentDefault = COA
 			contentDefault {
@@ -84,8 +108,7 @@ page {
       currentURL = TEXT
       currentURL.data = getIndpEnv:TYPO3_REQUEST_URL
 
-
-# override automatic page title with content element if available
+# override automatic content title on sub pages with a content element
 			contentHeader = CONTENT
 			contentHeader.table = tt_content
 			contentHeader {
@@ -118,12 +141,12 @@ page {
   }
 }
 
-# mobile menu content page
+# mobile menu content page, content in this page will be shown in menu
 menucontent = CONTENT
 menucontent {
   table = tt_content
   select {
-    pidInList = {$microtemplate.mobilemenu-content-page}
+    pidInList = {$microtemplate.mobilemenuContentPage}
     orderBy = sorting
   }
   renderObj =< tt_content
