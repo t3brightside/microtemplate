@@ -1,19 +1,20 @@
 # customsubcategory=microtemplatedarkmode=Microtemplate - Dark Mode
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Default text color: Body, headers, main menu
-	microtemplate.darkMode-text-default = #FFFFFF
+	microtemplate.dmTextColor = #FFFFFF
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Default background color
-	microtemplate.darkMode-body-background = #171717
+	microtemplate.dmBodyBg = #242424
+# cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Menu background color
+	microtemplate.dmMenuBg = rgba(0,0,0,0.8)
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Accent color:Link color & button background
-	microtemplate.darkMode-accentColor = #C100CF
+	microtemplate.dmAccentColor = #C100CF
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Light text:Used on dark background or if set in section settings
-	microtemplate.darkMode-text-light = #ffffff
+	microtemplate.dmTextLight = #ffffff
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Dark text:Used on light background or if set in section settings
-	microtemplate.darkMode-text-dark = #000000
+	microtemplate.dmTextDark = #ffffff
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Default section background
-	microtemplate.darkMode-containerSection.bg-default = #171717
+	microtemplate.dmBgDefault = #171717
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Light section background
-	microtemplate.darkMode-containerSection.bg-light = #242424
+	microtemplate.dmBgLight = #242424
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Dark section background
-	microtemplate.darkMode-containerSection.bg-dark = #1A1A1A
-# cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Header background
-	microtemplate.darkMode-header-bg = rgba(23,23,23,0.9)
+	microtemplate.dmBgDark = #1A1A1A
+  microtemplate.darkModeOn = 1

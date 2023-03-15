@@ -1,0 +1,42 @@
+#language-menu {
+    text-transform: uppercase;
+    font-size: .85rem;
+    width: auto;
+    margin: auto;
+    float: left;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+#language-menu>nav>ul {
+    width: auto;
+    display: inline-block;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+#language-menu>nav>ul>li {
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+#language-menu>nav>ul>li>a {
+    padding: 0.5rem;
+    color: var(--textColor);
+}
+
+#language-menu>nav>ul>li:last-child {
+    margin-right: 0;
+}
+
+#language-menu a {
+    transition: color .2s ease-in-out;
+}
+#language-menu>nav>ul>li.act>a {
+    color: var(--accentColor);
+}
+
+#language-menu a:hover {
+    text-decoration: none;
+}

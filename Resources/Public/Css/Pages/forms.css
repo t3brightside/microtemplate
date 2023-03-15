@@ -22,14 +22,13 @@ div.valid, div.error {
 form {
     margin: auto;
     margin-top: 2em;
-    max-width: 48em;
+
 }
 
 form>.row {
-    width: 45%;
-    float: left;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    grid-gap: 2.5rem;
 }
 
 form>.actions {
@@ -40,7 +39,7 @@ form>.actions {
 
 form>.actions .btn {
     padding-top: 0.86em;
-    padding-bottom: 0.86em;
+    margin-top: 0;
 }
 
 form .form-group {
@@ -78,23 +77,15 @@ input, button, textarea, select {
 }
 
 input, textarea, select {
-    border: 1px solid #666;
+    width: 100%;
+    border: 1px solid;
     padding: 0.7em;
     font-size: 1em;
     border-radius: 0;
-    float: left;
-    width: 100%;
-    background: transparent;
-    background-color: rgba(255, 255, 255, 0.2);
-    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
     position: relative;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.0) inset;
-    transition: background-color .4s ease-in-out 0s;
+    -webkit-box-shadow: none;
     box-sizing: border-box;
-}
-
-.error input, .error textarea, .error select {
-    padding-right: 2.3em;
 }
 
 select {
@@ -147,8 +138,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 textarea {
-    height: 8.26em;
+    height: 9.05em;
 }
+
 
 form span.error {
     display: block;
@@ -170,14 +162,9 @@ form span.error:before {
 }
 
 /* Custom forms */
-form#contactUs-91 .form-group, form#contactUs-126 .form-group {
-    margin-bottom: 1.12em !important;
-}
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 860px) {
     form>.row {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        display: block;
     }
 }

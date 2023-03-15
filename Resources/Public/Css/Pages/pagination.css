@@ -1,14 +1,18 @@
 ul.pagination {
     line-height: .9em;
     font-size: .9em;
-    clear: both;
     list-style: none;
     margin: 0;
-    padding-top: 1em;
+    padding-top: 2.5em;
+    max-width: 100%;
+    display: inline-block;
+}
+.align-center {
+    text-align: center;
 }
 
 ul.pagination>li {
-    margin: .4em .1em 0 0;
+    margin: .4em .2em 0 0;
 }
 
 ul.pagination>li:last-child {

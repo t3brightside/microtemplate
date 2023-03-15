@@ -7,7 +7,7 @@
 	microtemplate.cacheControlMaxAge = 21600
 # customsubcategory=microtemplatestyles=Microtemplate styles & design
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main CSS file
-	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Styles/Page/default.css
+	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Css/default.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
 	microtemplate.customCSS =
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
@@ -15,40 +15,36 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label=Menu & Header font file
 	microtemplate.header-font-file = EXT:microtemplate/Resources/Public/Fonts/fira-sans-extra-condensed-v5-latin-500.woff2
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main font family
-	microtemplate.main-font-family = sans-serif
+	microtemplate.mainFontFamily = sans-serif
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default text color: Body, headers, main menu
-	microtemplate.text-default = #111111
+	microtemplate.textColor = #111111
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default background color
-	microtemplate.body-background = #ffffff
+	microtemplate.bodyBg = #ffffff
 # cat=Microtemplate/microtemplatestyles; type=color; label= Accent color:Link color & button background
 	microtemplate.accentColor = #db0500
 # cat=Microtemplate/microtemplatestyles; type=color; label= Light text:Used on dark background or if set in section settings
-	microtemplate.text-light = #ffffff
+	microtemplate.textLight = #ffffff
 # cat=Microtemplate/microtemplatestyles; type=color; label= Dark text:Used on light background or if set in section settings
-	microtemplate.text-dark = #000000
-# cat=Microtemplate/microtemplatestyles; type=color; label= Default section background
-	microtemplate.containerSection.bg-default = #ffffff
+	microtemplate.textDark = #000000
 # cat=Microtemplate/microtemplatestyles; type=color; label= Light section background
-	microtemplate.containerSection.bg-light = #f5f5f5
+	microtemplate.bgLight = #f5f5f5
 # cat=Microtemplate/microtemplatestyles; type=color; label= Dark section background
-	microtemplate.containerSection.bg-dark = #353535
+	microtemplate.bgDark = #353535
 # cat=Microtemplate/microtemplatestyles; type=color; label= Header background
-	microtemplate.header-bg = rgba(255,255,255,0.9)
-# cat=Microtemplate/microtemplatestyles; type=boolean; type=color; label= Non transparent header at home page
-	microtemplate.nontransparent-header = 0
+	microtemplate.menuBg = rgba(255,255,255,0.9)
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum home page width (px, em or %)
 	microtemplate.pageWidth = 100%
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum home page content width (px, em or %)
 	microtemplate.contentWidth = 62rem
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum sub page content width (px, em or %)
-	microtemplate.subpageContentWidth = 43rem
+	microtemplate.subpageWidth = 43rem
 # cat=Microtemplate/microtemplatestyles; type=string; label= Mobile menu content page ID (shows elements from this page)
-	microtemplate.mobilemenu-content-page = 0
-
+	microtemplate.mobilemenuContentPage = 0
 # cat=Microtemplate/microtemplatestyles; type=int; label= Maximum image width (px)
 	styles.content.textmedia.maxW = 800
 # cat=Microtemplate/microtemplatestyles; type=int; label= Maximum image width in text (px)
 	styles.content.textmedia.maxWInText = 400
+
 
 # Sets default header type for sub pages
 	styles.content.defaultHeaderType = 2
@@ -67,27 +63,31 @@
 # Gallerycontent
   gallerycontent.imageWidth = 800
   gallerycontent.enableLightbox = 1
+  gallerycontent.cssPriority = 0
 
 # Personnel
+  personnel.enableBreakpoints = 0
   personnel.cardImageWidth = 300
   personnel.cardImageHeight = 300
   personnel.cardsBreakThree = 8000
-  personnel.stylesPath = EXT:microtemplate/Resources/Public/Extensions/Personnel/Styles/personnel.css
+  # personnel.cssFile = EXT:microtemplate/Resources/Public/Extensions/Personnel/Css/personnel.css
+  personnel.cssPriority = 0
 
 # Pagelist
 	pagelist.partialRootPaths = EXT:microtemplate/Resources/Private/Partials/Pagelist/
-  pagelist.styles = EXT:microtemplate/Resources/Public/Extensions/Pagelist/Styles/pagelist.css
+  pagelist.cssPriority = 0
 
 # Favicon
   favicon.svgPath = data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cg transform='translate(-481 -613)'%3E%3Cg transform='translate(-280 -278)'%3E%3Cpath d='M0,0H36V36H0Z' transform='translate(761 891)' fill='%23bc0000'/%3E%3C/g%3E%3Crect width='22' height='7' transform='translate(488 620)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(488 631)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(501 631)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A
   favicon.pngPath = EXT:microtemplate/Resources/Public/Icons/Extension.png
 
-# Containeritems
-  containerSection.fadeInContent = 1
-  containerSection.defaultAlignment = center
-
 # Paginated processors
-  paginatedprocessors.styles = EXT:microtemplate/Resources/Public/Styles/Page/pagination.css
-  paginatedprocessors.enableDefaultStyles = 1
+  paginatedprocessors.cssFile = EXT:microtemplate/Resources/Public/Css/Pages/pagination.css
+  paginatedprocessors.cssPriority = 0
 
+# Containeritems
+  containerSection.defaultAlignment = left
+  containerSection.default-scroll-in-effect = slide-from-below
 
+# Youtubevideo
+  youtubevideo.cssPriority = 0

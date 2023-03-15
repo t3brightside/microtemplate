@@ -1,0 +1,35 @@
+#menu-content {
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#menu-content h1,
+#menu-content h2,
+#menu-content h3 {
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+#menu-content .btn {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    background: transparent;
+    transition: all .2s ease-in-out;
+}
+
+#menu-content p:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#menu-content .btn {
+    color: var(--textColor);
+    border-color: var(--textColor);
+}
+#menu-content .btn:hover {
+    border-color: var(--accentColor);
+}

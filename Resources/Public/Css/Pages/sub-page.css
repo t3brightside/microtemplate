@@ -1,0 +1,54 @@
+.subpage {
+    max-width: var(--subpageWidth);
+    padding: 5em 1.6em;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.subpage h1 {
+    padding-bottom: .36em;
+}
+
+.subpage .author img {
+    border-radius: 50%;
+}
+
+.closelink {
+    border-radius: 50%;
+    width: 2.6em;
+    height: 2.6em;
+    display: block;
+    position: fixed;
+    margin: 1em;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    transition: all .4s ease-in-out;
+}
+
+.closelink::before,
+.closelink::after {
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    background: var(--textColor);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.closelink::before {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.closelink:hover {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
+.has-lightbox .closelink {
+    display: none;
+}

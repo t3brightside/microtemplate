@@ -1,0 +1,65 @@
+.hmbrgr {
+    position: fixed;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    width: 3rem;
+    height: 2.5rem;
+    z-index: 9999999;
+    right: 1rem;
+    top: 1rem;
+    transition: all .4s ease-in-out;
+    mix-blend-mode: exclusion;
+}
+
+.hmbrgr::before,
+.hmbrgr::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 50%;
+    height: 3px;
+    left: 25%;
+    top: calc(50% - 1px);
+    transition: margin .4s ease-in-out, background .4s ease-in-out;
+}
+
+.hmbrgr::before {
+    margin-top: -6%;
+}
+
+.hmbrgr::after {
+    margin-top: 6%;
+}
+
+.hmbrgr.open::before,
+.hmbrgr.open::after {
+    margin: 0;
+    transition: transform .4s ease-in-out;
+}
+
+.hmbrgr.open::before {
+    transform: rotate(45deg);
+}
+
+.hmbrgr.open::after {
+    transform: rotate(-45deg);
+}
+
+.has-lightbox .hmbrgr {
+    display: none;
+}
+
+@media screen and (max-width: 1700px) {
+
+    .hmbrgr::before,
+    .hmbrgr::after {
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hmbrgr {
+        margin-right: -0.5em;
+    }
+}

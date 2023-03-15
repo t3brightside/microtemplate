@@ -2,20 +2,44 @@
 	Link, button etc colors and dynamic container widths are set in:
 	Configuration/TypoScript/Setup/styles.typoscript and can be edited through TS constant editor
 */
-html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input, textarea, figure, button {
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input,
+textarea,
+figure,
+button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-button, input[type="submit"], input[type="reset"] {
+button,
+input[type="submit"],
+input[type="reset"] {
     background: none;
     color: inherit;
     border: none;
     padding: 0;
     font: inherit;
     cursor: pointer;
-    outline: inherit;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
 }
@@ -24,11 +48,13 @@ ul {
     list-style: none;
 }
 
-fieldset, img {
+fieldset,
+img {
     border: none;
 }
 
-caption, th {
+caption,
+th {
     text-align: left;
 }
 
@@ -40,29 +66,34 @@ iframe {
     border: none;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-}
 
 html {
     font-size: 20px;
 }
 
 body {
-    font-size: 100%;
+    font-size: 1rem;
     line-height: 1.5em;
     font-weight: 400;
-    color: #000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: var(--mainFontFamily);
+    color: var(--textColor);
+    background-color: var(--bodyBgColor);
 }
 
-p, ul, ol, table, form {
+p,
+ul,
+ol,
+table,
+form {
     margin-bottom: 1em;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     padding-bottom: .21em;
     font-weight: 500;
 }
@@ -90,23 +121,29 @@ h4 {
     font-size: 1em;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     padding-top: .3em;
 }
 
-b, strong {
+b,
+strong {
     font-weight: 700;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
+    color: var(--accentColor);
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-ul, ol {
+ul,
+ol {
     margin-left: 1em;
 }
 
@@ -134,7 +171,8 @@ th {
     font-weight: bold;
 }
 
-th, td {
+th,
+td {
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
     padding: .2em;
@@ -142,12 +180,14 @@ th, td {
     padding-right: .6em;
 }
 
-th:last-child, td:last-child {
+th:last-child,
+td:last-child {
     border-right: none;
     padding-right: 0;
 }
 
-tbody tr:last-child th, tbody tr:last-child td {
+tbody tr:last-child th,
+tbody tr:last-child td {
     border-bottom: none;
     padding-bottom: 0;
 }
@@ -156,7 +196,9 @@ tbody tr:last-child th, tbody tr:last-child td {
     clear: both;
 }
 
-.btn, .btn:visited {
+.btn,
+.btn:visited {
+    background-color: var(--accentColor);
     font-size: .86em;
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
@@ -170,12 +212,17 @@ tbody tr:last-child th, tbody tr:last-child td {
     transition: color .4s, font-size .4s;
     border: 2px solid;
     margin-right: .4em;
+    border-color: var(--accentColor);
 }
 
-.btn:hover, .btn:visited:hover, button.btn:disabled {
+.btn:hover,
+.btn:visited:hover,
+button.btn:disabled {
     text-decoration: none;
     background-color: transparent;
     cursor: pointer;
+    color: var(--accentColor);
+    border-color: var(--accentColor);
 }
 
 .align-center .btn {
@@ -188,17 +235,15 @@ tbody tr:last-child th, tbody tr:last-child td {
     margin-right: 0;
 }
 
-.youtubevideo {
-    width: 100%;
-    float: left;
-}
-
 .pageWidth {
+    max-width: var(--pageWidth);
     margin: auto;
     clear: both;
 }
-
 .contentWidth {
+    max-width: var(--contentWidth);
+}
+.content {
     margin: auto;
     clear: both;
     padding: 0 3em;
@@ -206,41 +251,37 @@ tbody tr:last-child th, tbody tr:last-child td {
     z-index: 1;
 }
 
-#header, #content, #footer {
+.content .frame-type-textmedia p,
+.content .frame-type-textmedia ul,
+.content .frame-type-textmedia ol {
+    max-width: 43rem;
+}
+p:last-child, ol:last-child, ul:last-child {
+    margin-bottom: 0;
+}
+#content,
+#footer {
     margin: auto;
 }
 
-#header {
+#logo {
     position: fixed;
-    z-index: 12;
-    width: 100%;
-    padding: 1.333em 0;
-    top: 0;
-    transition: all .3s;
+    top: 1.7rem;
+    left: 1.8rem;
+    z-index: 9999977;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    max-width: 270px;
 }
 
 #logo svg {
-    float: left;
-    margin-top: .65em;
-    margin-bottom: 0;
-    height: 1.5em;
+    height: 1.25rem;
     width: auto;
     transition: height .4s;
 }
 
-#header.scrolled #logo svg {
-    height: 1.2em;
-}
-
-#header.scrolled {
-    padding: .2em;
-    padding-top: .36em;
-}
-
-#header.scrolled, #header.force-bg {
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+.has-lightbox #logo {
+    display: none;
 }
 
 /* ext:fluid_styled_content */
@@ -307,29 +348,6 @@ tbody tr:last-child th, tbody tr:last-child td {
     font-weight: 100;
 }
 
-.ce-gallery {
-    display: table;
-}
-
-.ce-gallery .ce-row {
-    display: table-row;
-}
-
-.ce-gallery .ce-column {
-    display: table-cell;
-    vertical-align: top;
-    padding: .3em;
-}
-
-.ce-gallery .image {
-    line-height: 0;
-}
-
-.ce-gallery img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
 
 .ce-textpic.ce-above .ce-gallery {
     margin-bottom: 1.3em;
@@ -339,12 +357,14 @@ tbody tr:last-child th, tbody tr:last-child td {
     margin-top: 1.3em;
 }
 
-.ce-textpic.ce-above .ce-gallery, .ce-textpic.ce-below .ce-gallery {
+.ce-textpic.ce-above .ce-gallery,
+.ce-textpic.ce-below .ce-gallery {
     width: 101.5%;
     margin-left: -.3em;
 }
 
-.ce-textpic.ce-right.ce-intext .ce-gallery, .ce-textpic.ce-left.ce-intext .ce-gallery {
+.ce-textpic.ce-right.ce-intext .ce-gallery,
+.ce-textpic.ce-left.ce-intext .ce-gallery {
     margin-bottom: 1em;
     max-width: 55%;
 }
@@ -394,65 +414,37 @@ ul.ce-uploads li .ce-uploads-filesize {
     font-size: .9em;
 }
 
-/* ext:youtubevideo */
-#content .youtubevideo {
-    max-width: 110vh;
-    margin: auto;
-    float: none;
+.c-section.home h1 {
+    font-size: 7vw
+}
+.home .btn, .home .btn:visited {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+    transition: background .3s ease-in-out;
+}
+.home .btn:hover, .home .btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+.text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-right {
+    text-align: right;
+    margin-left: auto;
+}
+@media screen and (min-width:2000px) {
+    .c-section.home h1 {
+        font-size: 6em
+    }
 }
 
-.subpage {
-    padding: 5em 1.6em;
-    margin: auto;
-    overflow-x: auto;
-}
-
-.subpage h1 {
-    padding-bottom: .36em;
-}
-
-.subpage .author img {
-    border-radius: 50%;
-}
-
-.closelink {
-    border-radius: 50%;
-    width: 2.6em;
-    height: 2.6em;
-    display: block;
-    position: fixed;
-    margin: 1em;
-    top: 0;
-    right: 0;
-    z-index: 9;
-    transition: all .4s ease-in-out;
-}
-
-.closelink i {
-    display: block;
-    height: 3px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    background: #000;
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-}
-
-.closelink i.l {
-    transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-}
-
-.closelink:hover {
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-}
-
-/* responsive layout */
 @media screen and (min-device-width: 2560px) and (min-width: 1700px) {
     html {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
@@ -466,9 +458,22 @@ ul.ce-uploads li .ce-uploads-filesize {
     html {
         font-size: 16px;
     }
-
+    #logo {
+        margin-left: -0.5rem;
+    }
     h1 {
         font-size: 2.5em;
+    }
+
+    .c-section.home {
+        padding: 1.8rem !important;
+    }
+    .home .content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .c-section.home h1 {
+        font-size: 11vw
     }
 }
 
@@ -476,20 +481,10 @@ ul.ce-uploads li .ce-uploads-filesize {
     h2 {
         font-size: 1.5em;
     }
-
-    input, select, textarea {
-        max-width: 100%;
-    }
-
-    form>.row {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
 }
 
 @media screen and (max-width: 520px) {
-    .contentWidth {
+    .content {
         padding: 0 1.667em;
     }
 
