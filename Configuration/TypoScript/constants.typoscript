@@ -7,9 +7,14 @@
 	microtemplate.cacheControlMaxAge = 21600
 # customsubcategory=microtemplatestyles=Microtemplate styles & design
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main CSS file
-	microtemplate.mainCSS = EXT:microtemplate/Resources/Public/Css/default.css
+	microtemplate.mainCss = EXT:microtemplate/Resources/Public/Css/default.css
+# cat=Microtemplate/microtemplatestyles; type=string; label=Sub pages CSS file
+	microtemplate.subpagesCss = EXT:microtemplate/Resources/Public/Css/Pages/sub-page.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
-	microtemplate.customCSS =
+	microtemplate.customCss =
+# cat=Microtemplate/microtemplatestyles; type=string; label=Forms CSS file
+	microtemplate.formsCss = EXT:microtemplate/Resources/Public/Css/Pages/forms.css
+# cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
 	microtemplate.logoFile = EXT:microtemplate/Resources/Public/Images/brightside_logo.svg
 # cat=Microtemplate/microtemplatestyles; type=string; label=Menu & Header font file

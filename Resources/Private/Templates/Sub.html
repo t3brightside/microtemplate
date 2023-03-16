@@ -1,9 +1,9 @@
 {namespace ea=Brightside\Embedassets\ViewHelpers}
 
 <f:render partial="CssSettings" arguments="{_all}" />
-<ea:asset.css embed="1" priority="1" identifier="microtemplateDefault" href="EXT:microtemplate/Resources/Public/Css/default.css" />
-<ea:asset.css embed="1" identifier="microtemplateForms" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
-<ea:asset.css embed="1" priority="1" identifier="subPage" href="EXT:microtemplate/Resources/Public/Css/Pages/sub-page.css" />
+<ea:asset.css embed="1" priority="1" identifier="mainCss" href="{settings.mainCss}" />
+<ea:asset.css embed="1" priority="1" identifier="subpagesCss" href="{settings.subpagesCss}" />
+<ea:asset.css embed="1" priority="1" identifier="customCss" href="{settings.customCss}" />
 
 <body class="subpage-body">
 	<f:render partial="Sub/CloseLink" arguments="{_all}" />
@@ -33,4 +33,3 @@
 			</f:if>
 	</div>
 </body>
-<ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
