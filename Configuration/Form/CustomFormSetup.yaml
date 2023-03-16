@@ -1,0 +1,7 @@
+prototypes:
+  standard:
+    formElementsDefinition:
+      Form:
+        renderingOptions:
+          templateRootPaths:
+            20: 'EXT:microtemplate/Resources/Private/Templates/Form/'

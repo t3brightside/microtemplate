@@ -62,6 +62,11 @@ page {
       as = languageMenu
     }
     settings {
+# CSS files
+      mainCss = {$microtemplate.mainCss}
+      subpagesCss = {$microtemplate.subpagesCss}
+      customCss = {$microtemplate.customCss}
+      formsCss = {$microtemplate.formsCss}
 # CSS variables for Resources/Private/Partials/CssSettings.html
       mainFontFamily = {$microtemplate.mainFontFamily}
       textColor = {$microtemplate.textColor}
@@ -169,3 +174,11 @@ menucontent {
     }
   }
 [END]
+
+plugin.tx_form {
+    settings {
+        yamlConfigurations {
+            1001 = EXT:microtemplate/Configuration/Form/CustomFormSetup.yaml
+        }
+    }
+}

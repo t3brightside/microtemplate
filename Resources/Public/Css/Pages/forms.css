@@ -12,7 +12,8 @@
     font-size: 0.85em;
 }
 
-div.valid, div.error {
+div.valid,
+div.error {
     position: relative;
     clear: both;
     width: auto !important;
@@ -66,7 +67,10 @@ label {
     width: auto;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -76,7 +80,9 @@ input, button, textarea, select {
     -webkit-box-shadow: none;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     border: 1px solid;
     padding: 0.7em;
@@ -103,7 +109,8 @@ select.xlarge {
     background-position: right 1.5em top 50%;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
     width: 1em;
     height: 1em;
     margin-right: .5em;
@@ -134,7 +141,8 @@ input[type="radio"] {
     border-radius: 50%;
 }
 
-.radio label span, .checkbox label span {
+.radio label span,
+.checkbox label span {
     display: inline-block;
     font-size: 0.8em;
     padding-top: 0.08em;
@@ -181,7 +189,19 @@ form span.error:before {
     left: 0;
 }
 
-/* Custom forms */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    border: 1px solid rgb(142, 142, 240) !important;
+
+}
+
+button[disabled=disabled],
+button:disabled {
+    cursor: text !important;
+}
 
 @media screen and (max-width: 860px) {
     form>.row {
