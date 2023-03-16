@@ -104,11 +104,31 @@ select.xlarge {
 }
 
 input[type="checkbox"], input[type="radio"] {
-    width: auto;
+    width: 1em;
+    height: 1em;
     margin-right: .5em;
     padding: 0.5em;
     margin-top: 0.2em;
+    vertical-align: baseline;
+    margin-bottom: -0.2em;
 }
+
+input[type="checkbox"]:checked::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "✓";
+    left: 0.1em;
+    top: -0.1em;
+}
+
+input[type="radio"]:checked::before {
+    position: absolute;
+    content: '●';
+    left: 0.2em;
+    top: -0.12em;
+}
+
 
 input[type="radio"] {
     border-radius: 50%;
