@@ -66,7 +66,6 @@ page {
       mainCss = {$microtemplate.mainCss}
       subpagesCss = {$microtemplate.subpagesCss}
       customCss = {$microtemplate.customCss}
-      formsCss = {$microtemplate.formsCss}
 # CSS variables for Resources/Private/Partials/CssSettings.html
       mainFontFamily = {$microtemplate.mainFontFamily}
       textColor = {$microtemplate.textColor}
@@ -180,5 +179,6 @@ plugin.tx_form {
         yamlConfigurations {
             1001 = EXT:microtemplate/Configuration/Form/CustomFormSetup.yaml
         }
+
     }
 }

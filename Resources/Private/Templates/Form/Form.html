@@ -2,7 +2,7 @@
 {namespace ea=Brightside\Embedassets\ViewHelpers}
 
 <formvh:renderRenderable renderable="{form}">
-    <ea:asset.css embed="1" identifier="microtemplateForms" href="{settings.formsCss}" />
+    <ea:asset.css embed="1" priority="0" identifier="formsCss" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
     <formvh:form
         object="{form}"
         action="{form.renderingOptions.controllerAction}"

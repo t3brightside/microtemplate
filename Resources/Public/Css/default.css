@@ -21,10 +21,7 @@ pre,
 form,
 p,
 blockquote,
-fieldset,
-input,
-textarea,
-figure,
+
 button {
     margin: 0;
     padding: 0;
@@ -86,9 +83,7 @@ p,
 ul,
 ol,
 table,
-form {
-    margin-bottom: 1em;
-}
+
 
 h1,
 h2,
