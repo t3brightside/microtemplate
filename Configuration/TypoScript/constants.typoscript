@@ -27,7 +27,7 @@
 # cat=Microtemplate/microtemplatestyles; type=color; label= Dark text:Used on light background or if set in section settings
 	microtemplate.textDark = #000000
 # cat=Microtemplate/microtemplatestyles; type=color; label= Light section background
-	microtemplate.bgLight = #f5f5f5
+	microtemplate.bgLight = #f0f0f0
 # cat=Microtemplate/microtemplatestyles; type=color; label= Dark section background
 	microtemplate.bgDark = #353535
 # cat=Microtemplate/microtemplatestyles; type=color; label= Header background
