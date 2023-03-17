@@ -21,6 +21,7 @@
     display: block;
     margin-top: 0.75rem;
     right: 0.75rem;
+    mix-blend-mode: exclusion;
 }
 
 .closelink::before, .closelink::after {
@@ -30,7 +31,7 @@
     top: 50%;
     width: 60%;
     height: 2px;
-    background-color: #333;
+    background-color: #fff;
     left: 20%;
     transition: opacity .3s ease-in-out;
 }
@@ -50,3 +51,13 @@
 .has-lightbox .closelink {
     display: none;
 }
+
+
+@media screen and (max-width: 960px) {
+    .closelink {
+        margin-top: 0.25rem;
+        right: 0.25rem;
+    }
+}
+
+
