@@ -22,6 +22,7 @@
     margin-top: 0.75rem;
     right: 0.75rem;
     mix-blend-mode: exclusion;
+    z-index: 2;
 }
 
 .closelink::before, .closelink::after {

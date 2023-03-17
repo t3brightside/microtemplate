@@ -5,3 +5,5 @@ hmbrgr.addEventListener('click', () => {
   hmbrgr.classList.toggle('open');
   menu.classList.toggle('open');
 });
+
+hmbrgr.style.display = "block";

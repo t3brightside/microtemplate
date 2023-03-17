@@ -10,7 +10,7 @@
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    z-index: 9999998;
+    z-index: 98;
     backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
