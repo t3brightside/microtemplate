@@ -40,9 +40,9 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum home page content width (px, em or %)
 	microtemplate.contentWidth = 62rem
 # cat=Microtemplate/microtemplatestyles; type=string; label= Maximum sub page content width (px, em or %)
-	microtemplate.subpageWidth = 43rem
+	microtemplate.subpageWidth = 48rem
 # cat=Microtemplate/microtemplatestyles; type=string; label= Mobile menu content page ID (shows elements from this page)
-	microtemplate.mobilemenuContentPage = 0
+	microtemplate.mobilemenuContentPage =
 # cat=Microtemplate/microtemplatestyles; type=int; label= Maximum image width (px)
 	styles.content.textmedia.maxW = 800
 # cat=Microtemplate/microtemplatestyles; type=int; label= Maximum image width in text (px)
