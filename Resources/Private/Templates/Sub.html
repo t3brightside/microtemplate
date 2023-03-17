@@ -4,6 +4,7 @@
 <ea:asset.css embed="1" priority="1" identifier="mainCss" href="{settings.mainCss}" />
 <ea:asset.css embed="1" priority="1" identifier="subpagesCss" href="{settings.subpagesCss}" />
 <ea:asset.css embed="1" priority="1" identifier="customCss" href="{settings.customCss}" />
+<ea:asset.css embed="1" priority="0" identifier="formsCss" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
 
 <body class="subpage-body">
 	<f:render partial="Sub/CloseLink" arguments="{_all}" />
@@ -32,4 +33,5 @@
 				</article>
 			</f:if>
 	</div>
+    <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
 </body>

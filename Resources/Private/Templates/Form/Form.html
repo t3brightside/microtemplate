@@ -1,8 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
-{namespace ea=Brightside\Embedassets\ViewHelpers}
-
 <formvh:renderRenderable renderable="{form}">
-    <ea:asset.css embed="1" priority="0" identifier="formsCss" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
     <formvh:form
         object="{form}"
         action="{form.renderingOptions.controllerAction}"
