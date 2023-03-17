@@ -431,6 +431,10 @@ ul.ce-uploads li .ce-uploads-filesize {
     text-align: right;
     margin-left: auto;
 }
+.c-popup-content.contentWidth {
+    max-width: 43rem;
+    margin: auto;
+}
 @media screen and (min-width:2000px) {
     .c-section.home h1 {
         font-size: 6em
