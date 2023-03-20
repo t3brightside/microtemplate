@@ -46,7 +46,7 @@ RTE.default.preset = microtemplate
                 1 {
                   name = Page content
                   colPos = 0
-                  allowed.CType = containerSection, containerPopup
+                  allowed.CType = containerSection
                 }
               }
             }
