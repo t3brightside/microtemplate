@@ -24,6 +24,7 @@ This is a place for us to try out and learn about new ways of doing things. Alwa
 - Configurable color schemes
 - Automatic menu of section titles
 - Automatic language menu
+- Social links in menu
 - Content columns & accordions
 - Section background (colour, image with effects, video)
 - Section scroll in effect

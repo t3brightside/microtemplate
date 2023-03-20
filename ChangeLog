@@ -41,10 +41,16 @@
 * 3.3.3
   - [TASK] improve font and layout handling on huge screens
 * 4.0.0
-  - [TASK] TYPO3 12 compatibility
-  - [TASK] (!BREAKING!) Restructure font handling
+  - [!! BREAKING CHANGES !!]
+  - [NOTE] (!BREAKING!) See the changes in ext:containeritems 5.0
+  - [TASK] (!BREAKING!) Restructure font handling and define header font file instead of folder
   - [TASK] (!BREAKING!) Remove Google Analytics
-  – [TASK] (!BREAKING!) Remove Lightbox (use one built in to ext:gallerycontent if needed)
+  – [TASK] (!BREAKING!) Remove Lightbox (use one built into ext:gallerycontent if needed)
+  - [TASK] TYPO3 12 compatibility
   - [TASK] Restructure extension configuration and resource files
   - [TASK] Get rid of jQuery
   - [BUGFIX] CSS typo fixes
+  - [TASK] Change RTE configuration for v12
+  - [TASK] Follow coding guidelines for ext_localconf.php
+  - [!!UPGRADE!!]
+    - TS constants need to be revised
