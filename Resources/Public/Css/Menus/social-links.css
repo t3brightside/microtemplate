@@ -1,0 +1,37 @@
+#social-links {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+#social-links li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.125rem;
+    margin-right: 0.125rem;
+}
+
+#social-links li a {
+    height: 2.5rem;
+    width: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#social-links svg {
+    max-height: 1.15rem;
+    max-width: 1.15rem;
+    height: auto;
+}
+
+#social-links svg path {
+    fill: var(--textColor);
+    transition: fill .3s ease-in-out;
+}
+
+#social-links a:hover svg path {
+    fill: var(--accentColor);
+    transition: fill .3s ease-in-out;
+}

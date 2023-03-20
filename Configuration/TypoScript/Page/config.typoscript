@@ -91,6 +91,14 @@ page {
       dmTextLight = {$microtemplate.dmTextLight}
       dmBgDark = {$microtemplate.dmBgDark}
       dmTextDark = {$microtemplate.dmTextDark}
+  # social links
+      socialLinksEnabled = {$microtemplate.socialLinksEnabled}
+      linkedinUrl = {$microtemplate.linkedinUrl}
+      twitterUrl = {$microtemplate.twitterUrl}
+      instagramUrl = {$microtemplate.instagramUrl}
+      facebookUrl = {$microtemplate.facebookUrl}
+      youtubeUrl = {$microtemplate.youtubeUrl}
+      githubUrl = {$microtemplate.githubUrl}
     }
 		variables {
 # logo settings
@@ -155,6 +163,7 @@ menucontent {
   }
   renderObj =< tt_content
 }
+
 # enable page authors if ext:personnel is loaded
 ["{$microtemplate.personnelIsLoaded}" == "1"]
   page.10.dataProcessing {

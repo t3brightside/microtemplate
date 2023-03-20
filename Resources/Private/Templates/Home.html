@@ -31,6 +31,9 @@
                             <f:cObject typoscriptObjectPath="menucontent" />
                         </div>
                     </f:if>
+                    <f:if condition="{settings.socialLinksEnabled}">
+                        <f:render partial="Menus/SocialLinks" arguments="{_all}" />
+                    </f:if>
                 </div>
             </f:if>
             <div id="content">
