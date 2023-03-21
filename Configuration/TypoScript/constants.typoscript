@@ -48,20 +48,19 @@
 # cat=Microtemplate/microtemplatestyles; type=int; label= Maximum image width in text (px)
 	styles.content.textmedia.maxWInText = 400
 # cat=Microtemplate/microtemplatestyles; type=int; label= Enable socail links in menu
-  microtemplate.socialLinksEnabled = 1
+  microtemplate.socialLinksEnabled = 0
 # cat=Microtemplate/microtemplatestyles; type=string; label= LinkedIn URL
-  microtemplate.linkedinUrl = https://www.linkedin.com/
+  microtemplate.linkedinUrl =
 # cat=Microtemplate/microtemplatestyles; type=string; label= Twitter URL
-  microtemplate.twitterUrl = https://twitter.com/t3brightside
+  microtemplate.twitterUrl =
 # cat=Microtemplate/microtemplatestyles; type=string; label= Instagram URL
-  microtemplate.instagramUrl = https://www.instagram.com
+  microtemplate.instagramUrl =
 # cat=Microtemplate/microtemplatestyles; type=string; label= Facebook URL
-  microtemplate.facebookUrl = https://www.facebook.com
+  microtemplate.facebookUrl =
 # cat=Microtemplate/microtemplatestyles; type=string; label= Youtube URL
-  microtemplate.youtubeUrl = https://www.youtube.com
+  microtemplate.youtubeUrl =
 # cat=Microtemplate/microtemplatestyles; type=string; label= Github URL
-  microtemplate.githubUrl = https://github.com/t3brightside
-
+  microtemplate.githubUrl =
 # Sets default header type for sub pages
 	styles.content.defaultHeaderType = 2
 # Sets default header type for home page
