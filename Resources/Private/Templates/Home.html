@@ -25,7 +25,7 @@
                     <f:if condition="{sectionMenu}">
                         <f:render partial="Menus/SectionMenu" arguments="{_all}" />
                     </f:if>
-                    <f:if condition="{f:cObject(typoscriptObjectPath: 'menucontent')}">
+                    <f:if condition="{settings.mobilemenuContentPage}">
                         <ea:asset.css embed="1" priority="1" identifier="menuContent" href="EXT:microtemplate/Resources/Public/Css/Menus/menu-content.css" />
                         <div id="menu-content">
                             <f:cObject typoscriptObjectPath="menucontent" />

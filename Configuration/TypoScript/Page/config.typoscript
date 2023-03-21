@@ -91,6 +91,8 @@ page {
       dmTextLight = {$microtemplate.dmTextLight}
       dmBgDark = {$microtemplate.dmBgDark}
       dmTextDark = {$microtemplate.dmTextDark}
+  # menu content element
+      mobilemenuContentPage = {$microtemplate.mobilemenuContentPage}
   # social links
       socialLinksEnabled = {$microtemplate.socialLinksEnabled}
       linkedinUrl = {$microtemplate.linkedinUrl}
