@@ -263,7 +263,7 @@ p:last-child, ol:last-child, ul:last-child {
     position: fixed;
     top: 1.7rem;
     left: 1.8rem;
-    z-index: 1;
+    z-index: 98;
     overflow: hidden;
     transition: all .4s ease-in-out;
     max-width: 270px;
