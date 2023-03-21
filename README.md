@@ -32,7 +32,7 @@ This is a place for us to try out and learn about new ways of doing things. Alwa
 - GDPR friendly
 
 ## Install
-- `composer req t3brightside/microtemplate` or from TYPO3 extension repository **[microtemplate](https://extensions.typo3.org/extension/microtemplate/)**
+- `composer req t3brightside/microtemplate` or from TYPO3 extension repository **[microtemplate](https://extensions.typo3.org/extension/microtemplate/)** or try [this composer file](https://github.com/t3brightside/microtemplate_composer)
 - Include static templates in that order: **fluid_styled_content**, advancedpagetitle, personnel, pagelist, youtubevideo, etc, **containeritems section**, **microtemplate scripts**, **microtemplate**
 - Use TypoScript constant editor for customisation
 - **Edit home page** to set _'Resources -> Include Page TSConfig -> Microtemplate – Main'_ and save
