@@ -12,7 +12,6 @@
 	microtemplate.subpagesCss = EXT:microtemplate/Resources/Public/Css/Pages/sub-page.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
 	microtemplate.customCss =
-# cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
 	microtemplate.logoFile = EXT:microtemplate/Resources/Public/Images/brightside_logo.svg
 # cat=Microtemplate/microtemplatestyles; type=string; label=Menu & Header font file
@@ -61,9 +60,6 @@
   microtemplate.youtubeUrl =
 # cat=Microtemplate/microtemplatestyles; type=string; label= Github URL
   microtemplate.githubUrl =
-# Sets default header type for sub pages
-	styles.content.defaultHeaderType = 2
-# Sets default header type for home page
 
 # Template
 	microtemplate.partialRootPath = EXT:microtemplate/Resources/Private/Partials/
@@ -75,25 +71,24 @@
   gallerycontent.cssPriority = 0
 
 # Personnel
-  personnel.enableBreakpoints = 0
-  personnel.cardImageWidth = 300
-  personnel.cardImageHeight = 300
-  personnel.cardsBreakThree = 8000
-  # personnel.cssFile = EXT:microtemplate/Resources/Public/Extensions/Personnel/Css/personnel.css
+  personnel.cardImageWidth = 330
+  personnel.cardImageHeight = 330
   personnel.cssPriority = 0
 
 # Pagelist
 	pagelist.partialRootPaths = EXT:microtemplate/Resources/Private/Partials/Pagelist/
   pagelist.cssPriority = 0
+  pagelist.cardImageWidth = 583
+  pagelist.cardImageHeight = 328
 
 # Favicon
   favicon.svgPath = data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cg transform='translate(-481 -613)'%3E%3Cg transform='translate(-280 -278)'%3E%3Cpath d='M0,0H36V36H0Z' transform='translate(761 891)' fill='%23bc0000'/%3E%3C/g%3E%3Crect width='22' height='7' transform='translate(488 620)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(488 631)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(501 631)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A
   favicon.pngPath = EXT:microtemplate/Resources/Public/Icons/Extension.png
 
 # Paginated processors
+  paginatedprocessors.enableDefaultStyles = 1
   paginatedprocessors.cssFile = EXT:microtemplate/Resources/Public/Css/Pages/pagination.css
   paginatedprocessors.cssPriority = 0
-  paginatedprocessors.enableDefaultStyles = 1
 
 # Containeritems
   containerItems.sectionScrollInEffect = slide-from-below
@@ -101,7 +96,10 @@
 # Youtubevideo
   youtubevideo.cssPriority = 0
 
-# override for home page
+# Fluid styled content
+	styles.content.defaultHeaderType = 2
+
+# Override for home page
 [tree.pagelayout == "pagets__home"]
 	styles.content.defaultHeaderType = 1
   styles.content.textmedia.maxW = 1628
