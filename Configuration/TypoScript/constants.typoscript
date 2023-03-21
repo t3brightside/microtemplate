@@ -44,7 +44,7 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label= Mobile menu content page ID (shows elements from this page)
 	microtemplate.mobilemenuContentPage =
 # cat=Microtemplate/microtemplatestyles; type=int; label= Maximum image width (px)
-	styles.content.textmedia.maxW = 800
+	styles.content.textmedia.maxW = 987
 # cat=Microtemplate/microtemplatestyles; type=int; label= Maximum image width in text (px)
 	styles.content.textmedia.maxWInText = 400
 # cat=Microtemplate/microtemplatestyles; type=int; label= Enable socail links in menu
@@ -65,18 +65,12 @@
 	styles.content.defaultHeaderType = 2
 # Sets default header type for home page
 
-[tree.pagelayout == "pagets__home"]
-	styles.content.defaultHeaderType = 1
-  styles.content.textmedia.maxW = 1126
-  gallerycontent.imageWidth = 1126
-[END]
-
 # Template
 	microtemplate.partialRootPath = EXT:microtemplate/Resources/Private/Partials/
 	microtemplate.templateRootPath = EXT:microtemplate/Resources/Private/Templates/
 
 # Gallerycontent
-  gallerycontent.imageWidth = 800
+  gallerycontent.imageWidth = 987
   gallerycontent.enableLightbox = 1
   gallerycontent.cssPriority = 0
 
@@ -106,3 +100,10 @@
 
 # Youtubevideo
   youtubevideo.cssPriority = 0
+
+# override for home page
+[tree.pagelayout == "pagets__home"]
+	styles.content.defaultHeaderType = 1
+  styles.content.textmedia.maxW = 1628
+  gallerycontent.imageWidth = 1628
+[END]
