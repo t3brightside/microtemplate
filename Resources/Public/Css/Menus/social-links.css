@@ -1,8 +1,7 @@
 #social-links {
     list-style: none;
     text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0 2rem 0;
 }
 
 #social-links li {
