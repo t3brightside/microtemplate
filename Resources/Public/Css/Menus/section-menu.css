@@ -12,6 +12,7 @@
     scrollbar-width: none;
     z-index: 98;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     flex-flow: column nowrap;
