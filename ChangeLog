@@ -54,3 +54,12 @@
   - [TASK] Follow coding guidelines for ext_localconf.php
   - [!!UPGRADE!!]
     - TS constants need to be revised
+* 4.0.1
+  - [BUGFIX] Add menu bg filter for -webkit
+  - [TASK] Disable socialLinksEnabled by default
+  - [TASK] Specify new image sizes as default
+  - [BUGFIX] Disable menu content if constant is empty
+  - [TASK] Fine tune pagelist and personnel image sizes
+  - [TASK] Link to composer kickstarter file in README
+  - [BUGFIX] Set logo z-index higher
+  - [BUGFIX] Social links ul margin
