@@ -63,3 +63,5 @@
   - [TASK] Link to composer kickstarter file in README
   - [BUGFIX] Set logo z-index higher
   - [BUGFIX] Social links ul margin
+* 4.0.2
+  - [FEATURE] TAB navigation for menu and focus target section after click

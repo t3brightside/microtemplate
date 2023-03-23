@@ -18,7 +18,8 @@ window.addEventListener('scroll', function () {
 document.querySelectorAll('a[href*="#"]:not([href="#"])').forEach(trigger => {
   trigger.addEventListener('click', e => {
     e.preventDefault();
-    let hash = '#' + trigger.getAttribute('href').split('#')[1];
+    let id = trigger.getAttribute('href').split('#')[1];
+    let hash = '#' + id;
     let target = document.querySelector(hash);
     let headerOffset = 0;
     let elementPosition = target.offsetTop;
@@ -27,6 +28,7 @@ document.querySelectorAll('a[href*="#"]:not([href="#"])').forEach(trigger => {
       behavior: 'smooth',
       top: offsetPosition
     });
+    document.getElementById(id).focus();
   });
 });
 

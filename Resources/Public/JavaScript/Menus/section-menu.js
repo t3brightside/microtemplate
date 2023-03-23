@@ -10,7 +10,11 @@ window.addEventListener('resize', function() {
 menu.addEventListener("click", function (event) {
   if (event.target.matches("a")) {
     hmbrgr.classList.remove('open');
+    hmbrgr.setAttribute("aria-expanded", "false");
     menu.classList.remove('open');
+    menuLinks.forEach(link => {
+      link.setAttribute('tabindex', '-1');
+    });
   }
 });
 

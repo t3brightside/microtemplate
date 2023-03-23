@@ -6,7 +6,7 @@
         <f:for each="{languageMenu}" as="item">
             <f:if condition="{item.available}">
                 <li class="{f:if(condition: item.active, then: 'act')}">
-                    <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                    <a tabindex="-1" href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
                         {item.navigationTitle}
                     </a>
                 </li>
