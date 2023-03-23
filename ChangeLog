@@ -69,3 +69,7 @@
   - [BUGFIX] Remove aria-label from subpage closelinks
 * 4.0.4
   - [BUGFIX] Set section focus after scrolling is done
+* 4.0.5
+  - [TASK] Improve menu semantics and accessibility
+  - [FEATURE] Add function to close menu using ESC
+  - [TASK] Improve content semantics and clean up
