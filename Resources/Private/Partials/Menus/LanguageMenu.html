@@ -1,17 +1,14 @@
 <ea:asset.css embed="1" priority="1" identifier="language" href="EXT:microtemplate/Resources/Public/Css/Menus/language-menu.css" />
-
-<div id="language-menu">
-<nav>
+<nav id="language-menu" aria-label="Language selection">
     <ul>
         <f:for each="{languageMenu}" as="item">
             <f:if condition="{item.available}">
                 <li class="{f:if(condition: item.active, then: 'act')}">
-                    <a tabindex="-1" href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                    <a tabindex="-1" href="{item.link}" hreflang="{item.hreflang}" title="{item.title}" {f:if(condition: item.active, then: 'aria-current="true"')}>
                         {item.navigationTitle}
                     </a>
                 </li>
             </f:if>
         </f:for>
     </ul>
-    </nav>
-</div>
+</nav>

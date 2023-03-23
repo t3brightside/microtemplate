@@ -1,7 +1,7 @@
 <ea:asset.css embed="1" priority="1" identifier="sectionMenu" href="EXT:microtemplate/Resources/Public/Css/Menus/section-menu.css" />
 
-<nav>
-    <ul id="section-menu">
+<nav id="section-menu" aria-label="Content section selection">
+    <ul>
         <f:for each="{sectionMenu}" as="section">
             <f:if condition="{section.data.header}">
                 <li id="m{section.data.uid}">

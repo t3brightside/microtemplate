@@ -8,7 +8,7 @@
     margin-left: 1.5rem;
 }
 
-#language-menu>nav>ul {
+#language-menu>ul {
     width: auto;
     display: inline-block;
     list-style: none;
@@ -16,24 +16,24 @@
     padding: 0;
 }
 
-#language-menu>nav>ul>li {
+#language-menu>ul>li {
     display: inline-block;
     margin-right: 0.25rem;
 }
 
-#language-menu>nav>ul>li>a {
+#language-menu>ul>li>a {
     padding: 0.5rem;
     color: var(--textColor);
 }
 
-#language-menu>nav>ul>li:last-child {
+#language-menu>ul>li:last-child {
     margin-right: 0;
 }
 
 #language-menu a {
     transition: color .2s ease-in-out;
 }
-#language-menu>nav>ul>li.act>a {
+#language-menu>ul>li.act>a {
     color: var(--accentColor);
 }
 

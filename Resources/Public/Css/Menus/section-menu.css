@@ -19,7 +19,7 @@
     background-color: var(--menuBgColor);
 }
 
-#menu>nav {
+#section-menu {
     flex-grow: 1;
 }
 
@@ -31,7 +31,7 @@
     right: 0;
 }
 
-#section-menu {
+#section-menu ul {
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
@@ -40,17 +40,17 @@
     width: 100%;
 }
 
-#section-menu>li {
+#section-menu>ul>li {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#section-menu>li:last-child {
+#section-menu>ul>li:last-child {
     border-bottom: none;
 }
 
-#section-menu>li>a {
+#section-menu>ul>li>a {
     color: var(--textColor);
     display: block;
     box-sizing: border-box;
