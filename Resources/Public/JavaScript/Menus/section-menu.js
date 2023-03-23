@@ -7,14 +7,22 @@ window.addEventListener('resize', function() {
   mVh();
 });
 
+function closeMenu() {
+  hmbrgr.classList.remove('open');
+  hmbrgr.setAttribute("aria-expanded", "false");
+  menu.classList.remove('open');
+  menuLinks.forEach(link => {
+    link.setAttribute('tabindex', '-1');
+  });
+}
 menu.addEventListener("click", function (event) {
   if (event.target.matches("a")) {
-    hmbrgr.classList.remove('open');
-    hmbrgr.setAttribute("aria-expanded", "false");
-    menu.classList.remove('open');
-    menuLinks.forEach(link => {
-      link.setAttribute('tabindex', '-1');
-    });
+    closeMenu();
+  }
+});
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && menu.classList.contains('open')) {
+    closeMenu();
   }
 });
 
