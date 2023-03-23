@@ -67,3 +67,5 @@
   - [FEATURE] TAB navigation for menu and focus target section after click
 * 4.0.3
   - [BUGFIX] Remove aria-label from subpage closelinks
+* 4.0.4
+  - [BUGFIX] Set section focus after scrolling is done
