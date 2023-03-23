@@ -65,3 +65,5 @@
   - [BUGFIX] Social links ul margin
 * 4.0.2
   - [FEATURE] TAB navigation for menu and focus target section after click
+* 4.0.3
+  - [BUGFIX] Remove aria-label from subpage closelinks
