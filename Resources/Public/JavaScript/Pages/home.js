@@ -28,7 +28,13 @@ document.querySelectorAll('a[href*="#"]:not([href="#"])').forEach(trigger => {
       behavior: 'smooth',
       top: offsetPosition
     });
-    document.getElementById(id).focus();
+    // Wait for the scrolling to finish before setting focus
+    window.addEventListener('scroll', function onScroll() {
+      if (window.scrollY === offsetPosition) {
+        document.getElementById(id).focus();
+        window.removeEventListener('scroll', onScroll);
+      }
+    });
   });
 });
 
