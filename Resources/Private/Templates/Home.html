@@ -1,5 +1,5 @@
 <html xmlns:ea="http://typo3.org/ns/Brightside/Embedassets/ViewHelpers" data-namespace-typo3-fluid="true">
-
+<f:spaceless>
     <f:render partial="CssSettings" arguments="{_all}" />
     <ea:asset.css embed="1" priority="1" identifier="mainCss" href="{settings.mainCss}" />
     <ea:asset.css embed="1" priority="1" identifier="customCss" href="{settings.customCss}" />
@@ -37,6 +37,8 @@
         <main id="content" class="pageWidth p{data.uid}">
             <f:format.raw>{contentDefault}</f:format.raw>
         </main>
+
     <ea:asset.script embed="1" identifier="home" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/home.js" />
     <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
+</f:spaceless>
 </html>

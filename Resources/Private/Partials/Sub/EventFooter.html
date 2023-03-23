@@ -4,8 +4,7 @@
     <div class="author">
       <f:if condition="{author.authorimages.0}">
         <figure><img src="<f:uri.image image="{author.authorimages.0}" width="130c" height="130c" />" alt="{f:if(condition:'{author.authorimages.0.alternative}', then:'{author.authorimages.0.alternative}', else:'{author.data.firstname} {author.data.lastname}')}"/></figure>
-      </f:if>
-      {author.data.firstname} {author.data.lastname}<br />
+      </f:if>{author.data.firstname} {author.data.lastname}<br />
       <a href="mailto:{author.data.email}">{author.data.email}</a>
       <a href="tel:{author.data.phone}">{author.data.phone}</a>
     </div>

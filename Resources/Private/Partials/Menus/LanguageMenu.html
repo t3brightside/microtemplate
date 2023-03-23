@@ -4,9 +4,7 @@
         <f:for each="{languageMenu}" as="item">
             <f:if condition="{item.available}">
                 <li class="{f:if(condition: item.active, then: 'act')}">
-                    <a tabindex="-1" href="{item.link}" hreflang="{item.hreflang}" title="{item.title}" {f:if(condition: item.active, then: 'aria-current="true"')}>
-                        {item.navigationTitle}
-                    </a>
+                    <a tabindex="-1" href="{item.link}" hreflang="{item.hreflang}" title="{item.title}" {f:if(condition: item.active, then: 'aria-current="true"')}>{item.navigationTitle}</a>
                 </li>
             </f:if>
         </f:for>
