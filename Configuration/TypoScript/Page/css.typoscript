@@ -37,7 +37,7 @@ page {
 			25.wrap = font-family: '|';
 			25.stdWrap.insertData = 1
 			30 = TEXT
-			30.value = font-display: swap;
+			30.value = font-display: block;
 			40 = TEXT
 			40.value = {site:base}{path : {$microtemplate.header-font-file}}
 			40.insertData = 1
