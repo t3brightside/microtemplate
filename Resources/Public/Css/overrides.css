@@ -1,0 +1,135 @@
+.c-section {
+    background-color: var(--bodyBg);
+}
+
+.c-section.bg-light {
+    background-color: var(--bgLight);
+    color: var(--textColorDark);
+}
+
+.c-section.bg-dark {
+    background-color: var(--bgDark);
+    color: var(--textColorLight);
+}
+
+.c-section.text-light {
+    color: var(--textColorLight);
+}
+
+.c-section.text-dark {
+    color: var(--textColorDark);
+}
+
+/* accordion */
+.c-accordion-title,
+.c-accordion-title:visited {
+    color: var(--textColor);
+}
+
+.c-accordion-title:hover {
+    color: var(--accentColor);
+}
+
+.c-accordion-title::after,
+.c-accordion-title::before {
+    background-color: var(--textColor);
+}
+
+.c-accordion-title:hover::after,
+.c-accordion-title:hover::before {
+    background-color: var(--accentColor);
+}
+
+/* sub pages */
+.subpage {
+    color: var(--textColor);
+}
+
+.subpage-body {
+    background-color: var(--bodyBg);
+}
+
+.closelink i {
+    background: var(--textColor);
+}
+
+/* forms */
+input,
+select,
+textarea {
+    font-family: var(--mainFontFamily);
+    color: var(--textColor);
+    border-color: var(--textColor);
+    -webkit-text-fill-color: var(--textColor);
+}
+
+.bg-dark input,
+.bg-dark select,
+.bg-dark textarea {
+    font-family: var(--mainFontFamily);
+    color: var(--textColorLight);
+    border-color: var(--textColorLight);
+    -webkit-text-fill-color: var(--textColorLight);
+}
+
+.c-section.text-dark input,
+.c-section.text-dark select,
+.c-section.text-dark textarea {
+    color: var(--textColorDark);
+    border-color: var(--textColorDark);
+    -webkit-text-fill-color: var(--textColorDark);
+}
+
+.c-section.text-light input,
+.c-section.textLight select,
+.c-section.textLight textarea {
+    color: var(--textColorLight);
+    border-color: var(--textColorLight);
+    -webkit-text-fill-color: var(--textColorLight);
+}
+
+i.validation-icon svg path {
+    fill: var(--textColor);
+}
+
+.c-section.text-dark i.validation-icon svg path {
+    fill: var(--textColorDark);
+}
+
+.c-section.text-light i.validation-icon svg path {
+    fill: var(--textColorLight);
+}
+
+/* ext:youtubevideo */
+.youtubeVideo:hover .customplaybutton polygon {
+    fill: var(--accentColor);
+}
+
+/* ext:pagelist styles */
+.pagelist .info,
+.pagelist .abstract {
+    color: var(--textColor);
+}
+
+/* pagination */
+ul.pagination>li>a {
+    border-color: var(--accentColor);
+}
+
+/* ext:personnel */
+.c-section .personnel svg path,
+.subpage .personnel svg path {
+    fill: var(--textColor);
+}
+
+.c-section.bg-dark .personnel svg path {
+    fill: var(--textColorLight);
+}
+
+.c-section.text-light .personnel svg path {
+    fill: var(--textColorLight);
+}
+
+.c-section.text-dark .personnel svg path {
+    fill: var(--textColorLight);
+}

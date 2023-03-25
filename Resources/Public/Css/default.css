@@ -1,6 +1,5 @@
 /*
-	Link, button etc colors and dynamic container widths are set in:
-	Configuration/TypoScript/Setup/styles.typoscript and can be edited through TS constant editor
+	Colors and other TS constants are set in: overrides.css
 */
 html,
 body,
@@ -235,9 +234,11 @@ button.btn:disabled {
     margin: auto;
     clear: both;
 }
+
 .contentWidth {
     max-width: var(--contentWidth);
 }
+
 .content {
     margin: auto;
     clear: both;
@@ -251,9 +252,13 @@ button.btn:disabled {
 .content .frame-type-textmedia ol {
     max-width: 43rem;
 }
-p:last-child, ol:last-child, ul:last-child {
+
+p:last-child,
+ol:last-child,
+ul:last-child {
     margin-bottom: 0;
 }
+
 #content,
 #footer {
     margin: auto;
@@ -412,29 +417,37 @@ ul.ce-uploads li .ce-uploads-filesize {
 .c-section.home h1 {
     font-size: 7vw
 }
-.home .btn, .home .btn:visited {
+
+.home .btn,
+.home .btn:visited {
     border-color: #fff;
     color: #fff;
     background-color: transparent;
     transition: background .3s ease-in-out;
 }
-.home .btn:hover, .home .btn:hover {
+
+.home .btn:hover,
+.home .btn:hover {
     background-color: #fff;
     color: #222;
 }
+
 .text-center {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
 .text-right {
     text-align: right;
     margin-left: auto;
 }
+
 .c-popup-content.contentWidth {
     max-width: 43rem;
     margin: auto;
 }
+
 @media screen and (min-width:2000px) {
     .c-section.home h1 {
         font-size: 6em
@@ -457,9 +470,11 @@ ul.ce-uploads li .ce-uploads-filesize {
     html {
         font-size: 16px;
     }
+
     #logo {
         margin-left: -0.5rem;
     }
+
     h1 {
         font-size: 2.5em;
     }
@@ -467,10 +482,12 @@ ul.ce-uploads li .ce-uploads-filesize {
     .c-section.home {
         padding: 1.8rem !important;
     }
+
     .home .content {
         margin: 0 !important;
         padding: 0 !important;
     }
+
     .c-section.home h1 {
         font-size: 11vw
     }

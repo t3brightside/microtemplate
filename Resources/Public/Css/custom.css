@@ -1,0 +1,16 @@
+#logo {
+    mix-blend-mode: exclusion;
+
+}
+
+.scrolled #logo {
+    max-width: 1.1rem;
+}
+
+.scrolled #logo:hover {
+    max-width: 240px;
+}
+
+#logo svg path {
+    fill: #fff !important;
+}

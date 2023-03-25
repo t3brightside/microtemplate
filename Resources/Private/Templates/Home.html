@@ -3,41 +3,40 @@
     <f:render partial="CssSettings" arguments="{_all}" />
     <ea:asset.css embed="1" priority="1" identifier="mainCss" href="{settings.mainCss}" />
     <ea:asset.css embed="1" priority="1" identifier="customCss" href="{settings.customCss}" />
+    <ea:asset.css embed="1" priority="1" identifier="cssOverrides" href="EXT:microtemplate/Resources/Public/Css/overrides.css" />
     <ea:asset.css embed="1" priority="0" identifier="formsCss" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
-
-        <a href="#content" id="logo" title="{data.title}">
-            <f:format.raw>{logo}</f:format.raw>
-        </a>
-        <f:variable name="languagesAvailable" value="0" />
-        <f:for each="{languageMenu}" as="item">
-            <f:if condition="{item.available}">
-                <f:variable name="languagesAvailable" value="{languagesAvailable + 1}" />
-            </f:if>
-        </f:for>
-        <f:if condition="{sectionMenu} || {languagesAvailable} > 1">
-            <f:render partial="Menus/Hmbrgr" arguments="{_all}" />
-            <div id="menu">
-                <f:if condition="{languagesAvailable} > 1">
-                    <f:render partial="Menus/LanguageMenu" arguments="{_all}" />
-                </f:if>
-                <f:if condition="{sectionMenu}">
-                    <f:render partial="Menus/SectionMenu" arguments="{_all}" />
-                </f:if>
-                <f:if condition="{settings.mobilemenuContentPage}">
-                    <ea:asset.css embed="1" priority="1" identifier="menuContent" href="EXT:microtemplate/Resources/Public/Css/Menus/menu-content.css" />
-                    <div id="menu-content">
-                        <f:cObject typoscriptObjectPath="menucontent" />
-                    </div>
-                </f:if>
-                <f:if condition="{settings.socialLinksEnabled}">
-                    <f:render partial="Menus/SocialLinks" arguments="{_all}" />
-                </f:if>
-            </div>
+    <a href="#content" id="logo" title="{data.title}">
+        <f:format.raw>{logo}</f:format.raw>
+    </a>
+    <f:variable name="languagesAvailable" value="0" />
+    <f:for each="{languageMenu}" as="item">
+        <f:if condition="{item.available}">
+            <f:variable name="languagesAvailable" value="{languagesAvailable + 1}" />
         </f:if>
-        <main id="content" class="pageWidth p{data.uid}">
-            <f:format.raw>{contentDefault}</f:format.raw>
-        </main>
-
+    </f:for>
+    <f:if condition="{sectionMenu} || {languagesAvailable} > 1">
+        <f:render partial="Menus/Hmbrgr" arguments="{_all}" />
+        <div id="menu">
+            <f:if condition="{languagesAvailable} > 1">
+                <f:render partial="Menus/LanguageMenu" arguments="{_all}" />
+            </f:if>
+            <f:if condition="{sectionMenu}">
+                <f:render partial="Menus/SectionMenu" arguments="{_all}" />
+            </f:if>
+            <f:if condition="{settings.mobilemenuContentPage}">
+                <ea:asset.css embed="1" priority="1" identifier="menuContent" href="EXT:microtemplate/Resources/Public/Css/Menus/menu-content.css" />
+                <div id="menu-content">
+                    <f:cObject typoscriptObjectPath="menucontent" />
+                </div>
+            </f:if>
+            <f:if condition="{settings.socialLinksEnabled}">
+                <f:render partial="Menus/SocialLinks" arguments="{_all}" />
+            </f:if>
+        </div>
+    </f:if>
+    <main id="content" class="pageWidth p{data.uid}">
+        <f:format.raw>{contentDefault}</f:format.raw>
+    </main>
     <ea:asset.script embed="1" identifier="home" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/home.js" />
     <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
 </f:spaceless>
