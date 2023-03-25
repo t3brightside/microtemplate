@@ -11,7 +11,7 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label=Sub pages CSS file
 	microtemplate.subpagesCss = EXT:microtemplate/Resources/Public/Css/Pages/sub-page.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
-	microtemplate.customCss =
+	microtemplate.customCss = EXT:microtemplate/Resources/Public/Css/custom.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
 	microtemplate.logoFile = EXT:microtemplate/Resources/Public/Images/brightside_logo.svg
 # cat=Microtemplate/microtemplatestyles; type=string; label=Menu & Header font file
