@@ -17,4 +17,5 @@
 	microtemplate.dmBgLight = #242424
 # cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=color; label= Dark section background
 	microtemplate.dmBgDark = #1A1A1A
+# cat=Microtemplate - Dark Mode/microtemplatedarkmode; type=boolean; label= Enable Dark Mode
   microtemplate.darkModeOn = 1
