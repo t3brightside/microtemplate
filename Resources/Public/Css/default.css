@@ -247,9 +247,9 @@ button.btn:disabled {
     z-index: 1;
 }
 
-.content .frame-type-textmedia p,
-.content .frame-type-textmedia ul,
-.content .frame-type-textmedia ol {
+.frame-type-text p, .frame-type-textmedia p,
+.frame-type-text ul, .frame-type-textmedia ul,
+.frame-type-text ol, .frame-type-textmedia ol {
     max-width: 43rem;
 }
 
@@ -414,24 +414,6 @@ ul.ce-uploads li .ce-uploads-filesize {
     font-size: .9em;
 }
 
-.c-section.home h1 {
-    font-size: 7vw
-}
-
-.home .btn,
-.home .btn:visited {
-    border-color: #fff;
-    color: #fff;
-    background-color: transparent;
-    transition: background .3s ease-in-out;
-}
-
-.home .btn:hover,
-.home .btn:hover {
-    background-color: #fff;
-    color: #222;
-}
-
 .text-center {
     text-align: center;
     margin-left: auto;
@@ -446,12 +428,6 @@ ul.ce-uploads li .ce-uploads-filesize {
 .c-popup-content.contentWidth {
     max-width: 43rem;
     margin: auto;
-}
-
-@media screen and (min-width:2000px) {
-    .c-section.home h1 {
-        font-size: 6em
-    }
 }
 
 @media screen and (min-device-width: 2560px) and (min-width: 1700px) {
@@ -477,19 +453,6 @@ ul.ce-uploads li .ce-uploads-filesize {
 
     h1 {
         font-size: 2.5em;
-    }
-
-    .c-section.home {
-        padding: 1.8rem !important;
-    }
-
-    .home .content {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    .c-section.home h1 {
-        font-size: 11vw
     }
 }
 
