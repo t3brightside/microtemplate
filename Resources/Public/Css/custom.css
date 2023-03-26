@@ -1,6 +1,5 @@
 #logo {
     mix-blend-mode: exclusion;
-
 }
 
 .scrolled #logo {
@@ -8,9 +7,62 @@
 }
 
 .scrolled #logo:hover {
-    max-width: 240px;
+    max-width: 270px;
 }
 
 #logo svg path {
     fill: #fff !important;
+}
+
+.home h1 {
+    font-size: 7vw
+}
+
+.home .btn,
+.home .btn:visited {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+    transition: background .3s ease-in-out;
+}
+
+.home .btn:hover,
+.home .btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+
+@media screen and (min-width:2000px) {
+    .c-section.home h1 {
+        font-size: 6em
+    }
+}
+
+@media screen and (min-device-width: 2560px) and (min-width: 1700px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1506px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .home {
+        padding: 1.8rem !important;
+    }
+
+    .home .content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .home h1 {
+        font-size: 11vw
+    }
 }
