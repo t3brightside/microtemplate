@@ -73,3 +73,9 @@
   - [TASK] Improve menu semantics and accessibility
   - [FEATURE] Add function to close menu using ESC
   - [TASK] Improve content semantics and clean up
+* 4.0.6
+  - [TASK] Change header font-display to block for smoother loading
+  - [TASK] Move template css overrides to a file
+  - [TASK] Add custom.css with logo speciffic example
+  - [TASK] Add label for enabling dark mode in TS constants
+  - [TASK] Move .home styles to custom.css

@@ -3,7 +3,7 @@
     'title' => 'Microtemplate',
     'description' => 'One page template with sections and lightbox like sub pages. Demo at: https://microtemplate.t3brightside.com',
     'category' => 'fe',
-    'version' => '4.0.5',
+    'version' => '4.0.6',
     'state' => 'stable',
     'clearCacheOnLoad' => 1,
     'author' => 'Tanel Põld',
