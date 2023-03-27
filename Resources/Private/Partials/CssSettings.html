@@ -15,7 +15,7 @@
 }
 </ea:asset.css>
 <f:if condition="{settings.darkModeEnabled}">
-<f:asset.css  priority="1" identifier="microtemplateCssConstantsDark">
+<ea:asset.css priority="1" identifier="microtemplateCssConstantsDark">
 @media (prefers-color-scheme: dark) {
     :root {
         --bodyBg:{settings.dmBodyBg};
@@ -28,5 +28,5 @@
         --bgDark: {settings.dmBgDark};
     }
 }
-</f:asset.css>
+</ea:asset.css>
 </f:if>
