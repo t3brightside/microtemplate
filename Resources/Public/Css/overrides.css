@@ -88,18 +88,6 @@ textarea {
     -webkit-text-fill-color: var(--textColorLight);
 }
 
-i.validation-icon svg path {
-    fill: var(--textColor);
-}
-
-.c-section.text-dark i.validation-icon svg path {
-    fill: var(--textColorDark);
-}
-
-.c-section.text-light i.validation-icon svg path {
-    fill: var(--textColorLight);
-}
-
 /* ext:youtubevideo */
 .youtubeVideo:hover .customplaybutton polygon {
     fill: var(--accentColor);
