@@ -79,3 +79,11 @@
   - [TASK] Add custom.css with logo speciffic example
   - [TASK] Add label for enabling dark mode in TS constants
   - [TASK] Move .home styles to custom.css
+* 4.0.7
+  - [TASK] require containeritems 4.2
+  - [FEATURE] exclude .c-popup from scroll to anchors
+  - [FEATURE] Allow popup containers
+  - [TASK] CSS clean-up
+  - [TASK] CSS settings to ea:asset
+  - [TASK] change f:asset to ea:asset in css settings
+  - [TASK] Add microstart link
