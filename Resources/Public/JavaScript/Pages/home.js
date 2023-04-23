@@ -15,28 +15,26 @@ window.addEventListener('scroll', function () {
 });
 
 /* smooth scrolling to anchor links */
-document.querySelectorAll('a[href*="#"]:not([href="#"])').forEach(trigger => {
-  trigger.addEventListener('click', e => {
-    e.preventDefault();
-    let id = trigger.getAttribute('href').split('#')[1];
-    let hash = '#' + id;
-    let target = document.querySelector(hash);
-    let headerOffset = 0;
-    let elementPosition = target.offsetTop;
-    let offsetPosition = elementPosition - headerOffset;
-    window.scrollTo({
-      behavior: 'smooth',
-      top: offsetPosition
-    });
-    // Wait for the scrolling to finish before setting focus
-    window.addEventListener('scroll', function onScroll() {
-      if (window.scrollY === offsetPosition) {
-        document.getElementById(id).focus();
-        window.removeEventListener('scroll', onScroll);
+const anchors = document.getElementsByTagName('a');
+
+for (let i = 0; i < anchors.length; i++) {
+  const href = anchors[i].getAttribute('href');
+  if (href && href.indexOf('#') !== -1) {
+    anchors[i].addEventListener('click', function(event) {
+      // Get the target element with the same ID as the anchor link's href
+      const targetId = href.substring(href.indexOf('#') + 1);
+      const target = document.getElementById(targetId);
+
+      // Check if a target element was found and if it has the "c-popup" class, don't scroll to it
+      if (target && !target.classList.contains('c-popup')) {
+        event.preventDefault();
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
       }
     });
-  });
-});
+  }
+}
 
 /* remember window scroll position */
 window.onbeforeunload = function (e) {
