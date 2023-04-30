@@ -97,11 +97,14 @@
   youtubevideo.cssPriority = 0
 
 # Fluid styled content
-	styles.content.defaultHeaderType = 2
+	styles.content.defaultHeaderType = 1
 
 # Override for home page
 [tree.pagelayout == "pagets__home"]
-	styles.content.defaultHeaderType = 1
   styles.content.textmedia.maxW = 1628
   gallerycontent.imageWidth = 1628
+[END]
+
+[tree.pagelayout == "pagets__sub"]
+	styles.content.defaultHeaderType = 2
 [END]
