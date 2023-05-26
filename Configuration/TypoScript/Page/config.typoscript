@@ -61,6 +61,15 @@ page {
       languages = auto
       as = languageMenu
     }
+# pages menu
+    dataProcessing.40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    dataProcessing.40 {
+          levels = 2
+          excludeDoktypes = 199,254
+          as = pagesMenu
+          expandAll = 1
+          titleField = nav_title // title
+      }
     settings {
 # CSS files
       mainCss = {$microtemplate.mainCss}
@@ -91,7 +100,8 @@ page {
       dmTextLight = {$microtemplate.dmTextLight}
       dmBgDark = {$microtemplate.dmBgDark}
       dmTextDark = {$microtemplate.dmTextDark}
-  # menu content element
+  # menu
+      menuType = {$microtemplate.menuType}
       mobilemenuContentPage = {$microtemplate.mobilemenuContentPage}
   # social links
       socialLinksEnabled = {$microtemplate.socialLinksEnabled}
@@ -110,6 +120,8 @@ page {
 # needed for if home is not in page tree root level
       rootPageId = TEXT
       rootPageId.value = {$microtemplate.rootPageId}
+      siteBase = TEXT
+      siteBase.data = siteLanguage:base
 # default page content
 			contentDefault = COA
 			contentDefault {
@@ -149,8 +161,8 @@ page {
       pagets__home.value = Home
       pagets__sub = TEXT
       pagets__sub.value = Sub
-      pagets__article = TEXT
-      pagets__article.value = Article
+      pagets__sub_regular = TEXT
+      pagets__sub_regular.value = Home
     }
   }
 }
@@ -169,8 +181,8 @@ menucontent {
 # enable page authors if ext:personnel is loaded
 ["{$microtemplate.personnelIsLoaded}" == "1"]
   page.10.dataProcessing {
-    40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-    40 {
+    140 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    140 {
       table = tx_personnel_domain_model_person
       uidInList.field = tx_personnel_authors
       pidInList = 0

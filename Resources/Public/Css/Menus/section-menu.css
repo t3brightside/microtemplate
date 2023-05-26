@@ -60,7 +60,7 @@
 }
 
 #menu a:hover,
-#menu a.act {
+#menu a.act, #menu a.cur {
     color: var(--accentColor);
 }
 

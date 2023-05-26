@@ -5,7 +5,8 @@
     <ea:asset.css embed="1" priority="1" identifier="customCss" href="{settings.customCss}" />
     <ea:asset.css embed="1" priority="1" identifier="cssOverrides" href="EXT:microtemplate/Resources/Public/Css/overrides.css" />
     <ea:asset.css embed="1" priority="0" identifier="formsCss" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
-    <a href="#content" id="logo" title="{data.title}">
+
+    <a href="{f:if(condition: '!{settings.menuType}', then: '#content', else: '{siteBase}')}" id="logo" title="{data.title}">
         <f:format.raw>{logo}</f:format.raw>
     </a>
     <f:variable name="languagesAvailable" value="0" />
@@ -20,8 +21,17 @@
             <f:if condition="{languagesAvailable} > 1">
                 <f:render partial="Menus/LanguageMenu" arguments="{_all}" />
             </f:if>
-            <f:if condition="{sectionMenu}">
-                <f:render partial="Menus/SectionMenu" arguments="{_all}" />
+            <f:if condition="{settings.menuType} == 1">
+                <f:then>
+                    <f:if condition="{pagesMenu}">
+                        <f:render partial="Menus/PagesMenu" arguments="{_all}" />
+                    </f:if>
+                </f:then>
+                <f:else>
+                    <f:if condition="{sectionMenu}">
+                        <f:render partial="Menus/SectionMenu" arguments="{_all}" />
+                    </f:if>
+                </f:else>
             </f:if>
             <f:if condition="{settings.mobilemenuContentPage}">
                 <ea:asset.css embed="1" priority="1" identifier="menuContent" href="EXT:microtemplate/Resources/Public/Css/Menus/menu-content.css" />
@@ -39,5 +49,8 @@
     </main>
     <ea:asset.script embed="1" identifier="home" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/home.js" />
     <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
+    <f:if condition="!{settings.menuType}">
+        <ea:asset.script embed="1" identifier="scrollMemory" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/scrollMemory.js" />
+    </f:if>
 </f:spaceless>
 </html>

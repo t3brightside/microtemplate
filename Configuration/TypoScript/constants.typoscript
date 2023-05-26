@@ -18,6 +18,8 @@
 	microtemplate.header-font-file = EXT:microtemplate/Resources/Public/Fonts/fira-sans-extra-condensed-v5-latin-500.woff2
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main font family
 	microtemplate.mainFontFamily = sans-serif
+# cat=Microtemplate/microtemplatestyles; type=boolean; label= Use pages menu instead of sections
+  microtemplate.menuType =
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default text color: Body, headers, main menu
 	microtemplate.textColor = #111111
 # cat=Microtemplate/microtemplatestyles; type=color; label= Default background color

@@ -1,0 +1,13 @@
+<ea:asset.css embed="1" priority="1" identifier="sectionMenu" href="EXT:microtemplate/Resources/Public/Css/Menus/section-menu.css" />
+
+<nav id="section-menu" aria-label="Sub-page selection">
+    <ul>
+        <f:for each="{pagesMenu}" as="menuItem">
+            <li>
+                <f:link.page tabindex="-1" pageUid="{menuItem.data.uid}" class="{f:if(condition:menuItem.current, then:'cur')} {menuItem.active && !menuItem.current ? 'act' : ''}"><f:format.raw>{menuItem.title}</f:format.raw></f:link.page>
+            </li>
+        </f:for>
+    </ul>
+</nav>
+
+<ea:asset.script embed="1" identifier="sectionMenu" src="EXT:microtemplate/Resources/Public/JavaScript/Menus/section-menu.js" />

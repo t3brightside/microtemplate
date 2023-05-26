@@ -41,7 +41,7 @@ RTE.default.preset = microtemplate
                 1 {
                   name = Page content
                   colPos = 0
-                  allowed.CType = containerSection, containerPopup
+                #  allowed.CType = containerSection
                 }
               }
             }
@@ -60,9 +60,8 @@ RTE.default.preset = microtemplate
               columns {
                 1 {
                   name = Content title (overrides automatic title)
-                  allowed = header
+                #  allowed.CType = header
                   colPos = 5
-                  disallowed.CType = containerSection
                 }
               }
             }
@@ -71,7 +70,6 @@ RTE.default.preset = microtemplate
                 1 {
                   name = Page content
                   colPos = 0
-                  disallowed.CType = containerSection
                 }
               }
             }
