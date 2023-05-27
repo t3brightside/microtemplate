@@ -34,13 +34,22 @@ RTE.default.preset = microtemplate
       config {
         backend_layout {
           colCount = 1
-          rowCount = 1
+          rowCount = 2
           rows {
             1 {
               columns {
                 1 {
                   name = Page content
                   colPos = 0
+                #  allowed.CType = containerSection
+                }
+              }
+            }
+            2 {
+              columns {
+                1 {
+                  name = Page footer
+                  colPos = 1
                 #  allowed.CType = containerSection
                 }
               }

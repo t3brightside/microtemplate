@@ -47,6 +47,11 @@
     <main id="content" class="pageWidth p{data.uid}">
         <f:format.raw>{contentDefault}</f:format.raw>
     </main>
+    <f:if condition="{contentFooter}">
+        <footer>
+            <f:format.raw>{contentFooter}</f:format.raw>
+        </footer>
+    </f:if>
     <ea:asset.script embed="1" identifier="home" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/home.js" />
     <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
     <f:if condition="!{settings.menuType}">
