@@ -17,7 +17,7 @@
     </f:for>
     <f:if condition="{sectionMenu} || {languagesAvailable} > 1">
         <f:render partial="Menus/Hmbrgr" arguments="{_all}" />
-        <div id="menu">
+        <div id="menu" class="{languagesAvailable > 1 ? 'haslangmenu' : ''}">
             <f:if condition="{languagesAvailable} > 1">
                 <f:render partial="Menus/LanguageMenu" arguments="{_all}" />
             </f:if>

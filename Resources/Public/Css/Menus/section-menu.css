@@ -30,14 +30,16 @@
 #menu.open {
     right: 0;
 }
-
 #section-menu ul {
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    padding: 3em 0 1em 0;
+    padding: 6em 0 1em 0;
     margin: 0;
     width: 100%;
+}
+#menu.haslangmenu #section-menu ul {
+    padding: 3em 0 1em 0;
 }
 
 #section-menu>ul>li {
