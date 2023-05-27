@@ -30,7 +30,7 @@ RTE.default.preset = microtemplate
 # Page layouts
   mod.web_layout.BackendLayouts {
     home {
-      title = Microtemplate – Home
+      title = Microtemplate – Main
       config {
         backend_layout {
           colCount = 1
