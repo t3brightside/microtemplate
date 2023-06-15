@@ -87,3 +87,5 @@
   - [TASK] CSS settings to ea:asset
   - [TASK] change f:asset to ea:asset in css settings
   - [TASK] Add microstart link
+* 4.1.0
+  - [FEATURE] Add first level pages menu option (activate with TS constant)

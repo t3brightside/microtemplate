@@ -22,7 +22,7 @@ This is a place for us to try out and learn about new ways of doing things. Alwa
 ## Features
 - Can be installed in multi domain setup or just for a sub page
 - Configurable color schemes
-- Automatic menu of section titles
+- Automatic menu of section titles or first level of sub pages
 - Automatic language menu
 - Social links in menu
 - Content columns & accordions
