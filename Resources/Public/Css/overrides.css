@@ -40,6 +40,17 @@
     background-color: var(--accentColor);
 }
 
+/* popup */
+.c-popup {
+    background-color: var(--bodyBg);
+    color: var(--textColor);
+}
+
+.c-popup-close::before,
+.c-popup-close::after {
+    background-color: var(--textColor);
+}
+
 /* sub pages */
 .subpage {
     color: var(--textColor);
