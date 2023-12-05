@@ -15,7 +15,12 @@ config {
    config.baseURL = {$microtemplate.domainName}
 [end]
 
-# header data
+# Fluid styled content default header override
+lib.contentElement.settings.defaultHeaderType = 2
+[tree.pagelayout == "pagets__home"]
+  lib.contentElement.settings.defaultHeaderType = 1
+[END]
+
 page {
 	config {
   	headerComment (
