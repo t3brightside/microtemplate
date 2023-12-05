@@ -55,6 +55,9 @@ These extensions are preconfigured and tested in Microtemplate
 - [favicon](https://github.com/t3brightside/favicon) – Favicon extension
 - [advancedtitle](https://github.com/t3brightside/advancedtitle) – Page title prefix and suffix
 
+Clean up the BE editing
+- [beux](https://github.com/t3brightside/beux) - Experiment to clean up back end editing for Microtemplate
+
 To speed things up
 - [staticfilecache](https://github.com/lochmueller/staticfilecache) - Write pages into HTML files to save chunk of time
 ## Sources
