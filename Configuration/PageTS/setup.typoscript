@@ -41,7 +41,7 @@ RTE.default.preset = microtemplate
                 1 {
                   name = Page content
                   colPos = 0
-                  allowed.CType = containerSection
+                  allowed.CType = containerSection, containerPopup
                 }
               }
             }
@@ -50,7 +50,7 @@ RTE.default.preset = microtemplate
                 1 {
                   name = Page footer
                   colPos = 1
-                  allowed.CType = containerSection
+                  allowed.CType = containerSection, containerPopup
                 }
               }
             }
