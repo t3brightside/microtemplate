@@ -89,3 +89,8 @@
   - [TASK] Add microstart link
 * 4.1.0
   - [FEATURE] Add first level pages menu option (activate with TS constant)
+* 4.1.1
+  - [BUGFIX] override defaultHeaderType conditions in Page/config.typoscript
+  - [TASK] Improve doc on customCSS settings
+  - [TASK] allow containerPopup type on home page
+  - [TASK] override .c-popup colours for dark mode
