@@ -94,3 +94,5 @@
   - [TASK] Improve doc on customCSS settings
   - [TASK] allow containerPopup type on home page
   - [TASK] override .c-popup colours for dark mode
+* 4.1.2
+  - [TASK] Use session storage for remembering scroll position
