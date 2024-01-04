@@ -14,7 +14,7 @@
 		"typo3/cms-core": "^11.5  || ^12.4",
 		"typo3/cms-fluid-styled-content": "^11.5 || ^12.4",
 		"ichhabrecht/content-defender": "^3.3",
-		"t3brightside/containeritems": "^4.3",
+		"t3brightside/containeritems": "^4.4",
 		"t3brightside/embedassets": "^1.2"
 	},
 	"suggest": {

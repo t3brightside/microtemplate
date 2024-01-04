@@ -96,3 +96,5 @@
   - [TASK] override .c-popup colours for dark mode
 * 4.1.2
   - [TASK] Use session storage for remembering scroll position
+* 4.2.0
+  - [FEATURE] add ext:iconpack support to menus
