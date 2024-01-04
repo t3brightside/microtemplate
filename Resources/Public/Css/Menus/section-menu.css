@@ -61,6 +61,10 @@
     transition: color .2s;
 }
 
+#section-menu>ul>li>a .iconpack {
+    margin-right: 1rem;
+}
+
 #menu a:hover,
 #menu a.act, #menu a.cur {
     color: var(--accentColor);

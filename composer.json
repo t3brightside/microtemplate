@@ -14,7 +14,7 @@
 		"typo3/cms-core": "^11.5  || ^12.4",
 		"typo3/cms-fluid-styled-content": "^11.5 || ^12.4",
 		"ichhabrecht/content-defender": "^3.3",
-		"t3brightside/containeritems": "^4.2",
+		"t3brightside/containeritems": "^4.3",
 		"t3brightside/embedassets": "^1.2"
 	},
 	"suggest": {
@@ -24,7 +24,8 @@
 		"t3brightside/personnel": "Contact lists with vCard support",
 		"t3brightside/youtubevideo": "Responsive YouTube videos with cover image",
 		"t3brightside/gallerycontent": "Image content gallery with crop ratios",
-		"lochmueller/staticfilecache": "To speed things up"
+		"lochmueller/staticfilecache": "To speed things up",
+		"quellenform/t3x-iconpack": "For tab, accordion and menu icons"
 	},
 	"extra": {
 		"typo3/cms": {

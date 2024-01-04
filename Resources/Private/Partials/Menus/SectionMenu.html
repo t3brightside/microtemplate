@@ -1,3 +1,5 @@
+{namespace i=Quellenform\Iconpack\ViewHelpers}
+
 <ea:asset.css embed="1" priority="1" identifier="sectionMenu" href="EXT:microtemplate/Resources/Public/Css/Menus/section-menu.css" />
 
 <nav id="section-menu" aria-label="Content section selection">
@@ -5,7 +7,7 @@
         <f:for each="{sectionMenu}" as="section">
             <f:if condition="{section.data.header}">
                 <li id="m{section.data.uid}">
-                    <a tabindex="-1" href="/{f:if(condition: section.data.uid, then: '#c{section.data.uid}')}" title="{section.data.header}">{section.data.header}</a>
+                    <a tabindex="-1" href="/{f:if(condition: section.data.uid, then: '#c{section.data.uid}')}" title="{section.data.header}"><f:if condition="{section.data.header_icon}"><i:icon iconfig="{section.data.header_icon}" preferredRenderTypes="svgInline,webfont" /></f:if>{section.data.header}</a>
                 </li>
             </f:if>
         </f:for>
