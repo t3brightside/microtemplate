@@ -32,6 +32,11 @@
                 </article>
             </f:if>
         </main>
+        <f:if condition="{contentThroguhPages}">
+            <footer>
+                <f:format.raw>{contentThroguhPages}</f:format.raw>
+            </footer>
+        </f:if>
         <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
     </body>
 </html>

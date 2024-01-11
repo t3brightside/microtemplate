@@ -48,7 +48,7 @@ RTE.default.preset = microtemplate
             2 {
               columns {
                 1 {
-                  name = Page footer
+                  name = Content through pages
                   colPos = 1
                   allowed.CType = containerSection, containerPopup
                 }
@@ -79,6 +79,14 @@ RTE.default.preset = microtemplate
                 1 {
                   name = Page content
                   colPos = 0
+                }
+              }
+            }
+            3 {
+              columns {
+                1 {
+                  name = Content through pages
+                  colPos = 1
                 }
               }
             }

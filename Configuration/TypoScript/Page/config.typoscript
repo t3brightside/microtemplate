@@ -136,10 +136,10 @@ page {
 				20.select.where = colPos = 0
 				30 = RESTORE_REGISTER
 			}
-      contentFooter = COA
-			contentFooter {
+      contentThroguhPages = COA
+			contentThroguhPages {
 				10 = LOAD_REGISTER
-				10.maxImageWidth = {$oeftemplate.pageWidth}
+				10.maxImageWidth = {$microtemplate.pageWidth}
 				20 < styles.content.get
 				20.select.where = colPos = 1
         20.slide = -1
