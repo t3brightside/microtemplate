@@ -104,6 +104,7 @@ select {
     position: relative;
     -webkit-box-shadow: none;
     box-sizing: border-box;
+    border-radius: 3px;
 }
 
 select {
