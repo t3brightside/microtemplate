@@ -21,8 +21,7 @@
 }
 
 /* accordion */
-.c-accordion-title,
-.c-accordion-title:visited {
+.c-accordion-title {
     color: var(--textColor);
 }
 
@@ -38,6 +37,21 @@
 .c-accordion-title:hover::after,
 .c-accordion-title:hover::before {
     background-color: var(--accentColor);
+}
+
+/* tabs */
+.c-tabs-title, .c-tabs-title.act, .c-tabs-title.act:hover {
+    color: var(--textColor);
+}
+
+.c-tabs-title.act, .c-tabs-title.act:hover {
+    color: var(--textColor);
+    border-color: var(--textColor);
+}
+
+.c-tabs-title:hover {
+    color: var(--accentColor);
+    border-color: var(--accentColor);
 }
 
 /* popup */
