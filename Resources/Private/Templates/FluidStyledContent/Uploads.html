@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace i=Quellenform\Iconpack\ViewHelpers}
+{namespace ea=Brightside\Embedassets\ViewHelpers}
+
+<f:layout name="Default" />
+<f:section name="Main">
+    <ea:asset.css embed="{settings.cssEmbed}" priority="1" identifier="fscUploads" href="EXT:microtemplate/Resources/Public/Css/FluidStyledContent/uploads.css" />
+
+    <f:if condition="{files}">
+        <ul class="ce-uploads">
+            <f:for each="{files}" as="file" iteration="fileIterator">
+                <li><span class="icon" style="font-size: 2.25em; margin-right: .65em;"><i:icon iconfig="bi1,filetype-jpg" preferredRenderTypes="svgInline,webfont" /></span>
+                        <span class="ce-uploads-title-desc">
+                            <span class="ce-uploads-title">{f:if(condition: file.properties.title, then: file.properties.title, else: file.name) -> f:format.htmlspecialchars()}</span>
+                            <f:if condition="{data.uploads_description}"><f:if condition="{file.properties.description}"><br /><span class="ce-uploads-description">{file.properties.description}</span></f:if></f:if>
+                            <span class="ce-uploads-fileName">{file.name} <f:if condition="!{data.filelink_size}"> – <f:format.bytes value="{file.properties.size}" /></f:if></span></span>
+                        <a class="ce-uploads-download-link" href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"')}{f:if(condition: file.title, then: ' title="Download <f:format.bytes value="{file.properties.size}" /> {file.extension}: {file.title}"')}>
+                            <i:icon iconfig="bi1,cloud-download-fill" preferredRenderTypes="svgInline,webfont" />
+                            <f:if condition="{data.filelink_size}">
+                                <f:then><span class="ce-uploads-size"><span class="ce-uploads-extension">{file.extension}</span> - <f:format.bytes value="{file.properties.size}" /></span></f:then>
+                                <f:else>Download</f:else>
+                            </f:if>
+                        </a>
+
+                </li>
+            </f:for>
+        </ul>
+    </f:if>
+
+</f:section>
+</html>

@@ -67,6 +67,9 @@
 	microtemplate.partialRootPath = EXT:microtemplate/Resources/Private/Partials/
 	microtemplate.templateRootPath = EXT:microtemplate/Resources/Private/Templates/
 
+# Fluid Styled Content
+  styles.templates.templateRootPath = EXT:microtemplate/Resources/Private/Templates/FluidStyledContent/
+
 # Gallerycontent
   gallerycontent.imageWidth = 987
   gallerycontent.enableLightbox = 1
