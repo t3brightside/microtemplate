@@ -105,6 +105,10 @@ select {
     -webkit-box-shadow: none;
     box-sizing: border-box;
     border-radius: 3px;
+    font-family: var(--mainFontFamily);
+    color: var(--textColor);
+    border-color: var(--textColor);
+    -webkit-text-fill-color: var(--textColor);
 }
 
 select {
@@ -214,6 +218,32 @@ input:-webkit-autofill:active {
 button[disabled=disabled],
 button:disabled {
     cursor: text !important;
+}
+
+
+.bg-dark input,
+.bg-dark select,
+.bg-dark textarea {
+    font-family: var(--mainFontFamily);
+    color: var(--textColorLight);
+    border-color: var(--textColorLight);
+    -webkit-text-fill-color: var(--textColorLight);
+}
+
+.c-section.text-dark input,
+.c-section.text-dark select,
+.c-section.text-dark textarea {
+    color: var(--textColorDark);
+    border-color: var(--textColorDark);
+    -webkit-text-fill-color: var(--textColorDark);
+}
+
+.c-section.text-light input,
+.c-section.textLight select,
+.c-section.textLight textarea {
+    color: var(--textColorLight);
+    border-color: var(--textColorLight);
+    -webkit-text-fill-color: var(--textColorLight);
 }
 
 @media screen and (max-width: 860px) {

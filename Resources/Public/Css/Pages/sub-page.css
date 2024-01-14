@@ -1,8 +1,18 @@
 .subpage {
     max-width: var(--subpageWidth);
+    color: var(--textColor);
     padding: 5em 1.6em;
     margin: auto;
     overflow-x: auto;
+}
+
+
+.subpage-body {
+    background-color: var(--bodyBg);
+}
+
+.closelink i {
+    background: var(--textColor);
 }
 
 .subpage h1 {
@@ -12,6 +22,7 @@
 .subpage .author img {
     border-radius: 50%;
 }
+
 .closelink {
     width: auto;
     position: fixed;
@@ -25,7 +36,8 @@
     z-index: 2;
 }
 
-.closelink::before, .closelink::after {
+.closelink::before,
+.closelink::after {
     content: '';
     display: block;
     position: absolute;
@@ -37,7 +49,8 @@
     transition: opacity .3s ease-in-out;
 }
 
-.closelink:hover::before, .closelink:hover::after {
+.closelink:hover::before,
+.closelink:hover::after {
     opacity: 0.5;
 }
 
@@ -60,5 +73,3 @@
         right: 0.25rem;
     }
 }
-
-
