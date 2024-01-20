@@ -96,6 +96,7 @@ h1 {
     font-size: 3em;
     line-height: 1.2em;
     margin-bottom: .2em;
+    margin-top: -0.75rem;
 }
 
 h2 {
@@ -297,6 +298,9 @@ button.btn:disabled {
     margin-bottom: 1em;
 }
 .frame > *:last-child, .ce-bodytext *:last-child{
+    margin-bottom: 0;
+}
+.frame > *:last-child .btn, .ce-bodytext *:last-child .btn {
     margin-bottom: 0;
 }
 

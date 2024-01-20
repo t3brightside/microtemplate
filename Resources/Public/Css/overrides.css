@@ -78,7 +78,10 @@
 .pagelist .abstract {
     color: var(--textColor);
 }
-
+.pagelist .info {
+    font-size: 1em !important;
+    margin: 0 !important;
+}
 /* pagination */
 ul.pagination>li>a {
     border-color: var(--accentColor);
