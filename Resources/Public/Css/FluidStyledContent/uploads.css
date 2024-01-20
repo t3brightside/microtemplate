@@ -7,39 +7,29 @@ ul.ce-uploads {
 
 ul.ce-uploads li {
     margin: 0;
-    border-bottom: 1px solid #ddd;
-    padding: 1em 0;
+    background: var(--bgLight);
+    padding: 1em;
+    padding-top: 1.25em;
     width: 100%;
-    /* Make the list item full width of the outer container */
     display: flex;
-    align-items: center;
-
+    margin-bottom: 2px;
 }
 
 ul.ce-uploads li:last-child {
-    border: none;
-}
-
-ul.ce-uploads li a {
-    padding: .5em;
-    display: inline-block;
-    position: relative;
-}
-
-.ce-uploads-filesize {
-    float: right;
+    margin-bottom: 0;
 }
 
 .ce-uploads-title-desc {
-    width: 100%;
-    display: inline-block;
-    padding-right: 2em;
     line-height: 1.15em;
-
 }
 
+.ce-uploads-icon {
+    font-size: 1.6em;
+    margin-right: .5em;
+}
 .ce-uploads-title {
     font-weight: bold;
+    display: inline-block;
 }
 
 .ce-uploads-description {
@@ -47,42 +37,28 @@ ul.ce-uploads li a {
     width: 100%;
     font-size: .85em;
     margin-top: .5em;
-
 }
-
-/* Style for the download link */
-.ce-uploads-download-link {
+.ce-uploads-link-size {
+    display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+}
+.ce-uploads-link {
     font-weight: bold;
     font-size: .85em;
-    background: red;
-    color: white !important;
-    display: inline-block;
-    padding: .5em !important;
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    background-color: var(--accentColor);
-    border-radius: 2px;
-    white-space: nowrap;
-    border: 2px solid var(--accentColor);
+    color: var(--accentColor);
     transition: all .3s ease-in-out;
 }
 
-.ce-uploads-download-link:hover {
-    text-decoration: none;
-    background-color: white;
-    color: var(--accentColor) !important;
-}
-
-.ce-uploads-extension {
-    text-transform: uppercase;
-
-}
-
-.ce-uploads-fileName {
+.ce-uploads-file-size {
     display: inline-block;
-    margin-top: .5em;
-    opacity: .6;
+    margin-left: .5em;
     font-size: .85em;
-    width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    ul.ce-uploads li {
+        background: var(--bgDark);
+    }
 }
