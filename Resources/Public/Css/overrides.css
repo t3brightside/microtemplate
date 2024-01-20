@@ -55,7 +55,6 @@
 
 .c-tabs-title:hover {
     color: var(--accentColor);
-    border-color: var(--accentColor);
 }
 
 /* popup */
