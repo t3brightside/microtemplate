@@ -254,12 +254,6 @@ button.btn:disabled {
     max-width: 43rem;
 }
 
-p:last-child,
-ol:last-child,
-ul:last-child {
-    margin-bottom: 0;
-}
-
 #content,
 #footer {
     margin: auto;
@@ -302,9 +296,10 @@ ul:last-child {
 .frame p {
     margin-bottom: 1em;
 }
-.frame :last-child {
+.frame > *:last-child, .ce-bodytext *:last-child{
     margin-bottom: 0;
 }
+
 .frame-space-before-extra-small {
     margin-top: 1em;
 }
