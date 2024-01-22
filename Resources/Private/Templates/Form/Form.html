@@ -1,5 +1,7 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ea="http://typo3.org/ns/Brightside/Embedassets/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
 <formvh:renderRenderable renderable="{form}">
+    <ea:asset.css embed="1" priority="0" identifier="formsCss" href="EXT:microtemplate/Resources/Public/Css/forms.css" />
+
     <formvh:form
         object="{form}"
         action="{form.renderingOptions.controllerAction}"
@@ -17,5 +19,7 @@
             <f:render partial="Form/Navigation" arguments="{form: form}" />
         </div>
     </formvh:form>
+    <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/forms.js" />
+
 </formvh:renderRenderable>
 </html>

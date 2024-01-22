@@ -9,7 +9,7 @@
 # cat=Microtemplate/microtemplatestyles; type=string; label=Main CSS file
 	microtemplate.mainCss = EXT:microtemplate/Resources/Public/Css/default.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=Sub pages CSS file
-	microtemplate.subpagesCss = EXT:microtemplate/Resources/Public/Css/Pages/sub-page.css
+	microtemplate.subpagesCss = EXT:microtemplate/Resources/Public/Css/sub-page.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=Custom CSS file for your own changes
 	microtemplate.customCss = EXT:microtemplate/Resources/Public/Css/custom.css
 # cat=Microtemplate/microtemplatestyles; type=string; label=SVG logo file location
@@ -92,11 +92,12 @@
 
 # Paginated processors
   paginatedprocessors.enableDefaultStyles = 1
-  paginatedprocessors.cssFile = EXT:microtemplate/Resources/Public/Css/Pages/pagination.css
+  paginatedprocessors.cssFile = EXT:microtemplate/Resources/Public/Css/pagination.css
   paginatedprocessors.cssPriority = 0
 
 # Containeritems
   containerItems.sectionScrollInEffect = slide-from-below
+  containerItems.enableIconpack = 1
 
 # Youtubevideo
   youtubevideo.cssPriority = 0

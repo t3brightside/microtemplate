@@ -4,7 +4,6 @@
     <ea:asset.css embed="1" priority="1" identifier="subpagesCss" href="{settings.subpagesCss}" />
     <ea:asset.css embed="1" priority="1" identifier="customCss" href="{settings.customCss}" />
     <ea:asset.css embed="1" priority="1" identifier="cssOverrides" href="EXT:microtemplate/Resources/Public/Css/overrides.css" />
-    <ea:asset.css embed="1" priority="0" identifier="formsCss" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
     <body class="subpage-body">
         <f:render partial="Sub/CloseLink" arguments="{_all}" />
         <main id="p{data.uid}" class="subpage subpageContentWidth">
@@ -37,6 +36,5 @@
                 <f:format.raw>{contentThroguhPages}</f:format.raw>
             </footer>
         </f:if>
-        <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
     </body>
 </html>

@@ -4,7 +4,6 @@
     <ea:asset.css embed="1" priority="1" identifier="mainCss" href="{settings.mainCss}" />
     <ea:asset.css embed="1" priority="1" identifier="customCss" href="{settings.customCss}" />
     <ea:asset.css embed="1" priority="1" identifier="cssOverrides" href="EXT:microtemplate/Resources/Public/Css/overrides.css" />
-    <ea:asset.css embed="1" priority="0" identifier="formsCss" href="EXT:microtemplate/Resources/Public/Css/Pages/forms.css" />
 
     <a href="{f:if(condition: '!{settings.menuType}', then: '#content', else: '{siteBase}')}" id="logo" title="{data.title}">
         <f:format.raw>{logo}</f:format.raw>
@@ -52,10 +51,9 @@
             <f:format.raw>{contentThroguhPages}</f:format.raw>
         </footer>
     </f:if>
-    <ea:asset.script embed="1" identifier="home" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/home.js" />
-    <ea:asset.script embed="1" identifier="forms" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/forms.js" />
+    <ea:asset.script embed="1" identifier="home" src="EXT:microtemplate/Resources/Public/JavaScript/home.js" />
     <f:if condition="!{settings.menuType}">
-        <ea:asset.script embed="1" identifier="scrollMemory" src="EXT:microtemplate/Resources/Public/JavaScript/Pages/scrollMemory.js" />
+        <ea:asset.script embed="1" identifier="scrollMemory" src="EXT:microtemplate/Resources/Public/JavaScript/scrollMemory.js" />
     </f:if>
 </f:spaceless>
 </html>
