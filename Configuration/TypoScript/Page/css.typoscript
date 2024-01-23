@@ -6,6 +6,10 @@ config {
 	inlineStyle2TempFile = 0
 }
 
+page.includeCSS {
+  iconpack =
+}
+
 # create CSS for font inclusion
 page {
 	cssInline {
