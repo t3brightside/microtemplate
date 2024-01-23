@@ -113,3 +113,7 @@
     - [TASK] Override title colours for tabs
     - [TASK] Improve input and button layouts
     - [TASK] Add content-through-pages column to templates
+* 4.3.1
+    - [TASK] adjust textarea height
+    - [TASK] embed uploads css
+    - [TASK] embed iconback css
