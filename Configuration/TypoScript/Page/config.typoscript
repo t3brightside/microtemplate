@@ -197,15 +197,22 @@ menucontent {
   page.10.dataProcessing {
     140 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
     140 {
+      if.isTrue.field = tx_personnel
       table = tx_personnel_domain_model_person
-      uidInList.field = tx_personnel_authors
-      pidInList = 0
+      pidInList = 1
+      recursive = 99
+      join.field = uid
+      join.wrap = tx_personnel_mm ON uid = tx_personnel_mm.uid_local AND tx_personnel_mm.uid_foreign = '|' AND tx_personnel_mm.tablenames='pages' AND tx_personnel_mm.fieldname='tx_personnel'
       as = authors
       dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10.references.table = tx_personnel_domain_model_person
-        10.references.fieldName = images
-        10.as = authorimages
+        10 {
+            references {
+              table = tx_personnel_domain_model_person
+              fieldName = images
+            }
+            as = authorimages
+        }
       }
     }
   }
