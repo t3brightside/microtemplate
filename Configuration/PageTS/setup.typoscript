@@ -47,7 +47,7 @@ RTE.default.preset = microtemplate
       uploads_description = 1
     }
   }
-
+TCAdefaults.tt_content.CType = textmedia
 # Page layouts
   mod.web_layout.BackendLayouts {
     home {
