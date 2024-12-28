@@ -11,8 +11,8 @@
     'author_company' => 'Brightside OÜ',
     'constraints' => [
       'depends' => [
-        'typo3' => '11.5.0-12.4.99',
-        'fluid_styled_content' => '11.5.0-12.4.99',
+        'typo3' => '12.4.0-13.4.99',
+        'fluid_styled_content' => '12.4.0-13.4.99',
         'embedassets' => '1.2.0-1.99.99',
         'container' => '2.1.0-3.99.99',
         'containeritems' => '4.5.0-5.99.99',
