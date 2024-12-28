@@ -117,3 +117,8 @@
     - [TASK] adjust textarea height
     - [TASK] embed uploads css
     - [TASK] embed iconback css
+* 5.0.0
+    - [TASK] dev compatibility with v13 and dropping v11
+    - [TASK] clean up
+    - [TASK] uptade personnel relations
+    - [TASK] Update install instructions
