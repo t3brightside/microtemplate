@@ -122,3 +122,5 @@
     - [TASK] clean up
     - [TASK] uptade personnel relations
     - [TASK] Update install instructions
+* 5.0.1
+    -[BUGFIX] TYPO3 version dependency
