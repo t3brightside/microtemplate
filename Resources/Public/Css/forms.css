@@ -47,7 +47,7 @@ form>.row {
 form>.actions {
     width: 100%;
     float: left;
-    margin-top: 0.5em;
+    margin-top: 2rem;
 }
 
 form>.actions .btn {
@@ -244,6 +244,12 @@ button:disabled {
     color: var(--textColorLight);
     border-color: var(--textColorLight);
     -webkit-text-fill-color: var(--textColorLight);
+}
+
+.form-element-gridrow {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 860px) {

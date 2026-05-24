@@ -1,0 +1,298 @@
+categories:
+  Microtemplate:
+    label: 'Microtemplate'
+  Microtemplate.setup:
+    label: 'Microtemplate: Setup'
+    parent: Microtemplate
+  Microtemplate.assets:
+    label: 'Microtemplate: Assets & Fonts'
+    parent: Microtemplate
+  Microtemplate.design:
+    label: 'Microtemplate: Design & Colors'
+    parent: Microtemplate
+  Microtemplate.layout:
+    label: 'Microtemplate: Layout & Dimensions'
+    parent: Microtemplate
+  Microtemplate.social:
+    label: 'Microtemplate: Social Media'
+    parent: Microtemplate
+  Microtemplate.extensions:
+    label: 'External Extension Overrides'
+    parent: Microtemplate
+
+settings:
+  # --- 1. SETUP ---
+  microtemplate.rootPageId:
+    label: 'Root page ID'
+    category: Microtemplate.setup
+    description: 'ID of the root page if it is a sub page'
+    type: string
+    default: ''
+  microtemplate.domainName:
+    label: 'Domain name'
+    category: Microtemplate.setup
+    description: 'Used for legacy/v11 (e.g., https://example.com/)'
+    type: string
+    default: '/'
+  microtemplate.cacheControlMaxAge:
+    label: 'Cache max age'
+    category: Microtemplate.setup
+    description: 'In seconds (default 6 hours = 21600)'
+    type: int
+    default: 21600
+  microtemplate.partialRootPath:
+    label: 'Microtemplate Partial Path'
+    category: Microtemplate.setup
+    type: string
+    default: 'EXT:microtemplate/Resources/Private/Partials/'
+  microtemplate.templateRootPath:
+    label: 'Microtemplate Template Path'
+    category: Microtemplate.setup
+    type: string
+    default: 'EXT:microtemplate/Resources/Private/Templates/'
+
+  # --- 2. ASSETS & FONTS ---
+  microtemplate.mainCss:
+    label: 'Main CSS file'
+    category: Microtemplate.assets
+    type: string
+    default: 'EXT:microtemplate/Resources/Public/Css/default.css'
+  microtemplate.subpagesCss:
+    label: 'Sub pages CSS file'
+    category: Microtemplate.assets
+    type: string
+    default: 'EXT:microtemplate/Resources/Public/Css/sub-page.css'
+  microtemplate.customCss:
+    label: 'Custom CSS file'
+    category: Microtemplate.assets
+    type: string
+    default: 'EXT:microtemplate/Resources/Public/Css/custom.css'
+  microtemplate.logoFile:
+    label: 'SVG logo file'
+    category: Microtemplate.assets
+    type: string
+    default: 'EXT:microtemplate/Resources/Public/Images/brightside_logo.svg'
+  microtemplate.header-font-file:
+    label: 'Header font file'
+    category: Microtemplate.assets
+    type: string
+    default: 'EXT:microtemplate/Resources/Public/Fonts/fira-sans-extra-condensed-v5-latin-500.woff2'
+  microtemplate.mainFontFamily:
+    label: 'Main font family'
+    category: Microtemplate.design
+    type: string
+    default: 'sans-serif'
+
+  # --- 3. DESIGN & COLORS ---
+  microtemplate.textColor:
+    label: 'Default text color'
+    category: Microtemplate.design
+    type: color
+    default: '#111111'
+  microtemplate.bodyBg:
+    label: 'Default background color'
+    category: Microtemplate.design
+    type: color
+    default: '#ffffff'
+  microtemplate.accentColor:
+    label: 'Accent color'
+    category: Microtemplate.design
+    type: color
+    default: '#db0500'
+  microtemplate.textLight:
+    label: 'Light text color'
+    category: Microtemplate.design
+    type: color
+    default: '#ffffff'
+  microtemplate.textDark:
+    label: 'Dark text color'
+    category: Microtemplate.design
+    type: color
+    default: '#000000'
+  microtemplate.bgLight:
+    label: 'Light section background'
+    category: Microtemplate.design
+    type: color
+    default: '#f0f0f0'
+  microtemplate.bgDark:
+    label: 'Dark section background'
+    category: Microtemplate.design
+    type: color
+    default: '#353535'
+  microtemplate.menuBg:
+    label: 'Header background'
+    category: Microtemplate.design
+    type: string
+    default: 'rgba(255,255,255,0.9)'
+  favicon.svgPath:
+    label: 'Favicon SVG Path/Data'
+    category: Microtemplate.design
+    type: string
+    default: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cg transform='translate(-481 -613)'%3E%3Cg transform='translate(-280 -278)'%3E%3Cpath d='M0,0H36V36H0Z' transform='translate(761 891)' fill='%23bc0000'/%3E%3C/g%3E%3Crect width='22' height='7' transform='translate(488 620)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(488 631)' fill='%23fff'/%3E%3Crect width='9' height='11' transform='translate(501 631)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A"
+  favicon.pngPath:
+    label: 'Favicon PNG Path'
+    category: Microtemplate.design
+    type: string
+    default: 'EXT:microtemplate/Resources/Public/Icons/Extension.png'
+
+  # --- 4. LAYOUT & DIMENSIONS ---
+  microtemplate.menuType:
+    label: 'Menu Type'
+    category: Microtemplate.layout
+    description: 'Checked = Pages menu, Unchecked = Sections'
+    type: bool
+    default: 0
+  microtemplate.pageWidth:
+    label: 'Max home page width'
+    category: Microtemplate.layout
+    type: string
+    default: '100%'
+  microtemplate.contentWidth:
+    label: 'Max home content width'
+    category: Microtemplate.layout
+    type: string
+    default: '62rem'
+  microtemplate.subpageWidth:
+    label: 'Max sub page width'
+    category: Microtemplate.layout
+    type: string
+    default: '48rem'
+  microtemplate.mobilemenuContentPage:
+    label: 'Mobile menu page ID'
+    category: Microtemplate.layout
+    type: string
+    default: ''
+  styles.content.textmedia.maxW:
+    label: 'Max image width (px)'
+    category: Microtemplate.layout
+    type: int
+    default: 987
+  styles.content.textmedia.maxWInText:
+    label: 'Max image width in text (px)'
+    category: Microtemplate.layout
+    type: int
+    default: 400
+
+  # --- 5. SOCIAL MEDIA ---
+  microtemplate.socialLinksEnabled:
+    label: 'Enable social links'
+    category: Microtemplate.social
+    type: bool
+    default: 0
+  microtemplate.linkedinUrl:
+    label: 'LinkedIn'
+    category: Microtemplate.social
+    type: string
+    default: ''
+  microtemplate.twitterUrl:
+    label: 'Twitter'
+    category: Microtemplate.social
+    type: string
+    default: ''
+  microtemplate.instagramUrl:
+    label: 'Instagram'
+    category: Microtemplate.social
+    type: string
+    default: ''
+  microtemplate.facebookUrl:
+    label: 'Facebook'
+    category: Microtemplate.social
+    type: string
+    default: ''
+  microtemplate.youtubeUrl:
+    label: 'Youtube'
+    category: Microtemplate.social
+    type: string
+    default: ''
+  microtemplate.githubUrl:
+    label: 'Github'
+    category: Microtemplate.social
+    type: string
+    default: ''
+
+  # --- 6. EXTENSION OVERRIDES ---
+  styles.templates.templateRootPath:
+    label: 'FSC Template Path'
+    category: Microtemplate.extensions
+    type: string
+    default: 'EXT:microtemplate/Resources/Private/Templates/FluidStyledContent/'
+  gallerycontent.imageWidth:
+    label: 'Gallery: Image width'
+    category: Microtemplate.extensions
+    type: int
+    default: 987
+  gallerycontent.enableLightbox:
+    label: 'Gallery: Enable Lightbox'
+    category: Microtemplate.extensions
+    type: bool
+    default: 1
+  gallerycontent.cssPriority:
+    label: 'Gallery: CSS Priority'
+    category: Microtemplate.extensions
+    type: bool
+    default: 0
+  personnel.cardImageWidth:
+    label: 'Personnel: Card width'
+    category: Microtemplate.extensions
+    type: int
+    default: 330
+  personnel.cardImageHeight:
+    label: 'Personnel: Card height'
+    category: Microtemplate.extensions
+    type: int
+    default: 330
+  personnel.cssPriority:
+    label: 'Personnel: CSS Priority'
+    category: Microtemplate.extensions
+    type: bool
+    default: 0
+  pagelist.partialRootPaths:
+    label: 'Pagelist: Partial Path'
+    category: Microtemplate.extensions
+    type: string
+    default: 'EXT:microtemplate/Resources/Private/Partials/Pagelist/'
+  pagelist.cssPriority:
+    label: 'Pagelist: CSS Priority'
+    category: Microtemplate.extensions
+    type: bool
+    default: 0
+  pagelist.cardImageWidth:
+    label: 'Pagelist: Card width'
+    category: Microtemplate.extensions
+    type: int
+    default: 583
+  pagelist.cardImageHeight:
+    label: 'Pagelist: Card height'
+    category: Microtemplate.extensions
+    type: int
+    default: 328
+  paginatedprocessors.enableDefaultStyles:
+    label: 'Paginated: Default Styles'
+    category: Microtemplate.extensions
+    type: bool
+    default: 1
+  paginatedprocessors.cssFile:
+    label: 'Paginated: CSS File'
+    category: Microtemplate.extensions
+    type: string
+    default: 'EXT:microtemplate/Resources/Public/Css/pagination.css'
+  paginatedprocessors.cssPriority:
+    label: 'Paginated: CSS Priority'
+    category: Microtemplate.extensions
+    type: bool
+    default: 0
+  containerItems.sectionScrollInEffect:
+    label: 'Container: Scroll effect'
+    category: Microtemplate.extensions
+    type: string
+    default: 'slide-from-below'
+  containerItems.enableIconpack:
+    label: 'Container: Iconpack'
+    category: Microtemplate.extensions
+    type: bool
+    default: 1
+  youtubevideo.cssPriority:
+    label: 'YouTube: CSS Priority'
+    category: Microtemplate.extensions
+    type: bool
+    default: 0

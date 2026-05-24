@@ -1,0 +1,4 @@
+name: 't3brightside/microtemplate'
+label: 'Microtemplate'
+dependencies:
+    - typo3/fluid-styled-content
